@@ -12,7 +12,7 @@ Bienvenidos al repositorio del Grupo 12 del curso: "Introducción a Señales Bio
 ## Imágenes
 | Colaborador 1                          | Colaborador 2                          | Colaborador 3                          |
 |---------------------------------|---------------------------------|---------------------------------|
-| ![Renato Cardoso](\Imágenes\R_cardoso.jpg)    | ![Jimena Alpiste](Imágenes/Captura.jpg)    | ![Jossymar León](Imágenes\Yopuesquienmas.jpg)    |
+| ![Renato Cardoso](Imágenes/R_cardoso.jpg)    | ![Jimena Alpiste](Imágenes/Captura.jpg)    | ![Jossymar León](Imágenes/Yopuesquienmas.jpg)    |
 
 ## Introducción a Señales Biomedicas Grupo 12
 ### Repositorio del curso introducción Señales Biomédicas
