@@ -2,13 +2,15 @@
 
 Bienvenidos al repositorio del Grupo 12 del curso: "Introducción a Señales Biomédicas"
 
+
 ## Tabla de contenidos:
 - [Sobre Nosotros](#SobreNosotros)
 - [Imágenes](#Imágenes)
 - [Integrantes](#Integrantes)
 
 ## Sobre Nosotros
-
+Proyecto: Aún no determinado
+Se buscará aplicar lo aprendido en el curso para el buen desarrollo del proyecto
 ## Imágenes
 | Colaborador 1                          | Colaborador 2                          | Colaborador 3                          |
 |---------------------------------|---------------------------------|---------------------------------|
