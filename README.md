@@ -21,4 +21,4 @@ Bienvenidos al repositorio del Grupo 12 del curso: "Introducción a Señales Bio
 
 | Colaborador 1                          | Colaborador 2                          | Colaborador 3                          |
 |---------------------------------|---------------------------------|---------------------------------|
-| ![Renato Cardoso](C:\Users\Equipo\Downloads\R_cardoso.jpg)    | ![Jimena Alpiste](C:\Users\Equipo\Downloads\Captura.JPG)    | ![Jossymar León](C:\Users\Equipo\OneDrive\Imágenes\Yopuesquienmas.jpg)    |
+| ![Renato Cardoso](C:\Users\Equipo\OneDrive\Escritorio\Introduccion_a_señales_biomedicas\Github\inb_2024_gh12\Imágenes\R_cardoso.jpg)    | ![Jimena Alpiste](C:\Users\Equipo\OneDrive\Escritorio\Introduccion_a_señales_biomedicas\Github\inb_2024_gh12\Imágenes\Captura.jpg)    | ![Jossymar León](C:\Users\Equipo\OneDrive\Escritorio\Introduccion_a_señales_biomedicas\Github\inb_2024_gh12\Imágenes\Yopuesquienmas.jpg)    |
