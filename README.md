@@ -3,7 +3,7 @@
 Bienvenidos al repositorio del Grupo 12 del curso: "Introducción a Señales Biomédicas"
 
 ## Tabla de contenidos:
-- [Sobre Nosotros](#Sobre Nosotros)
+- [Sobre Nosotros](#SobreNosotros)
 - [Imágenes](#Imágenes)
 - [Integrantes](#Integrantes)
 
