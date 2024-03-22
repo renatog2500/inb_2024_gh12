@@ -3,10 +3,10 @@
 Bienvenidos al repositorio del Grupo 12 del curso: "Introducción a Señales Biomédicas"
 
 ## Tabla de contenidos:
-- Imagenes
-- Hardware
-- Software
-- Participantes
+- [Imágenes](#Imágenes)
+- [Integrantes](#Integrantes)
+
+## Imágenes
 
 ## Introducción a Señales Biomedicas Grupo 12
 ### Repositorio del curso introducción Señales Biomédicas
