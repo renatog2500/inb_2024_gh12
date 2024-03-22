@@ -1,5 +1,3 @@
-![foto_renato](https://github.com/renatog2500/inb_2024_gh12/assets/164541858/905fc321-9313-43b1-907e-22a5f16fc5d6)# inb_2024_gh12
-
 Bienvenidos al repositorio del Grupo 12 del curso: "Introducción a Señales Biomédicas"
 
 
@@ -17,7 +15,7 @@ Se buscará aplicar lo aprendido en el curso para el buen desarrollo del proyect
 
 
 
-| img scr= "https://github.com/renatog2500/inb_2024_gh12/assets/164541858/1b2ba643-9eb2-447d-82eb-f0045fba748b" alt="Captura" width= "400" | ![Jimena Alpiste](Imágenes/Captura.jpg)    | ![Jossymar León](Imágenes/Yopuesquienmas.jpg)    |
+|<img scr= "https://github.com/renatog2500/inb_2024_gh12/assets/164541858/1b2ba643-9eb2-447d-82eb-f0045fba748b" alt="Captura" width= "400">| ![Jimena Alpiste](Imágenes/Captura.jpg)    | ![Jossymar León](Imágenes/Yopuesquienmas.jpg)    |
 
 ## Introducción a Señales Biomedicas Grupo 12
 ### Repositorio del curso introducción Señales Biomédicas
