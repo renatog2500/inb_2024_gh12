@@ -22,7 +22,7 @@ Se buscará aplicar lo aprendido en el curso para el buen desarrollo del proyect
 ### Repositorio del curso introducción Señales Biomédicas
 
 ### Integrantes
-- Renato Giusseppi Cardoso Reategui(colaborador) renato.cardoso@upch.pe
+- Renato Giusseppi Cardoso Reategui (colaborador) renato.cardoso@upch.pe
 - Jimena Alpiste Espinoza (colaboradora) jimena.alpiste@pucp.edu.pe  
 - Jossymar Leon Mallma (colaborador) Jossymarlm7@gmail.com
 
