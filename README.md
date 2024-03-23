@@ -1,4 +1,4 @@
-Bienvenidos al repositorio del Grupo 12 del curso: "Introducción a Señales Biomédicas"
+Bienvenidos al repositorio del Grupo 13 del curso: "Introducción a Señales Biomédicas"
 
 
 ## Tabla de contenidos:
@@ -18,7 +18,7 @@ Se buscará aplicar lo aprendido en el curso para el buen desarrollo del proyect
 
 |![Renato_Cardoso](Imágenes/R_cardoso.jpg)  | ![Jimena Alpiste](Imágenes/Captura.jpg)    | ![Jossymar León](Imágenes/Yopuesquienmas.jpg)    |
 
-## Introducción a Señales Biomedicas Grupo 12
+## Introducción a Señales Biomedicas Grupo 13
 ### Repositorio del curso introducción Señales Biomédicas
 
 ### Integrantes
