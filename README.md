@@ -4,6 +4,7 @@ Bienvenidos al repositorio del Grupo 13 del curso: "Introducción a Señales Bio
 
 ![gif_presentacion](Imágenes/Electrocardiograma-1.gif)
 </center>
+
 ## Tabla de contenidos:
 - [Proyecto](#Proyecto)
 - [Sobre Nosotros](#SobreNosotros)
