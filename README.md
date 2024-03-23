@@ -1,6 +1,5 @@
 Bienvenidos al repositorio del Grupo 13 del curso: "Introducción a Señales Biomédicas" del ciclo 2024-1
-![Imagen de un gato](https://www.google.com/url?sa=i&url=https%3A%2F%2Fstudikard.com%2Fcardiologia%2Felectrocardiograma-registra-la-senal-electrica-del-corazon%2F&psig=AOvVaw2k5qoN0krHmN59zxjMHQHr&ust=1711253656096000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPD7--PCiYUDFQAAAAAdAAAAABAE)
-
+![gif_presentacion](Imágenes/Electrocardiograma-1.gif)
 ## Tabla de contenidos:
 - [Proyecto](#Proyecto)
 - [Sobre Nosotros](#SobreNosotros)
