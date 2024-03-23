@@ -1,5 +1,4 @@
 ## Introducción a Señales Biomedicas Grupo 13
-### Repositorio del curso introducción Señales Biomédicas
 
 Bienvenidos al repositorio del Grupo 13 del curso: "Introducción a Señales Biomédicas" del ciclo 2024-1
 
