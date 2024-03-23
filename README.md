@@ -24,8 +24,10 @@ Somos un equipo de estudiantes de Ingeniería Biomédica, provenientes de la Pon
 
 
 
-
+<center>
 ![Renato_Cardoso](Imágenes/integrantesss.png)
+</center>  
+
 - Renato Giusseppi Cardoso Reategui (colaborador) renato.cardoso@upch.pe
 - Jimena Alpiste Espinoza (colaboradora) jimena.alpiste@pucp.edu.pe  
 - Jossymar Leon Mallma (colaborador) Jossymarlm7@gmail.com
