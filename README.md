@@ -15,7 +15,7 @@ Se buscará aplicar lo aprendido en el curso para el buen desarrollo del proyect
 Somos un equipo de estudiantes de Ingeniería Biomédica, provenientes de la Pontificia Universidad Católica del Perú y la Universidad Peruana Cayetano Heredia. Nos motiva profundamente el conocimiento sobre el funcionamiento de los equipos de medición de señales biomédicas, así como el procesamiento de la información que generan y sus diversas aplicaciones en el campo de la medicina.
 
 ## Integrantes
-| Colaborador 1                          | Colaborador 2                          | Colaborador 3                          |
+| Colaborador 1                                                 | Colaborador 2                          | Colaborador 3                          |
 |---------------------------------|---------------------------------|---------------------------------|
 
 
