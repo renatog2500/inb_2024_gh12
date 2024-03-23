@@ -5,6 +5,7 @@ Bienvenidos al repositorio del Grupo 12 del curso: "Introducción a Señales Bio
 - [Sobre Nosotros](#SobreNosotros)
 - [Imágenes](#Imágenes)
 - [Integrantes](#Integrantes)
+- [Docentes del curso](#DocentesDelCurso)
 
 ## Sobre Nosotros 
 Proyecto: Aún no determinado :)
@@ -25,4 +26,6 @@ Se buscará aplicar lo aprendido en el curso para el buen desarrollo del proyect
 - Jimena Alpiste Espinoza (colaboradora) jimena.alpiste@pucp.edu.pe  
 - Jossymar Leon Mallma (colaborador) Jossymarlm7@gmail.com
 
-
+## Docentes del Curso
+- Umbert Lewis De La Cruz Rodríguez (coordinador)
+- Moises Stevend Meza Rodríguez (coordinador)
