@@ -1,3 +1,6 @@
+## Introducción a Señales Biomedicas Grupo 13
+### Repositorio del curso introducción Señales Biomédicas
+
 Bienvenidos al repositorio del Grupo 13 del curso: "Introducción a Señales Biomédicas" del ciclo 2024-1
 
 
@@ -27,8 +30,7 @@ Somos un equipo de estudiantes de Ingeniería Biomédica, provenientes de la Pon
 - Renato Giusseppi Cardoso Reategui (colaborador) renato.cardoso@upch.pe
 - Jimena Alpiste Espinoza (colaboradora) jimena.alpiste@pucp.edu.pe  
 - Jossymar Leon Mallma (colaborador) Jossymarlm7@gmail.com
-## Introducción a Señales Biomedicas Grupo 13
-### Repositorio del curso introducción Señales Biomédicas
+
 
 
 
