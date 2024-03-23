@@ -3,6 +3,7 @@ Bienvenidos al repositorio del Grupo 13 del curso: "Introducción a Señales Bio
   <img width="460" height="300" src="![gif_presentacion](Imágenes/Electrocardiograma-1.gif)">
 </p>
 ![gif_presentacion](Imágenes/Electrocardiograma-1.gif)
+
 ## Tabla de contenidos:
 - [Proyecto](#Proyecto)
 - [Sobre Nosotros](#SobreNosotros)
