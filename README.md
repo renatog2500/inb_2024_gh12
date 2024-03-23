@@ -1,9 +1,8 @@
 Bienvenidos al repositorio del Grupo 13 del curso: "Introducción a Señales Biomédicas" del ciclo 2024-1
-<center>
 
 
 ![gif_presentacion](Imágenes/Electrocardiograma-1.gif)
-</center>
+
 
 ## Tabla de contenidos:
 - [Proyecto](#Proyecto)
@@ -22,11 +21,8 @@ Somos un equipo de estudiantes de Ingeniería Biomédica, provenientes de la Pon
 | Colaborador 1                                                 | Colaborador 2                          | Colaborador 3                          |
 |---------------------------------|---------------------------------|---------------------------------|
 
-
-
-<center>
 ![Renato_Cardoso](Imágenes/integrantesss.png)
-</center>  
+
 
 - Renato Giusseppi Cardoso Reategui (colaborador) renato.cardoso@upch.pe
 - Jimena Alpiste Espinoza (colaboradora) jimena.alpiste@pucp.edu.pe  
