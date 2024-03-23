@@ -1,8 +1,7 @@
 Bienvenidos al repositorio del Grupo 13 del curso: "Introducción a Señales Biomédicas" del ciclo 2024-1
 <p align="center">
-  <img width="460" height="300" src="![gif_presentacion](Imágenes/Electrocardiograma-1.gif)">
-</p>
 
+![gif_presentacion](Imágenes/Electrocardiograma-1.gif)
 
 ## Tabla de contenidos:
 - [Proyecto](#Proyecto)
