@@ -20,7 +20,7 @@ Somos un equipo de estudiantes de Ingeniería Biomédica, provenientes de la Pon
 
 
 
-|![Renato_Cardoso](Imágenes/R_cardoso.jpg)  | ![Jimena Alpiste](Imágenes/Captura.jpg)    | ![Jossymar León](Imágenes/Yopuesquienmas.jpg)    |
+|![Renato_Cardoso](2.png)  | ![Jimena Alpiste](Imágenes/3.png)    | ![Jossymar León](Imágenes/4.png)    |
 |![Renato_Cardoso](Imágenes/integrantesss.png)
 - Renato Giusseppi Cardoso Reategui (colaborador) renato.cardoso@upch.pe
 - Jimena Alpiste Espinoza (colaboradora) jimena.alpiste@pucp.edu.pe  
