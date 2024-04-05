@@ -22,7 +22,10 @@ Somos un equipo de estudiantes de Ingeniería Biomédica, provenientes de la Pon
 ## Integrantes
 | Colaborador 1                                                 | Colaborador 2                          | Colaborador 3                          |
 |---------------------------------|---------------------------------|---------------------------------|
-
+| Colaborador 1                                                 | Colaborador 2                          | Colaborador 3                          |
+|---------------------------------|---------------------------------|---------------------------------|
+| Colaborador 1                                                 | Colaborador 2                          | Colaborador 3                          |
+|---------------------------------|---------------------------------|---------------------------------|
 ![Renato_Cardoso](Imágenes/integrantesss.png)
 
 
