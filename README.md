@@ -8,7 +8,7 @@ Bienvenidos al repositorio del Grupo 13 del curso: "Introducción a Señales Bio
 
 ## Tabla de contenidos:
 - [Proyecto](#Proyecto)
-- [Sobre Nosotros](#Sobre Nosotros)
+- [Sobre Nosotros](#SobreNosotros)
 - [Integrantes](#Integrantes)
 - [Docentes del curso](#DocentesCurso)
 
