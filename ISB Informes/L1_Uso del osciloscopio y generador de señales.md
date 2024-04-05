@@ -6,3 +6,10 @@
 ● Entender los criterios de selección de la frecuencia de muestreo.
 
 ● Manipular y configurar adecuadamente una fuente de alimentación regulable; multímetro digital; Generador de señales y osciloscopio digital.
+
+## Equipo utilizado:
+● Arduino Nano IoT 33
+● Generador de Señales
+● Osciloscopio
+● Computadora con Arduino IDE y acceso a Arduino Cloud
+
