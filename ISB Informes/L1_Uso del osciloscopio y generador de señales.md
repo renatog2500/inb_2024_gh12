@@ -9,7 +9,10 @@
 
 ## Equipo utilizado:
 ● Arduino Nano IoT 33
+
 ● Generador de Señales
+
 ● Osciloscopio
+
 ● Computadora con Arduino IDE y acceso a Arduino Cloud
 
