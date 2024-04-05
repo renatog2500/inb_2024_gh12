@@ -1,1 +1,1 @@
-# inb_2024_gh12
+# Informe Laboratorio 1
