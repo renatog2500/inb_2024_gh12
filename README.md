@@ -22,7 +22,7 @@ Somos un equipo de estudiantes de Ingeniería Biomédica, provenientes de la Pon
 ## Integrantes
 | Colaborador 1                    | Colaborador 2                          | Colaborador 3                          |
 |---------------------------------|---------------------------------|---------------------------------|
-|![renato](Imágenes/2.png)                                              | ![jimena](Imágenes/3.png)                       | ![jossymar](Imágenes/4.png)                         |
+|![renato](Imágenes/2.png)         | ![jimena](Imágenes/3.png)                       | ![jossymar](Imágenes/4.png)                         |
 |---------------------------------|---------------------------------|---------------------------------|
 | Colaborador 1                                                 | Colaborador 2                          | Colaborador 3                          |
 |---------------------------------|---------------------------------|---------------------------------|
