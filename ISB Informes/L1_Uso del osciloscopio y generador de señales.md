@@ -56,20 +56,20 @@ Se configuro el generador de señales para proporcionar una señal sinusoidal de
 
 | Señal          | Imagen                           | Descripción                 |
 |---------------------------------|---------------------------------|---------------------------------|
-|Onda Sinusoidal|![](Imágenes/Osciloscopio_Onda_sinusoidal.png)|---------------------------------|
-|Onda Cuadrada|![](Imágenes/Osciloscopio_Onda_cuadrada.png)|---------------------------------|
-|Onda Traingular|![](Imágenes/Osciloscopio_Onda_triangular.png)|---------------------------------|
+|Onda Sinusoidal|![Onda Sinusoidal](Imágenes/Osciloscopio_Onda_sinusoidal.png)|---------------------------------|
+|Onda Cuadrada|![Onda Cuadrada](Imágenes/Osciloscopio_Onda_cuadrada.png)|---------------------------------|
+|Onda Traingular|![Onda Traingular](Imágenes/Osciloscopio_Onda_triangular.png)|---------------------------------|
 
 - Señal obtenida del Arduino IDE:
   
 | Señal          | Imagen                           | Descripción                 |
 |---------------------------------|---------------------------------|---------------------------------|
-|Onda Sinusoidal|![](Imágenes/Sinusoidal_cap.png)|Con condensador|
-|Onda Cuadrada|![](Imágenes/Cuadrada_cap.png)|Con condensador|
-|Onda Traingular|![](Imágenes/Triangulo_cap.png)|Con condensador|
-|Onda Sinusoidal|![](Imágenes/Sinusoidal.png)|Sin condensador|
-|Onda Cuadrada|![](Imágenes/Cuadrada.png)|Sin condensador|
-|Onda Traingular|![](Imágenes/Triangulo.png)|Sin condensador|
+|Onda Sinusoidal|![Onda Sinusoidal](Imágenes/Sinusoidal_cap.png)|Con condensador|
+|Onda Cuadrada|![Onda Cuadrada](Imágenes/Cuadrada_cap.png)|Con condensador|
+|Onda Traingular|![Onda Traingular](Imágenes/Triangulo_cap.png)|Con condensador|
+|Onda Sinusoidal|![Onda Sinusoidal](Imágenes/Sinusoidal.png)|Sin condensador|
+|Onda Cuadrada|![Onda Cuadrada](Imágenes/Cuadrada.png)|Sin condensador|
+|Onda Traingular|![Onda Traingular](Imágenes/Triangulo.png)|Sin condensador|
 
 - Arduino Cloud:
   
