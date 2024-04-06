@@ -5,8 +5,8 @@
 - [Objetivos](#Objetivos)
 - [Equipo Utilizado](#Equipo_utilizado)
 - [Resultados](#Resultados)
-- [Conclusiones](#Conclusiones)___________________________________________________________________________________________________
-
+- [Conclusiones](#Conclusiones)
+__________________________________________________________________________________________________
 ## Objetivos:
 - Adquirir señales conocidas como señal cuadrada, triangular, senoidal, rampa, etc.
 - Entender los criterios de selección de la frecuencia de muestreo.
