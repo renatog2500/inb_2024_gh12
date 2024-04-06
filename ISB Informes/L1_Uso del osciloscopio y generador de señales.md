@@ -1,6 +1,7 @@
 # Informe Laboratorio 1
- __________________________________________________________________________________________________
+
 ## Tabla de contenidos:
+ __________________________________________________________________________________________________
 - [Objetivos](#Objetivos)
 - [Equipo Utilizado](#EquipoUtilizado)
 - [Resultados y Discusión](#ResultadosDiscusion)
