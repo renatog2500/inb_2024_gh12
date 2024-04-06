@@ -20,7 +20,9 @@ ________________________________________________________________________________
 
 ## Resultados:
 - Conexión Arduino nano 33 IoT y cable BNC :
+  
 *pones la pic *
+
 Se conectó el condensador a las entradas A0 del Arduino y a su terminal de Ground.
 
 - Código en Arduino IDE:
