@@ -61,6 +61,7 @@ void loop() {
 
 
 - Generador de Señales:
+
 Se configuro el generador de señales para proporcionar una señal sinusoidal de 2 Hz de frecuencia, con 3.3V de amplitud y 0V de offset
 
 
@@ -68,7 +69,7 @@ Se configuro el generador de señales para proporcionar una señal sinusoidal de
 |-----------------|-----------------------------------------------|----------|
 | ![](../Imágenes/Generador_Onda_Sinusoidal.png)   | ![](../Imágenes/Generador_Onda_cuadrada.png)                        | ![](../Imágenes/Generador_Onda_Triangular.png)      |
 
-<p align="center">Tabla 1. Ondas en el Generador</p>
+<p align="center">Tabla 1. Configuración del generador de ondas para el ploteo de señales</p>
 
 - Señal obtenida del Osciloscopio:
 
