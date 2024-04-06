@@ -23,7 +23,7 @@ ________________________________________________________________________________
   
 *pones la pic *
 
-Se conectó el condensador a las entradas A0 del Arduino y a su terminal de Ground.
+Se estableció la conexión del Arduino Nano 33 IoT en el protoboard, junto con un condensador, para configurar un filtro RC. Este filtro se empleó en conjunto con un cable BNC para analizar la señal sinusoidal proveniente del generador de señales
 
 - Código en Arduino IDE:
 
@@ -40,6 +40,7 @@ Se conectó el condensador a las entradas A0 del Arduino y a su terminal de Grou
 
 
 - Generador de Señales:
+Se configuro el generador de señales para proporcionar una señal sinusoidal de 2 Hz de frecuencia, con 3.3V de amplitud y 0V de offset
 
 | Onda Sinusoidal           | Onda Cuadrada                           | Onda Triangular                   |
 |---------------------------------|---------------------------------|---------------------------------|
