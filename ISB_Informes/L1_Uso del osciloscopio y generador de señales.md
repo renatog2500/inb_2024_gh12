@@ -62,15 +62,6 @@ Se configuro el generador de señales para proporcionar una señal sinusoidal de
 |Onda Traingular|![Onda Traingular](../Imágenes/Osciloscopio_Onda_triangular.png)|---------------------------------|
 
 - Señal obtenida del Arduino IDE:
-  
-| Señal          | Imagen                           | Descripción                 |
-|---------------------------------|---------------------------------|---------------------------------|
-|Onda Sinusoidal|![Onda Sinusoidal](../Imágenes/Sinusoidal_cap.png)|Con condensador|
-|Onda Cuadrada|![Onda Cuadrada](../Imágenes/Cuadrada_cap.png)|Con condensador|
-|Onda Traingular|![Onda Traingular](../Imágenes/Triangulo_cap.png)|Con condensador|
-|Onda Sinusoidal|![Onda Sinusoidal](../Imágenes/Sinusoidal.png)|Sin condensador|
-|Onda Cuadrada|![Onda Cuadrada](../Imágenes/Cuadrada.png)|Sin condensador|
-|Onda Traingular|![Onda Traingular](../Imágenes/Triangulo.png)|Sin condensador|
 
 | Señal          | Con Condensador                           | Sin Condensador                |
 |---------------------------------|---------------------------------|---------------------------------|
