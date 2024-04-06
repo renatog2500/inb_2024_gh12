@@ -29,6 +29,7 @@ Se conectó el condensador a las entradas A0 del Arduino y a su terminal de Grou
 *pones la pic *
 
 '''
+
 unsigned long lastMsg = 0;
 float F = 3;          // Frecuencia de la señal en Hz
 double Fs = 10 * F;      // Frecuencia de muestreo en Hz (10 veces la frecuencia de la señal)
