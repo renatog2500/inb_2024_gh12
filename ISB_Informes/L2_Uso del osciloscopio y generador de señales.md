@@ -63,24 +63,13 @@ void loop() {
 - Generador de Señales:
 Se configuro el generador de señales para proporcionar una señal sinusoidal de 2 Hz de frecuencia, con 3.3V de amplitud y 0V de offset
 
+<p align="center">
 | Onda Sinusoidal          | Onda Cuadrada                                    | Onda Triangular |
 |-----------------|-----------------------------------------------|----------|
 | ![](../Imágenes/Generador_Onda_Sinusoidal.png)   | ![](../Imágenes/Generador_Onda_cuadrada.png)                        | ![](../Imágenes/Generador_Onda_Triangular.png)      |
 
-<p align="center">
-  <table>
-    <tr>
-      <th>Onda Sinusoidal</th>
-      <th>Onda Cuadrada</th>
-      <th>Onda Triangular</th>
-    </tr>
-    <tr>
-      <td><img src="../Imágenes/Generador_Onda_Sinusoidal.png" alt="Onda Sinusoidal"></td>
-      <td><img src="../Imágenes/Generador_Onda_cuadrada.png" alt="Onda Cuadrada"></td>
-      <td><img src="../Imágenes/Generador_Onda_Triangular.png" alt="Onda Triangular"></td>
-    </tr>
-  </table>
 </p>
+
 
 - Señal obtenida del Osciloscopio:
 
