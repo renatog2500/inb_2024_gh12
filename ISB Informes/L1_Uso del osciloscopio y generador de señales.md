@@ -4,7 +4,7 @@
  __________________________________________________________________________________________________
 - [Objetivos](#Objetivos)
 - [Equipo Utilizado](#EquipoUtilizado)
-- [Resultados y Discusión](#ResultadosDiscusion)
+- [Resultados y Discusión](#Resultados/Discusión)
 ___________________________________________________________________________________________________
 
 ## Objetivos:
@@ -18,3 +18,4 @@ ________________________________________________________________________________
 - Osciloscopio
 - Computadora con Arduino IDE y acceso a Arduino Cloud
 
+## Resultados/Discusión:
