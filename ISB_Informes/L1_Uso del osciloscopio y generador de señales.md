@@ -44,13 +44,12 @@ Se estableció la conexión del Arduino Nano 33 IoT en el protoboard, junto con 
 
 
 
-
 - Generador de Señales:
 Se configuro el generador de señales para proporcionar una señal sinusoidal de 2 Hz de frecuencia, con 3.3V de amplitud y 0V de offset
 
-| Onda Sinusoidal           | Onda Cuadrada                           | Onda Triangular                   |
-|----------------------------------------------|--------------------------------------------|-----------------------------------------------|
-|![](../Imágenes/Generador_Onda_Sinusoidal.png)|![](../Imágenes/Generador_Onda_cuadrada.png)|![](../Imágenes/Generador_Onda_Triangular.png)|
+| Onda Sinusoidal          | Onda Cuadrada                                    | Onda Triangular |
+|-----------------|-----------------------------------------------|----------|
+| ![](../Imágenes/Generador_Onda_Sinusoidal.png)   | ![](../Imágenes/Generador_Onda_cuadrada.png)                        | ![](../Imágenes/Generador_Onda_Triangular.png)      |
 
 
 
@@ -63,15 +62,14 @@ Se configuro el generador de señales para proporcionar una señal sinusoidal de
 |Onda Traingular|![Onda Traingular](../Imágenes/Osciloscopio_Onda_triangular.png)|Para esta onda tuvimos que configurarla con una frecuencia de 2Hz, una amplitud de 3.3v. En esta seña, se observó la variación de la amplitud y frecuencia se ven afectados, debido al ruido que se puede apreciar en la imagen.|
 
 - Señal obtenida del Arduino IDE:
-  
-| Señal          | Imagen                           | Descripción                 |
+
+| Señal          | Con Condensador                           | Sin Condensador                |
 |---------------------------------|---------------------------------|---------------------------------|
-|Onda Sinusoidal|![Onda Sinusoidal](../Imágenes/Sinusoidal_cap.png)|Con condensador|
-|Onda Cuadrada|![Onda Cuadrada](../Imágenes/Cuadrada_cap.png)|Con condensador|
-|Onda Traingular|![Onda Traingular](../Imágenes/Triangulo_cap.png)|Con condensador|
-|Onda Sinusoidal|![Onda Sinusoidal](../Imágenes/Sinusoidal.png)|Sin condensador|
-|Onda Cuadrada|![Onda Cuadrada](../Imágenes/Cuadrada.png)|Sin condensador|
-|Onda Traingular|![Onda Traingular](../Imágenes/Triangulo.png)|Sin condensador|
+|Onda Sinusoidal|![Onda Sinusoidal](../Imágenes/Sinusoidal_cap.png)|![Onda Sinusoidal](../Imágenes/Sinusoidal.png)|
+|Onda Cuadrada|![Onda Cuadrada](../Imágenes/Cuadrada_cap.png)|![Onda Cuadrada](../Imágenes/Cuadrada.png)|
+|Onda Traingular|![Onda Traingular](../Imágenes/Triangulo_cap.png)|![Onda Traingular](../Imágenes/Triangulo.png)|
+
+
 
 - Arduino Cloud:
   
