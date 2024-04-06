@@ -48,7 +48,7 @@ Se estableció la conexión del Arduino Nano 33 IoT en el protoboard, junto con 
 Se configuro el generador de señales para proporcionar una señal sinusoidal de 2 Hz de frecuencia, con 3.3V de amplitud y 0V de offset
 
 | Onda Sinusoidal           | Onda Cuadrada                           | Onda Triangular                   |
-|![](../Imágenes/Generador_Onda_Sinusoidal.png)|![](../Imágenes/Generador_Onda_cuadrada.png)|![](../Imágenes/Generador_Onda_Triangular.png)|
+|![](../Imágenes/Generador_Onda_Sinusoidal.png).|![](../Imágenes/Generador_Onda_cuadrada.png)|![](../Imágenes/Generador_Onda_Triangular.png)|
 
 
 
