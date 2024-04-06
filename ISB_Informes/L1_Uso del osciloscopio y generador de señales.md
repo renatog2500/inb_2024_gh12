@@ -51,6 +51,11 @@ Se configuro el generador de señales para proporcionar una señal sinusoidal de
 |![](../Imágenes/Generador_Onda_Sinusoidal.png).|![](../Imágenes/Generador_Onda_cuadrada.png)|![](../Imágenes/Generador_Onda_Triangular.png)|
 
 
+| Onda Sinusoidal          | Onda Cuadrada                                    | Onda Triangular |
+|-----------------|-----------------------------------------------|----------|
+| ![](../Imágenes/Generador_Onda_Sinusoidal.png)   | ![](../Imágenes/Generador_Onda_cuadrada.png)                        | ![](../Imágenes/Generador_Onda_Triangular.png)      |
+
+
 
 - Señal obtenida del Osciloscopio:
 
