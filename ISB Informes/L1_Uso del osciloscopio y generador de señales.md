@@ -19,3 +19,5 @@ ________________________________________________________________________________
 - Computadora con Arduino IDE y acceso a Arduino Cloud
 
 ## Resultados:
+- Conexión Arduino nano 33 IoT y cable BNC :
+  
