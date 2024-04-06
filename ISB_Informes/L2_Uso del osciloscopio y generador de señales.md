@@ -27,6 +27,7 @@ ________________________________________________________________________________
 - Conexión Arduino nano 33 IoT y cable BNC :
   
 *pones la pic *
+
 Figura 1. Conexiones del Arduino.
 
 Se estableció la conexión del Arduino Nano 33 IoT en el protoboard, junto con un condensador, para configurar un filtro RC. Este filtro se empleó en conjunto con un cable BNC para analizar la señal sinusoidal proveniente del generador de señales
@@ -35,15 +36,7 @@ Se estableció la conexión del Arduino Nano 33 IoT en el protoboard, junto con 
 
 *pones el codigo *
 
-
-- Comparativa del Efecto del Condensador:
-  
-| Con Condensador | Sin Condensador |
-|-----------|-----------|
-| ![](../Imágenes/Apagado_con_Condensador.png)|![](../Imágenes/Apagado_sin_condensador.png)|
-
-
-
+Figura 2. Código para el ploteo de las señales
 
 - Generador de Señales:
 Se configuro el generador de señales para proporcionar una señal sinusoidal de 2 Hz de frecuencia, con 3.3V de amplitud y 0V de offset
