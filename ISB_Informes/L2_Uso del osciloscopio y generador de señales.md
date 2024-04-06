@@ -33,7 +33,7 @@ Figura 1. Conexiones del Arduino.
 <p align="center">
   <img src="../Imágenes/Circuito.png" alt="Figura 1. Conexiones del Arduino">
 </p>
-
+<p align="center">Figura 1. Conexiones del Arduino</p>
 Se estableció la conexión del Arduino Nano 33 IoT en el protoboard, junto con un condensador, para configurar un filtro RC. Este filtro se empleó en conjunto con un cable BNC para analizar la señal sinusoidal proveniente del generador de señales
 
 - Código en Arduino IDE:
