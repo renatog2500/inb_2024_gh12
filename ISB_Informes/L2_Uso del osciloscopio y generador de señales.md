@@ -97,7 +97,9 @@ En el circuito, el condensador actúa como un filtro pasa alta, permitiendo el p
 - Arduino Cloud:
   
 Se presentaron problemas en el Arduino Cloud al momento de subir el código al Nano 33 IoT por lo cual no se pudo realizar una lectura con el entorno virtual.
-## Resultados:
+
+
+## Discusión:
 Fuentes de Error: 
 Hay algunas razones posibles por las que ves picos extraños e irregulares la señal cuando se agrega un capacitor de 470uF a tu circuito de filtro RC. A continuación se muestran algunas posibles causas:
 
