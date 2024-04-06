@@ -1,8 +1,12 @@
 # Informe Laboratorio 1
+## ______________________________________________________________________________________________________________________________________
+
 ## Tabla de contenidos:
 - [Objetivos](#Objetivos)
 - [Equipo Utilizado](#EquipoUtilizado)
 - [Resultados y Discusión](#ResultadosDiscusion)
+
+## ______________________________________________________________________________________________________________________________________
 
 ## Objetivos:
 - Adquirir señales conocidas como señal cuadrada, triangular, senoidal, rampa, etc.
