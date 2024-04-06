@@ -39,7 +39,8 @@ Se estableció la conexión del Arduino Nano 33 IoT en el protoboard, junto con 
   
 | Con Condensador | Sin Condensador |
 |-----------|-----------|
-| Dato 1    | Dato A    |
+| ![](../Imágenes/Apagado_con_Condensador.png)|![](../Imágenes/Apagado_sin_Condensador.png)|
+
 
 
 
@@ -48,6 +49,7 @@ Se estableció la conexión del Arduino Nano 33 IoT en el protoboard, junto con 
 Se configuro el generador de señales para proporcionar una señal sinusoidal de 2 Hz de frecuencia, con 3.3V de amplitud y 0V de offset
 
 | Onda Sinusoidal           | Onda Cuadrada                           | Onda Triangular                   |
+|----------------------------------------------|--------------------------------------------|-----------------------------------------------|
 |![](../Imágenes/Generador_Onda_Sinusoidal.png)|![](../Imágenes/Generador_Onda_cuadrada.png)|![](../Imágenes/Generador_Onda_Triangular.png)|
 
 
@@ -56,9 +58,9 @@ Se configuro el generador de señales para proporcionar una señal sinusoidal de
 
 | Señal          | Imagen                           | Descripción                 |
 |---------------------------------|---------------------------------|---------------------------------|
-|Onda Sinusoidal|![Onda Sinusoidal](../Imágenes/Osciloscopio_Onda_sinusoidal.png)|---------------------------------|
-|Onda Cuadrada|![Onda Cuadrada](../Imágenes/Osciloscopio_Onda_cuadrada.png)|---------------------------------|
-|Onda Traingular|![Onda Traingular](../Imágenes/Osciloscopio_Onda_triangular.png)|---------------------------------|
+|Onda Sinusoidal|![Onda Sinusoidal](../Imágenes/Osciloscopio_Onda_sinusoidal.png)|Para esta onda tuvimos que configurarla con una frecuencia de 2Hz, una amplitud de 3.3v. Donde se puede apreciar una atenuación de aproximadamente 50 mV y una frecuencia detectada de 1.9 Hz|
+|Onda Cuadrada|![Onda Cuadrada](../Imágenes/Osciloscopio_Onda_cuadrada.png)|Para esta onda tuvimos que configurarla con una frecuencia de 2Hz, una amplitud de 3.3v. Del mismo modo, se apreció una atenuación junto a ruido en las zonas altas de la onda. |
+|Onda Traingular|![Onda Traingular](../Imágenes/Osciloscopio_Onda_triangular.png)|Para esta onda tuvimos que configurarla con una frecuencia de 2Hz, una amplitud de 3.3v. En esta seña, se observó la variación de la amplitud y frecuencia se ven afectados, debido al ruido que se puede apreciar en la imagen.|
 
 - Señal obtenida del Arduino IDE:
   
