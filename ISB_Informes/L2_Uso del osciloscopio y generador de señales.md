@@ -88,7 +88,7 @@ Se configuro el generador de señales para proporcionar una señal sinusoidal de
 |Onda Cuadrada|![Onda Cuadrada](../Imágenes/Cuadrada_cap.png)|![Onda Cuadrada](../Imágenes/Cuadrada.png)|
 |Onda Traingular|![Onda Traingular](../Imágenes/Triangulo_cap.png)|![Onda Traingular](../Imágenes/Triangulo.png)|
 
-
+En el circuito, el condensador actúa como un filtro pasa alta, permitiendo el paso de frecuencias más altas mientras atenúa las frecuencias más bajas. Esto afecta el proceso de detección y registro de la señal por parte del Arduino proveniente del generador. 
 
 - Arduino Cloud:
   
