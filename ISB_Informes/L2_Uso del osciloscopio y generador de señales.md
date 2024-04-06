@@ -25,17 +25,37 @@ ________________________________________________________________________________
 
 ## Resultados:
 - Conexión Arduino nano 33 IoT y cable BNC :
-  ![](../Imágenes/Circuito.png)
 
 
+![](../Imágenes/Circuito.png)
 Figura 1. Conexiones del Arduino.
 
 Se estableció la conexión del Arduino Nano 33 IoT en el protoboard, junto con un condensador, para configurar un filtro RC. Este filtro se empleó en conjunto con un cable BNC para analizar la señal sinusoidal proveniente del generador de señales
 
 - Código en Arduino IDE:
+```C++
+unsigned long lastMsg = 0;
+float F = 3;          // Frecuencia de la señal en Hz
+double Fs = 10 * F;      // Frecuencia de muestreo en Hz (10 veces la frecuencia de la señal)
+double Ts_ms = (1 / Fs) * 1000;  // Período de muestreo en milisegundos (recíproco de la frecuencia de muestreo)
 
-*pones el codigo *
+void setup() {
+  Serial.begin(9600);
+  while (!Serial);  // Esperar hasta que se inicie la comunicación serial
+}
 
+void loop() {
+  unsigned long now = millis();  
+
+ 
+  if (now - lastMsg > Ts_ms) {
+    lastMsg = now;  
+
+    double signal_analogica = analogRead(A0);  
+    Serial.println(signal_analogica);                                 
+  }
+}
+```
 Figura 2. Código para el ploteo de las señales
 
 - Generador de Señales:
