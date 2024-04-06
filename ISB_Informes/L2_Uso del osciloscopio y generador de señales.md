@@ -39,7 +39,7 @@ Se estableció la conexión del Arduino Nano 33 IoT en el protoboard, junto con 
   
 | Con Condensador | Sin Condensador |
 |-----------|-----------|
-| ![](../Imágenes/Apagado_con_Condensador.png)|![](../Imágenes/Apagado_sin_Condensador.png)|
+| ![](../Imágenes/Apagado_con_Condensador.png)|![](../Imágenes/Apagado_sin_condensador.png)|
 
 
 
