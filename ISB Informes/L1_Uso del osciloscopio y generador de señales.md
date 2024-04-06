@@ -63,6 +63,7 @@ Se conectó el condensador a las entradas A0 del Arduino y a su terminal de Grou
 |Onda Traingular|------------------foto---------------|Sin condensador|
 
 - Arduino Cloud:
+  
 Se presentaron problemas en el Arduino Cloud al momento de subir el código al Nano 33 IoT por lo cual no se pudo realizar una lectura con el entorno virtual.
 
 ## Conclusiones:
