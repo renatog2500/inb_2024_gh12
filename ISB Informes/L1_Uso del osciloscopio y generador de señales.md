@@ -27,10 +27,8 @@ Se conectó el condensador a las entradas A0 del Arduino y a su terminal de Grou
 
 - Código en Arduino IDE:
 
-  '''
-*pones el codigo*
+*pones el codigo *
 
-'''
 
 - Comparativa del Efecto del Condensador:
 
