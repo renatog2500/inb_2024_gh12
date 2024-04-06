@@ -28,8 +28,11 @@ Se conectó el condensador a las entradas A0 del Arduino y a su terminal de Grou
 - Código en Arduino IDE:
 *pones la pic *
 
-- Comparativa del Efecto del Condensador: 
-
+- Comparativa del Efecto del Condensador:
+  
+| Con condensador          | Sin Condensador                        |
+| foto        | foto                       |
+| Descripción        | Descripción                       |
 - Generador de Señales:
 
 - Señal obtenida del Osciloscopio:
