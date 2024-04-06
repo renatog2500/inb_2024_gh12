@@ -4,7 +4,7 @@
  __________________________________________________________________________________________________
 - [Objetivos](#Objetivos)
 - [Equipo Utilizado](#EquipoUtilizado)
-- [Resultados y Discusión](#Resultados/Discusión)
+- [Resultados / Discusión](#Resultados/Discusión)
 ___________________________________________________________________________________________________
 
 ## Objetivos:
