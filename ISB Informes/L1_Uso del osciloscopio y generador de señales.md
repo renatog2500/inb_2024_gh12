@@ -5,7 +5,7 @@
 - [Objetivos](#Objetivos)
 - [Equipo Utilizado](#Equipo_utilizado)
 - [Resultados](#Resultados)
-___________________________________________________________________________________________________
+- [Conclusiones](#Conclusiones)___________________________________________________________________________________________________
 
 ## Objetivos:
 - Adquirir señales conocidas como señal cuadrada, triangular, senoidal, rampa, etc.
@@ -52,6 +52,7 @@ Se conectó el condensador a las entradas A0 del Arduino y a su terminal de Grou
 |Onda Traingular|------------------foto---------------|---------------------------------|
 
 - Señal obtenida del Arduino IDE:
+  
 | Señal          | Imagen                           | Descripción                 |
 |---------------------------------|---------------------------------|---------------------------------|
 |Onda Sinusoidal|------------------foto---------------|---------------------------------|
