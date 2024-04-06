@@ -29,9 +29,6 @@ Se conectó el condensador a las entradas A0 del Arduino y a su terminal de Grou
 *pones la pic *
 
 - Comparativa del Efecto del Condensador:
-  
-
-
 
 | Estado             | Imagen                           | Descripción                   |
 |---------------------------------|---------------------------------|---------------------------------|
@@ -40,6 +37,7 @@ Se conectó el condensador a las entradas A0 del Arduino y a su terminal de Grou
 
 
 - Generador de Señales:
+
 | Onda Sinusoidal           | Onda Cuadrada                           | Onda Triangular                   |
 |---------------------------------|---------------------------------|---------------------------------|
 |foto|------------------foto---------------|---------------------------------|
