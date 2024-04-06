@@ -103,9 +103,9 @@ Se presentaron problemas en el Arduino Cloud al momento de subir el código al N
 Fuentes de Error: 
 Hay algunas razones posibles por las que ves picos extraños e irregulares la señal cuando se agrega un capacitor de 470uF a tu circuito de filtro RC. A continuación se muestran algunas posibles causas:
 
-1.  Diseño de filtro incorrecto: El circuito de filtro RC está diseñado para suavizar la señal de salida de su Arduino Nano reduciendo los componentes de alta frecuencia de la señal. Si los valores de la resistencia y el condensador no se eligen correctamente, es posible que el filtro no funcione como se esperaba y que vea picos extraños en la señal de salida.[1]
-2.   Ruido: Es posible que el condensador esté captando ruido del entorno o de la fuente de alimentación. Este ruido puede ser amplificado por el circuito de filtro RC y aparecer como picos en la señal de salida. [2]
-3.   
+1.  Diseño de filtro incorrecto: El circuito de filtro RC está diseñado para suavizar la señal de salida de su Arduino Nano reduciendo los componentes de alta frecuencia de la señal. Si los valores de la resistencia y el condensador no se eligen correctamente, es posible que el filtro no funcione como se esperaba y que vea picos extraños en la señal de salida [1].
+2.   Ruido: Es posible que el condensador esté captando ruido del entorno o de la fuente de alimentación. Este ruido puede ser amplificado por el circuito de filtro RC y aparecer como picos en la señal de salida [2].
+3.   Fugas de condensadores: Los condensadores pueden perder carga con el tiempo, especialmente si son viejos o han sido sometidos a altas temperaturas. Esta fuga puede hacer que el capacitor se descargue lentamente, lo que resulta en una caída de voltaje en el capacitor y provoca picos en la señal de salida [3.
 
 
 
@@ -116,6 +116,8 @@ En este experimento, se logró exitosamente plotear señales en el Arduino IDE p
 ## Bibliografía:
 [1] “La respuesta natural de un circuito RC (artículo) | Khan Academy,” Khan Academy, 2023. https://es.khanacademy.org/science/electrical-engineering/ee-circuit-analysis-topic/ee-natural-and-forced-response/a/ee-rc-natural-response (accessed Apr. 06, 2024).
 
-[2]
-N. Arias-Prado, E. Escamilla-Hernández, M. Nakano-Miyatake, and H. Perez-Meana, “Desarrollo de un sistema para cancelación activa de ruido,” Pädi Boletín Científico de Ciencias Básicas e Ingenierías del ICBI, vol. 10, no. Especial4, pp. 173–180, Oct. 2022, doi: https://doi.org/10.29057/icbi.v10iEspecial4.9138.
+[2] N. Arias-Prado, E. Escamilla-Hernández, M. Nakano-Miyatake, and H. Perez-Meana, “Desarrollo de un sistema para cancelación activa de ruido,” Pädi Boletín Científico de Ciencias Básicas e Ingenierías del ICBI, vol. 10, no. Especial4, pp. 173–180, Oct. 2022, doi: https://doi.org/10.29057/icbi.v10iEspecial4.9138.
+
+[3] I. S. Ike, I. Sigalas, and S. Iyuke, “Understanding performance limitation and suppression of leakage current or self-discharge in electrochemical capacitors: a review,” Physical Chemistry Chemical Physics, vol. 18, no. 2, pp. 661–680, Jan. 2016, doi: https://doi.org/10.1039/c5cp05459a.
+
 
