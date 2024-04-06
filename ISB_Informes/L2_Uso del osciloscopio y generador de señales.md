@@ -7,6 +7,7 @@
 - [Resultados](#Resultados)
 - [Discusión](#Discusión)
 - [Conclusiones](#Conclusiones)
+- [Bibliografía](#Bibliografía)
 __________________________________________________________________________________________________
 ## Objetivos:
 - Adquirir señales conocidas como señal cuadrada, triangular, senoidal, rampa, etc.
@@ -97,6 +98,7 @@ En el circuito, el condensador actúa como un filtro pasa alta, permitiendo el p
   
 Se presentaron problemas en el Arduino Cloud al momento de subir el código al Nano 33 IoT por lo cual no se pudo realizar una lectura con el entorno virtual.
 ## Resultados:
+Fuentes de Error: 
 
 
 
@@ -105,4 +107,6 @@ Se presentaron problemas en el Arduino Cloud al momento de subir el código al N
 
 ## Conclusiones:
 En este experimento, se logró exitosamente plotear señales en el Arduino IDE provenientes del generador de señales. La comparación con las gráficas obtenidas del osciloscopio permitió validar la precisión de las mediciones realizadas por el Arduino. Además, la capacidad de graficar en Arduino Cloud proporciona una alternativa conveniente para monitorear y analizar datos de manera remota, pero en esta oportunidad no se logró obtener una conexión. 
+
+## Bibliografía:
    
