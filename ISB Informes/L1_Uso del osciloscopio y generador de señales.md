@@ -13,10 +13,15 @@ ________________________________________________________________________________
 - Manipular y configurar adecuadamente una fuente de alimentación regulable; multímetro digital; Generador de señales y osciloscopio digital.
 
 ## Equipo_utilizado:
-- Arduino Nano IoT 33
-- Generador de Señales
-- Osciloscopio
-- Computadora con Arduino IDE y acceso a Arduino Cloud
+| Modelo          | Descripción                                    | Cantidad |
+|-----------------|-----------------------------------------------|----------|
+| AFG1022         | Generador de señales                          | 1        |
+| TBS 1000C Series| Osciloscopio digital                          | 1        |
+| -               | Cable BNC Male-Male                           | 1        |
+| -               | Punta de osciloscopio con conector BNC (Male)| 1        |
+| -               | Par de cables Male-Male                       | 1        |
+| SAMD            | Arduino 33 IoT                                | 1        |
+
 
 ## Resultados:
 - Conexión Arduino nano 33 IoT y cable BNC :
