@@ -55,9 +55,12 @@ Se conectó el condensador a las entradas A0 del Arduino y a su terminal de Grou
   
 | Señal          | Imagen                           | Descripción                 |
 |---------------------------------|---------------------------------|---------------------------------|
-|Onda Sinusoidal|------------------foto---------------|---------------------------------|
-|Onda Cuadrada|------------------foto---------------|---------------------------------|
-|Onda Traingular|------------------foto---------------|---------------------------------|
+|Onda Sinusoidal|------------------foto---------------|Con condensador|
+|Onda Cuadrada|------------------foto---------------|Con condensador|
+|Onda Traingular|------------------foto---------------|Con condensador|
+|Onda Sinusoidal|------------------foto---------------|Sin condensador|
+|Onda Cuadrada|------------------foto---------------|Sin condensador|
+|Onda Traingular|------------------foto---------------|Sin condensador|
 
 ## Conclusiones:
 En este experimento, se logró exitosamente plotear señales en el Arduino IDE provenientes del generador de señales. La comparación con las gráficas obtenidas del osciloscopio permitió validar la precisión de las mediciones realizadas por el Arduino. Además, la capacidad de graficar en Arduino Cloud proporciona una alternativa conveniente para monitorear y analizar datos de manera remota, pero en esta oportunidad no se logró obtener una conexión. 
