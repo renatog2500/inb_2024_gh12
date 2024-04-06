@@ -1,4 +1,4 @@
-# Informe Laboratorio 1
+# Laboratorio N°2 - Adquisión de señales y graficación en Arduino
 
 ## Tabla de contenidos:
  __________________________________________________________________________________________________
