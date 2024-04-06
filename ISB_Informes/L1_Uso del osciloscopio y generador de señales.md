@@ -72,6 +72,14 @@ Se configuro el generador de señales para proporcionar una señal sinusoidal de
 |Onda Cuadrada|![Onda Cuadrada](../Imágenes/Cuadrada.png)|Sin condensador|
 |Onda Traingular|![Onda Traingular](../Imágenes/Triangulo.png)|Sin condensador|
 
+| Señal          | Con Condensador                           | Sin Condensador                |
+|---------------------------------|---------------------------------|---------------------------------|
+|Onda Sinusoidal|![Onda Sinusoidal](../Imágenes/Sinusoidal_cap.png)|![Onda Sinusoidal](../Imágenes/Sinusoidal.png)|
+|Onda Cuadrada|![Onda Cuadrada](../Imágenes/Cuadrada_cap.png)|![Onda Cuadrada](../Imágenes/Cuadrada.png)|
+|Onda Traingular|![Onda Traingular](../Imágenes/Triangulo_cap.png)|![Onda Traingular](../Imágenes/Triangulo.png)|
+
+
+
 - Arduino Cloud:
   
 Se presentaron problemas en el Arduino Cloud al momento de subir el código al Nano 33 IoT por lo cual no se pudo realizar una lectura con el entorno virtual.
