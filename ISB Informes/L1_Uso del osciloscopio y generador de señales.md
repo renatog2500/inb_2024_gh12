@@ -35,11 +35,10 @@ Se conectó el condensador a las entradas A0 del Arduino y a su terminal de Grou
 | Descripción        | Descripción                       |
 
 
-| CEstado 1            | Imagen                           | Descripción                   |
+| Estado 1            | Imagen                           | Descripción                   |
 |---------------------------------|---------------------------------|---------------------------------|
-|![renato](Imágenes/2.png)| ![jimena](Imágenes/3.png)             | ![jossymar](Imágenes/4.png)     |
-
-
+|Con condensador|---------------------------------|---------------------------------|
+|Sin condensador|---------------------------------|---------------------------------|
 - Generador de Señales:
 
 - Señal obtenida del Osciloscopio:
