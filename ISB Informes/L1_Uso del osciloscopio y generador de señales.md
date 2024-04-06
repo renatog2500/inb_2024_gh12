@@ -40,12 +40,10 @@ void setup() {
 }
 
 void loop() {
-  unsigned long now = millis();  
-
- 
+  unsigned long now = millis();   
+  
   if (now - lastMsg > Ts_ms) {
     lastMsg = now;  
-
     double signal_analogica = analogRead(A0);  
     Serial.println(signal_analogica);                                 
   }
