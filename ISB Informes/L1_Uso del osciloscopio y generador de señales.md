@@ -31,11 +31,12 @@ Se conectó el condensador a las entradas A0 del Arduino y a su terminal de Grou
 
 
 - Comparativa del Efecto del Condensador:
+  
+| Con Condensador | Sin Condensador |
+|-----------|-----------|
+| Dato 1    | Dato A    |
 
-| Estado             | Imagen                           | --
-|---------------------------------|---------------------------------|---------------------------------|
-|Con condensador|------------------foto---------------|---------------------------------|
-|Sin condensador|-----------------foto----------------|---------------------------------|
+
 
 
 - Generador de Señales:
