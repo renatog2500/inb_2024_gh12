@@ -68,7 +68,7 @@ Se configuro el generador de señales para proporcionar una señal sinusoidal de
 |-----------------|-----------------------------------------------|----------|
 | ![](../Imágenes/Generador_Onda_Sinusoidal.png)   | ![](../Imágenes/Generador_Onda_cuadrada.png)                        | ![](../Imágenes/Generador_Onda_Triangular.png)      |
 
-
+<p align="center">Tabla 1. Ondas en el Generador +/p>
 
 - Señal obtenida del Osciloscopio:
 
@@ -78,7 +78,7 @@ Se configuro el generador de señales para proporcionar una señal sinusoidal de
 | Onda Cuadrada  | ![](../Imágenes/Osciloscopio_Onda_cuadrada.png)              | Para esta onda tuvimos que configurarla con una frecuencia de 2Hz, una amplitud de 3.3v. Del mismo modo, se apreció una atenuación junto a ruido en las zonas altas de la onda. |
 | Onda Triangular| ![](../Imágenes/Osciloscopio_Onda_triangular.png)            | Para esta onda tuvimos que configurarla con una frecuencia de 2Hz, una amplitud de 3.3v. En esta señal, se observó la variación de la amplitud y frecuencia se ven afectados, debido al ruido que se puede apreciar en la imagen. |
 
-
+<p align="center">Tabla 2. Señales en el osciloscopio</p>
 
 - Señal obtenida del Arduino IDE:
 
@@ -87,6 +87,7 @@ Se configuro el generador de señales para proporcionar una señal sinusoidal de
 |Onda Sinusoidal|![Onda Sinusoidal](../Imágenes/Sinusoidal_cap.png)|![Onda Sinusoidal](../Imágenes/Sinusoidal.png)|
 |Onda Cuadrada|![Onda Cuadrada](../Imágenes/Cuadrada_cap.png)|![Onda Cuadrada](../Imágenes/Cuadrada.png)|
 |Onda Traingular|![Onda Traingular](../Imágenes/Triangulo_cap.png)|![Onda Traingular](../Imágenes/Triangulo.png)|
+<p align="center">Tabla 3. Efecto del Condensador en el Arduino IDE</p>
 
 En el circuito, el condensador actúa como un filtro pasa alta, permitiendo el paso de frecuencias más altas mientras atenúa las frecuencias más bajas. Esto afecta el proceso de detección y registro de la señal por parte del Arduino proveniente del generador. 
 
