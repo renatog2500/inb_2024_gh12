@@ -3,7 +3,7 @@
 ## Tabla de contenidos:
  __________________________________________________________________________________________________
 - [Objetivos](#Objetivos)
-- [Equipo Utilizado](#EquipoUtilizado)
+- [Equipo Utilizado](#Equipo_utilizado)
 - [Resultados](#Resultados)
 ___________________________________________________________________________________________________
 
@@ -12,7 +12,7 @@ ________________________________________________________________________________
 - Entender los criterios de selección de la frecuencia de muestreo.
 - Manipular y configurar adecuadamente una fuente de alimentación regulable; multímetro digital; Generador de señales y osciloscopio digital.
 
-## Equipo utilizado:
+## Equipo_utilizado:
 - Arduino Nano IoT 33
 - Generador de Señales
 - Osciloscopio
