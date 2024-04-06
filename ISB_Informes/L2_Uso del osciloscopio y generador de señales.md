@@ -58,9 +58,9 @@ Se configuro el generador de señales para proporcionar una señal sinusoidal de
 
 | Señal          | Imagen                                                                               | Descripción                                                                                      |
 |----------------|--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| Onda Sinusoidal | <img src="../Imágenes/Osciloscopio_Onda_sinusoidal.png" width="800" height="400"> | Para esta onda tuvimos que configurarla con una frecuencia de 2Hz, una amplitud de 3.3v. Donde se puede apreciar una atenuación de aproximadamente 50 mV y una frecuencia detectada de 1.9 Hz |
-| Onda Cuadrada  | <img src="../Imágenes/Osciloscopio_Onda_cuadrada.png" width="800" height="400">    | Para esta onda tuvimos que configurarla con una frecuencia de 2Hz, una amplitud de 3.3v. Del mismo modo, se apreció una atenuación junto a ruido en las zonas altas de la onda. |
-| Onda Triangular| <img src="../Imágenes/Osciloscopio_Onda_triangular.png" width="800" height="400">  | Para esta onda tuvimos que configurarla con una frecuencia de 2Hz, una amplitud de 3.3v. En esta señal, se observó la variación de la amplitud y frecuencia se ven afectados, debido al ruido que se puede apreciar en la imagen. |
+| Onda Sinusoidal | <img src="../Imágenes/Osciloscopio_Onda_sinusoidal.png" width="800" height="200"> | Para esta onda tuvimos que configurarla con una frecuencia de 2Hz, una amplitud de 3.3v. Donde se puede apreciar una atenuación de aproximadamente 50 mV y una frecuencia detectada de 1.9 Hz |
+| Onda Cuadrada  | <img src="../Imágenes/Osciloscopio_Onda_cuadrada.png" width="800" height="200">    | Para esta onda tuvimos que configurarla con una frecuencia de 2Hz, una amplitud de 3.3v. Del mismo modo, se apreció una atenuación junto a ruido en las zonas altas de la onda. |
+| Onda Triangular| <img src="../Imágenes/Osciloscopio_Onda_triangular.png" width="800" height="200">  | Para esta onda tuvimos que configurarla con una frecuencia de 2Hz, una amplitud de 3.3v. En esta señal, se observó la variación de la amplitud y frecuencia se ven afectados, debido al ruido que se puede apreciar en la imagen. |
 
 
 
