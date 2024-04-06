@@ -28,6 +28,7 @@ ________________________________________________________________________________
 
 
 ![](../Imágenes/Circuito.png)
+
 Figura 1. Conexiones del Arduino.
 
 Se estableció la conexión del Arduino Nano 33 IoT en el protoboard, junto con un condensador, para configurar un filtro RC. Este filtro se empleó en conjunto con un cable BNC para analizar la señal sinusoidal proveniente del generador de señales
@@ -56,6 +57,7 @@ void loop() {
   }
 }
 ```
+
 Figura 2. Código para el ploteo de las señales
 
 - Generador de Señales:
@@ -68,13 +70,6 @@ Se configuro el generador de señales para proporcionar una señal sinusoidal de
 
 
 - Señal obtenida del Osciloscopio:
-
-| Señal          | Imagen                           | Descripción                 |
-|---------------------------------|---------------------------------|---------------------------------|
-|Onda Sinusoidal|![Onda Sinusoidal](../Imágenes/Osciloscopio_Onda_sinusoidal.png)|Para esta onda tuvimos que configurarla con una frecuencia de 2Hz, una amplitud de 3.3v. Donde se puede apreciar una atenuación de aproximadamente 50 mV y una frecuencia detectada de 1.9 Hz|
-|Onda Cuadrada|![Onda Cuadrada](../Imágenes/Osciloscopio_Onda_cuadrada.png)|Para esta onda tuvimos que configurarla con una frecuencia de 2Hz, una amplitud de 3.3v. Del mismo modo, se apreció una atenuación junto a ruido en las zonas altas de la onda. |
-|Onda Traingular|![Onda Traingular](../Imágenes/Osciloscopio_Onda_triangular.png)|Para esta onda tuvimos que configurarla con una frecuencia de 2Hz, una amplitud de 3.3v. En esta seña, se observó la variación de la amplitud y frecuencia se ven afectados, debido al ruido que se puede apreciar en la imagen.|
-
 
 | Señal          | Imagen                                                                               | Descripción                                                                                      |
 |----------------|--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
