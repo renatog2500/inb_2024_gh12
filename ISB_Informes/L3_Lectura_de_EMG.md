@@ -31,6 +31,7 @@ El siguiente procedimiento consiste en colocar los electrodos EMG en el usuario 
 <p align="justify">
 En la prueba 1 se tomo señales del reposo y contracción delantebrazo, teniendo la conexión de tierra próxima al codo de la persona. Presione el icono de **Youtube** para acceder a la lista de reproducción de la primera prueba.<br>
 </p>
+<div align="center">
 [<img src="https://s.widget-club.com/samples/SkKKnH4BdhhNhbwYwAUv8OzzsT23/B59FQXljdTYPxaG0NbUl/D112D5D5-1C92-4666-B4FB-F5DCE247052C.jpg?q=70" width="20%" height="20%">](https://www.youtube.com/watch?v=wQWGIh1lzSk&list=PLVlPVkO82_qqI6ozxE2nUjjm0MG3LpNd1&ab_channel=RENATOGIUSSEPPECARDOSORE%C3%81TEGUI)
 </div>
 
@@ -38,12 +39,14 @@ En la prueba 1 se tomo señales del reposo y contracción delantebrazo, teniendo
 <p align="justify">
 En la prueba 2 se tomo señales del reposo y contracción del bicep braquial, teniendo la conexión de tierra próxima al codo. Presione el icono de **Youtube** para acceder a la lista de reproducción de la segunda prueba<br>
 </p>
+<div align="center">
 [<img src="https://s.widget-club.com/samples/SkKKnH4BdhhNhbwYwAUv8OzzsT23/B59FQXljdTYPxaG0NbUl/D112D5D5-1C92-4666-B4FB-F5DCE247052C.jpg?q=70" width="20%" height="20%">](https://youtu.be/370-xtUXGvk)
 </div>
 
 ### PRUEBA 3: Dedo Pulgar <br>
 En la prueba 3 se tomo señales del reposo, contracción y oposición del dedo pulgar, manteniendo la conexión de tierra en la zona próxima al codo. Presione el icono de **Youtube** para acceder a la lista de reproducción de la primera prueba<br>
 </p>
+<div align="center">
 [<img src="https://s.widget-club.com/samples/SkKKnH4BdhhNhbwYwAUv8OzzsT23/B59FQXljdTYPxaG0NbUl/D112D5D5-1C92-4666-B4FB-F5DCE247052C.jpg?q=70" width="20%" height="20%">](https://youtu.be/WbZ2SZej9GI)
 </div>
 
