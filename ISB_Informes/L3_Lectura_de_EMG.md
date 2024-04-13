@@ -32,7 +32,7 @@ El siguiente procedimiento consiste en colocar los electrodos EMG en el usuario 
 <p align="justify">
 En la prueba 1 se tomo señales del reposo y contracción delantebrazo, teniendo la conexión de tierra próxima al codo de la persona. Presione el icono de **Youtube** para acceder a la lista de reproducción de la primera prueba.<br>
 </p>
-<p align="center"><img src="/ISB/Laboratorios/Imagenes/Bitalino/antebrazo.jpg" width="400" height="300"></p>
+<p align="center"><img src="/ISB/Laboratorios/Imagenes/Bitalino/antebrazo.png" width="400" height="300"></p>
 
 <div align="center">
 
@@ -44,7 +44,7 @@ En la prueba 1 se tomo señales del reposo y contracción delantebrazo, teniendo
 <p align="justify">
 En la prueba 2 se tomo señales del reposo y contracción del bicep braquial, teniendo la conexión de tierra próxima al codo. Presione el icono de **Youtube** para acceder a la lista de reproducción de la segunda prueba<br>
 </p>
-<p align="center"><img src="/ISB/Laboratorios/Imagenes/Bitalino/braquial.jpg" width="400" height="300"></p>
+<p align="center"><img src="/ISB/Laboratorios/Imagenes/Bitalino/braquial.png" width="400" height="300"></p>
 
 <div align="center">
 
@@ -56,7 +56,7 @@ En la prueba 2 se tomo señales del reposo y contracción del bicep braquial, te
 ### PRUEBA 3: Dedo Pulgar <br>
 En la prueba 3 se tomo señales del reposo, contracción y oposición del dedo pulgar, manteniendo la conexión de tierra en la zona próxima al codo. Presione el icono de **Youtube** para acceder a la lista de reproducción de la primera prueba<br>
 </p>
-<p align="center"><img src="/ISB/Laboratorios/Imagenes/Bitalino/pulgar.jpg" width="400" height="300"></p>
+<p align="center"><img src="/ISB/Laboratorios/Imagenes/Bitalino/pulgar.png" width="400" height="300"></p>
 
 <div align="center">
 
