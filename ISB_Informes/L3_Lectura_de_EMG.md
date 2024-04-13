@@ -29,7 +29,7 @@ El siguiente procedimiento consiste en colocar los electrodos EMG en el usuario 
 ### **Visualización de señal eléctrica mediante video y OpenSignalsl** <a name="t5"></a>
 ### PRUEBA 1: Antebrazo  <br>
 <p align="justify">
-En la prueba 1 se tomo señales del reposo y contracción delantebrazo, teniendo la conexión de tierra próxima al codo de la persona.Presione el icono de **Youtube** para acceder a la lista de reproducción de la primera prueba.<br>
+En la prueba 1 se tomo señales del reposo y contracción delantebrazo, teniendo la conexión de tierra próxima al codo de la persona. Presione el icono de **Youtube** para acceder a la lista de reproducción de la primera prueba.<br>
 </p>
 <img src="https://s.widget-club.com/samples/SkKKnH4BdhhNhbwYwAUv8OzzsT23/B59FQXljdTYPxaG0NbUl/D112D5D5-1C92-4666-B4FB-F5DCE247052C.jpg?q=70" width="20%" height="20%">
 
