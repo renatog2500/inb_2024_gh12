@@ -8,6 +8,7 @@
      3.2 [Visualización de señal eléctrica mediante video y OpenSignals](#t5)\
      3.3 [Archivos](#t6)\
      3.4 [Ploteo de la señal en Python](#t7)
+4. [Bibliografía](#t8)
 
 ## **Objetivos del Laboratorio** <a name = "t1"></a>
 * Adquirir señales biomédicas de EMG.
@@ -66,6 +67,16 @@ En la prueba 3 se tomo señales del reposo, contracción y oposición del dedo p
 [<img src="https://s.widget-club.com/samples/SkKKnH4BdhhNhbwYwAUv8OzzsT23/B59FQXljdTYPxaG0NbUl/D112D5D5-1C92-4666-B4FB-F5DCE247052C.jpg?q=70" width="20%" height="20%">](https://youtu.be/WbZ2SZej9GI)
 
 </div>
+
+**Explicación de la variación de la señal**
+* **En reposo:**
+Cuando el músculo está en reposo, se registra una actividad eléctrica mínima conocida como "ruido de base" o "actividad de base". Esta actividad se debe a la actividad eléctrica espontánea de las fibras musculares y no representa una contracción muscular significativa. En esta situación, la señal EMG es de baja amplitud y relativamente constante.[1][4]
+
+* **Durante un movimiento:**
+Cuando realizas un movimiento, como flexionar el antebrazo, las fibras musculares se activan y se contraen. Durante la contracción muscular, se produce una descarga eléctrica que se propaga a lo largo de las fibras musculares. Esta actividad eléctrica es captada por los electrodos (diodos) colocados sobre la piel. En consecuencia, la señal EMG muestra un aumento en la amplitud y una mayor variabilidad en comparación con el estado de reposo. La forma y la amplitud de la señal EMG durante el movimiento dependen de la fuerza y la duración de la contracción muscular.[2][4]
+
+* **Durante una oposición a una fuerza:**
+Cuando aplicas una fuerza externa contra la cual el músculo debe trabajar (por ejemplo, levantar un peso o empujar un objeto), se produce una contracción muscular más intensa. En esta situación, se reclutan más fibras musculares para generar la fuerza necesaria para oponerse a la carga externa. Como resultado, la señal EMG muestra una amplitud aún mayor en comparación con un movimiento sin resistencia. La amplitud de la señal EMG aumenta a medida que se incrementa la fuerza aplicada por el músculo.[3][5]
 
 ### **Archivos** <a name="t6"></a>
 - [Documentos (.txt)](https://github.com/renatog2500/inb_2024_gh12/tree/be701a0d1b2c92ef9167bfc775c26846401e695d/Documentaci%C3%B3n/EMG)
@@ -170,3 +181,18 @@ plt.show()
   <img src="../Imágenes/pulgar2.png" alt="Figura 2. Medición del EMG en el bicep">
 </p>
 <p align="center">Figura 3. Ploteo de la señal en el tiempo y su dominio en frecuencia</p>
+
+
+## **Bibliografía** <a name="t8"></a>
+
+[1] "Electromiografía", MedlinePlus, Biblioteca Nacional de Medicina de los Estados Unidos. [En línea]. Disponible: https://medlineplus.gov/spanish/ency/article/003929.htm. [Accedido: 13-abr-2024].
+
+[2] "Electromiografía (EMG)", Mayo Clinic. [En línea]. Disponible: https://www.mayoclinic.org/es-es/tests-procedures/emg/about/pac-20393913. [Accedido: 13-abr-2024].
+
+[3] "Electromiografía", Sociedad Española de Neurología (SEN). [En línea]. Disponible: https://www.sen.es/pdf/2015/electromiografia.pdf. [Accedido: 13-abr-2024].
+
+[4] R. Portillo Reyes, "Electromiografía Clínica", ResearchGate, 2018. [En línea]. Disponible: https://www.researchgate.net/publication/327149874_Electromiografia_clinica. [Accedido: 13-abr-2024].
+
+[5] J. A. Bevilacqua, "Electromiografía en el Diagnóstico de Enfermedades Neuromusculares", Revista Médica Clínica Las Condes, vol. 29, no. 3, pp. 270-273, mayo-junio 2018. [En línea]. Disponible: https://www.sciencedirect.com/science/article/pii/S0716864019300070. [Accedido: 13-abr-2024].
+
+
