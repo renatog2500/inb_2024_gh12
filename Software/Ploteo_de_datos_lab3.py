@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import re
 
 # Cargar datos desde el archivo de texto según la ubicación del 
-archivo = "C:/Users/Equipo/OneDrive/Escritorio/Introduccion_a_señales_biomedicas/EMG_intro/Lectura_antebrazo_supinación_EMG.txt"
+archivo = "C:/Users/Equipo/OneDrive/Escritorio/Introduccion_a_señales_biomedicas/EMG_intro/Lectura_pulgar_supinación_EMG.txt"
 def extraer_nombres_columnas(archivo):
     with open(archivo, 'r') as f:
         for linea in f:
@@ -53,7 +53,7 @@ fft_result = np.fft.fft(Lectura_EMG)
 frequencies = np.fft.fftfreq(len(Lectura_EMG), d=1/1000)
 
 # Compute the FFT magnitude
-magnitudes_db = 20*np.log10(np.abs(fft_result))
+magnitudes_db = -20*np.log10(np.abs(fft_result))
 
 #print(Lectura_EMG)
 Lectura_EMG.index = Lectura_EMG.index / 1000
@@ -62,7 +62,7 @@ Lectura_EMG.index = Lectura_EMG.index / 1000
 plt.figure(figsize=(13,9))
 plt.subplot(211)
 plt.plot(Lectura_EMG)
-plt.title("Lectura del antebrazo supinación EMG en el dominio del tiempo")
+plt.title("Lectura del pulgar supinación EMG en el dominio del tiempo")
 plt.xlabel("Tiempo (s)")
 plt.ylabel("Amplitud (mV)")
 plt.grid(True)
