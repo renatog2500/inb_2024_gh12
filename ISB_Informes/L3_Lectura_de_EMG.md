@@ -10,9 +10,9 @@
      3.4 [Ploteo de la señal en Python](#t7)
 
 ## **Objetivos del Laboratorio** <a name = "t1"></a>
-* Adquirir señales biomédicas de EMG y ECG.
+* Adquirir señales biomédicas de EMG.
 * Hacer una correcta configuración de BiTalino.
-* Extraer la información de las señales EMG y ECG del software OpenSignals (r)evolution
+* Extraer la información de las señales EMG del software OpenSignals (r)evolution
 
   
 ## **Materiales y equipos** <a name="t2"></a>
@@ -21,6 +21,7 @@
 * 1 paciente de prueba
 
 ## **RESULTADOS** <a name="t3"></a>
+
 ### **Tipo de Conexión para la captación de señales** <a name="t4"></a>
 Se hizo uso del dispositivo Bitalino en conjunto con su sensor EMG de tres electrodos para la obtención de señales electromiográficas, como se evidencia en la imagen que se muestra posteriormente.
 
