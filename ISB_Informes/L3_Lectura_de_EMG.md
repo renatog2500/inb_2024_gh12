@@ -35,18 +35,18 @@
 ### **Ploteo de la señal en Python** <a name="t7"></a>
 ### Ploteo de la señal del antebrazo
 <p align="center">
-  <img src="../Imágenes/antebrazo.png" alt="Figura 1. Medición del EMG en el antebrazo">
+  <img src="../Imágenes/antebrazo2.png" alt="Figura 1. Medición del EMG en el antebrazo">
 </p>
 <p align="center">Figura 1. Ploteo de la señal en el tiempo y su dominio en frecuencia</p>
 
 ### PRUEBA 2: Bicep braquial <br>
 <p align="center">
-  <img src="../Imágenes/Braquial.png" alt="Figura 2. Medición del EMG en el bicep">
+  <img src="../Imágenes/Braquial2.png" alt="Figura 2. Medición del EMG en el bicep">
 </p>
 <p align="center">Figura 2. Ploteo de la señal en el tiempo y su dominio en frecuencia</p>
 
 ### Ploteo del dedo pulgar <br>
 <p align="center">
-  <img src="../Imágenes/pulgar.png" alt="Figura 2. Medición del EMG en el bicep">
+  <img src="../Imágenes/pulgar2.png" alt="Figura 2. Medición del EMG en el bicep">
 </p>
 <p align="center">Figura 3. Ploteo de la señal en el tiempo y su dominio en frecuencia</p>
