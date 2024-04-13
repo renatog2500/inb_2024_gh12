@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import re
 
 # Cargar datos desde el archivo de texto según la ubicación del 
-archivo = "C:/Users/Equipo/OneDrive/Escritorio/Introduccion_a_señales_biomedicas/EMG_intro/Lectura_pulgar_supinación_EMG.txt"
+archivo = "Ubicación/del/archivo/Lectura_pulgar_supinación_EMG.txt"
 def extraer_nombres_columnas(archivo):
     with open(archivo, 'r') as f:
         for linea in f:
