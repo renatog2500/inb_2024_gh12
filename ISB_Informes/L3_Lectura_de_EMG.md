@@ -170,17 +170,35 @@ plt.show()
 </p>
 <p align="center">Figura 1. Ploteo de la señal en el tiempo y su dominio en frecuencia</p>
 
-### PRUEBA 2: Bicep braquial <br>
+La señal EMG del antebrazo muestra diferentes patrones de actividad eléctrica muscular en distintas condiciones. Inicialmente, se observa una señal de baja amplitud y constante durante el reposo, lo que corresponde a la actividad eléctrica espontánea de las fibras musculares en ausencia de una contracción significativa [1], [4]. Luego, se produce un aumento notable en la amplitud y variabilidad de la señal, indicando una contracción muscular voluntaria, donde las fibras musculares se activan y generan una descarga eléctrica que se propaga a lo largo del músculo [2], [4]. Después de la contracción, la señal regresa a un estado de menor amplitud, pero sin recobrar exactamente las características iniciales del reposo, posiblemente debido a factores como la fatiga muscular o cambios en la impedancia de la piel [4]. Finalmente, se registra una señal de amplitud aún mayor cuando el antebrazo se opone a una fuerza externa, reflejando un mayor reclutamiento de fibras musculares para generar la fuerza necesaria [3], [5].
+
+</div>
+
+### Ploteo de la señal del Bicep braquial <br>
 <p align="center">
   <img src="../Imágenes/Braquial2.png" alt="Figura 2. Medición del EMG en el bicep">
 </p>
 <p align="center">Figura 2. Ploteo de la señal en el tiempo y su dominio en frecuencia</p>
 
-### Ploteo del dedo pulgar <br>
+La señal EMG del bíceps braquial presenta una secuencia de patrones de actividad eléctrica muscular en diferentes estados. En la fase inicial de reposo, se observa una señal de baja amplitud y constante, correspondiente a la actividad eléctrica espontánea de las fibras musculares en ausencia de una contracción significativa [1], [4]. Posteriormente, durante la fase de movimiento, se evidencia un aumento notable en la amplitud y variabilidad de la señal, lo que indica una contracción muscular voluntaria, donde las fibras musculares se activan y generan una descarga eléctrica que se propaga a lo largo del músculo [2], [4]. Tras esta contracción, la señal regresa a un estado de menor amplitud, similar al reposo, pero con posibles diferencias en las características debido a factores como la fatiga muscular o cambios en la impedancia de la piel [4]. A continuación, se registra una señal de amplitud aún mayor cuando el bíceps braquial se opone a una fuerza externa, reflejando un mayor reclutamiento de fibras musculares para generar la fuerza necesaria [3], [5]. Finalmente, la señal vuelve a mostrar un patrón similar al de la fase de movimiento inicial, con una amplitud y variabilidad aumentadas, indicando una nueva contracción muscular voluntaria [2], [4].
+
+</div>
+
+### Ploteo de la señal del Abductor pollicis brevis (pulgar) <br>
 <p align="center">
   <img src="../Imágenes/pulgar2.png" alt="Figura 2. Medición del EMG en el bicep">
 </p>
 <p align="center">Figura 3. Ploteo de la señal en el tiempo y su dominio en frecuencia</p>
+
+La señal EMG del abductor pollicis brevis (pulgar) muestra una secuencia de patrones de actividad eléctrica muscular en diferentes estados. Durante la fase inicial de reposo, se observa una señal de baja amplitud y constante, correspondiente a la actividad eléctrica espontánea de las fibras musculares en ausencia de una contracción significativa [1], [4]. Luego, en la fase de movimiento, se produce un aumento notable en la amplitud y variabilidad de la señal, indicando una contracción muscular voluntaria, donde las fibras musculares se activan y generan una descarga eléctrica que se propaga a lo largo del músculo [2], [4]. 
+
+Después de esta contracción, la señal regresa a un estado de menor amplitud, similar al reposo, pero con posibles diferencias en las características debido a factores como la fatiga muscular o cambios en la impedancia de la piel [4]. 
+
+A continuación, se registra una señal de amplitud similar a la observada durante la contracción voluntaria cuando el abductor pollicis brevis se opone a una fuerza externa. Esto sugiere que el músculo del pulgar requiere un reclutamiento de fibras musculares comparable tanto para la contracción voluntaria como para la oposición a una fuerza [3], [5]. Esta similitud en la amplitud de la señal puede deberse a las características anatómicas y funcionales específicas del abductor pollicis brevis, que desempeña un papel importante en la oposición del pulgar y en tareas de agarre fino [4], [5].
+
+Finalmente, la señal vuelve a mostrar un patrón similar al de la fase de movimiento inicial, con una amplitud y variabilidad aumentadas, indicando una nueva contracción muscular voluntaria [2], [4].
+
+</div>
 
 
 ## **Bibliografía** <a name="t8"></a>
