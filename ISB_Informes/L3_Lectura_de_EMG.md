@@ -16,15 +16,29 @@
 
   
 ## **Materiales y equipos** <a name="t2"></a>
-* Kit BITalino
-* Laptop
+* 1 Kit BITalino
+* 1 Laptop
+* 1 paciente de prueba
 
 ## **RESULTADOS** <a name="t3"></a>
 ### **Tipo de Conexión para la captación de señales** <a name="t4"></a>
+Se hizo uso del dispositivo Bitalino en conjunto con su sensor EMG de tres electrodos para la obtención de señales electromiográficas, como se evidencia en la imagen que se muestra posteriormente.
+
+El siguiente procedimiento consiste en colocar los electrodos EMG en el usuario de prueba. Para ello se utilizó la **Guía De BITalino en EMG** elaborada por **pluX** brindada por el laboratorio.
+
 ### **Visualización de señal eléctrica mediante video y OpenSignalsl** <a name="t5"></a>
 ### PRUEBA 1: Antebrazo  <br>
+<p align="justify">
+En la prueba 1 se tomo señales del reposo y contracción delantebrazo, teniendo la conexión de tierra próxima al codo de la persona.Presione el icono de **Youtube** para acceder a la lista de reproducción de la primera prueba.<br>
+</p>
+<img src="https://s.widget-club.com/samples/SkKKnH4BdhhNhbwYwAUv8OzzsT23/B59FQXljdTYPxaG0NbUl/D112D5D5-1C92-4666-B4FB-F5DCE247052C.jpg?q=70" width="20%" height="20%">
 
 ### PRUEBA 2: Bicep braquial <br>
+<p align="justify">
+En la prueba 2 se tomo señales del reposo y contracción del bicep braquial, teniendo la conexión de tierra próxima al codo. Presione el icono de **Youtube** para acceder a la lista de reproducción de la segunda prueba<br>
+</p>
+<img src="https://s.widget-club.com/samples/SkKKnH4BdhhNhbwYwAUv8OzzsT23/B59FQXljdTYPxaG0NbUl/D112D5D5-1C92-4666-B4FB-F5DCE247052C.jpg?q=70" width="20%" height="20%">
+
 
 ### PRUEBA 3: Dedo Pulgar <br>
 
