@@ -5,7 +5,7 @@
 2. [Materiales y equipos](#t2)
 3. [Resultados](#t3)\
      3.1 [Tipo de Conexión para la captación de señales](#t4)\
-     3.2 [Visualización de señal eléctrica mediante video y OpenSignalsl](#t5)\
+     3.2 [Visualización de señal eléctrica mediante video y OpenSignals](#t5)\
      3.3 [Archivos](#t6)\
      3.4 [Ploteo de la señal en Python](#t7)
 
