@@ -25,6 +25,10 @@
 ### **Tipo de Conexión para la captación de señales** <a name="t4"></a>
 Se hizo uso del dispositivo Bitalino en conjunto con su sensor EMG de tres electrodos para la obtención de señales electromiográficas, como se evidencia en la imagen que se muestra posteriormente.
 
+<p align="justify">
+<p align="center"><img src="../Imagenes/BitTalino.jpg" width="400" height="266"></p>
+</p>
+
 El siguiente procedimiento consiste en colocar los electrodos EMG en el usuario de prueba. Para ello se utilizó la **Guía De BITalino en EMG** elaborada por **pluX** brindada por el laboratorio.
 
 ### **Visualización de señal eléctrica mediante video y OpenSignalsl** <a name="t5"></a>
@@ -44,7 +48,7 @@ En la prueba 1 se tomo señales del reposo y contracción delantebrazo, teniendo
 <p align="justify">
 En la prueba 2 se tomo señales del reposo y contracción del bicep braquial, teniendo la conexión de tierra próxima al codo. Presione el icono de **Youtube** para acceder a la lista de reproducción de la segunda prueba<br>
 </p>
-<p align="center"><img src="../Imágenes/braquial.png" width="400" height="300"></p>
+<p align="center"><img src="../Imágenes/braquial.jpg" width="400" height="300"></p>
 
 <div align="center">
 
