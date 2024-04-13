@@ -48,7 +48,7 @@ En la prueba 1 se tomo señales del reposo y contracción delantebrazo, teniendo
 <p align="justify">
 En la prueba 2 se tomo señales del reposo y contracción del bicep braquial, teniendo la conexión de tierra próxima al codo. Presione el icono de **Youtube** para acceder a la lista de reproducción de la segunda prueba<br>
 </p>
-<p align="center"><img src="../Imágenes/braquial.jpg" width="400" height="300"></p>
+<p align="center"><img src="../Imágenes/braquial.png" width="400" height="300"></p>
 
 <div align="center">
 
