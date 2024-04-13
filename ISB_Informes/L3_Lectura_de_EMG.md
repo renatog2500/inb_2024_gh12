@@ -26,7 +26,7 @@
 Se hizo uso del dispositivo Bitalino en conjunto con su sensor EMG de tres electrodos para la obtención de señales electromiográficas, como se evidencia en la imagen que se muestra posteriormente.
 
 <p align="justify">
-<p align="center"><img src="../Imagenes/BitTalino.jpg" width="400" height="266"></p>
+<p align="center"><img src="../Imágenes/BitTalino.jpg" width="400" height="266"></p>
 </p>
 
 El siguiente procedimiento consiste en colocar los electrodos EMG en el usuario de prueba. Para ello se utilizó la **Guía De BITalino en EMG** elaborada por **pluX** brindada por el laboratorio.
