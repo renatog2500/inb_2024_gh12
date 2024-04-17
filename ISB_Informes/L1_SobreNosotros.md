@@ -26,11 +26,7 @@ p= "https://github.com/renatog2500/inb_2024_gh12/blob/main/Im%C3%A1genes/3.png"
 |---------------------------------|---------------------------------|---------------------------------|
 |![renato](Imágenes/2.png)| | ![jossymar](Imágenes/4.png)     |
 |Renato Giusseppi Cardoso Reategui|Jimena Alpiste Espinoza|Jossymar Leon Mallma|
-
-| ![Imagen 1](p) | ![Imagen 2](https://github.com/renatog2500/inb_2024_gh12/blob/main/Im%C3%A1genes/3.png) | ![Imagen 3](URL_imagen_3) |
-
-
-
+| ![Imagen 1](https://github.com/renatog2500/inb_2024_gh12/blob/main/Im%C3%A1genes/3.png) | ![Imagen 2](https://github.com/renatog2500/inb_2024_gh12/blob/main/Im%C3%A1genes/3.png) | ![Imagen 3](https://github.com/renatog2500/inb_2024_gh12/blob/main/Im%C3%A1genes/3.png) |
 | renato.cardoso@upch.pe | jimena.alpiste@pucp.edu.pe        |  a20200543@pucp.edu.pe                     |
 | Estudiante de Ingeniería Biomédica del convenio PUCP-UPCH. Estoy interesado en las ramas de ingeniería clínica y mecánica y rehabilitación. | Estudiante de Ingeniería Biomédica PUCP-UPCH. Estoy interesada en las ramas de Ingeniería clínica e Ingeniería de Tejidos | Estudiante de Ingeniería Biomédica PUCP-UPCH. Estoy interesado en las ramas de ingeniería clínica y mecánica y rehabilitación.                |
 
