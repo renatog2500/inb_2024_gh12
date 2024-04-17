@@ -24,10 +24,9 @@ Somos un equipo de estudiantes de Ingeniería Biomédica, provenientes de la Pon
 ## Integrantes
 | Colaborador 1            | Colaborador 2                          | Colaborador 3                   |
 |---------------------------------|---------------------------------|---------------------------------|
-|![renato](Imágenes/2.png)| <p align="center">
-  <img width="400" height="300" src="https://github.com/renatog2500/inb_2024_gh12/blob/main/Im%C3%A1genes/3.png">
-</p>          | ![jossymar](Imágenes/4.png)     |
+|![renato](Imágenes/2.png)| | ![jossymar](Imágenes/4.png)     |
 |Renato Giusseppi Cardoso Reategui|Jimena Alpiste Espinoza|Jossymar Leon Mallma|
+| ![Imagen 1]([URL_imagen_1](https://github.com/renatog2500/inb_2024_gh12/blob/main/Im%C3%A1genes/3.png)) | ![Imagen 2]([[URL_imagen_2](https://github.com/renatog2500/inb_2024_gh12/blob/main/Im%C3%A1genes/3.png)](https://github.com/renatog2500/inb_2024_gh12/blob/main/Im%C3%A1genes/3.png)) | ![Imagen 3](URL_imagen_3) |
 | renato.cardoso@upch.pe | jimena.alpiste@pucp.edu.pe        |  a20200543@pucp.edu.pe                     |
 | Estudiante de Ingeniería Biomédica del convenio PUCP-UPCH. Estoy interesado en las ramas de ingeniería clínica y mecánica y rehabilitación. | Estudiante de Ingeniería Biomédica PUCP-UPCH. Estoy interesada en las ramas de Ingeniería clínica e Ingeniería de Tejidos | Estudiante de Ingeniería Biomédica PUCP-UPCH. Estoy interesado en las ramas de ingeniería clínica y mecánica y rehabilitación.                |
 
