@@ -1,7 +1,9 @@
 ## Introducción a Señales Biomédicas Grupo 13
 
 Bienvenidos al repositorio del Grupo 13 del curso: "Introducción a Señales Biomédicas" del ciclo 2024-1
-
+<p align="center">
+  <img width="400" height="300" src="https://github.com/renatog2500/inb_2024_gh12/blob/main/Im%C3%A1genes/3.png">
+</p>
 
 ![gif_presentacion](Imágenes/Electrocardiograma-1.gif)
 
