@@ -22,7 +22,9 @@ Somos un equipo de estudiantes de Ingeniería Biomédica, provenientes de la Pon
 ## Integrantes
 | Colaborador 1            | Colaborador 2                          | Colaborador 3                   |
 |---------------------------------|---------------------------------|---------------------------------|
-| ![renato](https://github.com/renatog2500/inb_2024_gh12/assets/130946164/f6c96a21-1d9d-416a-8028-a2cb6b193fa1) | ![jimena](https://github.com/renatog2500/inb_2024_gh12/assets/130946164/e73fc985-f4cc-4377-9b73-2729a69b742d) | ![4](https
+| ![renato](https://github.com/renatog2500/inb_2024_gh12/assets/130946164/f6c96a21-1d9d-416a-8028-a2cb6b193fa1) | ![jimena](https://github.com/renatog2500/inb_2024_gh12/assets/130946164/e73fc985-f4cc-4377-9b73-2729a69b742d) | ![4](https://github.com/renatog2500/inb_2024_gh12/assets/130946164/730cd321-f8c2-4a61-90b7-306143cae962) |
+| :---: | :---: | :---: |
+| renato | jimena | 4 |
 
 
 |Renato Giusseppi Cardoso Reategui|Jimena Alpiste Espinoza|Jossymar Leon Mallma|
