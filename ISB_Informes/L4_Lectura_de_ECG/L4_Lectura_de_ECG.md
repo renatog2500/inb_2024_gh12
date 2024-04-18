@@ -19,7 +19,7 @@ ________________________________________________________________________________
 * Jossymar León Mallma - 
 * Renato Cardoso Cardenas - 
 
-## **Introducción ** <a name = "t2"></a>
+## Introducción  <a name = "t2"></a>
 [insertar parrafo de intro]
 
 ## **Objetivos del Laboratorio** <a name = "t3"></a>
