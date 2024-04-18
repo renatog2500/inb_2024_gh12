@@ -10,7 +10,7 @@
 6. [Resultados](#t6)\
    6.1 [Visualización de la señal mediante video y OpenSignals ](#t7)\
    6.2 [Ploteo de la señal en Python](#t8)\
-   6.3 [Archivos de la señal ploteada en Python y datos de la señal](#t9)\
+   6.3 [Archivos de la señal ploteada en Python y datos de la señal](#t9)
 7. [Conclusiones](#t10)
 8. [Bibliografía](#t11)
 __________________________________________________________________________________________________
