@@ -28,9 +28,10 @@ ________________________________________________________________________________
 * Extraer la información de las señales ECG del software OpenSignals (r)evolution
   
 ## **Materiales y equipos** <a name="t4"></a>
-* 1 Kit BITalino
-* 1 Laptop
-* 1 paciente de prueba
+| Modelo          | Descripción                                    | Cantidad |
+|-----------------|-----------------------------------------------|----------|
+| (R)EVOLUTION	        | Kit de BITalino                        | 1        |
+| -| Laptop                        | 1        |
 
 ## ** Protocolo de conexión** <a name="t5"></a>
 Se hizo uso del dispositivo Bitalino en conjunto con su sensor EMG de tres electrodos para la obtención de señales electromiográficas, como se evidencia en la imagen que se muestra posteriormente.
