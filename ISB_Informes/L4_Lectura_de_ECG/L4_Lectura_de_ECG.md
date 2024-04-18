@@ -29,9 +29,10 @@ ________________________________________________________________________________
   
 ## **Materiales y equipos** <a name="t4"></a>
 | Modelo          | Descripción                                    | Cantidad |
-|-----------------|-----------------------------------------------|----------|
-| (R)EVOLUTION	        | Kit de BITalino                        | 1        |
-| -| Laptop                        | 1        |
+|:----------------:|-----------------------------------------------|----------|
+| (R)EVOLUTION    | Kit de BITalino                                | 1        |
+| -               | Laptop                                         | 1        |
+
 
 ## ** Protocolo de conexión** <a name="t5"></a>
 Se hizo uso del dispositivo Bitalino en conjunto con su sensor EMG de tres electrodos para la obtención de señales electromiográficas, como se evidencia en la imagen que se muestra posteriormente.
