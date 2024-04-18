@@ -49,15 +49,13 @@ ________________________________________________________________________________
   <b>Tabla 1. Materiales y equipos utilizados</b>
 </p>
 
+## Protocolo de conexión <a name="t5"></a>
+Para capturar las señales ECG, se empleó el dispositivo BITalino junto con su sensor ECG de tres electrodos. Se siguió el procedimiento detallado en la guía BiTalino,**(poner nombre completo aquí )**, como referencia para posicionar correctamente los electrodos en el sujeto de prueba. A continuación, se presentan los protocolos de conexión específicos utilizados en cada prueba llevada a cabo en este laboratorio:
 
-## ** Protocolo de conexión** <a name="t5"></a>
-Se hizo uso del dispositivo Bitalino en conjunto con su sensor EMG de tres electrodos para la obtención de señales electromiográficas, como se evidencia en la imagen que se muestra posteriormente.
-
-<p align="justify">
-<p align="center"><img src="../Imágenes/BitTalino.jpg" width="400" height="266"></p>
-</p>
-
-El siguiente procedimiento consiste en colocar los electrodos EMG en el usuario de prueba. Para ello se utilizó la **Guía De BITalino en EMG** elaborada por **pluX** brindada por el laboratorio.
+| Prueba 1 | Prueba 2 | Prueba 3 |
+|:----------|:----------|:----------|
+| Imagen 1  | Imagen 2  | Imagen 3  |
+| Descripción prueba 1 | Descripción prueba 2   | descripción prueba 3 |
 
 
 ## **Resultados** <a name="t6"></a>
