@@ -28,15 +28,6 @@ ________________________________________________________________________________
 * Extraer la información de las señales ECG del software OpenSignals (r)evolution
   
 ## **Materiales y equipos** <a name="t4"></a>
-| Modelo          | Descripción                                    | Cantidad |
-|:----------------:|-----------------------------------------------|----------|
-| (R)EVOLUTION    | Kit de BITalino                                | 1        |
-| -               | Laptop                                         | 1        |
-
-<p align="center">
-  <b>Materiales y equipos</b>
-</p>
-
 <table align="center">
   <tr>
     <th>Modelo</th>
@@ -54,6 +45,9 @@ ________________________________________________________________________________
     <td>1</td>
   </tr>
 </table>
+<p align="center">
+  <b>Tabla 1. Materiales y equipos utilizados</b>
+</p>
 
 
 ## ** Protocolo de conexión** <a name="t5"></a>
