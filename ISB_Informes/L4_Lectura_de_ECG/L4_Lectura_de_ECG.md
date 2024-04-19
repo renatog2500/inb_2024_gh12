@@ -17,7 +17,7 @@ ________________________________________________________________________________
 ## **Lista de participantes** <a name = "t1"></a>
 * Jimena Alpiste Espinoza - 74297329
 * Jossymar León Mallma - 
-* Renato Cardoso Cardenas - 
+* Renato Cardoso Cardenas - 73061678
 
 ## Introducción  <a name = "t2"></a>
 [insertar parrafo de intro]
