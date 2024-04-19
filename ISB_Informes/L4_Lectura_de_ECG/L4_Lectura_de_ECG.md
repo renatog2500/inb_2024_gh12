@@ -87,7 +87,7 @@ Se realizó la toma de la señal EKG del sujeto nuevamente, posterior al ejercic
 Se sometió al sujeto a una serie de ejercicios físicos para posteriormente tomar la señal EKG, estas pruebas consistieron en la realización de planchas y polichinelas. Reproduzca el video para ver la 4ta toma de señal..<br>
 </p
 
-### PRUEBA 4: Lectura posterior a la realización de ejercicios  <br>
+### PRUEBA 5: Tercera lectura en estado de reposo  <br>
 <p align="justify">
 Se realizó la toma de la señal EKG del sujeto nuevamente, posterior a la serie de ejercicios. Reproduzca el video para ver la 5ta toma de señal.<br>
 </p>
