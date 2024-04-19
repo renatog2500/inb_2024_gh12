@@ -97,14 +97,6 @@ Se realizó la toma de la señal EKG del sujeto nuevamente, posterior a la serie
 En la 6ta prueba el sujeto realizó ciclos de inhalación y exhalación de intervalos de 10 segundos, se tomó la lectura del comportamiento de la señal EKG. Reproduzca el video para ver la 6ta toma de señal.<br>
 </p>
 
-
-
-
-
-<p align="center">
-  <b>Tabla 2. Posicionamiento de los electrodos para cada prueba</b>
-</p>
-
 ## **Resultados** <a name="t6"></a>
 ### **Visualización de señal eléctrica mediante video y OpenSignalsl** <a name="t7"></a>
 
