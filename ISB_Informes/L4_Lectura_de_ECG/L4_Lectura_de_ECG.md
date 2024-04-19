@@ -72,6 +72,34 @@ Para capturar las señales ECG, se empleó el dispositivo BITalino junto con su 
 En la prueba 1 se tomo señales EKG del sujeto de prueba en estado de reposo. Presione el icono de **Youtube** para acceder al video de la primera prueba.<br>
 </p>
 
+### PRUEBA 2: Lectura de los ciclos de Inhalación y Exhalación (Fases de 5 segundos)  <br>
+<p align="justify">
+En la 2da prueba el sujeto realizó ciclos de inhalación y exhalación de intervalos de 5 segundos durante 30 segundos, se tomó la lectura del comportamiento de la señal EKG. Presione el icono de **Youtube** para acceder al video de la segunda prueba.<br>
+</p>
+
+### PRUEBA 3: Segunda lectura en estado de reposo  <br>
+<p align="justify">
+Se realizó la toma de la señal EKG del sujeto nuevamente, posterior al ejercicio de inhalación y exhalación. Presione el icono de **Youtube** para acceder al video de la tercera prueba.<br>
+</p>
+
+### PRUEBA 4: Lectura posterior a la realización de ejercicios  <br>
+<p align="justify">
+Se sometió al sujeto a una serie de ejercicios físicos para posteriormente tomar la señal EKG, estas pruebas consistieron en la realización de planchas y polichinelas. Presione el icono de **Youtube** para acceder al video de la cuarta prueba.<br>
+</p
+
+### PRUEBA 5: Tercera lectura en estado de reposo  <br>
+<p align="justify">
+Se realizó la toma de la señal EKG del sujeto nuevamente, posterior a la serie de ejercicios. Presione el icono de **Youtube** para acceder al video de la tercera prueba.<br>
+</p>
+
+### PRUEBA 6: Lectura de los ciclos de Inhalación y Exhalación prolongada (Fases de 10 segundos)  <br>
+<p align="justify">
+En la 6ta prueba el sujeto realizó ciclos de inhalación y exhalación de intervalos de 10 segundos, se tomó la lectura del comportamiento de la señal EKG. Presione el icono de **Youtube** para acceder al video de la segunda prueba.<br>
+</p>
+
+
+
+
 
 <p align="center">
   <b>Tabla 2. Posicionamiento de los electrodos para cada prueba</b>
