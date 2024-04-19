@@ -101,10 +101,15 @@ En la 6ta prueba el sujeto realizó ciclos de inhalación y exhalación de inter
 **Explicación de la variación de la señal**
 
 **1. Estado de reposo (lectura basal):** Durante el estado de reposo, la señal EKG presenta un patrón regular y estable, reflejando la actividad eléctrica normal del corazón. Las ondas P, QRS y T se observan claramente, y los intervalos entre ellas son consistentes [1].
+
 **2.Inhalación y exhalación en series de 5 segundos durante 30 segundos:** Durante la inspiración, se produce un aumento en la frecuencia cardíaca y una disminución en la variabilidad de la frecuencia cardíaca (VFC). Esto se debe a la estimulación del sistema nervioso simpático y la inhibición del sistema nervioso parasimpático. Durante la espiración, se observa una disminución en la frecuencia cardíaca y un aumento en la VFC, lo que refleja la activación del sistema nervioso parasimpático [2], [3].
+
 **3. Lectura basal después de la respiración controlada:** Después de la respiración controlada, la señal EKG vuelve a un patrón similar al observado en la lectura basal inicial. Sin embargo, pueden presentarse ligeras variaciones debido a los efectos residuales de la respiración controlada en el sistema nervioso autónomo [1], [3].
+
 **4. Lectura posterior a una serie de ejercicios:** Después del ejercicio, se observa un aumento significativo en la frecuencia cardíaca y cambios en la morfología de las ondas del EKG. La onda T puede aparecer invertida o aplanada, y el segmento ST puede presentar una depresión o elevación. Estos cambios se deben a la activación del sistema nervioso simpático y al aumento de las demandas metabólicas del corazón durante el ejercicio [4], [5].
+
 **5. Lectura basal después del ejercicio:** Después del ejercicio, la señal EKG gradualmente vuelve a un patrón similar al de la lectura basal inicial. Sin embargo, la frecuencia cardíaca puede permanecer elevada durante un período de tiempo, y la morfología de las ondas puede tardar en normalizarse. Esto se debe a la recuperación gradual del sistema nervioso autónomo y al restablecimiento del equilibrio simpático-parasimpático [4], [5].
+
 **6. Inhalación y exhalación prolongada durante 10 segundos:** Durante la inhalación prolongada, se observa un aumento sostenido en la frecuencia cardíaca y una disminución en la VFC, similar a lo observado en las series de respiración más cortas. Durante la exhalación prolongada, se produce una disminución sostenida en la frecuencia cardíaca y un aumento en la VFC. Estos cambios son más pronunciados en comparación con las series de respiración más cortas debido a la mayor duración de la estimulación de los sistemas nerviosos simpático y parasimpático [2], [3].
 
 
