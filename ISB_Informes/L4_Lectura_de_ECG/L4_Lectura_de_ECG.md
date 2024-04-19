@@ -98,7 +98,7 @@ En la 6ta prueba el sujeto realizó ciclos de inhalación y exhalación de inter
 </p>
 
 
-**Explicación de la variación de la señal**
+### **Explicación de la variación de la señal**
 
 **1. Estado de reposo (lectura basal):** Durante el estado de reposo, la señal EKG presenta un patrón regular y estable, reflejando la actividad eléctrica normal del corazón. Las ondas P, QRS y T se observan claramente, y los intervalos entre ellas son consistentes [1].
 
