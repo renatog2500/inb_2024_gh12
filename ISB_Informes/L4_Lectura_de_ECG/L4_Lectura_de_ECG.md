@@ -57,17 +57,14 @@ Para capturar las señales ECG, se empleó el dispositivo BITalino junto con su 
     <th>Prueba 1</th>
     <th>Prueba 2</th>
     <th>Prueba 3</th>
+    <th>Prueba 3</th>
   </tr>
   <tr>
     <td>Imagen 1</td>
     <td>Imagen 2</td>
     <td>Imagen 3</td>
   </tr>
-  <tr>
-    <td>Descripción prueba 1</td>
-    <td>Descripción prueba 2</td>
-    <td>Descripción prueba 3</td>
-  </tr>
+ 
 </table>
 
 <p align="center">
