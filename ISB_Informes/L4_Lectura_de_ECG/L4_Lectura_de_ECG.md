@@ -67,6 +67,12 @@ Para capturar las señales ECG, se empleó el dispositivo BITalino junto con su 
  
 </table>
 
+### PRUEBA 1: Lectura de la señal Basal  <br>
+<p align="justify">
+En la prueba 1 se tomo señales EKG del sujeto de prueba en estado de reposo. Presione el icono de **Youtube** para acceder al video de la primera prueba.<br>
+</p>
+
+
 <p align="center">
   <b>Tabla 2. Posicionamiento de los electrodos para cada prueba</b>
 </p>
