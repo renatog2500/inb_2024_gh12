@@ -212,9 +212,13 @@ plt.show()
 
 ## **Bibliografía** <a name="t11"></a>
 [1] https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1888690/
+
 [2] https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2017.00258/full
+
 [3] https://academic.oup.com/eurheartj/article/17/3/354/485572
+
 [4] https://www.sciencedirect.com/science/article/pii/S073510970700232X
+
 [5] https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4493772/ 
 
 
