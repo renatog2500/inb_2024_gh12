@@ -7,7 +7,7 @@
 3. [Objetivos del laboratorio](#t3)
 4. [Materiales y Equipo Utilizado](#t4)
 5. [Protocolo de conexión](#t5)
-6. [Resultados](#t6)\
+6. [Resultados y discusión](#t6)\
    6.1 [Visualización de la señal mediante video y OpenSignals ](#t7)\
    6.2 [Ploteo de la señal en Python](#t8)\
    6.3 [Archivos de la señal ploteada en Python y datos de la señal](#t9)
@@ -64,12 +64,24 @@ La derivación 1 en un ECG es una de las vistas básicas utilizadas para monitor
 * IN- (negro) se coloca en la muñeca derecha.
 * REF (blanco) se coloca en la cresta ilíaca.\
 
-Cabe resaltar que las ubicaciones mencionadas se mantuvieron para todas las pruebas. 
+Cabe resaltar que las ubicaciones mencionadas se mantuvieron para todas las pruebas: 
 
-
-
+- Prueba 1: Lectura del Estado Basal
+- Prueba 2: Lectura de los ciclos de Inhalación y Exhalación (Fases de 5 segundos) 
+- Prueba 3: Segunda lectura en estado de reposo
+- Prueba 4: Lectura posterior a la realización de ejercicio intenso. Ejercicios realizados: planchas y polichinelas
 
 https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8-b5fc-664aa1a81318
+  
+- Prueba 5: Tercera lectura en estado de reposo
+- Prueba 6: Lectura de los ciclos de Inhalación y Exhalación prolongada (Fases de 10 segundos)
+
+
+
+
+
+## **Resultados y discusión ** <a name="t6"></a>
+### **Visualización de señal eléctrica mediante video y OpenSignalsl** <a name="t7"></a>
 
 <table align="center">
   <tr>
@@ -127,14 +139,6 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8
 **5. Lectura basal después del ejercicio:** Después del ejercicio, la señal EKG gradualmente vuelve a un patrón similar al de la lectura basal inicial. Sin embargo, la frecuencia cardíaca puede permanecer elevada durante un período de tiempo, y la morfología de las ondas puede tardar en normalizarse. Esto se debe a la recuperación gradual del sistema nervioso autónomo y al restablecimiento del equilibrio simpático-parasimpático [4], [5].
 
 **6. Inhalación y exhalación prolongada durante 10 segundos:** Durante la inhalación prolongada, se observa un aumento sostenido en la frecuencia cardíaca y una disminución en la VFC, similar a lo observado en las series de respiración más cortas. Durante la exhalación prolongada, se produce una disminución sostenida en la frecuencia cardíaca y un aumento en la VFC. Estos cambios son más pronunciados en comparación con las series de respiración más cortas debido a la mayor duración de la estimulación de los sistemas nerviosos simpático y parasimpático [2], [3].
-
-
-## **Resultados** <a name="t6"></a>
-### **Visualización de señal eléctrica mediante video y OpenSignalsl** <a name="t7"></a>
-
-
-
-
 
 
 ### **Ploteo de la señal en Python** <a name="t8"></a>
