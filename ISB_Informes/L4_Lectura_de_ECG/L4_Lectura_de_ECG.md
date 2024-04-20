@@ -87,8 +87,7 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8
 ### **Visualización de señal eléctrica mediante video y OpenSignalsl** <a name="t7"></a>
 | PRUEBA   | VIDEO | DESCRIPCIÓN    |
 | --------- | ---- | --------- |
-| 1.Lectura de la señal Basal  | [![](https://markdown-videos-api.jorgenkh.no/youtube/gG2bqgt_6po)](https://youtu.be/gG2bqgt_6po)                                 
-      | En la prueba 1 se tomo señales ECG del sujeto de prueba en estado de reposo.|
+| 1.Lectura de la señal Basal  | [![](https://markdown-videos-api.jorgenkh.no/youtube/gG2bqgt_6po)](https://youtu.be/gG2bqgt_6po)    | En la prueba 1 se tomo señales ECG del sujeto de prueba en estado de reposo.|
 | 2. Lectura de los ciclos de Inhalación y Exhalación (Fases de 5 segundos) | 30   | En la 2da prueba el sujeto realizó ciclos de inhalación y exhalación de intervalos de 5 segundos durante 30 segundos, se tomó la lectura del comportamiento de la señal ECG. |
 | 3.Segunda lectura en estado de reposo | 28   | Se volvió a realizar la captura de la señal del electrocardiograma (ECG) del sujeto después de la sesión de ejercicios de inhalación y exhalación.|
 | 4. Lectura posterior a la realización de ejercicios | 28   | El sujeto fue sometido a una serie de ejercicios físicos que incluyeron la realización de planchas y polichinelas. Luego de completar estos ejercicios, se procedió a tomar la señal del electrocardiograma (ECG).   |
