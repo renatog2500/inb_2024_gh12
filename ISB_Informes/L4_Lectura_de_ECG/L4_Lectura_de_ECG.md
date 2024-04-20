@@ -255,11 +255,8 @@ plt.show()
 
 ```
 ### **Archivos** <a name="t9"></a>
-- [Documentos (.txt)](https://github.com/renatog2500/inb_2024_gh12/tree/be701a0d1b2c92ef9167bfc775c26846401e695d/Documentaci%C3%B3n/EMG)
-- [Programa de ploteo (python)](https://github.com/renatog2500/inb_2024_gh12/blob/main/Software/Ploteo_de_datos_lab.py)
-
-
-
+- [Documentos (.txt)](https://github.com/renatog2500/inb_2024_gh12/tree/main/ISB_Informes/L4_Lectura_de_ECG/ECG_L4)
+- [Programa de ploteo (python)](colocar link)
 
 
 ## Señal del PromSim4 : <a name="t10"></a>
