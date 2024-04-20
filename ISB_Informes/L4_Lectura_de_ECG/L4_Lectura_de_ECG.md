@@ -96,12 +96,12 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/b148188c-1bfa-4571
   <tr>
     <td> 1.Lectura de la señal Basal </td>
     <td>https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0</td>
-    <td>Imagen 3</td>
+    <td> En la prueba 1 se tomo señales EKG del sujeto de prueba en estado de reposo.</td>
   </tr>
    <tr>
     <td> 2. Lectura de los ciclos de Inhalación y Exhalación (Fases de 5 segundos)</td>
     <td>https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0</td>
-    <td>Imagen 3</td>
+    <td>En la 2da prueba el sujeto realizó ciclos de inhalación y exhalación de intervalos de 5 segundos durante 30 segundos, se tomó la lectura del comportamiento de la señal EKG.</td>
   </tr>
    <tr>
     <td> 3. Segunda lectura en estado de repos</td>
