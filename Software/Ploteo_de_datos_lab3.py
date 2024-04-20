@@ -5,26 +5,31 @@ import matplotlib.pyplot as plt
 import re
 
 # Cargar datos desde el archivo de texto según la ubicación del 
-archivo = "Ubicación/del/archivo/Lectura_pulgar_supinación_EMG.txt"
+archivo = "C:/Users/Equipo/OneDrive/Escritorio/Introduccion_a_señales_biomedicas/Github/inb_2024_gh12/Documentación/EMG/Lectura_antebrazo_supinación_EMG.txt"
 def extraer_nombres_columnas(archivo):
     with open(archivo, 'r') as f:
         for linea in f:
             if linea.startswith("#"):
-                matches = re.findall(r'column":\s*\[(.*?)\]', linea)
-                if matches:
-                    # Extraer la lista de nombres de columna de la línea
-                    column_names = [name.strip().strip('"') for name in matches[0].split(',')]
-                    return column_names,
+                columnas = re.findall(r'column":\s*\[(.*?)\]', linea)
+                entrada = re.findall(r'label":\s*\[(.*?)\]', linea)
+                if columnas:
+                    if entrada:
+                        # Extraer la lista de nombres de columna de la línea
+                        column_names = [name.strip().strip('"') for name in columnas[0].split(',')]
+                        # Extraemos los canales usados
+                        entrada = [name.strip().strip('"') for name in entrada[0].split(',')]
+                        return column_names, entrada [0]
+                    else:
+                        continue
                 else:
                     continue
 
 
                     
 #Me devuelve una tupla pues esta en "(...)"
-column_name=extraer_nombres_columnas(archivo)
-
-nombres_columnas=column_name[0]  # Imprime la lista: ['nSeq', 'I1', 'I2', 'O1', 'O2', 'A1']
-
+nombres_columnas,Entrada=extraer_nombres_columnas(archivo) #Aquí te devuelve la lista como un string dentro de otra lista y también el nombre del canal usado
+#print(nombres_columnas) Imprime la lista: ['nSeq', 'I1', 'I2', 'O1', 'O2', 'A1']
+print(type(Entrada))
 #Leyendo el TxT que nos da OpenSignal, podemos entender que las columnas para nuestro Dataframe serán las siguientes:
 #Se le coloca una columna "NaN" debido a que en el txt cada ultimo valor de fila tiene un espacio que lee como NaN
 #nombres_columnas = ["nSeq", "I1", "I2", "O1", "O2", "A1"]
@@ -41,7 +46,7 @@ datos.columns = nombres_columnas
 #Imprimimos el Dataframe resultante para ver si se obtuvo un buen resultado
 print(datos)
 #Comprobado el resultado solo escogemos la columna "A1", la cual usamos para nuestra medición
-Lectura_EMG = datos.iloc[:, 5]
+Lectura_EMG = datos[Entrada]
 
 # Convertir los datos a números
 Lectura_EMG = Lectura_EMG.apply(pd.to_numeric)

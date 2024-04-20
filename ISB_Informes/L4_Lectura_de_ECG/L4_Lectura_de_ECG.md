@@ -117,7 +117,7 @@ En la 6ta prueba el sujeto realizó ciclos de inhalación y exhalación de inter
 ### **Visualización de señal eléctrica mediante video y OpenSignalsl** <a name="t7"></a>
 
 
-
+![](../ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/electrodos_guia.png)
 
 
 
