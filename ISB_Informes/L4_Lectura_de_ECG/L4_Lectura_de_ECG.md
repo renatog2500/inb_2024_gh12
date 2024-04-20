@@ -75,6 +75,7 @@ Cabe resaltar que las ubicaciones mencionadas se mantuvieron para todas las prue
     <td>Imagen 1</td>
     <td>Imagen 2</td>
     <td>Imagen 3</td>
+    <td>Imagen 3</td>
   </tr>
  
 </table>
