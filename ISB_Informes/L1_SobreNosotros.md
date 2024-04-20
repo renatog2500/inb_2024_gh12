@@ -31,5 +31,3 @@ Somos un equipo de estudiantes de Ingeniería Biomédica, provenientes de la Pon
 ## Docentes del Curso
 - Umbert Lewis De La Cruz Rodríguez (coordinador)
 - Moises Stevend Meza Rodríguez (coordinador)
-
- ![](L4_Lectura_de_ECG/Imagenes_L4/electrodos_guia.png)

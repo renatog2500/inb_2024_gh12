@@ -80,7 +80,7 @@ Cuando aplicas una fuerza externa contra la cual el músculo debe trabajar (por 
 
 ### **Archivos** <a name="t6"></a>
 - [Documentos (.txt)](https://github.com/renatog2500/inb_2024_gh12/tree/be701a0d1b2c92ef9167bfc775c26846401e695d/Documentaci%C3%B3n/EMG)
-- [Programa de ploteo (python)](https://github.com/renatog2500/inb_2024_gh12/blob/be701a0d1b2c92ef9167bfc775c26846401e695d/Software/Ploteo_de_datos_lab3.py)
+- [Programa de ploteo (python)](https://github.com/renatog2500/inb_2024_gh12/blob/be701a0d1b2c92ef9167bfc775c26846401e695d/Software/Ploteo_de_datos_lab.py)
 
 ### **Ploteo de la señal en Python** <a name="t7"></a>
 - Código en Python:
