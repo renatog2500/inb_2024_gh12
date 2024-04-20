@@ -106,13 +106,14 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8
     <td>https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0</td>
     <td>En la sexta prueba, el sujeto llevó a cabo ciclos de inhalación y exhalación en intervalos de 10 segundos. Durante este proceso, se registró y analizó el comportamiento de la señal del electrocardiograma (ECG).
 
-
-
-
-
 </td>
   </tr>
 </table>
+<p align="center">
+  <b>Tabla 2. Pruebas realizadas</b>
+</p>
+
+
 
 ### PRUEBA 1: Lectura de la señal Basal  <br>
 <p align="justify">
