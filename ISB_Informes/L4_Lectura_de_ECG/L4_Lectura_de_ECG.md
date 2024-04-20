@@ -256,12 +256,12 @@ plt.show()
   </tr>
   <tr>
     <th> Paso 1. RSN (adulto): Frecuencia Respiratoria Normal en Adultos</th>
-    <td>video </td>
+    <td> https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/Paso1_video_ProSim.mp4 </td>
     <td> En la prueba 1 se tomo señales ECG del sujeto de prueba en estado de reposo.</td>
   </tr>
    <tr>
     <th> Paso 2. Onda de presión venosa central (CVP)</th>
-    <td> video 2 </td>
+    <td> https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/Paso2_video_ProSim.mp4 </td>
     <td>En la 2da prueba el sujeto realizó ciclos de inhalación y exhalación de intervalos de 5 segundos durante 30 segundos, se tomó la lectura del comportamiento de la señal ECG.</td>
   </tr>
    <tr>
