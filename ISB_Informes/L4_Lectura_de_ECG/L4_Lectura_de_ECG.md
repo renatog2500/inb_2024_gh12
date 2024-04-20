@@ -19,6 +19,8 @@ ________________________________________________________________________________
 * Jossymar León Mallma - 
 * Renato Cardoso Cardenas - 73061678
 
+https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/video_ejercicios_jossymar.mp4
+
 ## Introducción  <a name = "t2"></a>
 [insertar parrafo de intro]
 
