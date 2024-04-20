@@ -305,13 +305,13 @@ Para la siguiente prueba, utilizamos el Fluke ProSim 4, un simulador de paciente
 ///////////////////////////////////////
 
 <div align="center">
-| Simulación                                     | toma de video                                                              |
-|-----------------------------------------------|----------------------------------------------------------------------------------------------------|
-| Paso 1. RSN (adulto): Frecuencia Respiratoria Normal en Adultos  | <p align="center"><img src="Imagenes_L4/Paso1_video_ProSim.mp4" width="400"></p>  |
-| Paso 2. Onda de presión venosa central (CVP) | [Video Paso 2](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/Paso2_video_ProSim.mp4) |
-| Paso 3. Taquicardia ventricular a 160 lpm    | [Video Paso 3](https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0)              |
-| Paso 4. Fibrilación ventricular severa       | [Video Paso 4](https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0)              |
-| Paso 5. Asistolia                            | [Video Paso 5](https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0)              |
+  | Simulación                                     | toma de video                                                              |
+  |-----------------------------------------------|----------------------------------------------------------------------------------------------------|
+  | Paso 1. RSN (adulto): Frecuencia Respiratoria Normal en Adultos  | <p align="center"><img src="Imagenes_L4/Paso1_video_ProSim.mp4" width="400"></p>  |
+  | Paso 2. Onda de presión venosa central (CVP) | [Video Paso 2](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/Paso2_video_ProSim.mp4) |
+  | Paso 3. Taquicardia ventricular a 160 lpm    | [Video Paso 3](https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0)              |
+  | Paso 4. Fibrilación ventricular severa       | [Video Paso 4](https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0)              |
+  | Paso 5. Asistolia                            | [Video Paso 5](https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0)              |
 </div>
 
 <p align="center">
