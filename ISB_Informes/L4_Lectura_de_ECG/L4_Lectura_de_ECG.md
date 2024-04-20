@@ -268,42 +268,7 @@ Para la siguiente prueba, utilizamos el Fluke ProSim 4, un simulador de paciente
 | <p align="center"><img src="Imagenes_L4/Simulacion_paro_prosim4.jpg" width="400"></p>          | <p align="center"><img src="Imagenes_L4/conexiones_prosim4.jpg" width="400"></p> |
 
 
-
-
-
-
-<table align="center">
-  <tr>
-    <th> Simulación </th>
-    <th> Toma </th>
-  </tr>
-  <tr>
-    <th> Paso 1. RSN (adulto): Frecuencia Respiratoria Normal en Adultos</th>
-    <td> https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/Paso1_video_ProSim.mp4 </td>
-  </tr>
-   <tr>
-    <th> Paso 2. Onda de presión venosa central (CVP)</th>
-    <td> https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/Paso2_video_ProSim.mp4 </td>
-  </tr>
-   <tr>
-    <th> Paso 3. Taquicardia ventricular a 160 lpm </th>
-    <td>https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0</td>
-   <tr>
-    <th> Paso 4. Fibrilación ventricular severa </th>
-    <td>https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0</td>
-
-  </tr>
-   <tr>
-    <th> Paso 5. Asistolia </th>
-    <td>https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0</td>
-   
-  </tr>
-</table>
-<p align="center">
-  <b>Tabla 2. Pruebas realizadas</b>
-</p>
-///////////////////////////////////////
-
+## Registro de pruebas en ProSim4
 
   | Simulación                                     | toma de video                                                              |
   |-----------------------------------------------|----------------------------------------------------------------------------------------------------|
@@ -313,13 +278,18 @@ Para la siguiente prueba, utilizamos el Fluke ProSim 4, un simulador de paciente
   | Paso 4. Fibrilación ventricular severa       | [Video Paso 4](https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0)              |
   | Paso 5. Asistolia                            | [Video Paso 5](https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0)              |
 
-
-
 <p align="center">
   <b>Tabla 2. Pruebas realizadas en el FLuke ProSim4 </b>
 </p>
 
-
+## Ploteo en Python de las pruebas en ProSim4
+| Simulación        | Ploteo de la señal |
+|-------------------|-----------------------------------------------|
+| Paso 1. RSN (adulto): Frecuencia Respiratoria Normal en Adultos | <p align="center"><img src="Imagenes_L4/conexiones_prosim4.jpg" width="400"></p> |
+| Paso 2. Onda de presión venosa central (CVP) | <p align="center"><img src="Imagenes_L4/Paso2_Contracciones_ventriculares_prematuras.png" width="400"></p> |
+|  Paso 3. Taquicardia ventricular a 160 lpm  | <p align="center"><img src="Imagenes_L4/Paso3_Taquicardia.png" width="400"></p> |
+| Paso 4. Fibrilación ventricular severa | <p align="center"><img src="Imagenes_L4/conexiones_prosim4.jpg" width="400"></p> |
+|Paso 5. Asistolia   | <p align="center"><img src="Imagenes_L4/Paso5_Asistolia_video.mp4" width="400"></p> |
 ## **Conclusiones** <a name="t11"></a>
 
 //////////////////////
