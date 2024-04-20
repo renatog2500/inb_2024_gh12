@@ -140,7 +140,7 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8
   </tr>
 </table>
 <p align="center">
-  <b>Tabla 2. Pruebas realizadas</b>
+  <b>Tabla 2. Videos del Protocolo </b>
 </p>
 
 
@@ -172,7 +172,7 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8
 
 
 <p align="center">
-  <b>Tabla 2. Ploteo del protocolo en Python </b>
+  <b>Tabla 3. Ploteo del protocolo en Python </b>
 </p>
 
 
@@ -289,7 +289,7 @@ Para la siguiente prueba, utilizamos el Fluke ProSim 4, un simulador de paciente
   | Paso 5. Asistolia                            | [Video Paso 5](https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0)              |
 
 <p align="center">
-  <b>Tabla 2. Pruebas realizadas en el FLuke ProSim4 </b>
+  <b>Tabla 4. Videos de las pruebas realizadas en el FLuke ProSim4 </b>
 </p>
 
 ## Ploteo en Python de las pruebas en ProSim4
@@ -300,6 +300,13 @@ Para la siguiente prueba, utilizamos el Fluke ProSim 4, un simulador de paciente
 |  Paso 3. Taquicardia ventricular a 160 lpm  | <p align="center"><img src="Imagenes_L4/Paso3_Taquicardia.png" width="400"></p> |
 | Paso 4. Fibrilación ventricular severa |  |
 |Paso 5. Asistolia   | <p align="center"><img src="Imagenes_L4/Paso5_Asistolia.png" width="400"></p> |
+
+<p align="center">
+  <b>Tabla 5. Ploteo de las pruebas realizadas en el FLuke ProSim4 </b>
+</p>
+
+
+
 ## **Conclusiones** <a name="t11"></a>
 
 //////////////////////
