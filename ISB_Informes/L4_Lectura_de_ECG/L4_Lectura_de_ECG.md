@@ -92,7 +92,7 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8
   </tr>
   <tr>
     <th> 1.Lectura de la señal Basal </th>
-    <td> [![](https://markdown-videos-api.jorgenkh.no/youtube/{video_id})](https://www.youtube.com/watch?v=gG2bqgt_6po)</td>
+    <td> [![](https://markdown-videos-api.jorgenkh.no/youtube/gG2bqgt_6po)](https://youtu.be/gG2bqgt_6po)</td>
     <td> En la prueba 1 se tomo señales ECG del sujeto de prueba en estado de reposo.</td>
   </tr>
    <tr>
