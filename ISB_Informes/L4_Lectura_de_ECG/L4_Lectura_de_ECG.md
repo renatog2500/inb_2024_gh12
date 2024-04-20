@@ -248,6 +248,14 @@ plt.show()
 
 
 ## Señal del Promsim4 : <a name="t10"></a>
+
+| Figura X. Pruebas realizadas en ProSim.                                                                                                   | Figura X. Colocación de los electrodos en el ProSim para la derivación I                                                                                                     |
+|-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| ![pruebas Prosim](Imagenes_L4/Simulacion_paro_prosim4.jpg) |  ![pruebas Prosim](Imagenes_L4/conexiones_prosim4.jpg) |
+
+
+
+
 <table align="center">
   <tr>
     <th> Simulación </th>
