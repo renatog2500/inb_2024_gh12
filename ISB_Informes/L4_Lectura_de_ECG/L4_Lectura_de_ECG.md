@@ -11,8 +11,9 @@
    6.1 [Visualización de la señal mediante video y OpenSignals ](#t7)\
    6.2 [Ploteo de la señal en Python](#t8)\
    6.3 [Archivos de la señal ploteada en Python y datos de la señal](#t9)
-7. [Conclusiones](#t10)
-8. [Bibliografía](#t11)
+7. [Señal del Promsim4](#t10)
+8. [Conclusiones](#t11)
+9. [Bibliografía](#t12)
 __________________________________________________________________________________________________
 ## **Lista de participantes** <a name = "t1"></a>
 * Jimena Alpiste Espinoza - 74297329
@@ -233,11 +234,17 @@ plt.show()
 - [Documentos (.txt)](https://github.com/renatog2500/inb_2024_gh12/tree/be701a0d1b2c92ef9167bfc775c26846401e695d/Documentaci%C3%B3n/EMG)
 - [Programa de ploteo (python)](https://github.com/renatog2500/inb_2024_gh12/blob/main/Software/Ploteo_de_datos_lab.py)
 
-## **Conclusiones** <a name="t10"></a>
+
+
+
+
+## **Señal del Promsim4** <a name="t10"></a>
+
+## **Conclusiones** <a name="t11"></a>
 
 //////////////////////
 
-## **Bibliografía** <a name="t11"></a>
+## **Bibliografía** <a name="t12"></a>
 [1] https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1888690/
 
 [2] https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2017.00258/full
