@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import re
 
 # Cargar datos desde el archivo de texto según la ubicación del 
-archivo = "C:/Users/Equipo/OneDrive/Escritorio/Introduccion_a_señales_biomedicas/Github/inb_2024_gh12/Documentación/EMG/Lectura_antebrazo_supinación_EMG.txt"
+archivo = "C:/Users/Equipo/OneDrive/Escritorio/Introduccion_a_señales_biomedicas/Github/inb_2024_gh12/ISB_Informes/L4_Lectura_de_ECG/ECG_L4/Paso5_Simulador_asistolia.txt"
 def extraer_nombres_columnas(archivo):
     with open(archivo, 'r') as f:
         for linea in f:
@@ -29,7 +29,7 @@ def extraer_nombres_columnas(archivo):
 #Me devuelve una tupla pues esta en "(...)"
 nombres_columnas,Entrada=extraer_nombres_columnas(archivo) #Aquí te devuelve la lista como un string dentro de otra lista y también el nombre del canal usado
 #print(nombres_columnas) Imprime la lista: ['nSeq', 'I1', 'I2', 'O1', 'O2', 'A1']
-print(type(Entrada))
+#print(Entrada)
 #Leyendo el TxT que nos da OpenSignal, podemos entender que las columnas para nuestro Dataframe serán las siguientes:
 #Se le coloca una columna "NaN" debido a que en el txt cada ultimo valor de fila tiene un espacio que lee como NaN
 #nombres_columnas = ["nSeq", "I1", "I2", "O1", "O2", "A1"]
@@ -44,10 +44,10 @@ datos = pd.read_csv(archivo, sep='\t', skiprows=3, header=None, usecols=[0, 1 ,2
 datos.columns = nombres_columnas
 
 #Imprimimos el Dataframe resultante para ver si se obtuvo un buen resultado
-print(datos)
+#print(datos.columns)
 #Comprobado el resultado solo escogemos la columna "A1", la cual usamos para nuestra medición
 Lectura_EMG = datos[Entrada]
-
+#print(Lectura_EMG)
 # Convertir los datos a números
 Lectura_EMG = Lectura_EMG.apply(pd.to_numeric)
 
@@ -67,7 +67,7 @@ Lectura_EMG.index = Lectura_EMG.index / 1000
 plt.figure(figsize=(13,9))
 plt.subplot(211)
 plt.plot(Lectura_EMG)
-plt.title("Lectura del pulgar supinación EMG en el dominio del tiempo")
+plt.title("Lectura del simulador en el paso 5 Asistolia - ECG en el dominio del tiempo")
 plt.xlabel("Tiempo (s)")
 plt.ylabel("Amplitud (mV)")
 plt.grid(True)
