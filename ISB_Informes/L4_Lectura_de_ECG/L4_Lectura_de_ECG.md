@@ -76,6 +76,10 @@ Cabe resaltar que las ubicaciones mencionadas se mantuvieron para todas las prue
 </video>
 
 
+https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0
+
+
+
 ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/video_ejercicios_jossymar.mp4
 
  
