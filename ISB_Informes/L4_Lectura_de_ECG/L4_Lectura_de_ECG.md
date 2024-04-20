@@ -52,6 +52,14 @@ https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_d
   <b>Tabla 1. Materiales y equipos utilizados</b>
 </p>
 
+| Nombre    | Edad | Ciudad    |
+| --------- | ---- | --------- |
+| Juan      | 25   | [![](https://markdown-videos-api.jorgenkh.no/youtube/gG2bqgt_6po)](https://youtu.be/gG2bqgt_6po)
+   |
+| María     | 30   | Barcelona |
+| Pedro     | 28   | Valencia  |
+
+
 ## Protocolo de conexión <a name="t5"></a>
 Para capturar las señales ECG, se empleó el dispositivo BITalino junto con su sensor ECG de tres electrodos. Se siguió el procedimiento detallado en la guía BiTalino,**(BITalino HOME-GUIDE #2 ELECTROCARDIOGRAPHY (ECG) Exploring Cardiac Signals at the Skin Surface")** [1], como referencia para posicionar correctamente los electrodos en el sujeto de prueba. A continuación, se presentan los protocolos de conexión específicos utilizados en cada prueba llevada a cabo en este laboratorio:
 
@@ -79,7 +87,7 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8
 
 
 
-
+------------------------
 
 ## Resultados y discusión  <a name="t6"></a>
 ### **Visualización de señal eléctrica mediante video y OpenSignalsl** <a name="t7"></a>
