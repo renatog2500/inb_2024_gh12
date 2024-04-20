@@ -66,21 +66,12 @@ La derivación 1 en un ECG es una de las vistas básicas utilizadas para monitor
 
 Cabe resaltar que las ubicaciones mencionadas se mantuvieron para todas las pruebas. 
 
-[![Video de Ejercicios](https://www.example.com/video_thumbnail.jpg)](ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/video_ejercicios_jossymar.mp4)
-
-
-[Ver video](ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/video_ejercicios_jossymar.mp4)
-<video width="640" height="360" controls>
-  <source src="https://github.com/renatog2500/inb_2024_gh12/raw/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/video_ejercicios_jossymar.mp4" type="video/mp4">
-  Tu navegador no soporta la reproducción de video.
-</video>
-
 
 https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0
 
 
 
-ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/video_ejercicios_jossymar.mp4
+
 
  
 <table align="center">
@@ -92,7 +83,7 @@ ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/video_ejercicios_jossymar.mp4
   </tr>
   <tr>
     <td>Imagen 1</td>
-    <td>Imagen 2</td>
+    <td>[Imagen 2](https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0)</td>
     <td>Imagen 3</td>
     <td>Imagen 3</td>
   </tr>
