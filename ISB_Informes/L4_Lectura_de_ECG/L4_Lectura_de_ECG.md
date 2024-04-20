@@ -71,22 +71,6 @@ Cabe resaltar que las ubicaciones mencionadas se mantuvieron para todas las prue
 
 https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8-b5fc-664aa1a81318
 
-
-
-
-| Encabezado 1 | Encabezado 2 | Encabezado 3 |
-|--------------|--------------|--------------|
-| Celda 1,1    | https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0   | Celda 1,3    |
-| Celda 2,1    | Celda 2,2 
-
-https://github.com/renatog2500/inb_2024_gh12/assets/130946164/b148188c-1bfa-4571-9095-b0564ce1c157
-
-   | Celda 2,3    |
-| Celda 3,1    | Celda 3,2    | Celda 3,3    |
-
-
-
- 
 <table align="center">
   <tr>
     <th> PRUEBA </th>
@@ -94,7 +78,7 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/b148188c-1bfa-4571
     <th> DESCRIPCIÓN </th>
   </tr>
   <tr>
-    <td> 1.Lectura de la señal Basal </td>
+    <td> <b></b>1.Lectura de la señal Basal <b> </td>
     <td>https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0</td>
     <td> En la prueba 1 se tomo señales ECG del sujeto de prueba en estado de reposo.</td>
   </tr>
