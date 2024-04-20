@@ -61,7 +61,10 @@ La derivación 1 en un ECG es una de las vistas básicas utilizadas para monitor
 * IN+ (rojo) se coloca en la muñeca izquierda .
 * IN- (negro) se coloca en la muñeca derecha.
 * REF (blanco) se coloca en la cresta ilíaca.\
+
 Cabe resaltar que las ubicaciones mencionadas se mantuvieron para todas las pruebas. 
+
+ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/video_ejercicios_jossymar.mp4
 
  
 <table align="center">
