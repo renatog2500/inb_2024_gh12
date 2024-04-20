@@ -276,32 +276,27 @@ Para la siguiente prueba, utilizamos el Fluke ProSim 4, un simulador de paciente
   <tr>
     <th> Simulación </th>
     <th> Toma </th>
-    <th> Descripción </th>
   </tr>
   <tr>
     <th> Paso 1. RSN (adulto): Frecuencia Respiratoria Normal en Adultos</th>
     <td> https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/Paso1_video_ProSim.mp4 </td>
-    <td> En la prueba 1 se tomo señales ECG del sujeto de prueba en estado de reposo.</td>
   </tr>
    <tr>
     <th> Paso 2. Onda de presión venosa central (CVP)</th>
     <td> https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/Paso2_video_ProSim.mp4 </td>
-    <td>En la 2da prueba el sujeto realizó ciclos de inhalación y exhalación de intervalos de 5 segundos durante 30 segundos, se tomó la lectura del comportamiento de la señal ECG.</td>
   </tr>
    <tr>
     <th> Paso 3. Taquicardia ventricular a 160 lpm </th>
     <td>https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0</td>
-    <td> Se volvió a realizar la captura de la señal del electrocardiograma (ECG) del sujeto después de la sesión de ejercicios de inhalación y exhalación. </td>
-  </tr>
    <tr>
     <th> Paso 4. Fibrilación ventricular severa </th>
     <td>https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0</td>
-    <td>El sujeto fue sometido a una serie de ejercicios físicos que incluyeron la realización de planchas y polichinelas. Luego de completar estos ejercicios, se procedió a tomar la señal del electrocardiograma (ECG). </td>
+
   </tr>
    <tr>
     <th> Paso 5. Asistolia </th>
     <td>https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0</td>
-    <td>Se llevó a cabo una nueva toma de la señal del electrocardiograma (ECG) del sujeto en reposo después de completar la serie de ejercicios. </td>
+   
   </tr>
 </table>
 <p align="center">
@@ -318,7 +313,9 @@ Para la siguiente prueba, utilizamos el Fluke ProSim 4, un simulador de paciente
 | Paso 4. Fibrilación ventricular severa       | [Video Paso 4](https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0)              |
 | Paso 5. Asistolia                            | [Video Paso 5](https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0)              |
 
-
+<p align="center">
+  <b>Tabla 2. Pruebas realizadas en el FLuke ProSim4 </b>
+</p>
 
 
 ## **Conclusiones** <a name="t11"></a>
