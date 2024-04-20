@@ -83,7 +83,7 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9
   </tr>
   <tr>
     <td>Imagen 1</td>
-    <td>[Imagen 2](https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0)</td>
+    <td> https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0 </td>
     <td>Imagen 3</td>
     <td>Imagen 3</td>
   </tr>
