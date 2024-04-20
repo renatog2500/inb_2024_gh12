@@ -153,27 +153,14 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8
 
 ### **Ploteo de la señal en Python** <a name="t8"></a>
 
-| Columna 1      | Señal  2      |
+| Prueba     | Ploteo de la señal en el tiempo y su dominio en frecuencia     |
 | -------------- | -------------- |
-| 1.Lectura de la señal Basal | <img src="Imagenes_L4/Basal_1.png" alt="Electrodos de guía" width="700">|
-| 2. Lectura de los ciclos de Inhalación y Exhalación (Fases de 5 segundos) | <img src="Imagenes_L4/ciclo_inhalation_exhalation.png" alt="Electrodos de guía" width="700">|
-| 3. Segunda lectura Basal | <img src="Imagenes_L4/Basal_2_post_Inhalación.png" alt="Electrodos de guía" width="700">|
-| 4. Lectura posterior a la realización de ejercicios (no esta) | <img src="Imagenes_L4/Basal_2_post_Inhalación.png" alt="Electrodos de guía" width="700">|
-| 5.Tercera lectura Basal |<img src="Imagenes_L4/Basal_3_Post_ejercició.png" alt="Electrodos de guía" width="700"> |
-| 6.Inhalación y exhalación prolongada durante 10 segundos | <img src="Imagenes_L4/Inhalación_larga.png" alt="Electrodos de guía" width="700"> |
-
-| Columna 1 | Columna 2 |
-| ----------| ----------|
-| 1.Lectura de la señal Basal | <span style="font-size: larger;"> <img src="Imagenes_L4/Basal_1.png" alt="Electrodos de guía" width="700"> </span> |
-| 2. Lectura de los ciclos de Inhalación y Exhalación (Fases de 5 segundos) | <span style="font-size: larger;"> <img src="Imagenes_L4/ciclo_inhalation_exhalation.png" alt="Electrodos de guía" width="700"> </span> |
-| 3. Segunda lectura Basal | <span style="font-size: larger;"> <img src="Imagenes_L4/Basal_2_post_Inhalación.png" alt="Electrodos de guía" width="700"> </span> |
-| 4. Lectura posterior a la realización de ejercicios (no esta) | <span style="font-size: larger;"> <img src="Imagenes_L4/Basal_2_post_Inhalación.png" alt="Electrodos de guía" width="700"> </span> |
-| 5.Tercera lectura Basal | <span style="font-size: larger;"> <img src="Imagenes_L4/Basal_3_Post_ejercició.png" alt="Electrodos de guía" width="700"> </span> |
-| 6.Inhalación y exhalación prolongada durante 10 segundos | <span style="font-size: larger;"> <img src="Imagenes_L4/Inhalación_larga.png" alt="Electrodos de guía" width="700"> </span> |
-
-
-
-
+| **1.Lectura de la señal Basal**| <img src="Imagenes_L4/Basal_1.png" alt="Electrodos de guía" width="700">|
+| **2. Lectura de los ciclos de Inhalación y Exhalación (Fases de 5 segundos)** | <img src="Imagenes_L4/ciclo_inhalation_exhalation.png" alt="Electrodos de guía" width="700">|
+| **3. Segunda lectura Basal** | <img src="Imagenes_L4/Basal_2_post_Inhalación.png" alt="Electrodos de guía" width="700">|
+| **4. Lectura posterior a la realización de ejercicios (no esta)** | <img src="Imagenes_L4/Basal_2_post_Inhalación.png" alt="Electrodos de guía" width="700">|
+| **5.Tercera lectura Basal** |<img src="Imagenes_L4/Basal_3_Post_ejercició.png" alt="Electrodos de guía" width="700"> |
+| **6.Inhalación y exhalación prolongada durante 10 segundos** | <img src="Imagenes_L4/Inhalación_larga.png" alt="Electrodos de guía" width="700"> |
 
 
 
