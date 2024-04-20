@@ -91,7 +91,7 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8
 
 ## Resultados y discusión  <a name="t6"></a>
 ### **Visualización de señal eléctrica mediante video y OpenSignalsl** <a name="t7"></a>
-| PRUEBA   | VIDEO | DESCRIPCIÓN    |
+| Prueba   | Señal Ploteada en Open Signals   | Descripción    |
 | --------- | ---- | --------- |
 | 1.Lectura de la señal Basal  | [![](https://markdown-videos-api.jorgenkh.no/youtu.be/Dw4YXP73Ndo)](https://youtu.be/Dw4YXP73Ndo)    | En la prueba 1 se tomo señales ECG del sujeto de prueba en estado de reposo.|
 | 2. Lectura de los ciclos de Inhalación y Exhalación (Fases de 5 segundos) | 30   | En la 2da prueba el sujeto realizó ciclos de inhalación y exhalación de intervalos de 5 segundos durante 30 segundos, se tomó la lectura del comportamiento de la señal ECG. |
@@ -280,7 +280,7 @@ Para la siguiente prueba, utilizamos el Fluke ProSim 4, un simulador de paciente
 
 ## Registro de pruebas en ProSim4
 
-  | Simulación                                     | toma de video                                                              |
+  | Simulación                                     | Señal Ploteada en Open Signals                                                           |
   |-----------------------------------------------|----------------------------------------------------------------------------------------------------|
   | Paso 1. RSN (adulto): Frecuencia Respiratoria Normal en Adultos  | <p align="center"><img src="Imagenes_L4/Paso1_video_ProSim.mp4" width="400"></p>  |
   | Paso 2. Onda de presión venosa central (CVP) | [Video Paso 2](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/Paso2_video_ProSim.mp4) |
@@ -302,7 +302,7 @@ Para la siguiente prueba, utilizamos el Fluke ProSim 4, un simulador de paciente
 |Paso 5. Asistolia   | <p align="center"><img src="Imagenes_L4/Paso5_Asistolia.png" width="400"></p> |
 
 <p align="center">
-  <b>Tabla 5. Ploteo de las pruebas realizadas en el FLuke ProSim4 </b>
+  <b>Tabla 5. Ploteo en Python de las pruebas realizadas en el FLuke ProSim4 </b>
 </p>
 
 
