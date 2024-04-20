@@ -69,6 +69,10 @@ Cabe resaltar que las ubicaciones mencionadas se mantuvieron para todas las prue
 
 
 
+https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8-b5fc-664aa1a81318
+
+
+
 
 | Encabezado 1 | Encabezado 2 | Encabezado 3 |
 |--------------|--------------|--------------|
