@@ -285,11 +285,11 @@ Para la siguiente prueba, utilizamos el Fluke ProSim 4, un simulador de paciente
 ## Ploteo en Python de las pruebas en ProSim4
 | Simulación        | Ploteo de la señal |
 |-------------------|-----------------------------------------------|
-| Paso 1. RSN (adulto): Frecuencia Respiratoria Normal en Adultos | <p align="center"><img src="Imagenes_L4/conexiones_prosim4.jpg" width="400"></p> |
+| Paso 1. RSN (adulto): Frecuencia Respiratoria Normal en Adultos |  |
 | Paso 2. Onda de presión venosa central (CVP) | <p align="center"><img src="Imagenes_L4/Paso2_Contracciones_ventriculares_prematuras.png" width="400"></p> |
 |  Paso 3. Taquicardia ventricular a 160 lpm  | <p align="center"><img src="Imagenes_L4/Paso3_Taquicardia.png" width="400"></p> |
-| Paso 4. Fibrilación ventricular severa | <p align="center"><img src="Imagenes_L4/conexiones_prosim4.jpg" width="400"></p> |
-|Paso 5. Asistolia   | <p align="center"><img src="Imagenes_L4/Paso5_Asistolia_video.mp4" width="400"></p> |
+| Paso 4. Fibrilación ventricular severa |  |
+|Paso 5. Asistolia   | <p align="center"><img src="Imagenes_L4/Paso5_Asistolia.png" width="400"></p> |
 ## **Conclusiones** <a name="t11"></a>
 
 //////////////////////
