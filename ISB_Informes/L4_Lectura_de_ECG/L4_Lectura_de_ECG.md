@@ -54,7 +54,7 @@ Para capturar las señales ECG, se empleó el dispositivo BITalino junto con su 
 
 | Columna 1                                                                                                   | Columna 2                                                                                                       |
 |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| ![Electrodos de guía](Imagenes_L4/electrodos_guia.png) | <img src="Imagenes_L4/posicion _usada_electrodos.png" alt="Electrodos de guía" width="300"> |
+| ![Electrodos de guía](Imagenes_L4/electrodos_guia.png) | <img src="Imagenes_L4/posicion _usada_electrodos.png" alt="Electrodos de guía" width="600"> |
 
 
 
