@@ -23,7 +23,33 @@ ________________________________________________________________________________
 
 https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/video_ejercicios_jossymar.mp4
 ## Introducción  <a name = "t2"></a>
-[insertar parrafo de intro]
+Cuando el impulso cardíaco se transmite a través del corazón, la corriente eléctrica se extiende hacia los tejidos circundantes. Una pequeña fracción de esta corriente se disemina hacia la superficie corporal. Al colocar electrodos en la piel en diferentes áreas alrededor del corazón, es posible registrar los potenciales eléctricos generados por esta corriente; este registro se conoce como electrocardiograma (ECG) [1].
+
+El ECG es una modalidad de diagnóstico no invasiva que tiene un impacto clínico sustancial en la investigación de la gravedad de las enfermedades cardiovasculares. Se utiliza cada vez más para monitorear pacientes que toman antiarrítmicos y otros medicamentos, como parte integral de la evaluación preoperatoria de pacientes sometidos a cirugía no cardíaca, y para evaluar a personas en ocupaciones de alto riesgo y a quienes practican deportes[2]. 
+
+![wCF14V](https://github.com/renatog2500/inb_2024_gh12/assets/130946164/524d1208-8762-46c6-a17e-227118af87d8)
+Extraído de [Make a Gif)](https://makeagif.com/gif/ecg-animation-electrical-changes-in-heart-wCF14V)
+Señal de un Electrocardiograma: 
+Las fluctuaciones en el voltaje extracelular registrado por cada derivación varían desde fracciones de un milivoltio hasta varios milivoltios. Estas fluctuaciones se llaman ondas. 
+En la señal ECG podemos observar las siguientes ondas [3]:
+
+- Onda P: Es la primera deflexión hacia arriba. Se produce cuando se despolarizan las aurículas antes del comienzo de la contraciión auricular. La onda P debe ser suave, redondeada y positiva (hacia arriba).
+
+- Segmento P-R: Representa el tramo de la línea isoeléctrica que se encuentra entre el final de la onda P y la siguiente deflexión. En este periodo, las aurículas terminan de vaciarse y se produce desaceleración en la transmisión de la corriente eléctrica, justo antes del inicio de la contracción de los ventrículos.
+
+- Complejo QRS: Esta formado por los potenciales que se generan cuando se despolarizan los ventriculos antes de su contracción. En un ECG normal se deben observar ondas Q de tamaño pequeño (no mayores a un cuadrado pequeño tanto en longitud como profundidad), encontrarse solo en ciertas derivaciones y no debe exceder en duración más de dos cuadrados pequeños.
+
+- Segmento ST: En este segmento, los ventrículos están totalmente despolarizados. Tiene valor como herramienta diagnóstica ya que su elevación o descenso en relación con la línea basal puede significar insuficiencia en la irrigación del corazón
+
+- Onda T: Se produce por los potenciales que se generan cuando los ventriculos se recuperan del estado de despolarización. Permite a los ventrículos relajarse y prepararse para el siguiente ciclo cardíaco. Esta onda se manifiesta como una deflexión positiva (hacia arriba).
+
+- Segmento TP: Este segmento representa el período en el que los ventrículos están completamente relajados y en reposo.
+
+
+
+[1] E. A. Ashley and J. Niebauer, “Conquering the ECG,” Nih.gov, 2024. https://www.ncbi.nlm.nih.gov/books/NBK2214/ (accessed Apr. 20, 2024).
+[2]Y. Sattar and L. Chhabra, “Electrocardiogram,” Nih.gov, Jun. 05, 2023. https://www.ncbi.nlm.nih.gov/books/NBK549803/ (accessed Apr. 20, 2024).
+[3] R. Joe Noble, J Stanley Hillis, and D. A. Rothbaum, “Electrocardiography,” Nih.gov, 2024. https://www.ncbi.nlm.nih.gov/books/NBK354/ (accessed Apr. 20, 2024).
 
 ## **Objetivos del Laboratorio** <a name = "t3"></a>
 * Adquirir señales biomédicas de ECG.
