@@ -52,12 +52,6 @@ https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_d
   <b>Tabla 1. Materiales y equipos utilizados</b>
 </p>
 
-| Nombre    | Edad | Ciudad    |
-| --------- | ---- | --------- |
-| Juan      | 25   | [![](https://markdown-videos-api.jorgenkh.no/youtube/gG2bqgt_6po)](https://youtu.be/gG2bqgt_6po)
-   |
-| María     | 30   | Barcelona |
-| Pedro     | 28   | Valencia  |
 
 
 ## Protocolo de conexión <a name="t5"></a>
@@ -91,6 +85,12 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8
 
 ## Resultados y discusión  <a name="t6"></a>
 ### **Visualización de señal eléctrica mediante video y OpenSignalsl** <a name="t7"></a>
+| PRUEBA   | VIDEO | DESCRIPCIÓN    |
+| --------- | ---- | --------- |
+| 1.Lectura de la señal Basal  | 25   | [![](https://markdown-videos-api.jorgenkh.no/youtube/gG2bqgt_6po)](https://youtu.be/gG2bqgt_6po)
+   |
+| 2. Lectura de los ciclos de Inhalación y Exhalación (Fases de 5 segundos) | 30   | Barcelona |
+| Segunda lectura en estado de repos| 28   | Valencia  |
 
 <table align="center">
   <tr>
