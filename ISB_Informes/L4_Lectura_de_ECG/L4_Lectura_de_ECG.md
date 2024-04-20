@@ -65,6 +65,10 @@ La derivación 1 en un ECG es una de las vistas básicas utilizadas para monitor
 * REF (blanco) se coloca en la cresta ilíaca.\
 
 Cabe resaltar que las ubicaciones mencionadas se mantuvieron para todas las pruebas. 
+
+[![Video de Ejercicios](https://www.example.com/video_thumbnail.jpg)](ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/video_ejercicios_jossymar.mp4)
+
+
 [Ver video](ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/video_ejercicios_jossymar.mp4)
 <video width="640" height="360" controls>
   <source src="https://github.com/renatog2500/inb_2024_gh12/raw/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/video_ejercicios_jossymar.mp4" type="video/mp4">
