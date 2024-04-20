@@ -80,7 +80,7 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8
 
 
 
-## **Resultados y discusión ** <a name="t6"></a>
+## Resultados y discusión  <a name="t6"></a>
 ### **Visualización de señal eléctrica mediante video y OpenSignalsl** <a name="t7"></a>
 
 <table align="center">
