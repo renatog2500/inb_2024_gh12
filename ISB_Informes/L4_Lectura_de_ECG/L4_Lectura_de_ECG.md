@@ -152,6 +152,26 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8
 
 
 ### **Ploteo de la señal en Python** <a name="t8"></a>
+
+| Columna 1      | Señal  2      |
+| -------------- | -------------- |
+| 1.Lectura de la señal Basal | <img src="Imagenes_L4/Basal_1.png" alt="Electrodos de guía" width="700">|
+| 2. Lectura de los ciclos de Inhalación y Exhalación (Fases de 5 segundos) | Celda 2, Col 2 |
+| 3. Segunda lectura Basal | Celda 3, Col 2 |
+| 4. Lectura posterior a la realización de ejercicios | Celda 3, Col 2 |
+| 5.Tercera lectura Basal | Celda 3, Col 2 |
+| 6.Inhalación y exhalación prolongada durante 10 segundos | Celda 3, Col 2 |
+
+
+
+
+
+
+
+
+
+
+
 - Código en Python:
 ```python
 
