@@ -52,10 +52,8 @@ https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_d
   <b>Tabla 1. Materiales y equipos utilizados</b>
 </p>
 
-
-
 ## Protocolo de conexión <a name="t5"></a>
-Para capturar las señales ECG, se empleó el dispositivo BITalino junto con su sensor ECG de tres electrodos. Se siguió el procedimiento detallado en la guía BiTalino,**(BITalino HOME-GUIDE #2 ELECTROCARDIOGRAPHY (ECG) Exploring Cardiac Signals at the Skin Surface")** [1], como referencia para posicionar correctamente los electrodos en el sujeto de prueba. A continuación, se presentan los protocolos de conexión específicos utilizados en cada prueba llevada a cabo en este laboratorio:
+Para capturar las señales ECG, se empleó el dispositivo BITalino junto con su sensor ECG de tres electrodos. Se siguió el procedimiento detallado en la guía BiTalino,**(BITalino HOME-GUIDE #2 ELECTROCARDIOGRAPHY (ECG) Exploring Cardiac Signals at the Skin Surface")** [X], como referencia para posicionar correctamente los electrodos en el sujeto de prueba. A continuación, se presentan los protocolos de conexión específicos utilizados en cada prueba llevada a cabo en este laboratorio:
 
 | Figura X. Colocación de electrodos para la derivación I referencia[1].                                                                                                   | Figura X. Colocación de los electrodos en el laboratorio para la derivación I                                                                                                     |
 |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
@@ -67,7 +65,17 @@ La derivación 1 en un ECG es una de las vistas básicas utilizadas para monitor
 * IN- (negro) se coloca en la muñeca derecha.
 * REF (blanco) se coloca en la cresta ilíaca.
 
-Cabe resaltar que las ubicaciones mencionadas se mantuvieron para todas las pruebas: 
+**Protocolo:**
+El protocolo seguido para evaluar el latido del corazón en vivo con electrocardiografía fue el de la guía experimental de BITalino [X]:
+1. Registrar una línea base de señal con poco ruido y sin movimientos (respiración normal) durante 30 segundos.
+2. Repetir un ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER tres veces, manteniendo la respiración y fases de reposo durante cinco segundos.
+3. Registrar otra fase inicial de 30 segundos.
+4. Realizar 10 burpees **(se realizaron planchas)** y observa tu frecuencia cardíaca antes y después del entrenamiento.
+5. Registrar otra fase inicial de 30 segundos.
+6. Realizar una inhalación larga (~10 segundos) seguida de contener la respiración durante varios segundos (~10 segundos).
+
+**Pruebas realizadas:**
+Cabe destacar que las ubicaciones mencionadas se mantuvieron para todas las pruebas: 
 
 - Prueba 1: Lectura del Estado Basal
 - Prueba 2: Lectura de los ciclos de Inhalación y Exhalación (Fases de 5 segundos) 
@@ -78,8 +86,6 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8
   
 - Prueba 5: Tercera lectura en estado de reposo
 - Prueba 6: Lectura de los ciclos de Inhalación y Exhalación prolongada (Fases de 10 segundos)
-
-
 
 ------------------------
 
@@ -94,7 +100,9 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8
 | 5.Tercera lectura en estado de reposo | 28   | Se llevó a cabo una nueva toma de la señal del electrocardiograma (ECG) del sujeto en reposo después de completar la serie de ejercicios.   |
 | 6.Inhalación y exhalación prolongada durante 10 segundos | 28   | En la sexta prueba, el sujeto llevó a cabo ciclos de inhalación y exhalación en intervalos de 10 segundos. Durante este proceso, se registró y analizó el comportamiento de la señal del electrocardiograma (ECG).  |
 <table align="center">
-  <tr>
+ 
+ 
+ <tr>
     <th> PRUEBA </th>
     <th> VIDEO </th>
     <th> DESCRIPCIÓN </th>
@@ -163,7 +171,9 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8
 | **6.Inhalación y exhalación prolongada durante 10 segundos** | <img src="Imagenes_L4/Inhalación_larga.png" alt="Electrodos de guía" width="700"> |
 
 
-
+<p align="center">
+  <b>Tabla 2. Ploteo del protocolo en Python </b>
+</p>
 
 
 
@@ -295,6 +305,9 @@ Para la siguiente prueba, utilizamos el Fluke ProSim 4, un simulador de paciente
 //////////////////////
 
 ## **Bibliografía** <a name="t12"></a>
+
+[X] BITalino (r)evolution Home Guide. PLUX-Wireless Biosignals, S A. Lisbon Portugal 2020. Disponible en: https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide2_ECG.pdf
+
 [1] I. Dotsinsky, “Review of ‘Advanced Methods and Tools for ECG Data Analysis’, by Gari D. Clifford, Francisco Azuaje and Patrick E. McSharry (Editors),” BioMedical engineering online, vol. 6, no. 1, pp. 18–18, Jan. 2007, doi: https://doi.org/10.1186/1475-925x-6-18.
 ‌
 
