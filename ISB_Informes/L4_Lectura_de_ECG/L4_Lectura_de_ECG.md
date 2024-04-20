@@ -92,18 +92,15 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/b148188c-1bfa-4571
     <th> PRUEBA 1: Lectura de la señal Basal </th>
     <th>Prueba 2</th>
     <th>Prueba 3</th>
-    <th>Prueba 3</th>
   </tr>
   <tr>
-    <td>Imagen 1</td>
+    <td>PRUEBA 2: Lectura de los ciclos de Inhalación y Exhalación (Fases de 5 segundos) </td>
     <td>https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0</td>
-    <td>Imagen 3</td>
     <td>Imagen 3</td>
   </tr>
    <tr>
-    <td>Imagen 1</td>
+    <td>PRUEBA 3: Segunda lectura en estado de reposo</td>
     <td>https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0</td>
-    <td>Imagen 3</td>
     <td>Imagen 3</td>
   </tr>
 </table>
