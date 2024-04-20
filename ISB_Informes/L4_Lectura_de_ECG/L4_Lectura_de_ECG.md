@@ -19,8 +19,8 @@ ________________________________________________________________________________
 * Jossymar León Mallma - 
 * Renato Cardoso Cardenas - 73061678
 
-https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/video_ejercicios_jossymar.mp4
 
+https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/video_ejercicios_jossymar.mp4
 ## Introducción  <a name = "t2"></a>
 [insertar parrafo de intro]
 
@@ -67,9 +67,14 @@ La derivación 1 en un ECG es una de las vistas básicas utilizadas para monitor
 Cabe resaltar que las ubicaciones mencionadas se mantuvieron para todas las pruebas. 
 
 
-https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0
 
 
+
+| Encabezado 1 | Encabezado 2 | Encabezado 3 |
+|--------------|--------------|--------------|
+| Celda 1,1    | https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0   | Celda 1,3    |
+| Celda 2,1    | Celda 2,2    | Celda 2,3    |
+| Celda 3,1    | Celda 3,2    | Celda 3,3    |
 
 
 
