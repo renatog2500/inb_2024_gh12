@@ -89,7 +89,7 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/b148188c-1bfa-4571
  
 <table align="center">
   <tr>
-    <th>Prueba 1</th>
+    <th> **(PRUEBA 1: Lectura de la señal Basal)** </th>
     <th>Prueba 2</th>
     <th>Prueba 3</th>
     <th>Prueba 3</th>
