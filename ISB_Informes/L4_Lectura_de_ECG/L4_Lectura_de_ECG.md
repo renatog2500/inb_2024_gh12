@@ -57,6 +57,10 @@ Para capturar las señales ECG, se empleó el dispositivo BITalino junto con su 
 | ![Electrodos de guía](Imagenes_L4/electrodos_guia.png) | <img src="Imagenes_L4/posicion _usada_electrodos.png" alt="Electrodos de guía" width="700"> |
 
 
+La derivación 1 en un ECG es una de las vistas básicas utilizadas para monitorear la actividad eléctrica del corazón. La colocación adecuada de los electrodos es fundamental para capturar con precisión esta actividad. En la Figura X se muestra la colocación de los electrodos para esta derivación. En esta configuración, se utilizaron tres electrodos: 
+* IN+ (rojo) se coloca en la muñeca izquierda .
+* IN- (negro) se coloca en la muñeca derecha.
+* REF (blanco) se coloca en la cresta ilíaca.
 
 
  
