@@ -253,7 +253,8 @@ Para la siguiente prueba, utilizamos el Fluke ProSim 4, un simulador de paciente
 
 | Figura X. Pruebas realizadas en ProSim. | Figura X. Colocación de los electrodos en el ProSim para la derivación I |
 |-----------------------------------------|--------------------------------------------------------------------------|
-| <img src="Imagenes_L4/Simulacion_paro_prosim4.jpg" width="300"> | <img src="Imagenes_L4/conexiones_prosim4.jpg" width="300"> |
+| <p align="center"><img src="Imagenes_L4/Simulacion_paro_prosim4.jpg" width="400"></p> | <p align="center"><img src="Imagenes_L4/conexiones_prosim4.jpg" width="400"></p> |
+
 
 
 
