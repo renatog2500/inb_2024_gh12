@@ -52,7 +52,7 @@ https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_d
 </p>
 
 ## Protocolo de conexión <a name="t5"></a>
-Para capturar las señales ECG, se empleó el dispositivo BITalino junto con su sensor ECG de tres electrodos. Se siguió el procedimiento detallado en la guía BiTalino,**(BITalino HOME-GUIDE #2 ELECTROCARDIOGRAPHY (ECG) EXPERIMENTAL GUIDES TO MEET & LEARN YOUR BIOSIGNALS")** [1], como referencia para posicionar correctamente los electrodos en el sujeto de prueba. A continuación, se presentan los protocolos de conexión específicos utilizados en cada prueba llevada a cabo en este laboratorio:
+Para capturar las señales ECG, se empleó el dispositivo BITalino junto con su sensor ECG de tres electrodos. Se siguió el procedimiento detallado en la guía BiTalino,**(BITalino HOME-GUIDE #2 ELECTROCARDIOGRAPHY (ECG) Exploring Cardiac Signals at the Skin Surface")** [1], como referencia para posicionar correctamente los electrodos en el sujeto de prueba. A continuación, se presentan los protocolos de conexión específicos utilizados en cada prueba llevada a cabo en este laboratorio:
 
 | Figura X. Colocación de electrodos para la derivación I referencia[1].                                                                                                   | Figura X. Colocación de los electrodos en el laboratorio para la derivación I                                                                                                     |
 |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
@@ -111,38 +111,6 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8
 </table>
 <p align="center">
   <b>Tabla 2. Pruebas realizadas</b>
-</p>
-
-
-
-### PRUEBA 1: Lectura de la señal Basal  <br>
-<p align="justify">
-En la prueba 1 se tomo señales EKG del sujeto de prueba en estado de reposo. Reproduzca el video para ver la 1ra toma de señal.<br>
-</p>
-
-### PRUEBA 2: Lectura de los ciclos de Inhalación y Exhalación (Fases de 5 segundos)  <br>
-<p align="justify">
-En la 2da prueba el sujeto realizó ciclos de inhalación y exhalación de intervalos de 5 segundos durante 30 segundos, se tomó la lectura del comportamiento de la señal EKG. Reproduzca el video para ver la 2da toma de señal.<br>
-</p>
-
-### PRUEBA 3: Segunda lectura en estado de reposo  <br>
-<p align="justify">
-Se realizó la toma de la señal EKG del sujeto nuevamente, posterior al ejercicio de inhalación y exhalación. Reproduzca el video para ver la 3ra toma de señal..<br>
-</p>
-
-### PRUEBA 4: Lectura posterior a la realización de ejercicios  <br>
-<p align="justify">
-Se sometió al sujeto a una serie de ejercicios físicos para posteriormente tomar la señal EKG, estas pruebas consistieron en la realización de planchas y polichinelas. Reproduzca el video para ver la 4ta toma de señal..<br>
-</p>
-
-### PRUEBA 5: Tercera lectura en estado de reposo  <br>
-<p align="justify">
-Se realizó la toma de la señal EKG del sujeto nuevamente, posterior a la serie de ejercicios. Reproduzca el video para ver la 5ta toma de señal.<br>
-</p>
-
-### PRUEBA 6: Lectura de los ciclos de Inhalación y Exhalación prolongada (Fases de 10 segundos)  <br>
-<p align="justify">
-En la 6ta prueba el sujeto realizó ciclos de inhalación y exhalación de intervalos de 10 segundos, se tomó la lectura del comportamiento de la señal EKG. Reproduzca el video para ver la 6ta toma de señal.<br>
 </p>
 
 
