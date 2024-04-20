@@ -52,13 +52,10 @@ ________________________________________________________________________________
 ## Protocolo de conexión <a name="t5"></a>
 Para capturar las señales ECG, se empleó el dispositivo BITalino junto con su sensor ECG de tres electrodos. Se siguió el procedimiento detallado en la guía BiTalino,**(BITalino HOME-GUIDE #2 ELECTROCARDIOGRAPHY (ECG) EXPERIMENTAL GUIDES TO MEET & LEARN YOUR BIOSIGNALS")** [1], como referencia para posicionar correctamente los electrodos en el sujeto de prueba. A continuación, se presentan los protocolos de conexión específicos utilizados en cada prueba llevada a cabo en este laboratorio:
 
-| Columna 1 | Columna 2 |
-|-----------|-----------|
-| <p align="center">
-  <img src="Imagenes_L4/electrodos_guia.png" alt="Electrodos de guía">
-</p> | <p align="center">
-  <img src="Imagenes_L4/posicion _usada_electrodos.png" alt="Electrodos de guía">
-</p>|
+| Columna 1                                         | Columna 2                                         |
+|---------------------------------------------------|---------------------------------------------------|
+| ![Electrodos de guía](Imagenes_L4/electrodos_guia.png) | ![Electrodos de guía](Imagenes_L4/posicion_usada_electrodos.png) |
+
 
 
 <p align="center">
