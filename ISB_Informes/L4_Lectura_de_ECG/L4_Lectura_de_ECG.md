@@ -89,17 +89,36 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/b148188c-1bfa-4571
  
 <table align="center">
   <tr>
-    <th> PRUEBA 1: Lectura de la señal Basal </th>
-    <th>Prueba 2</th>
-    <th>Prueba 3</th>
+    <th> PRUEBA </th>
+    <th> VIDEO </th>
+    <th> DESCRIPCIÓN </th>
   </tr>
   <tr>
-    <td>PRUEBA 2: Lectura de los ciclos de Inhalación y Exhalación (Fases de 5 segundos) </td>
+    <td> 1.Lectura de la señal Basal </td>
     <td>https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0</td>
     <td>Imagen 3</td>
   </tr>
    <tr>
-    <td>PRUEBA 3: Segunda lectura en estado de reposo</td>
+    <td> 2. Lectura de los ciclos de Inhalación y Exhalación (Fases de 5 segundos)</td>
+    <td>https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0</td>
+    <td>Imagen 3</td>
+  </tr>
+   <tr>
+    <td> 3. Segunda lectura en estado de repos</td>
+    <td>https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0</td>
+    <td>Imagen 3</td>
+  </tr>
+   <tr>
+    <td> 4. Lectura posterior a la realización de ejercicios </td>
+    <td>https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0</td>
+    <td>Imagen 3</td>
+  </tr>
+   <tr>
+    <td> 5.Tercera lectura en estado de reposo </td>
+    <td>https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0</td>
+    <td>Imagen 3</td>
+  </tr>
+     <td> 6.Inhalación y exhalación prolongada durante 10 segundos</td>
     <td>https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0</td>
     <td>Imagen 3</td>
   </tr>
