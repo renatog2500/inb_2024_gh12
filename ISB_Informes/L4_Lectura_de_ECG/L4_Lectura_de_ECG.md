@@ -238,7 +238,7 @@ plt.show()
 
 
 
-## **Señal del Promsim4 : ** <a name="t10"></a>
+## Señal del Promsim4 : <a name="t10"></a>
 <table align="center">
   <tr>
     <th> Simulación </th>
