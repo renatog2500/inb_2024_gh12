@@ -65,7 +65,7 @@ Para capturar las señales ECG, se empleó el dispositivo BITalino junto con su 
 La derivación 1 en un ECG es una de las vistas básicas utilizadas para monitorear la actividad eléctrica del corazón. La colocación adecuada de los electrodos es fundamental para capturar con precisión esta actividad. En la Figura X se muestra la colocación de los electrodos para esta derivación. En esta configuración, se utilizaron tres electrodos: 
 * IN+ (rojo) se coloca en la muñeca izquierda .
 * IN- (negro) se coloca en la muñeca derecha.
-* REF (blanco) se coloca en la cresta ilíaca.\
+* REF (blanco) se coloca en la cresta ilíaca.
 
 Cabe resaltar que las ubicaciones mencionadas se mantuvieron para todas las pruebas: 
 
@@ -295,14 +295,15 @@ Para la siguiente prueba, utilizamos el Fluke ProSim 4, un simulador de paciente
 //////////////////////
 
 ## **Bibliografía** <a name="t12"></a>
-[1] https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1888690/
-
-[2] https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2017.00258/full
-
-[3] https://academic.oup.com/eurheartj/article/17/3/354/485572
-
-[4] https://www.sciencedirect.com/science/article/pii/S073510970700232X
-
-[5] https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4493772/ 
+[1] I. Dotsinsky, “Review of ‘Advanced Methods and Tools for ECG Data Analysis’, by Gari D. Clifford, Francisco Azuaje and Patrick E. McSharry (Editors),” BioMedical engineering online, vol. 6, no. 1, pp. 18–18, Jan. 2007, doi: https://doi.org/10.1186/1475-925x-6-18.
+‌
+[2] F. Shaffer and J. P. Ginsberg, “An Overview of Heart Rate Variability Metrics and Norms,” Frontiers in public health, vol. 5, Sep. 2017, doi: https://doi.org/10.3389/fpubh.2017.00258.
+‌
+[3] M. Malik et al., “Heart rate variability: Standards of measurement, physiological interpretation, and clinical use,” European heart journal, vol. 17, no. 3, pp. 354–381, Mar. 1996, doi: https://doi.org/10.1093/oxfordjournals.eurheartj.a014868.
+‌
+[4] P. Kligfield et al., “Recommendations for the Standardization and Interpretation of the Electrocardiogram,” Journal of the American College of Cardiology, vol. 49, no. 10, pp. 1109–1127, Mar. 2007, doi: https://doi.org/10.1016/j.jacc.2007.01.024.
+‌
+[5] C. J. Lavie et al., “Exercise and the Cardiovascular System,” Circulation research, vol. 117, no. 2, pp. 207–219, Jul. 2015, doi: https://doi.org/10.1161/circresaha.117.305205.
+‌
 
 
