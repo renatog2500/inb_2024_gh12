@@ -247,11 +247,14 @@ plt.show()
 
 
 
-## Señal del Promsim4 : <a name="t10"></a>
+## Señal del PromSim4 : <a name="t10"></a>
 
-| Figura X. Pruebas realizadas en ProSim.                                                                                                   | Figura X. Colocación de los electrodos en el ProSim para la derivación I                                                                                                     |
-|-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| ![pruebas Prosim](Imagenes_L4/Simulacion_paro_prosim4.jpg) |  ![pruebas Prosim](Imagenes_L4/conexiones_prosim4.jpg) |
+Para la siguiente prueba, utilizamos el Fluke ProSim 4, un simulador de pacientes portátil utilizado en entornos médicos para verificar y calibrar equipos médicos, como monitores de signos vitales, electrocardiógrafos y dispositivos de infusión (más información en la página de Fluke). En el presente laboratorio, simulamos un paro cardíaco para observar la señal del electrocardiograma (ECG) y sus variaciones durante las cinco fases de este proceso.
+
+| Figura X. Pruebas realizadas en ProSim. | Figura X. Colocación de los electrodos en el ProSim para la derivación I |
+|-----------------------------------------|--------------------------------------------------------------------------|
+| <img src="Imagenes_L4/Simulacion_paro_prosim4.jpg" width="300"> | <img src="Imagenes_L4/conexiones_prosim4.jpg" width="300"> |
+
 
 
 
@@ -302,7 +305,6 @@ plt.show()
 | Paso 4. Fibrilación ventricular severa       | [Video Paso 4](https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0)              | El sujeto fue sometido a una serie de ejercicios físicos que incluyeron la realización de planchas y polichinelas. Luego de completar estos ejercicios, se procedió a tomar la señal del electrocardiograma (ECG).             |
 | Paso 5. Asistolia                            | [Video Paso 5](https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0)              | Se llevó a cabo una nueva toma de la señal del electrocardiograma (ECG) del sujeto en reposo después de completar la serie de ejercicios.                                                           |
 
-https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/Paso1_video_ProSim.mp4
 
 
 ## **Conclusiones** <a name="t11"></a>
