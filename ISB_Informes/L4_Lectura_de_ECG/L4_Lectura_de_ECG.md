@@ -251,9 +251,9 @@ plt.show()
 
 Para la siguiente prueba, utilizamos el Fluke ProSim 4, un simulador de pacientes portátil utilizado en entornos médicos para verificar y calibrar equipos médicos, como monitores de signos vitales, electrocardiógrafos y dispositivos de infusión (más información en la página de Fluke). En el presente laboratorio, simulamos un paro cardíaco para observar la señal del electrocardiograma (ECG) y sus variaciones durante las cinco fases de este proceso.
 
-| Figura X. Pruebas realizadas en ProSim. | Figura X. Colocación de los electrodos en el ProSim para la derivación I |
+| Figura X. Pruebas realizadas en ProSim.            | Figura X. Colocación de los electrodos en el ProSim para la derivación I |
 |-----------------------------------------|--------------------------------------------------------------------------|
-| <p align="center"><img src="Imagenes_L4/Simulacion_paro_prosim4.jpg" width="400"></p> | <p align="center"><img src="Imagenes_L4/conexiones_prosim4.jpg" width="400"></p> |
+| <p align="center"><img src="Imagenes_L4/Simulacion_paro_prosim4.jpg" width="400"></p>          | <p align="center"><img src="Imagenes_L4/conexiones_prosim4.jpg" width="400"></p> |
 
 
 
