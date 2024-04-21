@@ -310,11 +310,10 @@ Para la siguiente prueba, utilizamos el Fluke ProSim 4, un simulador de paciente
 
   | Simulación                                     | Señal Ploteada en Open Signals                                                           |
   |-----------------------------------------------|----------------------------------------------------------------------------------------------------|
-  | Paso 1. RSN (adulto): Frecuencia Respiratoria Normal en Adultos  | <p align="center"><img src="Imagenes_L4/Paso1_video_ProSim.mp4" width="400"></p>  |
-  | Paso 2. Onda de presión venosa central (CVP) | [Video Paso 2](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/Paso2_video_ProSim.mp4) |
-  | Paso 3. Taquicardia ventricular a 160 lpm    | [Video Paso 3](https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0)              |
-  | Paso 4. Fibrilación ventricular severa       | [Video Paso 4](https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0)              |
-  | Paso 5. Asistolia                            | [Video Paso 5](https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0)              |
+  | Paso 2. Onda de presión venosa central (CVP) | [![Miniatura del video](https://img.youtube.com/vi/mSF1GTZv84Y/0.jpg)](https://www.youtube.com/watch?v=mSF1GTZv84Y&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=9 "Haz clic para ver el video") |
+  | Paso 3. Taquicardia ventricular a 160 lpm    | [![Miniatura del video](https://img.youtube.com/vi/2MF547j3KT0/0.jpg)](https://www.youtube.com/watch?v=2MF547j3KT0&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=2 "Haz clic para ver el video")              |
+  | Paso 4. Fibrilación ventricular severa       | [![Miniatura del video](https://img.youtube.com/vi/ifsCKWEJAFA/0.jpg)](https://www.youtube.com/watch?v=ifsCKWEJAFA&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=7 "Haz clic para ver el video")              |
+  | Paso 5. Asistolia                            | [![Miniatura del video](https://img.youtube.com/vi/eaulnKYYp_c/0.jpg)](https://www.youtube.com/watch?v=eaulnKYYp_c&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=6 "Haz clic para ver el video")             |
 
 <p align="center">
   <b>Tabla 4. Videos de las pruebas realizadas en el FLuke ProSim4 </b>
@@ -323,11 +322,10 @@ Para la siguiente prueba, utilizamos el Fluke ProSim 4, un simulador de paciente
 ## Ploteo en Python de las pruebas en ProSim4
 | Simulación        | Ploteo de la señal |
 |-------------------|-----------------------------------------------|
-| Paso 1. RSN (adulto): Frecuencia Respiratoria Normal en Adultos |  |
-| Paso 2. Onda de presión venosa central (CVP) | <p align="center"><img src="Imagenes_L4/Paso2_Contracciones_ventriculares_prematuras.png" width="400"></p> |
-|  Paso 3. Taquicardia ventricular a 160 lpm  | <p align="center"><img src="Imagenes_L4/Paso3_Taquicardia.png" width="400"></p> |
-| Paso 4. Fibrilación ventricular severa |  |
-|Paso 5. Asistolia   | <p align="center"><img src="Imagenes_L4/Paso5_Asistolia.png" width="400"></p> |
+| Paso 2. Onda de presión venosa central (CVP) | ![](Imagenes_L4/Paso2_Contracciones_ventriculares_prematuras.png) |
+|  Paso 3. Taquicardia ventricular a 160 lpm  | ![](Imagenes_L4/Paso3_Taquicardia.png) |
+| Paso 4. Fibrilación ventricular severa | ![](Imagenes_L4/Fibrilacion_ventricular_severa.png) |
+|Paso 5. Asistolia   | ![](Imagenes_L4/Paso5_Asistolia.png) |
 
 <p align="center">
   <b>Tabla 5. Ploteo en Python de las pruebas realizadas en el FLuke ProSim4 </b>
