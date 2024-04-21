@@ -173,17 +173,17 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8
 
 ### **Explicación de la variación de la señal**
 
-**1. Estado de reposo (lectura basal):** Durante el estado de reposo, la señal EKG presenta un patrón regular y estable, reflejando la actividad eléctrica normal del corazón. Las ondas P, QRS y T se observan claramente, y los intervalos entre ellas son consistentes [1].
+**1. Estado de reposo (lectura basal):** Durante el estado de reposo, la señal EKG presenta un patrón regular y estable, reflejando la actividad eléctrica normal del corazón. Las ondas P, QRS y T se observan claramente, y los intervalos entre ellas son consistentes [5].
 
-**2.Inhalación y exhalación en series de 5 segundos durante 30 segundos:** Durante la inspiración, se produce un aumento en la frecuencia cardíaca y una disminución en la variabilidad de la frecuencia cardíaca (VFC). Esto se debe a la estimulación del sistema nervioso simpático y la inhibición del sistema nervioso parasimpático. Durante la espiración, se observa una disminución en la frecuencia cardíaca y un aumento en la VFC, lo que refleja la activación del sistema nervioso parasimpático [2], [3].
+**2.Inhalación y exhalación en series de 5 segundos durante 30 segundos:** Durante la inspiración, se produce un aumento en la frecuencia cardíaca y una disminución en la variabilidad de la frecuencia cardíaca (VFC). Esto se debe a la estimulación del sistema nervioso simpático y la inhibición del sistema nervioso parasimpático. Durante la espiración, se observa una disminución en la frecuencia cardíaca y un aumento en la VFC, lo que refleja la activación del sistema nervioso parasimpático [6], [7].
 
-**3. Lectura basal después de la respiración controlada:** Después de la respiración controlada, la señal EKG vuelve a un patrón similar al observado en la lectura basal inicial. Sin embargo, pueden presentarse ligeras variaciones debido a los efectos residuales de la respiración controlada en el sistema nervioso autónomo [1], [3].
+**3. Lectura basal después de la respiración controlada:** Después de la respiración controlada, la señal EKG vuelve a un patrón similar al observado en la lectura basal inicial. Sin embargo, pueden presentarse ligeras variaciones debido a los efectos residuales de la respiración controlada en el sistema nervioso autónomo [5], [7].
 
-**4. Lectura posterior a una serie de ejercicios:** Después del ejercicio, se observa un aumento significativo en la frecuencia cardíaca y cambios en la morfología de las ondas del EKG. La onda T puede aparecer invertida o aplanada, y el segmento ST puede presentar una depresión o elevación. Estos cambios se deben a la activación del sistema nervioso simpático y al aumento de las demandas metabólicas del corazón durante el ejercicio [4], [5].
+**4. Lectura posterior a una serie de ejercicios:** Después del ejercicio, se observa un aumento significativo en la frecuencia cardíaca y cambios en la morfología de las ondas del EKG. La onda T puede aparecer invertida o aplanada, y el segmento ST puede presentar una depresión o elevación. Estos cambios se deben a la activación del sistema nervioso simpático y al aumento de las demandas metabólicas del corazón durante el ejercicio [7], [8].
 
-**5. Lectura basal después del ejercicio:** Después del ejercicio, la señal EKG gradualmente vuelve a un patrón similar al de la lectura basal inicial. Sin embargo, la frecuencia cardíaca puede permanecer elevada durante un período de tiempo, y la morfología de las ondas puede tardar en normalizarse. Esto se debe a la recuperación gradual del sistema nervioso autónomo y al restablecimiento del equilibrio simpático-parasimpático [4], [5].
+**5. Lectura basal después del ejercicio:** Después del ejercicio, la señal EKG gradualmente vuelve a un patrón similar al de la lectura basal inicial. Sin embargo, la frecuencia cardíaca puede permanecer elevada durante un período de tiempo, y la morfología de las ondas puede tardar en normalizarse. Esto se debe a la recuperación gradual del sistema nervioso autónomo y al restablecimiento del equilibrio simpático-parasimpático [7], [8].
 
-**6. Inhalación y exhalación prolongada durante 10 segundos:** Durante la inhalación prolongada, se observa un aumento sostenido en la frecuencia cardíaca y una disminución en la VFC, similar a lo observado en las series de respiración más cortas. Durante la exhalación prolongada, se produce una disminución sostenida en la frecuencia cardíaca y un aumento en la VFC. Estos cambios son más pronunciados en comparación con las series de respiración más cortas debido a la mayor duración de la estimulación de los sistemas nerviosos simpático y parasimpático [2], [3].
+**6. Inhalación y exhalación prolongada durante 10 segundos:** Durante la inhalación prolongada, se observa un aumento sostenido en la frecuencia cardíaca y una disminución en la VFC, similar a lo observado en las series de respiración más cortas. Durante la exhalación prolongada, se produce una disminución sostenida en la frecuencia cardíaca y un aumento en la VFC. Estos cambios son más pronunciados en comparación con las series de respiración más cortas debido a la mayor duración de la estimulación de los sistemas nerviosos simpático y parasimpático [8], [9].
 
 
 ### **Ploteo de la señal en Python** <a name="t8"></a>
@@ -341,19 +341,18 @@ Para la siguiente prueba, utilizamos el Fluke ProSim 4, un simulador de paciente
 
 [4] BITalino (r)evolution Home Guide. PLUX-Wireless Biosignals, S A. Lisbon Portugal 2020. Disponible en: https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide2_ECG.pdf
 
-[1] I. Dotsinsky, “Review of ‘Advanced Methods and Tools for ECG Data Analysis’, by Gari D. Clifford, Francisco Azuaje and Patrick E. McSharry (Editors),” BioMedical engineering online, vol. 6, no. 1, pp. 18–18, Jan. 2007, doi: https://doi.org/10.1186/1475-925x-6-18.
+[5] I. Dotsinsky, “Review of ‘Advanced Methods and Tools for ECG Data Analysis’, by Gari D. Clifford, Francisco Azuaje and Patrick E. McSharry (Editors),” BioMedical engineering online, vol. 6, no. 1, pp. 18–18, Jan. 2007, doi: https://doi.org/10.1186/1475-925x-Imagenes_L
+
+[6] F. Shaffer and J. P. Ginsberg, “An Overview of Heart Rate Variability Metrics and Norms,” Frontiers in public health, vol. 5, Sep. 2017, doi: https://doi.org/10.3389/fpubh.2017.00258.
 ‌
 
-[2] F. Shaffer and J. P. Ginsberg, “An Overview of Heart Rate Variability Metrics and Norms,” Frontiers in public health, vol. 5, Sep. 2017, doi: https://doi.org/10.3389/fpubh.2017.00258.
+[7] M. Malik et al., “Heart rate variability: Standards of measurement, physiological interpretation, and clinical use,” European heart journal, vol. 17, no. 3, pp. 354–381, Mar. 1996, doi: https://doi.org/10.1093/oxfordjournals.eurheartj.a014868.
 ‌
 
-[3] M. Malik et al., “Heart rate variability: Standards of measurement, physiological interpretation, and clinical use,” European heart journal, vol. 17, no. 3, pp. 354–381, Mar. 1996, doi: https://doi.org/10.1093/oxfordjournals.eurheartj.a014868.
+[8] P. Kligfield et al., “Recommendations for the Standardization and Interpretation of the Electrocardiogram,” Journal of the American College of Cardiology, vol. 49, no. 10, pp. 1109–1127, Mar. 2007, doi: https://doi.org/10.1016/j.jacc.2007.01.024.
 ‌
 
-[4] P. Kligfield et al., “Recommendations for the Standardization and Interpretation of the Electrocardiogram,” Journal of the American College of Cardiology, vol. 49, no. 10, pp. 1109–1127, Mar. 2007, doi: https://doi.org/10.1016/j.jacc.2007.01.024.
-‌
-
-[5] C. J. Lavie et al., “Exercise and the Cardiovascular System,” Circulation research, vol. 117, no. 2, pp. 207–219, Jul. 2015, doi: https://doi.org/10.1161/circresaha.117.305205.
+[9] C. J. Lavie et al., “Exercise and the Cardiovascular System,” Circulation research, vol. 117, no. 2, pp. 207–219, Jul. 2015, doi: https://doi.org/10.1161/circresaha.117.305205.
 ‌
 
 
