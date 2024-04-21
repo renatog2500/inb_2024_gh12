@@ -126,46 +126,7 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8
 | 4. Lectura posterior a la realización de ejercicios |[![Miniatura del video](https://img.youtube.com/vi/TCozf52vHHc/0.jpg)](https://www.youtube.com/watch?v=TCozf52vHHc&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=5 "Haz clic para ver el video")   | El sujeto fue sometido a una serie de ejercicios físicos que incluyeron la realización de planchas y polichinelas. Luego de completar estos ejercicios, se procedió a tomar la señal del electrocardiograma (ECG).   |
 | 5.Tercera lectura en estado de reposo | [![Miniatura del video](https://img.youtube.com/vi/QQnHKHVdN3U/0.jpg)](https://www.youtube.com/watch?v=QQnHKHVdN3U&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=4 "Haz clic para ver el video") | Se llevó a cabo una nueva toma de la señal del electrocardiograma (ECG) del sujeto en reposo después de completar la serie de ejercicios.   |
 | 6.Inhalación y exhalación prolongada durante 10 segundos | [![Miniatura del video](https://img.youtube.com/vi/lHYRxELjat0/0.jpg)](https://www.youtube.com/watch?v=lHYRxELjat0&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=8 "Haz clic para ver el video")   | En la sexta prueba, el sujeto llevó a cabo ciclos de inhalación y exhalación en intervalos de 10 segundos. Durante este proceso, se registró y analizó el comportamiento de la señal del electrocardiograma (ECG).  |
-<table align="center">
- 
- 
- <tr>
-    <th> PRUEBA </th>
-    <th> VIDEO </th>
-    <th> DESCRIPCIÓN </th>
-  </tr>
-  <tr>
-    <th> 1.Lectura de la señal Basal </th>
-    <td> <img src="Imagenes_L4/Basal_1.png"> </td>
-    <td> En la prueba 1 se tomo señales ECG del sujeto de prueba en estado de reposo.</td>
-  </tr>
-   <tr>
-    <th> 2. Lectura de los ciclos de Inhalación y Exhalación (Fases de 5 segundos)</th>
-    <td><img src="Imagenes_L4/ciclo_inhalation_exhalation.png"></td>
-    <td>En la 2da prueba el sujeto realizó ciclos de inhalación y exhalación de intervalos de 5 segundos durante 30 segundos, se tomó la lectura del comportamiento de la señal ECG.</td>
-  </tr>
-   <tr>
-    <th> 3. Segunda lectura en estado de repos</th>
-    <td><img src="Imagenes_L4/Basal_2_post_Inhalación.png"></td>
-    <td> Se volvió a realizar la captura de la señal del electrocardiograma (ECG) del sujeto después de la sesión de ejercicios de inhalación y exhalación. </td>
-  </tr>
-   <tr>
-    <th> 4. Lectura posterior a la realización de ejercicios </th>
-    <td><img src="Imagenes_L4/Post_ejercicio.png"></td>
-    <td>El sujeto fue sometido a una serie de ejercicios físicos que incluyeron la realización de planchas y polichinelas. Luego de completar estos ejercicios, se procedió a tomar la señal del electrocardiograma (ECG). </td>
-  </tr>
-   <tr>
-    <th> 5.Tercera lectura en estado de reposo </th>
-    <td><img src="Imagenes_L4/Basal_3_Post_ejercició.png"></td>
-    <td>Se llevó a cabo una nueva toma de la señal del electrocardiograma (ECG) del sujeto en reposo después de completar la serie de ejercicios. </td>
-  </tr>
-     <th> 6.Inhalación y exhalación prolongada durante 10 segundos</th>
-    <td><img src="Imagenes_L4/Inhalación_larga.png"></td>
-    <td>En la sexta prueba, el sujeto llevó a cabo ciclos de inhalación y exhalación en intervalos de 10 segundos. Durante este proceso, se registró y analizó el comportamiento de la señal del electrocardiograma (ECG).
 
-</td>
-  </tr>
-</table>
 <p align="center">
   <b>Tabla 2. Videos del Protocolo </b>
 </p>
@@ -193,7 +154,7 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8
 | **1.Lectura de la señal Basal**| <img src="Imagenes_L4/Basal_1.png" alt="Electrodos de guía" width="700">|
 | **2. Lectura de los ciclos de Inhalación y Exhalación (Fases de 5 segundos)** | <img src="Imagenes_L4/ciclo_inhalation_exhalation.png" alt="Electrodos de guía" width="700">|
 | **3. Segunda lectura Basal** | <img src="Imagenes_L4/Basal_2_post_Inhalación.png" alt="Electrodos de guía" width="700">|
-| **4. Lectura posterior a la realización de ejercicios (no esta)** | <img src="Imagenes_L4/Basal_2_post_Inhalación.png" alt="Electrodos de guía" width="700">|
+| **4. Lectura posterior a la realización de ejercicios (no esta)** | <img src="Imagenes_L4/Post_ejercicio.png" alt="Electrodos de guía" width="700">|
 | **5.Tercera lectura Basal** |<img src="Imagenes_L4/Basal_3_Post_ejercició.png" alt="Electrodos de guía" width="700"> |
 | **6.Inhalación y exhalación prolongada durante 10 segundos** | <img src="Imagenes_L4/Inhalación_larga.png" alt="Electrodos de guía" width="700"> |
 
