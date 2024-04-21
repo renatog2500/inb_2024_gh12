@@ -12,8 +12,7 @@
    6.2 [Ploteo de la señal en Python](#t8)\
    6.3 [Archivos de la señal ploteada en Python y datos de la señal](#t9)
 7. [Señal del Promsim4](#t10)
-8. [Conclusiones](#t11)
-9. [Bibliografía](#t12)
+8. [Bibliografía](#t11)
 __________________________________________________________________________________________________
 ## **Lista de participantes** <a name = "t1"></a>
 * Jimena Alpiste Espinoza - 74297329
@@ -331,11 +330,6 @@ Para la siguiente prueba, utilizamos el Fluke ProSim 4, un simulador de paciente
   <b>Tabla 5. Ploteo en Python de las pruebas realizadas en el FLuke ProSim4 </b>
 </p>
 
-
-
-## **Conclusiones** <a name="t11"></a>
-
-//////////////////////
 
 ## **Bibliografía** <a name="t12"></a>
 [1] E. A. Ashley and J. Niebauer, “Conquering the ECG,” Nih.gov, 2024. https://www.ncbi.nlm.nih.gov/books/NBK2214/ (accessed Apr. 20, 2024).
