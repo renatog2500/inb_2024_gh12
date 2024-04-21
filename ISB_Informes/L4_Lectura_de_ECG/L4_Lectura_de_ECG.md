@@ -27,18 +27,24 @@ Cuando el impulso cardíaco se transmite a través del corazón, la corriente el
 
 El ECG es una modalidad de diagnóstico no invasiva que tiene un impacto clínico sustancial en la investigación de la gravedad de las enfermedades cardiovasculares. Se utiliza cada vez más para monitorear pacientes que toman antiarrítmicos y otros medicamentos, como parte integral de la evaluación preoperatoria de pacientes sometidos a cirugía no cardíaca, y para evaluar a personas en ocupaciones de alto riesgo y a quienes practican deportes[2]. 
 
-![wCF14V](https://github.com/renatog2500/inb_2024_gh12/assets/130946164/524d1208-8762-46c6-a17e-227118af87d8)
-Extraído de [Make a Gif)](https://makeagif.com/gif/ecg-animation-electrical-changes-in-heart-wCF14V)
-
 <div align="center">
     <img src="https://github.com/renatog2500/inb_2024_gh12/assets/130946164/524d1208-8762-46c6-a17e-227118af87d8" alt="wCF14V">
-    <p>Extraído de <a href="https://makeagif.com/gif/ecg-animation-electrical-changes-in-heart-wCF14V">Make a Gif</a></p>
+    <p>Extraído de <a href="https://cardiologialosmochis.com/portfolio/electrocardiograma/">cardiologialosmochis</a></p>
 </div>
+
 
 
 **Señal de un Electrocardiograma**: 
 Las fluctuaciones en el voltaje extracelular registrado por cada derivación varían desde fracciones de un milivoltio hasta varios milivoltios. Estas fluctuaciones se llaman ondas. 
 En la señal ECG podemos observar las siguientes ondas [3]:
+<div align="center">
+    <img src="https://github.com/renatog2500/inb_2024_gh12/assets/130946164/6ced31e4-9fb6-4254-a8ea-e8a6aec2d043" alt="wCF14V">
+    <p>Extraído de <a href="https://makeagif.com/gif/ecg-animation-electrical-changes-in-heart-wCF14V">Make a Gif</a></p>
+</div>
+
+<p align="center">
+  <b>Figura 1. Señal de un ECG E</b>
+</p>
 
 - Onda P: Es la primera deflexión hacia arriba. Se produce cuando se despolarizan las aurículas antes del comienzo de la contraciión auricular. La onda P debe ser suave, redondeada y positiva (hacia arriba).
 
@@ -88,7 +94,7 @@ En la señal ECG podemos observar las siguientes ondas [3]:
 ## Protocolo de conexión <a name="t5"></a>
 Para capturar las señales ECG, se empleó el dispositivo BITalino junto con su sensor ECG de tres electrodos. Se siguió el procedimiento detallado en la guía BiTalino,**(BITalino HOME-GUIDE #2 ELECTROCARDIOGRAPHY (ECG) Exploring Cardiac Signals at the Skin Surface")** [X], como referencia para posicionar correctamente los electrodos en el sujeto de prueba. A continuación, se presentan los protocolos de conexión específicos utilizados en cada prueba llevada a cabo en este laboratorio:
 
-| Figura X. Colocación de electrodos para la derivación I referencia[1].                                                                                                   | Figura X. Colocación de los electrodos en el laboratorio para la derivación I                                                                                                     |
+| Figura 2. Colocación de electrodos para la derivación I referencia[1].                                                                                                   | Figura 3. Colocación de los electrodos en el laboratorio para la derivación I                                                                                                     |
 |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | ![Electrodos de guía](Imagenes_L4/electrodos_guia.png) | <img src="Imagenes_L4/posicion _usada_electrodos.png" alt="Electrodos de guía" width="700"> |
 
@@ -306,7 +312,7 @@ plt.show()
 
 Para la siguiente prueba, utilizamos el Fluke ProSim 4, un simulador de pacientes portátil utilizado en entornos médicos para verificar y calibrar equipos médicos, como monitores de signos vitales, electrocardiógrafos y dispositivos de infusión (más información en la página de Fluke). En el presente laboratorio, simulamos un paro cardíaco para observar la señal del electrocardiograma (ECG) y sus variaciones durante las cinco fases de este proceso.
 
-| Figura X. Pruebas realizadas en ProSim.            | Figura X. Colocación de los electrodos en el ProSim para la derivación I |
+| Figura 4. Pruebas realizadas en ProSim.            | Figura 5. Colocación de los electrodos en el ProSim para la derivación I |
 |-----------------------------------------|--------------------------------------------------------------------------|
 | <p align="center"><img src="Imagenes_L4/Simulacion_paro_prosim4.jpg" width="400"></p>          | <p align="center"><img src="Imagenes_L4/conexiones_prosim4.jpg" width="400"></p> |
 
