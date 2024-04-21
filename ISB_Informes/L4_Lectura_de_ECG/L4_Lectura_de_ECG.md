@@ -121,12 +121,12 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8
 ### **Visualización de señal eléctrica mediante video y OpenSignalsl** <a name="t7"></a>
 | Prueba   | Señal Ploteada en Open Signals   | Descripción    |
 | --------- | ---- | --------- |
-| 1.Lectura de la señal Basal  | [![](https://markdown-videos-api.jorgenkh.no/youtu.be/Dw4YXP73Ndo)](https://youtu.be/Dw4YXP73Ndo)    | En la prueba 1 se tomo señales ECG del sujeto de prueba en estado de reposo.|
-| 2. Lectura de los ciclos de Inhalación y Exhalación (Fases de 5 segundos) | 30   | En la 2da prueba el sujeto realizó ciclos de inhalación y exhalación de intervalos de 5 segundos durante 30 segundos, se tomó la lectura del comportamiento de la señal ECG. |
-| 3.Segunda lectura en estado de reposo | 28   | Se volvió a realizar la captura de la señal del electrocardiograma (ECG) del sujeto después de la sesión de ejercicios de inhalación y exhalación.|
-| 4. Lectura posterior a la realización de ejercicios | 28   | El sujeto fue sometido a una serie de ejercicios físicos que incluyeron la realización de planchas y polichinelas. Luego de completar estos ejercicios, se procedió a tomar la señal del electrocardiograma (ECG).   |
-| 5.Tercera lectura en estado de reposo | 28   | Se llevó a cabo una nueva toma de la señal del electrocardiograma (ECG) del sujeto en reposo después de completar la serie de ejercicios.   |
-| 6.Inhalación y exhalación prolongada durante 10 segundos | 28   | En la sexta prueba, el sujeto llevó a cabo ciclos de inhalación y exhalación en intervalos de 10 segundos. Durante este proceso, se registró y analizó el comportamiento de la señal del electrocardiograma (ECG).  |
+| 1.Lectura de la señal Basal  | [![](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/Basal_1.png)](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/1_Basal_normal.mp4)    | En la prueba 1 se tomo señales ECG del sujeto de prueba en estado de reposo.|
+| 2. Lectura de los ciclos de Inhalación y Exhalación (Fases de 5 segundos) | [![](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/ciclo_inhalation_exhalation.png)](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/2_inhalacion_exhalacion_5Seg.mp4)   | En la 2da prueba el sujeto realizó ciclos de inhalación y exhalación de intervalos de 5 segundos durante 30 segundos, se tomó la lectura del comportamiento de la señal ECG. |
+| 3.Segunda lectura en estado de reposo | [![](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/Basal_2_post_Inhalaci%C3%B3n.png)](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/3_Basal2.mp4)  | Se volvió a realizar la captura de la señal del electrocardiograma (ECG) del sujeto después de la sesión de ejercicios de inhalación y exhalación.|
+| 4. Lectura posterior a la realización de ejercicios | [![](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/Paso4_video_ProSim.mp4)](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/4_PostEntrenamiento.mp4)   | El sujeto fue sometido a una serie de ejercicios físicos que incluyeron la realización de planchas y polichinelas. Luego de completar estos ejercicios, se procedió a tomar la señal del electrocardiograma (ECG).   |
+| 5.Tercera lectura en estado de reposo | [![](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/Inhalaci%C3%B3n_larga.png)](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/5_Basal3.mp4) | Se llevó a cabo una nueva toma de la señal del electrocardiograma (ECG) del sujeto en reposo después de completar la serie de ejercicios.   |
+| 6.Inhalación y exhalación prolongada durante 10 segundos | [![](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/Inhalaci%C3%B3n_larga.png)](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/6_InhalacionProfunda.mp4)   | En la sexta prueba, el sujeto llevó a cabo ciclos de inhalación y exhalación en intervalos de 10 segundos. Durante este proceso, se registró y analizó el comportamiento de la señal del electrocardiograma (ECG).  |
 <table align="center">
  
  
@@ -137,7 +137,7 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8
   </tr>
   <tr>
     <th> 1.Lectura de la señal Basal </th>
-    <td> [![](https://markdown-videos-api.jorgenkh.no/youtube/gG2bqgt_6po)](https://youtu.be/gG2bqgt_6po)</td>
+    <td> ![](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/Basal_1.png) </td>
     <td> En la prueba 1 se tomo señales ECG del sujeto de prueba en estado de reposo.</td>
   </tr>
    <tr>
