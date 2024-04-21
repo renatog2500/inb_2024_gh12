@@ -121,12 +121,12 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8
 ### **Visualización de señal eléctrica mediante video y OpenSignalsl** <a name="t7"></a>
 | Prueba   | Señal Ploteada en Open Signals   | Descripción    |
 | --------- | ---- | --------- |
-| 1.Lectura de la señal Basal  | [[![Miniatura del video](https://img.youtube.com/vi/-wfPedZAewY/0.jpg)](https://www.youtube.com/watch?v=-wfPedZAewY&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=2)    | En la prueba 1 se tomo señales ECG del sujeto de prueba en estado de reposo.|
-| 2. Lectura de los ciclos de Inhalación y Exhalación (Fases de 5 segundos) | [![](https://img.youtube.com/vi/<VIDEO_ID>/maxresdefault.jpg)](https://www.youtube.com/watch?v=tKcrb_DEtSk&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=10)   | En la 2da prueba el sujeto realizó ciclos de inhalación y exhalación de intervalos de 5 segundos durante 30 segundos, se tomó la lectura del comportamiento de la señal ECG. |
-| 3.Segunda lectura en estado de reposo | [![](https://img.youtube.com/vi/<VIDEO_ID>/maxresdefault.jpg)](https://www.youtube.com/watch?v=Ae_AFhxrdck&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=3)  | Se volvió a realizar la captura de la señal del electrocardiograma (ECG) del sujeto después de la sesión de ejercicios de inhalación y exhalación.|
-| 4. Lectura posterior a la realización de ejercicios | [![](https://img.youtube.com/vi/<VIDEO_ID>/maxresdefault.jpg)](https://www.youtube.com/watch?v=TCozf52vHHc&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=5)   | El sujeto fue sometido a una serie de ejercicios físicos que incluyeron la realización de planchas y polichinelas. Luego de completar estos ejercicios, se procedió a tomar la señal del electrocardiograma (ECG).   |
-| 5.Tercera lectura en estado de reposo | [![](https://img.youtube.com/vi/<VIDEO_ID>/maxresdefault.jpg)](https://www.youtube.com/watch?v=QQnHKHVdN3U&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=4) | Se llevó a cabo una nueva toma de la señal del electrocardiograma (ECG) del sujeto en reposo después de completar la serie de ejercicios.   |
-| 6.Inhalación y exhalación prolongada durante 10 segundos | [![](https://img.youtube.com/vi/<VIDEO_ID>/maxresdefault.jpg)](https://www.youtube.com/watch?v=lHYRxELjat0&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=8)   | En la sexta prueba, el sujeto llevó a cabo ciclos de inhalación y exhalación en intervalos de 10 segundos. Durante este proceso, se registró y analizó el comportamiento de la señal del electrocardiograma (ECG).  |
+| 1.Lectura de la señal Basal  | [![Miniatura del video](https://img.youtube.com/vi/-wfPedZAewY/0.jpg)](https://www.youtube.com/watch?v=-wfPedZAewY&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=2)    | En la prueba 1 se tomo señales ECG del sujeto de prueba en estado de reposo.|
+| 2. Lectura de los ciclos de Inhalación y Exhalación (Fases de 5 segundos) | [![Miniatura del video](https://img.youtube.com/vi/tKcrb_DEtSk/0.jpg)](https://www.youtube.com/watch?v=tKcrb_DEtSk&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=10)   | En la 2da prueba el sujeto realizó ciclos de inhalación y exhalación de intervalos de 5 segundos durante 30 segundos, se tomó la lectura del comportamiento de la señal ECG. |
+| 3.Segunda lectura en estado de reposo | [![Miniatura del video](https://img.youtube.com/vi/Ae_AFhxrdck/0.jpg)](https://www.youtube.com/watch?v=Ae_AFhxrdck&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=3 )  | Se volvió a realizar la captura de la señal del electrocardiograma (ECG) del sujeto después de la sesión de ejercicios de inhalación y exhalación.|
+| 4. Lectura posterior a la realización de ejercicios |[![Miniatura del video](https://img.youtube.com/vi/TCozf52vHHc/0.jpg)](https://www.youtube.com/watch?v=TCozf52vHHc&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=5 "Haz clic para ver el video")   | El sujeto fue sometido a una serie de ejercicios físicos que incluyeron la realización de planchas y polichinelas. Luego de completar estos ejercicios, se procedió a tomar la señal del electrocardiograma (ECG).   |
+| 5.Tercera lectura en estado de reposo | [![Miniatura del video](https://img.youtube.com/vi/QQnHKHVdN3U/0.jpg)](https://www.youtube.com/watch?v=QQnHKHVdN3U&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=4 "Haz clic para ver el video") | Se llevó a cabo una nueva toma de la señal del electrocardiograma (ECG) del sujeto en reposo después de completar la serie de ejercicios.   |
+| 6.Inhalación y exhalación prolongada durante 10 segundos | [![Miniatura del video](https://img.youtube.com/vi/lHYRxELjat0/0.jpg)](https://www.youtube.com/watch?v=lHYRxELjat0&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=8 "Haz clic para ver el video")   | En la sexta prueba, el sujeto llevó a cabo ciclos de inhalación y exhalación en intervalos de 10 segundos. Durante este proceso, se registró y analizó el comportamiento de la señal del electrocardiograma (ECG).  |
 <table align="center">
  
  
@@ -137,31 +137,31 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8
   </tr>
   <tr>
     <th> 1.Lectura de la señal Basal </th>
-    <td> <img src="Imagenes_L4/Basal_1.png" width="400" height="300"> </td>
+    <td> <img src="Imagenes_L4/Basal_1.png"> </td>
     <td> En la prueba 1 se tomo señales ECG del sujeto de prueba en estado de reposo.</td>
   </tr>
    <tr>
     <th> 2. Lectura de los ciclos de Inhalación y Exhalación (Fases de 5 segundos)</th>
-    <td>https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0</td>
+    <td><img src="Imagenes_L4/ciclo_inhalation_exhalation.png"></td>
     <td>En la 2da prueba el sujeto realizó ciclos de inhalación y exhalación de intervalos de 5 segundos durante 30 segundos, se tomó la lectura del comportamiento de la señal ECG.</td>
   </tr>
    <tr>
     <th> 3. Segunda lectura en estado de repos</th>
-    <td>https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0</td>
+    <td><img src="Imagenes_L4/Basal_2_post_Inhalación.png"></td>
     <td> Se volvió a realizar la captura de la señal del electrocardiograma (ECG) del sujeto después de la sesión de ejercicios de inhalación y exhalación. </td>
   </tr>
    <tr>
     <th> 4. Lectura posterior a la realización de ejercicios </th>
-    <td>https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0</td>
+    <td><img src="Imagenes_L4/Post_ejercicio.png"></td>
     <td>El sujeto fue sometido a una serie de ejercicios físicos que incluyeron la realización de planchas y polichinelas. Luego de completar estos ejercicios, se procedió a tomar la señal del electrocardiograma (ECG). </td>
   </tr>
    <tr>
     <th> 5.Tercera lectura en estado de reposo </th>
-    <td>https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0</td>
+    <td><img src="Imagenes_L4/Basal_3_Post_ejercició.png"></td>
     <td>Se llevó a cabo una nueva toma de la señal del electrocardiograma (ECG) del sujeto en reposo después de completar la serie de ejercicios. </td>
   </tr>
      <th> 6.Inhalación y exhalación prolongada durante 10 segundos</th>
-    <td>https://github.com/renatog2500/inb_2024_gh12/assets/130946164/dc749f45-d7ee-46b9-a4ab-283b90a89cf0</td>
+    <td><img src="Imagenes_L4/Inhalación_larga.png"></td>
     <td>En la sexta prueba, el sujeto llevó a cabo ciclos de inhalación y exhalación en intervalos de 10 segundos. Durante este proceso, se registró y analizó el comportamiento de la señal del electrocardiograma (ECG).
 
 </td>
