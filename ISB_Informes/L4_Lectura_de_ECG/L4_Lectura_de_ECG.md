@@ -39,11 +39,10 @@ Las fluctuaciones en el voltaje extracelular registrado por cada derivación var
 En la señal ECG podemos observar las siguientes ondas [3]:
 <div align="center">
     <img src="https://github.com/renatog2500/inb_2024_gh12/assets/130946164/6ced31e4-9fb6-4254-a8ea-e8a6aec2d043" alt="wCF14V">
-    <p>Extraído de <a href="https://makeagif.com/gif/ecg-animation-electrical-changes-in-heart-wCF14V">Make a Gif</a></p>
 </div>
 
 <p align="center">
-  <b>Figura 1. Señal de un ECG E</b>
+  <b>Figura 1. Señal de un ECG </b> <p> - Extraído de <a href="https://makeagif.com/gif/ecg-animation-electrical-changes-in-heart-wCF14V">Make a Gif</a></p>
 </p>
 
 - Onda P: Es la primera deflexión hacia arriba. Se produce cuando se despolarizan las aurículas antes del comienzo de la contraciión auricular. La onda P debe ser suave, redondeada y positiva (hacia arriba).
