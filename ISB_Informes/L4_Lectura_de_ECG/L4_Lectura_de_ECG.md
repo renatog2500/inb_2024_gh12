@@ -21,7 +21,6 @@ ________________________________________________________________________________
 * Renato Cardoso Cardenas - 73061678
 
 
-https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/Imagenes_L4/video_ejercicios_jossymar.mp4
 ## Introducción  <a name = "t2"></a>
 Cuando el impulso cardíaco se transmite a través del corazón, la corriente eléctrica se extiende hacia los tejidos circundantes. Una pequeña fracción de esta corriente se disemina hacia la superficie corporal. Al colocar electrodos en la piel en diferentes áreas alrededor del corazón, es posible registrar los potenciales eléctricos generados por esta corriente; este registro se conoce como electrocardiograma (ECG) [1].
 
