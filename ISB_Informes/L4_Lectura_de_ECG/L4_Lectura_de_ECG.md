@@ -332,11 +332,12 @@ Para la siguiente prueba, utilizamos el Fluke ProSim 4, un simulador de paciente
 
 
 ## **Bibliografía** <a name="t12"></a>
-[1] E. A. Ashley and J. Niebauer, “Conquering the ECG,” Nih.gov, 2024. https://www.ncbi.nlm.nih.gov/books/NBK2214/ (accessed Apr. 20, 2024).
+[1] S. Śmigiel, K. Pałczyński, y D. Ledziński, “ECG signal classification using deep learning techniques based on the PTB-XL dataset”, Entropy (Basel), vol. 23, núm. 9, p. 1121, 2021.
 
 [2]Y. Sattar and L. Chhabra, “Electrocardiogram,” Nih.gov, Jun. 05, 2023. https://www.ncbi.nlm.nih.gov/books/NBK549803/ (accessed Apr. 20, 2024).
 
-[3] R. Joe Noble, J Stanley Hillis, and D. A. Rothbaum, “Electrocardiography,” Nih.gov, 2024. https://www.ncbi.nlm.nih.gov/books/NBK354/ (accessed Apr. 20, 2024).
+[3] M. A. Russo, D. M. Santarelli, y D. O’Rourke, “The physiological effects of slow breathing in the healthy human”, Breathe (Sheff), vol. 13, núm. 4, pp. 298–309, 2017.
+
 
 [4] BITalino (r)evolution Home Guide. PLUX-Wireless Biosignals, S A. Lisbon Portugal 2020. Disponible en: https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide2_ECG.pdf
 
