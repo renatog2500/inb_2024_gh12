@@ -41,9 +41,10 @@ En la señal ECG podemos observar las siguientes ondas [3]:
     <img src="https://github.com/renatog2500/inb_2024_gh12/assets/130946164/6ced31e4-9fb6-4254-a8ea-e8a6aec2d043" alt="wCF14V">
 </div>
 
-<p align="center">
-  <b>Figura 1. Señal de un ECG </b> <p> - Extraído de <a href="https://makeagif.com/gif/ecg-animation-electrical-changes-in-heart-wCF14V">Make a Gif</a></p>
-</p>
+<div align="center">
+    <img src="https://github.com/renatog2500/inb_2024_gh12/assets/130946164/524d1208-8762-46c6-a17e-227118af87d8" alt="Señal de ECG">
+    <p><b>Figura 1. Señal de un ECG </b> - Extraído de <a href="https://makeagif.com/gif/ecg-animation-electrical-changes-in-heart-wCF14V">cardiologialosmochis</a></p>
+</div>
 
 - Onda P: Es la primera deflexión hacia arriba. Se produce cuando se despolarizan las aurículas antes del comienzo de la contraciión auricular. La onda P debe ser suave, redondeada y positiva (hacia arriba).
 
