@@ -37,12 +37,9 @@ El ECG es una modalidad de diagnóstico no invasiva que tiene un impacto clínic
 **Señal de un Electrocardiograma**: 
 Las fluctuaciones en el voltaje extracelular registrado por cada derivación varían desde fracciones de un milivoltio hasta varios milivoltios. Estas fluctuaciones se llaman ondas. 
 En la señal ECG podemos observar las siguientes ondas [3]:
-<div align="center">
-    <img src="https://github.com/renatog2500/inb_2024_gh12/assets/130946164/6ced31e4-9fb6-4254-a8ea-e8a6aec2d043" alt="wCF14V">
-</div>
 
 <div align="center">
-    <img src="https://github.com/renatog2500/inb_2024_gh12/assets/130946164/524d1208-8762-46c6-a17e-227118af87d8" alt="Señal de ECG">
+     <img src="https://github.com/renatog2500/inb_2024_gh12/assets/130946164/6ced31e4-9fb6-4254-a8ea-e8a6aec2d043" alt="wCF14V">
     <p><b>Figura 1. Señal de un ECG </b> - Extraído de <a href="https://makeagif.com/gif/ecg-animation-electrical-changes-in-heart-wCF14V">cardiologialosmochis</a></p>
 </div>
 
