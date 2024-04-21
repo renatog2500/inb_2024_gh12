@@ -33,7 +33,6 @@ El ECG es una modalidad de diagnóstico no invasiva que tiene un impacto clínic
 </div>
 
 
-
 **Señal de un Electrocardiograma**: 
 Las fluctuaciones en el voltaje extracelular registrado por cada derivación varían desde fracciones de un milivoltio hasta varios milivoltios. Estas fluctuaciones se llaman ondas. 
 En la señal ECG podemos observar las siguientes ondas [3]:
@@ -54,12 +53,6 @@ En la señal ECG podemos observar las siguientes ondas [3]:
 - Onda T: Se produce por los potenciales que se generan cuando los ventriculos se recuperan del estado de despolarización. Permite a los ventrículos relajarse y prepararse para el siguiente ciclo cardíaco. Esta onda se manifiesta como una deflexión positiva (hacia arriba).
 
 - Segmento TP: Este segmento representa el período en el que los ventrículos están completamente relajados y en reposo.
-
-
-
-[1] E. A. Ashley and J. Niebauer, “Conquering the ECG,” Nih.gov, 2024. https://www.ncbi.nlm.nih.gov/books/NBK2214/ (accessed Apr. 20, 2024).
-[2]Y. Sattar and L. Chhabra, “Electrocardiogram,” Nih.gov, Jun. 05, 2023. https://www.ncbi.nlm.nih.gov/books/NBK549803/ (accessed Apr. 20, 2024).
-[3] R. Joe Noble, J Stanley Hillis, and D. A. Rothbaum, “Electrocardiography,” Nih.gov, 2024. https://www.ncbi.nlm.nih.gov/books/NBK354/ (accessed Apr. 20, 2024).
 
 ## **Objetivos del Laboratorio** <a name = "t3"></a>
 * Adquirir señales biomédicas de ECG.
@@ -89,20 +82,20 @@ En la señal ECG podemos observar las siguientes ondas [3]:
 </p>
 
 ## Protocolo de conexión <a name="t5"></a>
-Para capturar las señales ECG, se empleó el dispositivo BITalino junto con su sensor ECG de tres electrodos. Se siguió el procedimiento detallado en la guía BiTalino,**(BITalino HOME-GUIDE #2 ELECTROCARDIOGRAPHY (ECG) Exploring Cardiac Signals at the Skin Surface")** [X], como referencia para posicionar correctamente los electrodos en el sujeto de prueba. A continuación, se presentan los protocolos de conexión específicos utilizados en cada prueba llevada a cabo en este laboratorio:
+Para capturar las señales ECG, se empleó el dispositivo BITalino junto con su sensor ECG de tres electrodos. Se siguió el procedimiento detallado en la guía BiTalino,**(BITalino HOME-GUIDE #2 ELECTROCARDIOGRAPHY (ECG) Exploring Cardiac Signals at the Skin Surface")** [4], como referencia para posicionar correctamente los electrodos en el sujeto de prueba. A continuación, se presentan los protocolos de conexión específicos utilizados en cada prueba llevada a cabo en este laboratorio:
 
-| Figura 2. Colocación de electrodos para la derivación I referencia[1].                                                                                                   | Figura 3. Colocación de los electrodos en el laboratorio para la derivación I                                                                                                     |
+| Figura 2. Colocación de electrodos para la derivación I referencia[4].                                                                                                   | Figura 3. Colocación de los electrodos en el laboratorio para la derivación I                                                                                                     |
 |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | ![Electrodos de guía](Imagenes_L4/electrodos_guia.png) | <img src="Imagenes_L4/posicion _usada_electrodos.png" alt="Electrodos de guía" width="700"> |
 
 
-La derivación 1 en un ECG es una de las vistas básicas utilizadas para monitorear la actividad eléctrica del corazón. La colocación adecuada de los electrodos es fundamental para capturar con precisión esta actividad. En la Figura X se muestra la colocación de los electrodos para esta derivación. En esta configuración, se utilizaron tres electrodos: 
+La derivación 1 en un ECG es una de las vistas básicas utilizadas para monitorear la actividad eléctrica del corazón. La colocación adecuada de los electrodos es fundamental para capturar con precisión esta actividad. En la Figura 2 se muestra la colocación de los electrodos para esta derivación. En esta configuración, se utilizaron tres electrodos: 
 * IN+ (rojo) se coloca en la muñeca izquierda .
 * IN- (negro) se coloca en la muñeca derecha.
 * REF (blanco) se coloca en la cresta ilíaca.
 
 **Protocolo:**
-El protocolo seguido para evaluar el latido del corazón en vivo con electrocardiografía fue el de la guía experimental de BITalino [X]:
+El protocolo seguido para evaluar el latido del corazón en vivo con electrocardiografía fue el de la guía experimental de BITalino [4]:
 1. Registrar una línea base de señal con poco ruido y sin movimientos (respiración normal) durante 30 segundos.
 2. Repetir un ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER tres veces, manteniendo la respiración y fases de reposo durante cinco segundos.
 3. Registrar otra fase inicial de 30 segundos.
@@ -348,8 +341,13 @@ Para la siguiente prueba, utilizamos el Fluke ProSim 4, un simulador de paciente
 //////////////////////
 
 ## **Bibliografía** <a name="t12"></a>
+[1] E. A. Ashley and J. Niebauer, “Conquering the ECG,” Nih.gov, 2024. https://www.ncbi.nlm.nih.gov/books/NBK2214/ (accessed Apr. 20, 2024).
 
-[X] BITalino (r)evolution Home Guide. PLUX-Wireless Biosignals, S A. Lisbon Portugal 2020. Disponible en: https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide2_ECG.pdf
+[2]Y. Sattar and L. Chhabra, “Electrocardiogram,” Nih.gov, Jun. 05, 2023. https://www.ncbi.nlm.nih.gov/books/NBK549803/ (accessed Apr. 20, 2024).
+
+[3] R. Joe Noble, J Stanley Hillis, and D. A. Rothbaum, “Electrocardiography,” Nih.gov, 2024. https://www.ncbi.nlm.nih.gov/books/NBK354/ (accessed Apr. 20, 2024).
+
+[4] BITalino (r)evolution Home Guide. PLUX-Wireless Biosignals, S A. Lisbon Portugal 2020. Disponible en: https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide2_ECG.pdf
 
 [1] I. Dotsinsky, “Review of ‘Advanced Methods and Tools for ECG Data Analysis’, by Gari D. Clifford, Francisco Azuaje and Patrick E. McSharry (Editors),” BioMedical engineering online, vol. 6, no. 1, pp. 18–18, Jan. 2007, doi: https://doi.org/10.1186/1475-925x-6-18.
 ‌
