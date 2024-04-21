@@ -137,7 +137,7 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8
   </tr>
   <tr>
     <th> 1.Lectura de la señal Basal </th>
-    <td> <img src="/Imagenes_L4/Basal_1.png" width="400" height="300"> </td>
+    <td> <img src="https://github.com/renatog2500/inb_2024_gh12/blob/main/Imagenes_L4/Basal_1.png" width="400" height="300"> </td>
     <td> En la prueba 1 se tomo señales ECG del sujeto de prueba en estado de reposo.</td>
   </tr>
    <tr>
