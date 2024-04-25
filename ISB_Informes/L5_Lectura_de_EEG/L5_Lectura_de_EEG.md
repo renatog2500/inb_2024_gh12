@@ -21,10 +21,7 @@ ________________________________________________________________________________
 
 ## Introducción  <a name = "t2"></a>
 
-<div align="center">
-    <img src="https://github.com/renatog2500/inb_2024_gh12/assets/130946164/524d1208-8762-46c6-a17e-227118af87d8" alt="wCF14V">
-    <p>Extraído de <a href="https://cardiologialosmochis.com/portfolio/electrocardiograma/">cardiologialosmochis</a></p>
-</div>
+
 
 
 **Señal de un Electroencefalograma**: 
