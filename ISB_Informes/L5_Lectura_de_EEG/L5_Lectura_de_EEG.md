@@ -1,4 +1,4 @@
-# Laboratorio N°4 - Uso de BITalino para ECG
+# Laboratorio N°5 - Uso de BITalino para EEG
 
 ## Tabla de contenidos:
  __________________________________________________________________________________________________
@@ -11,8 +11,7 @@
    6.1 [Visualización de la señal mediante video y OpenSignals ](#t7)\
    6.2 [Ploteo de la señal en Python](#t8)\
    6.3 [Archivos de la señal ploteada en Python y datos de la señal](#t9)
-7. [Señal del Promsim4](#t10)
-8. [Bibliografía](#t11)
+7. [Bibliografía](#t10)
 __________________________________________________________________________________________________
 ## **Lista de participantes** <a name = "t1"></a>
 * Jimena Alpiste Espinoza - 74297329
@@ -21,9 +20,6 @@ ________________________________________________________________________________
 
 
 ## Introducción  <a name = "t2"></a>
-Cuando el impulso cardíaco se transmite a través del corazón, la corriente eléctrica se extiende hacia los tejidos circundantes. Una pequeña fracción de esta corriente se disemina hacia la superficie corporal. Al colocar electrodos en la piel en diferentes áreas alrededor del corazón, es posible registrar los potenciales eléctricos generados por esta corriente; este registro se conoce como electrocardiograma (ECG) [1].
-
-El ECG es una modalidad de diagnóstico no invasiva que tiene un impacto clínico sustancial en la investigación de la gravedad de las enfermedades cardiovasculares. Se utiliza cada vez más para monitorear pacientes que toman antiarrítmicos y otros medicamentos, como parte integral de la evaluación preoperatoria de pacientes sometidos a cirugía no cardíaca, y para evaluar a personas en ocupaciones de alto riesgo y a quienes practican deportes[2]. 
 
 <div align="center">
     <img src="https://github.com/renatog2500/inb_2024_gh12/assets/130946164/524d1208-8762-46c6-a17e-227118af87d8" alt="wCF14V">
@@ -31,31 +27,13 @@ El ECG es una modalidad de diagnóstico no invasiva que tiene un impacto clínic
 </div>
 
 
-**Señal de un Electrocardiograma**: 
-Las fluctuaciones en el voltaje extracelular registrado por cada derivación varían desde fracciones de un milivoltio hasta varios milivoltios. Estas fluctuaciones se llaman ondas. 
-En la señal ECG podemos observar las siguientes ondas [3]:
+**Señal de un Electroencefalograma**: 
 
-<div align="center">
-     <img src="https://github.com/renatog2500/inb_2024_gh12/assets/130946164/6ced31e4-9fb6-4254-a8ea-e8a6aec2d043" alt="wCF14V">
-    <p><b>Figura 1. Señal de un ECG </b> - Extraído de <a href="https://makeagif.com/gif/ecg-animation-electrical-changes-in-heart-wCF14V">cardiologialosmochis</a></p>
-</div>
-
-- Onda P: Es la primera deflexión hacia arriba. Se produce cuando se despolarizan las aurículas antes del comienzo de la contraciión auricular. La onda P debe ser suave, redondeada y positiva (hacia arriba).
-
-- Segmento P-R: Representa el tramo de la línea isoeléctrica que se encuentra entre el final de la onda P y la siguiente deflexión. En este periodo, las aurículas terminan de vaciarse y se produce desaceleración en la transmisión de la corriente eléctrica, justo antes del inicio de la contracción de los ventrículos.
-
-- Complejo QRS: Esta formado por los potenciales que se generan cuando se despolarizan los ventriculos antes de su contracción. En un ECG normal se deben observar ondas Q de tamaño pequeño (no mayores a un cuadrado pequeño tanto en longitud como profundidad), encontrarse solo en ciertas derivaciones y no debe exceder en duración más de dos cuadrados pequeños.
-
-- Segmento ST: En este segmento, los ventrículos están totalmente despolarizados. Tiene valor como herramienta diagnóstica ya que su elevación o descenso en relación con la línea basal puede significar insuficiencia en la irrigación del corazón
-
-- Onda T: Se produce por los potenciales que se generan cuando los ventriculos se recuperan del estado de despolarización. Permite a los ventrículos relajarse y prepararse para el siguiente ciclo cardíaco. Esta onda se manifiesta como una deflexión positiva (hacia arriba).
-
-- Segmento TP: Este segmento representa el período en el que los ventrículos están completamente relajados y en reposo.
 
 ## **Objetivos del Laboratorio** <a name = "t3"></a>
-* Adquirir señales biomédicas de ECG.
+* Adquirir señales biomédicas de EEG.
 * Hacer una correcta configuración de BiTalino.
-* Extraer la información de las señales ECG del software OpenSignals (r)evolution
+* Extraer la información de las señales EEG del software OpenSignals (r)evolution
   
 ## **Materiales y equipos** <a name="t4"></a>
 <table align="center">
@@ -134,17 +112,7 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8
 
 ### **Explicación de la variación de la señal**
 
-**1. Estado de reposo (lectura basal):** Durante el estado de reposo, la señal EKG presenta un patrón regular y estable, reflejando la actividad eléctrica normal del corazón. Las ondas P, QRS y T se observan claramente, y los intervalos entre ellas son consistentes [5].
-
-**2.Inhalación y exhalación en series de 5 segundos durante 30 segundos:** Durante la inspiración, se produce un aumento en la frecuencia cardíaca y una disminución en la variabilidad de la frecuencia cardíaca (VFC). Esto se debe a la estimulación del sistema nervioso simpático y la inhibición del sistema nervioso parasimpático. Durante la espiración, se observa una disminución en la frecuencia cardíaca y un aumento en la VFC, lo que refleja la activación del sistema nervioso parasimpático [6], [7].
-
-**3. Lectura basal después de la respiración controlada:** Después de la respiración controlada, la señal EKG vuelve a un patrón similar al observado en la lectura basal inicial. Sin embargo, pueden presentarse ligeras variaciones debido a los efectos residuales de la respiración controlada en el sistema nervioso autónomo [5], [7].
-
-**4. Lectura posterior a una serie de ejercicios:** Después del ejercicio, se observa un aumento significativo en la frecuencia cardíaca y cambios en la morfología de las ondas del EKG. La onda T puede aparecer invertida o aplanada, y el segmento ST puede presentar una depresión o elevación. Estos cambios se deben a la activación del sistema nervioso simpático y al aumento de las demandas metabólicas del corazón durante el ejercicio [7], [8].
-
-**5. Lectura basal después del ejercicio:** Después del ejercicio, la señal EKG gradualmente vuelve a un patrón similar al de la lectura basal inicial. Sin embargo, la frecuencia cardíaca puede permanecer elevada durante un período de tiempo, y la morfología de las ondas puede tardar en normalizarse. Esto se debe a la recuperación gradual del sistema nervioso autónomo y al restablecimiento del equilibrio simpático-parasimpático [7], [8].
-
-**6. Inhalación y exhalación prolongada durante 10 segundos:** Durante la inhalación prolongada, se observa un aumento sostenido en la frecuencia cardíaca y una disminución en la VFC, similar a lo observado en las series de respiración más cortas. Durante la exhalación prolongada, se produce una disminución sostenida en la frecuencia cardíaca y un aumento en la VFC. Estos cambios son más pronunciados en comparación con las series de respiración más cortas debido a la mayor duración de la estimulación de los sistemas nerviosos simpático y parasimpático [8], [9].
+**1. Estado de reposo (lectura basal):** 
 
 
 ### **Ploteo de la señal en Python** <a name="t8"></a>
@@ -252,68 +220,14 @@ plt.grid(True)
 plt.show()
 
 ```
-### **Archivos** <a name="t9"></a>
+### **Archivos de la señal ploteada en Python y datos de la señal** <a name="t9"></a>
 - [Documentos (.txt)](https://github.com/renatog2500/inb_2024_gh12/tree/main/ISB_Informes/L4_Lectura_de_ECG/ECG_L4)
-- [Programa de ploteo (python)](colocar link)
+- [Programa de ploteo (python)](colocar link) COLOCAR EL ARCHIVOOO
 
 
-## Señal del PromSim4 : <a name="t10"></a>
-
-Para la siguiente prueba, utilizamos el Fluke ProSim 4, un simulador de pacientes portátil utilizado en entornos médicos para verificar y calibrar equipos médicos, como monitores de signos vitales, electrocardiógrafos y dispositivos de infusión (más información en la página de Fluke). En el presente laboratorio, simulamos un paro cardíaco para observar la señal del electrocardiograma (ECG) y sus variaciones durante las cinco fases de este proceso.
-
-| Figura 4. Pruebas realizadas en ProSim.            | Figura 5. Colocación de los electrodos en el ProSim para la derivación I |
-|-----------------------------------------|--------------------------------------------------------------------------|
-| <p align="center"><img src="Imagenes_L4/Simulacion_paro_prosim4.jpg" width="400"></p>          | <p align="center"><img src="Imagenes_L4/conexiones_prosim4.jpg" width="400"></p> |
+## ** Bibliografía** : <a name="t10"></a>
 
 
-## Registro de pruebas en ProSim4
-
-  | Simulación                                     | Señal Ploteada en Open Signals                                                           |
-  |-----------------------------------------------|----------------------------------------------------------------------------------------------------|
-  | Paso 2. Onda de presión venosa central (CVP) | [![Miniatura del video](https://img.youtube.com/vi/mSF1GTZv84Y/0.jpg)](https://www.youtube.com/watch?v=mSF1GTZv84Y&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=9 "Haz clic para ver el video") |
-  | Paso 3. Taquicardia ventricular a 160 lpm    | [![Miniatura del video](https://img.youtube.com/vi/2MF547j3KT0/0.jpg)](https://www.youtube.com/watch?v=2MF547j3KT0&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=2 "Haz clic para ver el video")              |
-  | Paso 4. Fibrilación ventricular severa       | [![Miniatura del video](https://img.youtube.com/vi/ifsCKWEJAFA/0.jpg)](https://www.youtube.com/watch?v=ifsCKWEJAFA&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=7 "Haz clic para ver el video")              |
-  | Paso 5. Asistolia                            | [![Miniatura del video](https://img.youtube.com/vi/eaulnKYYp_c/0.jpg)](https://www.youtube.com/watch?v=eaulnKYYp_c&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=6 "Haz clic para ver el video")             |
-
-<p align="center">
-  <b>Tabla 4. Videos de las pruebas realizadas en el FLuke ProSim4 </b>
-</p>
-
-## Ploteo en Python de las pruebas en ProSim4
-| Simulación        | Ploteo de la señal |
-|-------------------|-----------------------------------------------|
-| Paso 2. Onda de presión venosa central (CVP) | ![](Imagenes_L4/Paso2_Contracciones_ventriculares_prematuras.png) |
-|  Paso 3. Taquicardia ventricular a 160 lpm  | ![](Imagenes_L4/Paso3_Taquicardia.png) |
-| Paso 4. Fibrilación ventricular severa | ![](Imagenes_L4/Fibrilacion_ventricular_severa.png) |
-|Paso 5. Asistolia   | ![](Imagenes_L4/Paso5_Asistolia.png) |
-
-<p align="center">
-  <b>Tabla 5. Ploteo en Python de las pruebas realizadas en el FLuke ProSim4 </b>
-</p>
-
-
-## **Bibliografía** <a name="t12"></a>
-[1] S. Śmigiel, K. Pałczyński, y D. Ledziński, “ECG signal classification using deep learning techniques based on the PTB-XL dataset”, Entropy (Basel), vol. 23, núm. 9, p. 1121, 2021.
-
-[2]Y. Sattar and L. Chhabra, “Electrocardiogram,” Nih.gov, Jun. 05, 2023. https://www.ncbi.nlm.nih.gov/books/NBK549803/ (accessed Apr. 20, 2024).
-
-[3] M. A. Russo, D. M. Santarelli, y D. O’Rourke, “The physiological effects of slow breathing in the healthy human”, Breathe (Sheff), vol. 13, núm. 4, pp. 298–309, 2017.
-
-
-[4] BITalino (r)evolution Home Guide. PLUX-Wireless Biosignals, S A. Lisbon Portugal 2020. Disponible en: https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide2_ECG.pdf
-
-[5] I. Dotsinsky, “Review of ‘Advanced Methods and Tools for ECG Data Analysis’, by Gari D. Clifford, Francisco Azuaje and Patrick E. McSharry (Editors),” BioMedical engineering online, vol. 6, no. 1, pp. 18–18, Jan. 2007, doi: https://doi.org/10.1186/1475-925x-Imagenes_L
-
-[6] F. Shaffer and J. P. Ginsberg, “An Overview of Heart Rate Variability Metrics and Norms,” Frontiers in public health, vol. 5, Sep. 2017, doi: https://doi.org/10.3389/fpubh.2017.00258.
-‌
-
-[7] M. Malik et al., “Heart rate variability: Standards of measurement, physiological interpretation, and clinical use,” European heart journal, vol. 17, no. 3, pp. 354–381, Mar. 1996, doi: https://doi.org/10.1093/oxfordjournals.eurheartj.a014868.
-‌
-
-[8] P. Kligfield et al., “Recommendations for the Standardization and Interpretation of the Electrocardiogram,” Journal of the American College of Cardiology, vol. 49, no. 10, pp. 1109–1127, Mar. 2007, doi: https://doi.org/10.1016/j.jacc.2007.01.024.
-‌
-
-[9] C. J. Lavie et al., “Exercise and the Cardiovascular System,” Circulation research, vol. 117, no. 2, pp. 207–219, Jul. 2015, doi: https://doi.org/10.1161/circresaha.117.305205.
 ‌
 
 
