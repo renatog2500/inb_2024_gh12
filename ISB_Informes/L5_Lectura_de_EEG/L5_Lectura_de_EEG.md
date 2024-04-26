@@ -10,8 +10,9 @@
 6. [Resultados y discusión](#t6)\
    6.1 [Visualización de la señal mediante video y OpenSignals ](#t7)\
    6.2 [Ploteo de la señal en Python](#t8)\
-   6.3 [Archivos de la señal ploteada en Python y datos de la señal](#t9)
-7. [Bibliografía](#t10)
+   6.3 [Archivos de la señal ploteada en Python y datos de la señal](#t9)\
+   6.4 [Ploteo de la señal en OpenBCI GUI] (#10)
+8. [Bibliografía](#t11)
 __________________________________________________________________________________________________
 ## **Lista de participantes** <a name = "t1"></a>
 * Jimena Alpiste Espinoza - 74297329
@@ -32,7 +33,7 @@ ________________________________________________________________________________
 * Hacer una correcta configuración de BiTalino.
 * Extraer la información de las señales EEG del software OpenSignals (r)evolution
   
-## **Materiales y equipos** <a name="t4"></a>
+## **Materiales y Equipo Utilizado** <a name="t4"></a>
 <table align="center">
   <tr>
     <th>Modelo</th>
@@ -62,33 +63,23 @@ Para capturar las señales ECG, se empleó el dispositivo BITalino junto con su 
 | ![Electrodos de guía](Imagenes_L4/electrodos_guia.png) | <img src="Imagenes_L4/posicion _usada_electrodos.png" alt="Electrodos de guía" width="700"> |
 
 
-La derivación 1 en un ECG es una de las vistas básicas utilizadas para monitorear la actividad eléctrica del corazón. La colocación adecuada de los electrodos es fundamental para capturar con precisión esta actividad. En la Figura 2 se muestra la colocación de los electrodos para esta derivación. En esta configuración, se utilizaron tres electrodos: 
-* IN+ (rojo) se coloca en la muñeca izquierda .
-* IN- (negro) se coloca en la muñeca derecha.
-* REF (blanco) se coloca en la cresta ilíaca.
+**Protocolo para las pruebas realizadas:**
+El protocolo seguido para evaluar la ***  en vivo con el encefalograma fue el de la guía experimental de BITalino [X]:
 
-**Protocolo:**
-El protocolo seguido para evaluar el latido del corazón en vivo con electrocardiografía fue el de la guía experimental de BITalino [4]:
-1. Registrar una línea base de señal con poco ruido y sin movimientos (respiración normal) durante 30 segundos.
-2. Repetir un ciclo de INHALACIÓN-MANTENER-EXHALACIÓN-MANTENER tres veces, manteniendo la respiración y fases de reposo durante cinco segundos.
-3. Registrar otra fase inicial de 30 segundos.
-4. Realizar 10 burpees **(se realizaron planchas)** y observa tu frecuencia cardíaca antes y después del entrenamiento.
-5. Registrar otra fase inicial de 30 segundos.
-6. Realizar una inhalación larga (~10 segundos) seguida de contener la respiración durante varios segundos (~10 segundos).
+1. Registrar una línea base de señal con poco ruido y sin movimientos (respiración normal,sin movimientos oculares/ojos cerrados) durante 30 segundos.
+2. Repetir un ciclo de OJOS ABIERTOS - OJOS CERRADOS cinco veces, manteniendo ambasfases durante cinco segundos.
+3. Registrar otra fase basal de 30 segundos (paso 1).
+4. Que uno de tus compañeros lea en voz alta una serie de ejercicios matemáticos (se dividió en dos secciones: preguntas simples y complejas) y resuelve cada uno de ellos mentalmente enfocando tu mirada en unpunto específico para evitar artefactos.
+5. Detener la grabación
 
 **Pruebas realizadas:**
 Cabe destacar que las ubicaciones mencionadas se mantuvieron para todas las pruebas: 
 
 - Prueba 1: Lectura del Estado Basal
-- Prueba 2: Lectura de los ciclos de Inhalación y Exhalación (Fases de 5 segundos) 
-- Prueba 3: Segunda lectura en estado de reposo
-- Prueba 4: Lectura posterior a la realización de ejercicio intenso. Ejercicios realizados: planchas y polichinelas
-
-https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8-b5fc-664aa1a81318
-  
-- Prueba 5: Tercera lectura en estado de reposo
-- Prueba 6: Lectura de los ciclos de Inhalación y Exhalación prolongada (Fases de 10 segundos)
-
+- Prueba 2: Lectura de los ciclos de Ojos Abiertos y Cerrados (Fases de 5 segundos) 
+- Prueba 3: Segunda lectura en estado de reposo (no se repitio la grabación de video)
+- Prueba 4: Resolución de preguntas Simples
+- Prueba 5: Resolución de preguntas Complejas
 ------------------------
 
 ## Resultados y discusión  <a name="t6"></a>
@@ -103,14 +94,18 @@ https://github.com/renatog2500/inb_2024_gh12/assets/130946164/7802253f-a10b-4bd8
 | 6.Inhalación y exhalación prolongada durante 10 segundos | [![Miniatura del video](https://img.youtube.com/vi/lHYRxELjat0/0.jpg)](https://www.youtube.com/watch?v=lHYRxELjat0&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=8 "Haz clic para ver el video")   | En la sexta prueba, el sujeto llevó a cabo ciclos de inhalación y exhalación en intervalos de 10 segundos. Durante este proceso, se registró y analizó el comportamiento de la señal del electrocardiograma (ECG).  |
 
 <p align="center">
-  <b>Tabla 2. Videos del Protocolo </b>
+  <b>Tabla 2. Videos de las pruebas realizadas </b>
 </p>
 
 
 ### **Explicación de la variación de la señal**
 
 **1. Estado de reposo (lectura basal):** 
-
+**1. Lectura del Estado Basal:**
+**2. Lectura de los ciclos de Ojos Abiertos y Cerrados (Fases de 5 segundos):**
+**3. Segunda lectura en estado de reposo (no se repitio la grabación de video):**
+**4. Resolución de preguntas Simples:**
+**5. Resolución de preguntas Complejas:**
 
 ### **Ploteo de la señal en Python** <a name="t8"></a>
 
