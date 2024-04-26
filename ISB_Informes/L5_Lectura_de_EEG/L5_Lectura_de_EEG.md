@@ -76,7 +76,7 @@ El protocolo seguido para evaluar la ***  en vivo con el encefalograma fue el de
 ## Resultados y discusión  <a name="t6"></a>
 
 ### **Visualización de señal eléctrica mediante video y OpenSignalsl** <a name="t7"></a>
-A continuación se mostrarán los videos de la señal EEG en OpenSignals. Seguimos el protocolo mencionado previamente, manteniendo las mismas conexiones de electrodos para cada medición. Con esto se asegura la coherencia de los datos recopilados y la fiabilidad de los resultados obtenidos. \t
+A continuación se mostrarán los videos de la señal EEG en OpenSignals. Seguimos el protocolo mencionado previamente, manteniendo las mismas conexiones de electrodos para cada medición. Con esto se asegura la coherencia de los datos recopilados y la fiabilidad de los resultados obtenidos.
 
 (*) Es importante destacar que la prueba 3, al tratarse de una segunda señal basal, no fue considerada para la grabación de video, aunque sí se tomó en cuenta para la representación gráfica mediante Python que se mostrará más adelante.
 
