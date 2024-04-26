@@ -71,21 +71,13 @@ El protocolo seguido para evaluar la ***  en vivo con el encefalograma fue el de
 3. Registrar otra fase basal de 30 segundos (paso 1).
 4. Que uno de tus compañeros lea en voz alta una serie de ejercicios matemáticos (se dividió en dos secciones: preguntas simples y complejas) y resuelve cada uno de ellos mentalmente enfocando tu mirada en unpunto específico para evitar artefactos.
 5. Detener la grabación
-
-**Pruebas realizadas:**
-Cabe destacar que las ubicaciones mencionadas se mantuvieron para todas las pruebas: 
-
-- Prueba 1: Lectura del Estado Basal
-- Prueba 2: Lectura de los ciclos de Ojos Abiertos y Cerrados (Fases de 5 segundos) 
-- Prueba 3: Segunda lectura en estado de reposo (no se repitio la grabación de video)
-- Prueba 4: Resolución de preguntas Simples
-- Prueba 5: Resolución de preguntas Complejas
 ------------------------
 
 ## Resultados y discusión  <a name="t6"></a>
 
 ### **Visualización de señal eléctrica mediante video y OpenSignalsl** <a name="t7"></a>
-A continuación se mostrarán los videos de la señal EEG en OpenSignals. Seguimos el protocolo mencionado previamente, manteniendo las mismas conexiones de electrodos para cada medición. Con esto se asegura la coherencia de los datos recopilados y la fiabilidad de los resultados obtenidos. 
+A continuación se mostrarán los videos de la señal EEG en OpenSignals. Seguimos el protocolo mencionado previamente, manteniendo las mismas conexiones de electrodos para cada medición. Con esto se asegura la coherencia de los datos recopilados y la fiabilidad de los resultados obtenidos. \t
+
 (*) Es importante destacar que la prueba 3, al tratarse de una segunda señal basal, no fue considerada para la grabación de video, aunque sí se tomó en cuenta para la representación gráfica mediante Python que se mostrará más adelante.
 
 | Prueba   | Señal Ploteada en Open Signals   | Descripción    |
