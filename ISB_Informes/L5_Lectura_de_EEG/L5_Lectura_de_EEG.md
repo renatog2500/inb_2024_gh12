@@ -11,7 +11,7 @@
    6.1 [Visualización de la señal mediante video y OpenSignals ](#t7)\
    6.2 [Ploteo de la señal en Python](#t8)\
    6.3 [Archivos de la señal ploteada en Python y datos de la señal](#t9)\
-   6.4 [Ploteo de la señal en OpenBCI GUI] (#10)
+   6.4 [Ploteo de la señal en OpenBCI GUI](#t10)
 8. [Bibliografía](#t11)
 __________________________________________________________________________________________________
 ## **Lista de participantes** <a name = "t1"></a>
@@ -83,6 +83,7 @@ Cabe destacar que las ubicaciones mencionadas se mantuvieron para todas las prue
 ------------------------
 
 ## Resultados y discusión  <a name="t6"></a>
+
 ### **Visualización de señal eléctrica mediante video y OpenSignalsl** <a name="t7"></a>
 | Prueba   | Señal Ploteada en Open Signals   | Descripción    |
 | --------- | ---- | --------- |
@@ -216,8 +217,12 @@ plt.show()
 - [Documentos (.txt)](https://github.com/renatog2500/inb_2024_gh12/tree/main/ISB_Informes/L4_Lectura_de_ECG/ECG_L4)
 - [Programa de ploteo (python)](colocar link) COLOCAR EL ARCHIVOOO
 
+## **Ploteo de la señal en OpenBCI GUI** : <a name="t10"></a>
 
-## ** Bibliografía** : <a name="t10"></a>
+-Crear una tabla en el que se vea los videos ( persona con señal )  y las señales ploteadas en pyhton 
+- Explicar lo que se ve en la señal 
+
+## ** Bibliografía** : <a name="t11"></a>
 
 
 ‌
