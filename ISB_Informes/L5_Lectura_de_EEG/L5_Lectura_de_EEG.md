@@ -151,6 +151,7 @@ A continuación se mostrarán los videos de la señal EEG en OpenSignals. Seguim
 
 
 ### **Ploteo de la señal en Python** 
+### <span style="font-size:larger;">**Ploteo de la señal en Python**</span>
 
 ### **BITalino: Ploteo de la señal en Python** <a name="t9"></a>
 **Ploteo del protocolo usando BITalino en Python:** 
