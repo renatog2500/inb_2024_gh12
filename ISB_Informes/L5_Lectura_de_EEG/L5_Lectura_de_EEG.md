@@ -112,10 +112,10 @@ A continuación se mostrarán los videos de la señal EEG en OpenSignals. Seguim
 | Prueba     | Ploteo de la señal en el tiempo y su dominio en frecuencia     |
 | -------------- | -------------- |
 | **1.Estado de reposo (lectura basal**| <img src="Imagenes_L5/Fase de referencia.png" alt="Electrodos de guía" width="700">|
-| **2.Lectura de los ciclos de Ojos Abiertos y Cerrados (Fases de 5 segundos)** | <img src="Imagenes_L4/ciclo_inhalation_exhalation.png" alt="Electrodos de guía" width="700">|
-| **3. Segunda lectura Basal** | <img src="Imagenes_L4/Basal_2_post_Inhalación.png" alt="Electrodos de guía" width="700">|
-| **4. Resolución de preguntas Simples** | <img src="ISB_Informes/L5_Lectura_de_EEG/Imagenes_L5/Preguntas_Simples.png" alt="Electrodos de guía" width="700">|
-| **5. Resolución de preguntas Complejas** |<img src="ISB_Informes/L5_Lectura_de_EEG/Imagenes_L5/Preguntas_complejas.png" alt="Electrodos de guía" width="700"> |
+| **2.Lectura de los ciclos de Ojos Abiertos y Cerrados (Fases de 5 segundos)** | <img src="Imagenes_L5/Abrir_y_ cerrar_los_ojos.png" alt="Electrodos de guía" width="700">|
+| **3. Segunda lectura Basal** | <img src="Imagenes_L5/Basal2.png" alt="Electrodos de guía" width="700">|
+| **4. Resolución de preguntas Simples** | <img src="Imagenes_L5/Preguntas_Simples.png" alt="Electrodos de guía" width="700">|
+| **5. Resolución de preguntas Complejas** |<img src="Imagenes_L5/Preguntas_complejas.png" alt="Electrodos de guía" width="700"> |
 
 <p align="center">
   <b>Tabla 3. Ploteo del protocolo en Python </b>
