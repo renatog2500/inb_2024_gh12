@@ -80,12 +80,12 @@ A continuación se mostrarán los videos de la señal EEG en OpenSignals. Seguim
 
 (*) Es importante destacar que la prueba 3, al tratarse de una segunda señal basal, no fue considerada para la grabación de video, aunque sí se tomó en cuenta para la representación gráfica mediante Python que se mostrará más adelante.
 
-| Prueba   | Señal Ploteada en Open Signals   | Descripción    |
-| --------- | ---- | --------- |
-| 1.Lectura de la señal Basal  | [![Miniatura del video](https://img.youtube.com/vi/-wfPedZAewY/0.jpg)](https://www.youtube.com/watch?v=-wfPedZAewY&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=2)    | En la prueba 1 se tomo señales ECG del sujeto de prueba en estado de reposo.|
-| 2. Lectura de los ciclos de Ojos Abiertos y Cerrados (Fases de 5 segundos)  | [![Miniatura del video](https://img.youtube.com/vi/tKcrb_DEtSk/0.jpg)](https://www.youtube.com/watch?v=tKcrb_DEtSk&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=10)   | En la 2da prueba el sujeto realizó ciclos de inhalación y exhalación de intervalos de 5 segundos durante 30 segundos, se tomó la lectura del comportamiento de la señal ECG. |
-| 4. Resolución de preguntas Simples |[![Miniatura del video](https://img.youtube.com/vi/TCozf52vHHc/0.jpg)](https://www.youtube.com/watch?v=TCozf52vHHc&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=5 "Haz clic para ver el video")   | El sujeto fue sometido a una serie de ejercicios físicos que incluyeron la realización de planchas y polichinelas. Luego de completar estos ejercicios, se procedió a tomar la señal del electrocardiograma (ECG).   |
-| 5.Resolución de preguntas Complejas | [![Miniatura del video](https://img.youtube.com/vi/QQnHKHVdN3U/0.jpg)](https://www.youtube.com/watch?v=QQnHKHVdN3U&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=4 "Haz clic para ver el video") | Se llevó a cabo una nueva toma de la señal del electrocardiograma (ECG) del sujeto en reposo después de completar la serie de ejercicios.   |
+| Prueba | Señal Ploteada en Open Signals |
+| --------- | ---- |
+| 1.Lectura de la señal Basal | [! [Miniatura del video] (https://img.youtube.com/vi/-wfPedZAewY/0.jpg)] (https://www.youtube.com/watch?v=-wfPedZAewY&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=2) |
+| 2. Lectura de los ciclos de Ojos Abiertos y Cerrados (Fases de 5 segundos) | [! [Miniatura del video] (https://img.youtube.com/vi/tKcrb_DEtSk/0.jpg)] (https://www.youtube.com/watch?v=tKcrb_DEtSk&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=10) |
+| 4. Resolución de preguntas Simples |[! [Miniatura del video] (https://img.youtube.com/vi/TCozf52vHHc/0.jpg)] (https://www.youtube.com/watch?v=TCozf52vHHc&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=5 "Haz clic para ver el video") |
+| 5.Resolución de preguntas Complejas | [! [Miniatura del video] (https://img.youtube.com/vi/QQnHKHVdN3U/0.jpg)] (https://www.youtube.com/watch?v=QQnHKHVdN3U&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=4 "Haz clic para ver el video") |
 
 
 <p align="center">
