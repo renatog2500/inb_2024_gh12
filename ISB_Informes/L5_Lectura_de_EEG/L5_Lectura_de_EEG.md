@@ -167,11 +167,11 @@ A continuación se mostrará la señal junto con el código de Python utilizado 
   <b>Tabla 3. Ploteo del protocolo en Python </b>
 </p>
 
-- <span style="color:blue;">**Descripción de las señales obtenidas:**</span>
+**Descripción de las señales obtenidas**: 
 
 
 
-**- Código en Python para ploteo de señales de BiTalino:**
+**Código en Python para ploteo de señales de BiTalino:**
 ```python
 
 import pandas as pd
@@ -258,8 +258,9 @@ plt.grid(True)
 plt.show()
 
 ```
-### **OpenBCI GUI: Ploteo de la señal en Python** <a name="t10"></a>
 
+### **OpenBCI GUI: Ploteo de la señal en Python** <a name="t10"></a>
+---
 A continuación se muestra el ploteo en Python del procedimiento utilizado para examinar la alteración en la actividad neuronal a través de la plataforma OpenBCI: 
 
 | Prueba     | Ploteo de la señal en el tiempo y su dominio en frecuencia     |
