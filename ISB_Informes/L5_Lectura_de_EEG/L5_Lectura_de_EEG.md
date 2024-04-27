@@ -79,13 +79,15 @@ Para capturar las señales ECG, se empleó el dispositivo BITalino junto con su 
 
 
 **Protocolo para las pruebas realizadas:**
-El protocolo seguido para evaluar la ***  en vivo con el encefalograma fue el de la guía experimental de BITalino [X]:
+El protocolo seguido para evaluar la actividad neuronal en vivo con el encefalograma fue el de la guía experimental de BITalino [X]:
 
 1. Registrar una línea base de señal con poco ruido y sin movimientos (respiración normal,sin movimientos oculares/ojos cerrados) durante 30 segundos.
 2. Repetir un ciclo de OJOS ABIERTOS - OJOS CERRADOS cinco veces, manteniendo ambasfases durante cinco segundos.
 3. Registrar otra fase basal de 30 segundos (paso 1).
 4. Que uno de tus compañeros lea en voz alta una serie de ejercicios matemáticos (se dividió en dos secciones: preguntas simples y complejas) y resuelve cada uno de ellos mentalmente enfocando tu mirada en unpunto específico para evitar artefactos.
 5. Detener la grabación
+
+
 ------------------------
 
 ## Resultados y discusión  <a name="t6"></a>
