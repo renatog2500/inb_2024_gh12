@@ -82,12 +82,13 @@ Para capturar las señales ECG, se empleó el dispositivo BITalino junto con su 
 **Protocolo para las pruebas realizadas:**
 El protocolo seguido para evaluar la actividad neuronal en vivo con el encefalograma fue el de la guía experimental de BITalino [X]:
 
-1. Registrar una línea base de señal con poco ruido y sin movimientos (respiración normal,sin movimientos oculares/ojos cerrados) durante 30 segundos.
-2. Repetir un ciclo de OJOS ABIERTOS - OJOS CERRADOS cinco veces, manteniendo ambasfases durante cinco segundos.
-3. Registrar otra fase basal de 30 segundos (paso 1).
-4. Que uno de tus compañeros lea en voz alta una serie de ejercicios matemáticos (se dividió en dos secciones: preguntas simples y complejas) y resuelve cada uno de ellos mentalmente enfocando tu mirada en unpunto específico para evitar artefactos.
-5. Detener la grabación
+**1. Lectura de la señal Basal:** Para adquirir esta señal el sujeto de prueba debe permanecer en una posición estable  , con ello se registrará la línea base de señal con poco ruido y sin movimientos (respiración normal,sin movimientos oculares/ojos cerrados) durante 30 segundos. Este estado sirve como nuestra prueba de referencia.
 
+**2. Lectura de Ojos Abiertos - Ojos Cerrados:** A continuación el participante repetirá un ciclo de OJOS ABIERTOS - OJOS CERRADOS cinco veces, manteniendo ambas fases durante 5 segundos. El sujeto debe permanecer en una posición estable y mirando a un poco fijo para evitar ruido en la señal.
+
+**3. Lectura de la Señal Basal 2 (paso 1):** Tras la Prueba N°2, se debe registrar una segunda fase de referencia en el que el participante se mantendra en una posición estable por un tiempo de 30 segundos.
+
+**4. Resolución de preguntas :** En esta prueba uno de los compañeros se encontrará leyendo en voz alta una serie de ejercicios obtenidos de [referencia elsevier], los ejercicios se dividiran en dos secciones de preguntas: simples y complejas. El particpante evaluado dbe intentar resolverlas manteniendo una posición estable. 
 
 ------------------------
 
