@@ -9,10 +9,11 @@
 5. [Protocolo de conexión](#t5)
 6. [Resultados y discusión](#t6)\
    6.1 [Visualización de la señal mediante video y OpenSignals ](#t7)\
-   6.2 [Ploteo de la señal en Python](#t8)\
-   6.3 [Archivos de la señal ploteada en Python y datos de la señal](#t9)\
-   6.4 [Ploteo de la señal en OpenBCI GUI](#t10)
-8. [Bibliografía](#t11)
+   6.2 [Visualización de la señal mediante video y OpenBCI ](#t8)\
+   6.3 [BITalino: Ploteo de la señal en Python](#t9)\
+   6.4 [OpenBCI GUI: Ploteo de la señal en Python](#t10)\
+   6.5 [Archivos de la señal ploteada en Python y datos de la señal](#t11)\
+7. [Bibliografía](#t12)
 __________________________________________________________________________________________________
 ## **Lista de participantes** <a name = "t1"></a>
 * Jimena Alpiste Espinoza - 74297329
@@ -110,20 +111,7 @@ A continuación se mostrarán los videos de la señal EEG en OpenSignals. Seguim
  </b>
 </p>
 
-| Prueba | Señal Ploteada en OpenBCI |
-| --------- | ---- |
-| 1.Lectura de la señal Basal | [! [Miniatura del video] (https://img.youtube.com/vi/-wfPedZAewY/0.jpg)] (https://www.youtube.com/watch?v=XvO9Swg0UOs&feature=youtu.be) |
-| 1.Lectura de la señal Basal | [![Miniatura del video](https://img.youtube.com/vi/XvO9Swg0UOs/0.jpg)](https://www.youtube.com/watch?v=XvO9Swg0UOs) |
-| 2. Lectura de los ciclos de Ojos Abiertos y Cerrados (Fases de 5 segundos) | [! [Miniatura del video] (https://img.youtube.com/vi/5O7GbBteY9w/0.jpg)]  (https://www.youtube.com/watch?v=5O7GbBteY9w)|
-| 4. Resolución de preguntas Simples |[! [Miniatura del video] (https://img.youtube.com/vi/TCozf52vHHc/0.jpg)] (https://www.youtube.com/watch?v=TCozf52vHHc&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=5 "Haz clic para ver el video") |
-| 5.Resolución de preguntas Complejas | [! [Miniatura del video] (https://img.youtube.com/vi/QQnHKHVdN3U/0.jpg)] (https://www.youtube.com/watch?v=QQnHKHVdN3U&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=4 "Haz clic para ver el video") |
-
-<p align="center">
-  <b>Tabla 3. Videos de la señal ploteada en OpenBCI del protocolo </b>
-</p>
-
-### **Explicación de la variación de la señal**
-
+### **Explicación de la variación de la señal de OpenSignals**
 
 **1. Lectura del Estado Basal:**
 
@@ -137,8 +125,34 @@ A continuación se mostrarán los videos de la señal EEG en OpenSignals. Seguim
 
 
 
-### **Ploteo de la señal en Python** <a name="t8"></a>
+### **Visualización de señal eléctrica mediante video y OpenBCI** <a name="t8"></a>
 
+| Prueba | Señal Ploteada en OpenBCI |
+| --------- | ---- |
+| 1.Lectura de la señal Basal | [![Miniatura del video](https://img.youtube.com/vi/XvO9Swg0UOs/0.jpg)](https://www.youtube.com/watch?v=XvO9Swg0UOs) |
+| 2. Lectura de los ciclos de Ojos Abiertos y Cerrados (Fases de 5 segundos)  | [![Miniatura del video](https://img.youtube.com/vi/5O7GbBteY9w/0.jpg)](https://www.youtube.com/watch?v=5O7GbBteY9w) |
+| 3. Registro fase de referencia | [![Miniatura del video](https://img.youtube.com/vi/g9LNPO2JDDc/0.jpg)](https://www.youtube.com/watch?v=g9LNPO2JDDc) |
+| 4. Ejercicios Matemáticos | [![Miniatura del video](https://img.youtube.com/vi/p1FOJwmLAsk/0.jpg)](https://www.youtube.com/watch?v=p1FOJwmLAsk) |
+
+<p align="center">
+  <b>Tabla 3. Videos de la señal ploteada en OpenBCI del protocolo </b>
+</p>
+
+### **Explicación de la variación de la señal ploteada en OpenBCI**
+
+**1. Lectura del Estado Basal:**
+
+**2. Lectura de los ciclos de Ojos Abiertos y Cerrados (Fases de 5 segundos):**
+
+**3. Registro de fase de referencia**
+
+**4. Resolución de preguntas matemáticas:**
+
+
+
+### **Ploteo de la señal en Python** 
+
+### **BITalino: Ploteo de la señal en Python** <a name="t9"></a>
 **Ploteo del protocolo usando BITalino en Python:** 
 A continuación se mostrará la señal junto con el código de Python utilizado para su representación:
 
@@ -241,8 +255,7 @@ plt.grid(True)
 plt.show()
 
 ```
-
-**Ploteo del protocolo usando UltraCortex en Python:** 
+### **OpenBCI GUI: Ploteo de la señal en Python** <a name="t10"></a>
 
 A continuación se muestra el ploteo en Python del procedimiento utilizado para examinar la alteración en la actividad neuronal a través de la plataforma OpenBCI: 
 
@@ -256,6 +269,8 @@ A continuación se muestra el ploteo en Python del procedimiento utilizado para 
 <p align="center">
   <b>Tabla 4. Ploteo del protocolo en UltraCortex </b>
 </p>
+
+
 
 **-Código de ploteo para señal de OpenBCI:**
 ```python
@@ -336,16 +351,12 @@ fig.text(0.005, 0.5, 'Amplitude (uV)', ha='center', va='center', rotation='verti
 plt.show()
 ```
 
-### **Archivos de la señal ploteada en Python y datos de la señal** <a name="t9"></a>
+### **Archivos de la señal ploteada en Python y datos de la señal** <a name="t11"></a>
 - [Documentos (.txt)](https://github.com/renatog2500/inb_2024_gh12/tree/main/ISB_Informes/L5_Lectura_de_EEG/EEG_L5)
 - [Programa de ploteo (python)](colocar link) COLOCAR EL ARCHIVOOO
 
-## **Ploteo de la señal en OpenBCI GUI** : <a name="t10"></a>
 
--Crear una tabla en el que se vea los videos ( persona con señal )  y las señales ploteadas en pyhton 
-- Explicar lo que se ve en la señal 
-
-## ** Bibliografía** : <a name="t11"></a>
+## ** Bibliografía** : <a name="t12"></a>
 
 
 ‌
