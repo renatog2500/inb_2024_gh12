@@ -88,9 +88,18 @@ El protocolo seguido para evaluar la actividad neuronal en vivo con el encefalog
 
 **3. Lectura de la Señal Basal 2 (paso 1):** Tras la Prueba N°2, se debe registrar una segunda fase de referencia en el que el participante se mantendra en una posición estable por un tiempo de 30 segundos.
 
-**4. Resolución de preguntas :** En esta prueba uno de los compañeros se encontrará leyendo en voz alta una serie de ejercicios obtenidos de [referencia elsevier], los ejercicios se dividiran en dos secciones de preguntas: simples y complejas. El particpante evaluado dbe intentar resolverlas manteniendo una posición estable. 
+**4. Resolución de preguntas :** En esta prueba uno de los compañeros se encontrará leyendo en voz alta una serie de ejercicios obtenidos de [referencia elsevier], los ejercicios se dividiran en dos secciones de preguntas: simples y complejas. El particpante evaluado dbe intentar resolverlas manteniendo una posición estable. Las preguntas realizadas se observan en la Tabla X.
 
 ------------------------
+| Categoría| Pregunta |
+| --------- | --------- |
+| Simple | Hay 3 pájaros en un árbol; Llegan 7 más. ¿Cuántos pájaros hay ahora?  |
+| Simple  | Jonás tiene 5 manzanas y Mary tiene 4. ¿Cuántas manzanas tienen en total?  |
+| Simple  | Hanna tiene 9 dólares pero gastó 4. ¿Cuántos dólares le quedan? |
+| Compleja   | John anotó 45 puntos para su equipo; 10 más que José. Marie anotó 13 puntos más que John y Joseph juntos. ¿Cuántos puntos obtuvieron en total? |
+| Compleja   | El grupo A tiene 24 estudiantes; 13 menos que el grupo B. El grupo C tiene 12 alumnos más que los grupos A y B juntos. ¿Cuál es el número total de estudiantes? |
+| Compleja | Una tienda vendió 21 refrescos por la mañana y 13 más que por la tarde. Por la noche vendió 10 más que por la mañana y por la tarde juntas. ¿Cuántos refrescos se vendieron en total? |
+
 
 ## Resultados y discusión  <a name="t6"></a>
 
