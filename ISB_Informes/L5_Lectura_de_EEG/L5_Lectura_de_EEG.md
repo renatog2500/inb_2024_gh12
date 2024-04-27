@@ -106,9 +106,20 @@ A continuación se mostrarán los videos de la señal EEG en OpenSignals. Seguim
 
 
 <p align="center">
-  <b>Tabla 2. Videos de las pruebas realizadas </b>
+  <b>Tabla 2. Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals del protocolo.
+ </b>
 </p>
 
+| Prueba | Señal Ploteada en OpenBCI |
+| --------- | ---- |
+| 1.Lectura de la señal Basal | [! [Miniatura del video] (https://img.youtube.com/vi/-wfPedZAewY/0.jpg)] (https://www.youtube.com/watch?v=XvO9Swg0UOs&feature=youtu.be) |
+| 2. Lectura de los ciclos de Ojos Abiertos y Cerrados (Fases de 5 segundos) | [! [Miniatura del video] (https://img.youtube.com/vi/5O7GbBteY9w/0.jpg)]  (https://www.youtube.com/watch?v=5O7GbBteY9w)|
+| 4. Resolución de preguntas Simples |[! [Miniatura del video] (https://img.youtube.com/vi/TCozf52vHHc/0.jpg)] (https://www.youtube.com/watch?v=TCozf52vHHc&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=5 "Haz clic para ver el video") |
+| 5.Resolución de preguntas Complejas | [! [Miniatura del video] (https://img.youtube.com/vi/QQnHKHVdN3U/0.jpg)] (https://www.youtube.com/watch?v=QQnHKHVdN3U&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=4 "Haz clic para ver el video") |
+
+<p align="center">
+  <b>Tabla 3. Videos de la señal ploteada en OpenBCI del protocolo </b>
+</p>
 
 ### **Explicación de la variación de la señal**
 
@@ -122,6 +133,7 @@ A continuación se mostrarán los videos de la señal EEG en OpenSignals. Seguim
 **4. Resolución de preguntas Simples:**
 
 **5. Resolución de preguntas Complejas:**
+
 
 
 ### **Ploteo de la señal en Python** <a name="t8"></a>
@@ -230,6 +242,7 @@ plt.show()
 ```
 
 **Ploteo del protocolo usando UltraCortex en Python:** 
+
 A continuación se muestra el ploteo en Python del procedimiento utilizado para examinar la alteración en la actividad neuronal a través de la plataforma OpenBCI: 
 
 | Prueba     | Ploteo de la señal en el tiempo y su dominio en frecuencia     |
@@ -240,7 +253,7 @@ A continuación se muestra el ploteo en Python del procedimiento utilizado para 
 | **4. Resolución de preguntas matemáticas** | <img src="Imagenes_L5/Preguntas_matematicas_ultracortex.png" alt="Electrodos de guía" width="700">|
 
 <p align="center">
-  <b>Tabla 3. Ploteo del protocolo en UltraCortex </b>
+  <b>Tabla 4. Ploteo del protocolo en UltraCortex </b>
 </p>
 
 **-Código de ploteo para señal de OpenBCI:**
@@ -323,7 +336,7 @@ plt.show()
 ```
 
 ### **Archivos de la señal ploteada en Python y datos de la señal** <a name="t9"></a>
-- [Documentos (.txt)](https://github.com/renatog2500/inb_2024_gh12/tree/main/ISB_Informes/L4_Lectura_de_ECG/ECG_L4)
+- [Documentos (.txt)](https://github.com/renatog2500/inb_2024_gh12/tree/main/ISB_Informes/L5_Lectura_de_EEG/EEG_L5)
 - [Programa de ploteo (python)](colocar link) COLOCAR EL ARCHIVOOO
 
 ## **Ploteo de la señal en OpenBCI GUI** : <a name="t10"></a>
