@@ -259,6 +259,7 @@ plt.show()
 
 ```
 
+
 ### **OpenBCI GUI: Ploteo de la señal en Python** <a name="t10"></a>
 ---
 A continuación se muestra el ploteo en Python del procedimiento utilizado para examinar la alteración en la actividad neuronal a través de la plataforma OpenBCI: 
