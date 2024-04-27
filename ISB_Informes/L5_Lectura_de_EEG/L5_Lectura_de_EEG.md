@@ -50,6 +50,21 @@ ________________________________________________________________________________
     <td>Laptop</td>
     <td>1</td>
   </tr>
+   <tr>
+    <td>-</td>
+    <td>Electrodos</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>OpenBCI</td>
+    <td>Ultracortex Mark IV EEG Headset	</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>OpenBCI</td>
+    <td>OpenBCI Cyton 8-channel Board	</td>
+    <td>1</td>
+  </tr>
 </table>
 <p align="center">
   <b>Tabla 1. Materiales y equipos utilizados</b>
@@ -108,6 +123,8 @@ A continuación se mostrarán los videos de la señal EEG en OpenSignals. Seguim
 
 
 ### **Ploteo de la señal en Python** <a name="t8"></a>
+
+A continuación se mostrará la señal junto con el código de Python utilizado para su representación:
 
 | Prueba     | Ploteo de la señal en el tiempo y su dominio en frecuencia     |
 | -------------- | -------------- |
