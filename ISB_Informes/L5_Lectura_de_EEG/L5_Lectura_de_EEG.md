@@ -97,10 +97,15 @@ A continuación se mostrarán los videos de la señal EEG en OpenSignals. Seguim
 
 
 **1. Lectura del Estado Basal:**
+
 **2. Lectura de los ciclos de Ojos Abiertos y Cerrados (Fases de 5 segundos):**
+
 **3. Segunda lectura en estado de reposo (no se repitio la grabación de video):**
+
 **4. Resolución de preguntas Simples:**
+
 **5. Resolución de preguntas Complejas:**
+
 
 ### **Ploteo de la señal en Python** <a name="t8"></a>
 
