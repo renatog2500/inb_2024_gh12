@@ -113,6 +113,7 @@ A continuación se mostrarán los videos de la señal EEG en OpenSignals. Seguim
 | Prueba | Señal Ploteada en OpenBCI |
 | --------- | ---- |
 | 1.Lectura de la señal Basal | [! [Miniatura del video] (https://img.youtube.com/vi/-wfPedZAewY/0.jpg)] (https://www.youtube.com/watch?v=XvO9Swg0UOs&feature=youtu.be) |
+| 1.Lectura de la señal Basal | [![Miniatura del video](https://img.youtube.com/vi/XvO9Swg0UOs/0.jpg)](https://www.youtube.com/watch?v=XvO9Swg0UOs) |
 | 2. Lectura de los ciclos de Ojos Abiertos y Cerrados (Fases de 5 segundos) | [! [Miniatura del video] (https://img.youtube.com/vi/5O7GbBteY9w/0.jpg)]  (https://www.youtube.com/watch?v=5O7GbBteY9w)|
 | 4. Resolución de preguntas Simples |[! [Miniatura del video] (https://img.youtube.com/vi/TCozf52vHHc/0.jpg)] (https://www.youtube.com/watch?v=TCozf52vHHc&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=5 "Haz clic para ver el video") |
 | 5.Resolución de preguntas Complejas | [! [Miniatura del video] (https://img.youtube.com/vi/QQnHKHVdN3U/0.jpg)] (https://www.youtube.com/watch?v=QQnHKHVdN3U&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=4 "Haz clic para ver el video") |
