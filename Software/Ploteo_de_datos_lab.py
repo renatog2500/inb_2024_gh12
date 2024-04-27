@@ -4,8 +4,7 @@ import matplotlib.pyplot as plt
 import re
 
 # Cargar datos desde el archivo de texto según la ubicación del 
-archivo = "ISB_Informes\L5_Lectura_de_EEG\EEG_L5\BiTalino\Fase_referencia_30seg.txt"
-
+archivo = "C:/Users/Equipo/OneDrive/Escritorio/Introduccion_a_señales_biomedicas/Github/inb_2024_gh12/ISB_Informes/L5_Lectura_de_EEG/EEG_L5/BiTalino/Prueba_ojos_abiertos_cerrado_5s.txt"
 def extraer_nombres_columnas(archivo):
     with open(archivo, 'r') as f:
         for linea in f:
@@ -78,8 +77,8 @@ Lectura = Lectura * 1e6
 # Plotear la señal de EMG en el dominio del tiempo
 plt.figure(figsize=(13,9))
 plt.subplot(211)
-plt.plot(Lectura, color="Green",linewidth=1)
-plt.title("Lectura del EEG en la fase de referencia en el dominio del tiempo")
+plt.plot(Lectura, color="red",linewidth=1)
+plt.title("Lectura del EEG en la fase de abrir y cerrar los ojos en el dominio del tiempo")
 plt.xlabel("Tiempo (s)")
 plt.ylabel("Amplitud (uV)")
 plt.grid(True)
