@@ -126,6 +126,7 @@ A continuación se mostrarán los videos de la señal EEG en OpenSignals. Seguim
 
 ### **Ploteo de la señal en Python** <a name="t8"></a>
 
+**Ploteo del protocolo usando BITalino en Python:** 
 A continuación se mostrará la señal junto con el código de Python utilizado para su representación:
 
 | Prueba     | Ploteo de la señal en el tiempo y su dominio en frecuencia     |
@@ -139,8 +140,6 @@ A continuación se mostrará la señal junto con el código de Python utilizado 
 <p align="center">
   <b>Tabla 3. Ploteo del protocolo en Python </b>
 </p>
-
-
 
 **- Código en Python para ploteo de señales de BiTalino:**
 ```python
@@ -229,6 +228,20 @@ plt.grid(True)
 plt.show()
 
 ```
+
+**Ploteo del protocolo usando UltraCortex en Python:** 
+A continuación se muestra el ploteo en Python del procedimiento utilizado para examinar la alteración en la actividad neuronal a través de la plataforma OpenBCI: 
+
+| Prueba     | Ploteo de la señal en el tiempo y su dominio en frecuencia     |
+| -------------- | -------------- |
+| **1.Estado de reposo (lectura basal**| <img src="Imagenes_L5/Ultracortex_Base.png" alt="Electrodos de guía" width="700">|
+| **2.Lectura de los ciclos de Ojos Abiertos y Cerrados (Fases de 5 segundos)** | <img src="Imagenes_L5/Ultra_cortex_Abrir_y_ cerrar_los_ojos.png" alt="Electrodos de guía" width="700">|
+| **3. Segunda lectura Basal** | <img src="Imagenes_L5/UltraCortex_Basal2.png" alt="Electrodos de guía" width="700">|
+| **4. Resolución de preguntas matemáticas** | <img src="Imagenes_L5/Preguntas_matematicas_ultracortex.png" alt="Electrodos de guía" width="700">|
+
+<p align="center">
+  <b>Tabla 3. Ploteo del protocolo en UltraCortex </b>
+</p>
 
 **-Código de ploteo para señal de OpenBCI:**
 ```python
