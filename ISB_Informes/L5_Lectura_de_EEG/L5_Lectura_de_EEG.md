@@ -119,10 +119,8 @@ A continuación se mostrarán los videos de la señal EEG en OpenSignals. Seguim
 | 4. Resolución de preguntas Simples | [![Miniatura del video](https://img.youtube.com/vi/dlAMXUPAE9I/0.jpg)](https://youtu.be/dlAMXUPAE9I) |
 | 5.Resolución de preguntas Complejas| [![Miniatura del video](https://img.youtube.com/vi/ADb1Umvjf0A/0.jpg)](https://youtu.be/ADb1Umvjf0A) |
 
-
-
 <p align="center">
-  <b>Tabla 2. Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals del protocolo.
+  <b>Tabla 3. Videos mostrando las conexiones electrodos-cuerpo y la señal ploteada en OpenSignals del protocolo.
  </b>
 </p>
 
@@ -150,7 +148,7 @@ A continuación se mostrarán los videos de la señal EEG en OpenSignals. Seguim
 | 4. Ejercicios Matemáticos | [![Miniatura del video](https://img.youtube.com/vi/p1FOJwmLAsk/0.jpg)](https://www.youtube.com/watch?v=p1FOJwmLAsk) |
 
 <p align="center">
-  <b>Tabla 3. Videos de la señal ploteada en OpenBCI del protocolo </b>
+  <b>Tabla 4. Videos de la señal ploteada en OpenBCI del protocolo </b>
 </p>
 
 ### **Explicación de la variación de la señal ploteada en OpenBCI**
@@ -167,7 +165,7 @@ A continuación se mostrarán los videos de la señal EEG en OpenSignals. Seguim
 
 ### **Ploteo de la señal en Python** 
 ________________________________________________________________________________________________
-### **BITalino: Ploteo de la señal en Python** <a name="t9"></a>
+### **BITalino: Ploteo de la señal obtenida en Python** <a name="t9"></a>
 A continuación se mostrará la señal junto con el código de Python utilizado para su representación:
 
 | Prueba     | Ploteo de la señal en el tiempo y su dominio en frecuencia     |
@@ -179,7 +177,7 @@ A continuación se mostrará la señal junto con el código de Python utilizado 
 | **5. Resolución de preguntas Complejas** |<img src="Imagenes_L5/Preguntas_complejas.png" alt="Electrodos de guía" width="700"> |
 
 <p align="center">
-  <b>Tabla 3. Ploteo del protocolo en Python </b>
+  <b>Tabla 5. Ploteo del protocolo en Python de la señal del BITalino </b>
 </p>
 
 **Descripción de las señales obtenidas**: 
@@ -287,7 +285,7 @@ A continuación se muestra el ploteo en Python del procedimiento utilizado para 
 | **4. Resolución de preguntas matemáticas** | <img src="Imagenes_L5/Preguntas_matematicas_ultracortex.png" alt="Electrodos de guía" width="700">|
 
 <p align="center">
-  <b>Tabla 4. Ploteo del protocolo en UltraCortex </b>
+  <b>Tabla 6. Ploteo en Python del protocolo en UltraCortex </b>
 </p>
 
 - **Descripción de las señales obtenidas:**
