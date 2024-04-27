@@ -25,10 +25,10 @@ archivo = "C:/Users/Equipo/OneDrive/Escritorio/Introduccion_a_señales_biomedica
 # Definir las constantes del ADC
 vref = 4.5  # Voltaje de referencia en volts
 ganancia = 24  # Ganancia del ADC
-resolucion = 24  # Resolución en bits
+resolucion = 16  # Resolución en bits
 
 # Calcular el voltaje por bit en volts
-voltaje_por_bit = vref / (ganancia) /(2**24 - 1)
+voltaje_por_bit = vref / (ganancia) /(2**16 - 1)
 
 # Load the data
 data = pd.read_csv(archivo, skiprows=5, usecols=range(1, 17))
