@@ -151,9 +151,8 @@ A continuación se mostrarán los videos de la señal EEG en OpenSignals. Seguim
 
 
 ### **Ploteo de la señal en Python** 
-_________________________________________
+________________________________________________________________________________________________
 ### **BITalino: Ploteo de la señal en Python** <a name="t9"></a>
-**Ploteo del protocolo usando BITalino en Python:** 
 A continuación se mostrará la señal junto con el código de Python utilizado para su representación:
 
 | Prueba     | Ploteo de la señal en el tiempo y su dominio en frecuencia     |
@@ -167,6 +166,10 @@ A continuación se mostrará la señal junto con el código de Python utilizado 
 <p align="center">
   <b>Tabla 3. Ploteo del protocolo en Python </b>
 </p>
+
+- <span style="color:blue;">**Descripción de las señales obtenidas:**</span>
+
+
 
 **- Código en Python para ploteo de señales de BiTalino:**
 ```python
@@ -270,6 +273,7 @@ A continuación se muestra el ploteo en Python del procedimiento utilizado para 
   <b>Tabla 4. Ploteo del protocolo en UltraCortex </b>
 </p>
 
+- **Descripción de las señales obtenidas:**
 
 
 **-Código de ploteo para señal de OpenBCI:**
