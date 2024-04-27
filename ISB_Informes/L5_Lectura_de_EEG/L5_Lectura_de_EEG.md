@@ -114,10 +114,11 @@ A continuación se mostrarán los videos de la señal EEG en OpenSignals. Seguim
 | Prueba | Señal Ploteada en Open Signals |
 | --------- | ---- |
 | 1.Lectura de la señal Basal    | [![Miniatura del video](https://img.youtube.com/vi/vVzU5VYG40Y/0.jpg)](https://youtu.be/vVzU5VYG40Y) |
+| 2. Lectura de Ojos Abiertos y Cerrados (Fases de 5 segundos)| [![Miniatura del video](https://img.youtube.com/vi/qGDZA1MTl0I/0.jpg)](https://youtu.be/qGDZA1MTl0I) |
+| 3. Lectura de la Segunda señal Basal| No se registro video de esta señal basa, pero si se considero para el ploteo |
+| 4. Resolución de preguntas Simples | [![Miniatura del video](https://img.youtube.com/vi/dlAMXUPAE9I/0.jpg)](https://youtu.be/dlAMXUPAE9I) |
+| 5.Resolución de preguntas Complejas| [![Miniatura del video](https://img.youtube.com/vi/ADb1Umvjf0A/0.jpg)](https://youtu.be/ADb1Umvjf0A) |
 
-| 2. Lectura de los ciclos de Ojos Abiertos y Cerrados (Fases de 5 segundos) | [! [Miniatura del video] (https://img.youtube.com/vi/tKcrb_DEtSk/0.jpg)] (https://www.youtube.com/watch?v=tKcrb_DEtSk&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=10) |
-| 4. Resolución de preguntas Simples |[! [Miniatura del video] (https://img.youtube.com/vi/TCozf52vHHc/0.jpg)] (https://www.youtube.com/watch?v=TCozf52vHHc&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=5 "Haz clic para ver el video") |
-| 5.Resolución de preguntas Complejas | [! [Miniatura del video] (https://img.youtube.com/vi/QQnHKHVdN3U/0.jpg)] (https://www.youtube.com/watch?v=QQnHKHVdN3U&list=PL1Sr3jz1xOr2I_mcd2os0of3MUAfD8h60&index=4 "Haz clic para ver el video") |
 
 
 <p align="center">
