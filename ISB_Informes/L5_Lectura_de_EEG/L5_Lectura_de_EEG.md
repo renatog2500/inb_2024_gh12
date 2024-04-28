@@ -205,6 +205,7 @@ La consistencia entre la primera y la segunda lectura basal en los 16 canales de
 
 **4. Resolución de preguntas matemáticas:**
 
+Las ondas tetha se asocian con la memoria de trabajo, la concentración y el procesamiento de información compleja [17], las ondas alfa se relacionan con la atención interna, la visualización mental y la inhibición de estímulos irrelevantes, y se produce una desincronización de las ondas alfa en las regiones occipitales y parietales durante la resolución de ejercicios mentales que implican imaginación visual o manipulación espacial[18]. Por último, se debe observar un aumento en la potencia de las ondas beta durante la resolución de ejercicios mentales que requieren un alto nivel de concentración y control cognitivo [12]
 
 
 ### **Ploteo de la señal en Python** 
@@ -500,9 +501,13 @@ Función de Visualización:
 
 [16] A. J. Casson, “Wearable EEG and beyond”, Biomed. Eng. Lett., vol. 9, n.º 1, pp. 53–71, enero de 2019. Accedido el 28 de abril de 2024. [En línea]. Disponible: (https://pubmed.ncbi.nlm.nih.gov/30956880/) 
 
-[17] BiTalino, “BITalino (r)evolution Board Kit Data Sheet”, 2016. 2020 Accessed: Apr. 27, 2024. [Online]
+[17] Snipes S, Krugliakova E, Meier E, Huber R. The Theta Paradox: 4-8 Hz EEG Oscillations Reflect Both Sleep Pressure and Cognitive Control. J Neurosci. 2022 Nov 9;42(45):8569-8586. doi: 10.1523/JNEUROSCI.1063-22.2022. Epub 2022 Oct 6. PMID: 36202618; PMCID: PMC9665934.
 
-[18] “Cyton data format”, Openbci.com. [En línea]. Disponible en: https://docs.openbci.com/Cyton/CytonDataFormat/. [Consultado: 28-abr-2024].
+[18] W. Klimesch, “Alpha-band oscillations, attention, and controlled access to stored information”, Trends Cogn. Sci., vol. 16, n.º 12, pp. 606–617, diciembre de 2012. Accedido el 28 de abril de 2024. [En línea]. Disponible: https://doi.org/10.1016/j.tics.2012.10.007
+
+[20] BiTalino, “BITalino (r)evolution Board Kit Data Sheet”, 2016. 2020 Accessed: Apr. 27, 2024. [Online]
+
+[21] “Cyton data format”, Openbci.com. [En línea]. Disponible en: https://docs.openbci.com/Cyton/CytonDataFormat/. [Consultado: 28-abr-2024].
 
 
 
