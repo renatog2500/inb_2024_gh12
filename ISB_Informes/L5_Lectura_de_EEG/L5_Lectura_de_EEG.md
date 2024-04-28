@@ -72,7 +72,7 @@ ________________________________________________________________________________
 </p>
 
 ## Protocolo de conexión <a name="t5"></a>
-Para capturar las señales EEG, se empleó el dispositivo BITalino y su conjunto de sensores EEG de tres electrodos. Se siguió el procedimiento detallado en la guía BiTalino,**(BITalino HOME-GUIDE #3 ELECTROENCEPHALOGRAPHY (EEG) Exploring Brain Signals ")** [1], como referencia para posicionar correctamente los electrodos en el sujeto de prueba. 
+Para capturar las señales EEG, se empleó el dispositivo BITalino y su conjunto de sensores EEG de tres electrodos. Se siguió el procedimiento detallado en la guía BiTalino,**(BITalino HOME-GUIDE #3 ELECTROENCEPHALOGRAPHY (EEG) Exploring Brain Signals ")** [1J], como referencia para posicionar correctamente los electrodos en el sujeto de prueba. 
 
 Para el registro de las señales de EEG con el BITalino, es común utilizar la modalidad de medición bipolar. En esta modalidad se requieren dos electrodos de medición (IN + e IN -) y uno de referencia. Este último se coloca adicionalmente en una zona ósea para garantizar una referencia estable y consistente durante la adquisición de las señales cerebrales. La guía BITalino Home Guide #3 sigue el sistema internacional 10-20 para la colocación de los electrodos. 
 
@@ -84,22 +84,22 @@ Para el registro de las señales de EEG con el BITalino, es común utilizar la m
 </p>
 
 
-En este sistema, los puntos de referencia se nombran de acuerdo con la distancia entre ellos, que es aproximadamente el 10% o el 20% de la distancia total entre el nasión (parte superior del puente de la nariz) y el inión (punto más prominente en la parte posterior del cráneo). Como se puede observar en la Figura 2. Los puntos etiquetados con "F" corresponden a la región frontal, mientras que los etiquetados con "P" corresponden a la región parietal. Por otro lado: Los numeros indican la distancia del nasión- inión. Donde "1" indica que el punto está a una distancia del 10% en esa dirección, mientras que el "2" indica que está a una distancia del 20% [1]. 
+En este sistema, los puntos de referencia se nombran de acuerdo con la distancia entre ellos, que es aproximadamente el 10% o el 20% de la distancia total entre el nasión (parte superior del puente de la nariz) y el inión (punto más prominente en la parte posterior del cráneo). Como se puede observar en la Figura 2. Los puntos etiquetados con "F" corresponden a la región frontal, mientras que los etiquetados con "P" corresponden a la región parietal. Por otro lado: Los numeros indican la distancia del nasión- inión. Donde "1" indica que el punto está a una distancia del 10% en esa dirección, mientras que el "2" indica que está a una distancia del 20% [1J]. 
 
 A continuación, se presentan los protocolos de conexión específicos utilizados en cada prueba llevada a cabo en este laboratorio:
 
-| Figura 3. Colocación de electrodos según el sistema 10-20 (posiciones referenciales) [4]. | Figura 4. Colocación de los electrodos en el laboratorio para la derivación en el sujeto de prueba     |
+| Figura 3. Colocación de electrodos según el sistema 10-20 (posiciones referenciales) [4J]. | Figura 4. Colocación de los electrodos en el laboratorio para la derivación en el sujeto de prueba     |
 |------------------------------------------------------------|---------------------------------------------------------------------------|
 | ![Electrodos de guía](Imagenes_L5/Posicion_referencial.png) | <img src="Imagenes_L5/Electrodos_posicion_renato.png" alt="Electrodos de guía" width="700"> |
 
-La siguiente actividad implica el uso de la plataforma Open BCI, la cual actúa como una interfaz entre el cerebro y la computadora para simular señales de electroencefalograma y analizar e interpretar la actividad cerebral. Se utilizó el "Ultracortex Mark IV EEG Headset" como casco con electrodos, siguiendo también el sistema 10-20. Es relevante mencionar que OpenBCI puede mostrar información en las cinco bandas de frecuencia (delta, theta, alpha, beta y gamma). [5]
+La siguiente actividad implica el uso de la plataforma Open BCI, la cual actúa como una interfaz entre el cerebro y la computadora para simular señales de electroencefalograma y analizar e interpretar la actividad cerebral. Se utilizó el "Ultracortex Mark IV EEG Headset" como casco con electrodos, siguiendo también el sistema 10-20. Es relevante mencionar que OpenBCI puede mostrar información en las cinco bandas de frecuencia (delta, theta, alpha, beta y gamma). [5J]
 
 
 Las imágenes a continuación fueron tomadas del grupo 11 debido a que no se pudo realizar la prueba por falta de tiempo. En la figura 5 se indican las ubicaciones predeterminadas de 10 a 20 electrodos que la intergaz OpenBCI espera al recibir una señal. El kit OpenBCI permite la adquisición para la adquisición y análisis de señales cerebrales utilizando hasta 16 canales de EEG . Los puntos marcados en azul en una representación gráfica identifican los primeros 8 canales de la placa Cyton de OpenBCI. Estos canales, numerados del 1 al 8, están predefinidos para ciertos propósitos o ubicaciones en la placa. Mientras que aquellos puntos marcados en rojo en la representación gráfica corresponden a los canales restantes, del 9 al 16. Estos canales pueden tener funciones distintas o estar destinados a ubicaciones específicas en la placa Cyton.
 
 En la figura 6 se muestra la colocación del UltraCortex, para garantizar la mejor toma de señales se busca que el nodo central posterior esté aproximadamente a la misma distancia, por encima del inion, que el nodo central frontal, el cual está por encima del puente de la nariz.
 
-| Figura 5.Ubicaciones predeterminadas de OpenBCI [5]. | Figura 6. Colocación de los electrodos en el laboratorio para la derivación en el sujeto de prueba     |
+| Figura 5.Ubicaciones predeterminadas de OpenBCI [5J]. | Figura 6. Colocación de los electrodos en el laboratorio para la derivación en el sujeto de prueba     |
 |------------------------------------------------------------|---------------------------------------------------------------------------|
 | ![Electrodos de guía](Imagenes_L5/tabla_ultra.png) | <img src="Imagenes_L5/conexiones_ultra.jpg" alt="Electrodos de guía" width="700"> |
 
@@ -152,11 +152,20 @@ A continuación se mostrarán los videos de la señal EEG en OpenSignals. Seguim
 
 **1. Lectura del Estado Basal:**
 
+Estado de reposo (Lectura Basal):
+El cambio abrupto inicial en la señal de EEG durante el estado de reposo puede atribuirse a artefactos de movimiento o ajustes en el sistema de adquisición. Después de este cambio inicial, la señal se vuelve estable y constante, lo que refleja un estado de reposo mental y una actividad cerebral reducida [1R]. Según Gu et al. (2020), "durante el estado de reposo, la actividad cerebral espontánea se caracteriza por oscilaciones de baja frecuencia y alta amplitud en las bandas alfa y theta" [2R].
+
 **2. Lectura de los ciclos de Ojos Abiertos y Cerrados (Fases de 5 segundos):**
+
+Los picos de gran tamaño observados al abrir o cerrar los ojos se deben a artefactos oculares causados por el movimiento de los ojos y los párpados. Estos artefactos se superponen a la señal de EEG y pueden tener una amplitud mucho mayor que la actividad cerebral subyacente [3R]. Plichta et al. (2021) mencionan que "los artefactos oculares, como los parpadeos y los movimientos sacádicos, pueden introducir grandes picos en la señal de EEG" [4R].
 
 **3. Segunda lectura en estado de reposo (no se repitio la grabación de video):**
 
+La similitud entre la primera y la segunda lectura en estado basal sugiere que el sujeto pudo relajarse y volver a un estado de reposo mental después de la tarea de abrir y cerrar los ojos. La reproducibilidad de las mediciones basales es importante para evaluar la estabilidad de la señal de EEG a lo largo del tiempo [1R].
+
 **4. Resolución de preguntas Simples:**
+
+Los cambios en los picos negativos y positivos de la señal de EEG durante la resolución de preguntas simples pueden estar relacionados con la activación de áreas cerebrales específicas involucradas en el procesamiento cognitivo y la formulación de respuestas [5R]. Los pequeños cambios observados durante el razonamiento sugieren una mayor actividad cerebral en comparación con el estado de reposo. Según Bhattacharya et al. (2020), "la resolución de problemas y el razonamiento están asociados con cambios en la actividad oscilatoria en las bandas theta y alfa del EEG" [6R].
 
 **5. Resolución de preguntas Complejas:**
 
@@ -401,10 +410,27 @@ plt.show()
 
 ## ** Bibliografía** : <a name="t12"></a>
 
-[1] BITalino, “BITalino HOME-GUIDE #3 ELECTROENCEPHALOGRAPHY (EEG) Exploring Brain signals” 2020 Accessed: Apr. 19, 2023. [Online]. Available from:https://bitalino.com/storage/uploads/media/homeguide3-eeg.pdf
-[4] J. Molina del Río, M. A. Guevara, M. Hernández González, R. M. Hidalgo Aguirre, y M. A. Cruz Aguilar, “EEG correlation during the solving of simple and complex logical–mathematical problems”, Cogn. Affect. Behav. Neurosci., vol. 19, núm. 4, pp. 1036–1046, 2019.
+[1J] BITalino, “BITalino HOME-GUIDE #3 ELECTROENCEPHALOGRAPHY (EEG) Exploring Brain signals” 2020 Accessed: Apr. 19, 2023. [Online]. Available from:https://bitalino.com/storage/uploads/media/homeguide3-eeg.pdf
 
-[5] “Ultracortex Mark IV”, Openbci.com, 2016. [En línea]. Disponible en: https://docs.openbci.com/AddOns/Headwear/MarkIV/
-‌
+[4J] J. Molina del Río, M. A. Guevara, M. Hernández González, R. M. Hidalgo Aguirre, y M. A. Cruz Aguilar, “EEG correlation during the solving of simple and complex logical–mathematical problems”, Cogn. Affect. Behav. Neurosci., vol. 19, núm. 4, pp. 1036–1046, 2019.
+
+[5J] “Ultracortex Mark IV”, Openbci.com, 2016. [En línea]. Disponible en: https://docs.openbci.com/AddOns/Headwear/MarkIV/
+
+[‌1R] X. Gu et al., "EEG-Based Brain-Computer Interfaces (BCIs): A Survey of Recent Studies on Signal Sensing Technologies and Computational Intelligence Approaches and Their Applications," in IEEE/ACM Transactions on Computational Biology and Bioinformatics, vol. 18, no. 5, pp. 1645-1666, 1 Sept.-Oct. 2021, doi: 10.1109/TCBB.2021.3052811.
+
+[2R] B. Yang, K. Duan, C. Fan, C. Hu y J. Wang, “Automatic ocular artifacts removal in EEG using deep learning”, Biomed. Signal Process. Control, vol. 43, pp. 148–158, mayo de 2018. Accedido el 28 de abril de 2024. [En línea]. Disponible: https://doi.org/10.1016/j.bspc.2018.02.021
+
+[3R] L. Gila, A. Villanueva y R. Cabeza, “Fisiopatología y técnicas de registro de los movimientos oculares”, Anales del Sist. Sanitario de Navarra, vol. 32, 2009. Accedido el 28 de abril de 2024. [En línea]. Disponible: https://doi.org/10.4321/s1137-66272009000600002 
+
+[4R] M. M. Plichta et al., “Event-related functional near-infrared spectroscopy (fNIRS): Are the measurements reliable?”, NeuroImage, vol. 31, n.º 1, pp. 116–124, mayo de 2006. Accedido el 28 de abril de 2024. [En línea]. Disponible: https://doi.org/10.1016/j.neuroimage.2005.12.008
+
+[5R] A. M. Norcia, L. G. Appelbaum, J. M. Ales, B. R. Cottereau y B. Rossion, “The steady-state visual evoked potential in vision research: A review”, J. Vis., vol. 15, n.º 6, p. 4, mayo de 2015. Accedido el 28 de abril de 2024. [En línea]. Disponible: https://doi.org/10.1167/15.6.4
+
+[6R] Y. Zhou, S. Huang, Z. Xu, P. Wang, X. Wu and D. Zhang, "Cognitive Workload Recognition Using EEG Signals and Machine Learning: A Review," in IEEE Transactions on Cognitive and Developmental Systems, vol. 14, no. 3, pp. 799-818, Sept. 2022, doi: 10.1109/TCDS.2021.3090217.
+
+
+
+
+
 
 
