@@ -22,11 +22,15 @@ ________________________________________________________________________________
 
 
 ## Introducción  <a name = "t2"></a>
+La electroencefalografía (EEG) es una técnica no invasiva que se utiliza para registrar la actividad eléctrica del cerebro. El EEG mide las fluctuaciones de voltaje resultantes de las corrientes iónicas dentro de las neuronas del cerebro [a]. Estas señales eléctricas se detectan mediante electrodos colocados sobre el cuero cabelludo y se registran en función del tiempo, lo que permite obtener una representación de los patrones de actividad cerebral [b].
+El EEG es capaz de detectar y registrar diferentes tipos de ondas cerebrales, que se clasifican según su frecuencia y amplitud [c]. Los principales tipos de ondas cerebrales son:
 
+**Ondas Delta (0.5-4 Hz)**: Estas ondas de baja frecuencia y alta amplitud se asocian con el sueño profundo y los estados de inconsciencia [d].
+**Ondas Theta (4-8 Hz)**: Las ondas theta se relacionan con la somnolencia, la meditación y algunos estados emocionales [5].
+**Ondas Alfa (8-13 Hz)**: Estas ondas se observan durante estados de relajación, vigilia tranquila y actividades mentales poco exigentes [d].
+**Ondas Beta (13-30 Hz)**: Las ondas beta se asocian con estados de alerta, atención activa, concentración y pensamiento activo [d].
+**Ondas Gamma (30-100 Hz)**: Estas ondas de alta frecuencia se relacionan con la percepción consciente, la integración de información y los procesos cognitivos de alto nivel [d].
 
-
-
-**Señal de un Electroencefalograma**: 
 
 
 ## **Objetivos del Laboratorio** <a name = "t3"></a>
@@ -463,6 +467,14 @@ Función de Visualización:
 
 
 ## ** Bibliografía** : <a name="t12"></a>
+
+[a] Chaddad A, Wu Y, Kateb R, Bouridane A. Electroencephalography Signal Processing: A Comprehensive Review and Analysis of Methods and Techniques. Sensors (Basel). 2023 Jul 16;23(14):6434. doi: 10.3390/s23146434. PMID: 37514728; PMCID: PMC10385593.
+
+[b] Cohen MX. Where Does EEG Come From and What Does It Mean? Trends Neurosci. 2017 Apr;40(4):208-218. doi: 10.1016/j.tins.2017.02.004. Epub 2017 Mar 15. PMID: 28314445.
+
+[c] K. S. Bayram, M. A. Kızrak and B. Bolat, "Classification of EEG signals by using support vector machines," 2013 IEEE INISTA, Albena, Bulgaria, 2013, pp. 1-3, doi: 10.1109/INISTA.2013.6577636.
+
+[d] Priyanka A. Abhang, Bharti W. Gawali, Suresh C. Mehrotra, "Technological Basics of EEG Recording and Operation of Apparatus", en Introduction to EEG- and Speech-Based Emotion Recognition, Academic Press, 2016, pp. 19-50, doi:10.1016/B978-0-12-804490-2.00002-6
 
 [1J] BITalino, “BITalino HOME-GUIDE #3 ELECTROENCEPHALOGRAPHY (EEG) Exploring Brain signals” 2020 Accessed: Apr. 19, 2023. [Online]. Available from:https://bitalino.com/storage/uploads/media/homeguide3-eeg.pdf
 
