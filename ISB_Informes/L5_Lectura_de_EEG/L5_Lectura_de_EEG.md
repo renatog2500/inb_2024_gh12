@@ -189,9 +189,15 @@ Los cambios en la señal de EEG durante la resolución de preguntas complejas pu
 
 **1. Lectura del Estado Basal:**
 
+Durante el estado de reposo, la señal de EEG de 16 derivaciones muestra un patrón estable y sincronizado en múltiples canales, lo que refleja una actividad cerebral basal coherente [1R]. Según Gu et al. (2020), "el EEG de múltiples canales permite una evaluación más completa de la actividad cerebral espontánea durante el estado de reposo, revelando patrones espaciales y temporales de sincronización" [2R].
+
 **2. Lectura de los ciclos de Ojos Abiertos y Cerrados (Fases de 5 segundos):**
 
+Los picos de gran amplitud observados en múltiples canales al abrir o cerrar los ojos se deben a artefactos oculares, que se propagan a través de los electrodos cercanos a los ojos [3R]. Blum et al. (2021) señalan que "los artefactos oculares pueden contaminar varios canales de EEG, especialmente los ubicados en las regiones frontal y temporal" [4R].
+
 **3. Registro de fase de referencia**
+
+
 
 **4. Resolución de preguntas matemáticas:**
 
