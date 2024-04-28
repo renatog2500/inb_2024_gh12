@@ -103,7 +103,7 @@ Como puede observarse en la figura 3, algunos componentes no fueron conectados d
 
 | Figura 5.Ubicaciones predeterminadas de OpenBCI [5]. | Figura 6. Colocación de los electrodos en el laboratorio para la derivación en el sujeto de prueba     |
 |------------------------------------------------------------|---------------------------------------------------------------------------|
-| ![Electrodos de guía](Imagenes_L5/Posicion_referencial.png) | <img src="Imagenes_L5/Electrodos_posicion_renato.png" alt="Electrodos de guía" width="700"> |
+| ![Electrodos de guía](Imagenes_L5/tabla_ultra.png) | <img src="Imagenes_L5/conexiones_ultra.jpg" alt="Electrodos de guía" width="700"> |
 
 **Protocolo para las pruebas realizadas:**
 El protocolo seguido para evaluar la actividad neuronal en vivo con el encefalograma fue el de la guía experimental de BITalino [1]:
