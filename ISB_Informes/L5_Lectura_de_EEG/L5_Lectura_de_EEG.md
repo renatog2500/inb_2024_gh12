@@ -26,7 +26,7 @@ La electroencefalografía (EEG) es una técnica no invasiva que se utiliza para 
 El EEG es capaz de detectar y registrar diferentes tipos de ondas cerebrales, que se clasifican según su frecuencia y amplitud [c]. Los principales tipos de ondas cerebrales son:
 
 - **Ondas Delta (0.5-4 Hz)**: Estas ondas de baja frecuencia y alta amplitud se asocian con el sueño profundo y los estados de inconsciencia [d].
-- **Ondas Theta (4-8 Hz)**: Las ondas theta se relacionan con la somnolencia, la meditación y algunos estados emocionales [5].
+- **Ondas Theta (4-8 Hz)**: Las ondas theta se relacionan con la somnolencia, la meditación y algunos estados emocionales [d].
 - **Ondas Alfa (8-13 Hz)**: Estas ondas se observan durante estados de relajación, vigilia tranquila y actividades mentales poco exigentes [d].
 - **Ondas Beta (13-30 Hz)**: Las ondas beta se asocian con estados de alerta, atención activa, concentración y pensamiento activo [d].
 - **Ondas Gamma (30-100 Hz)**: Estas ondas de alta frecuencia se relacionan con la percepción consciente, la integración de información y los procesos cognitivos de alto nivel [d].
