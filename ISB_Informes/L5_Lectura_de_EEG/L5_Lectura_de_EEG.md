@@ -95,11 +95,9 @@ A continuación, se presentan los protocolos de conexión específicos utilizado
 La siguiente actividad implica el uso de la plataforma Open BCI, la cual actúa como una interfaz entre el cerebro y la computadora para simular señales de electroencefalograma y analizar e interpretar la actividad cerebral. Se utilizó el "Ultracortex Mark IV EEG Headset" como casco con electrodos, siguiendo también el sistema 10-20. Es relevante mencionar que OpenBCI puede mostrar información en las cinco bandas de frecuencia (delta, theta, alpha, beta y gamma). [5]
 
 
-Las imágenes a continuación indican las ubicaciones predeterminadas de 10 a 20 electrodos que espera la interfaz gráfica de usuario de OpenBCI. Utilizando el kit de investigación y desarrollo de 16 canales OpenBCI, los nodos azules indicaron las 8 ubicaciones predeterminadas (canales 1-8) de la placa Cyton; mientras que los rojos indicaron las de los canales 9-16. [5]
+Las imágenes a continuación fueron tomadas del grupo 11 debido a que no se pudo realizar la prueba por falta de tiempo. En la figura 5 se indican las ubicaciones predeterminadas de 10 a 20 electrodos que la intergaz OpenBCI espera al recibir una señal. El kit OpenBCI permite la adquisición para la adquisición y análisis de señales cerebrales utilizando hasta 16 canales de EEG . Los puntos marcados en azul en una representación gráfica identifican los primeros 8 canales de la placa Cyton de OpenBCI. Estos canales, numerados del 1 al 8, están predefinidos para ciertos propósitos o ubicaciones en la placa. Mientras que aquellos puntos marcados en rojo en la representación gráfica corresponden a los canales restantes, del 9 al 16. Estos canales pueden tener funciones distintas o estar destinados a ubicaciones específicas en la placa Cyton.
 
-Como puede observarse en la figura 3, algunos componentes no fueron conectados debido al mal estado con el que fue entregado el dispositivo. Asimismo, se incorporaron los dos electrodos de clip para la oreja, los cuales sirven como referencia y polarización (tierra con rechazo de ruido de modo común). [5]
-
-
+En la figura 6 se muestra la colocación del UltraCortex, para garantizar la mejor toma de señales se busca que el nodo central posterior esté aproximadamente a la misma distancia, por encima del inion, que el nodo central frontal, el cual está por encima del puente de la nariz.
 
 | Figura 5.Ubicaciones predeterminadas de OpenBCI [5]. | Figura 6. Colocación de los electrodos en el laboratorio para la derivación en el sujeto de prueba     |
 |------------------------------------------------------------|---------------------------------------------------------------------------|
