@@ -92,6 +92,10 @@ A continuación, se presentan los protocolos de conexión específicos utilizado
 |------------------------------------------------------------|---------------------------------------------------------------------------|
 | ![Electrodos de guía](Imagenes_L5/Posicion_referencial.png) | <img src="Imagenes_L5/Electrodos_posicion_renato.png" alt="Electrodos de guía" width="700"> |
 
+La siguiente actividad implica el uso de la plataforma Open BCI, la cual actúa como una interfaz entre el cerebro y la computadora para simular señales de electroencefalograma y analizar e interpretar la actividad cerebral. Se utilizó el "Ultracortex Mark IV EEG Headset" como casco con electrodos, siguiendo también el sistema 10-20. Es relevante mencionar que OpenBCI puede mostrar información en las cinco bandas de frecuencia (delta, theta, alpha, beta y gamma). 
+| Figura 5. Colocación de electrodos según el sistema 10-20 (posiciones referenciales) [4]. | Figura 6. Colocación de los electrodos en el laboratorio para la derivación en el sujeto de prueba     |
+|------------------------------------------------------------|---------------------------------------------------------------------------|
+| ![Electrodos de guía](Imagenes_L5/Posicion_referencial.png) | <img src="Imagenes_L5/Electrodos_posicion_renato.png" alt="Electrodos de guía" width="700"> |
 
 **Protocolo para las pruebas realizadas:**
 El protocolo seguido para evaluar la actividad neuronal en vivo con el encefalograma fue el de la guía experimental de BITalino [1]:
