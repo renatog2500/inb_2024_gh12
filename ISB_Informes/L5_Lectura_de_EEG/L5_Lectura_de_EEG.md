@@ -72,7 +72,7 @@ ________________________________________________________________________________
 </p>
 
 ## Protocolo de conexión <a name="t5"></a>
-Para capturar las señales EEG, se empleó el dispositivo BITalino y su conjunto de sensores EEG de tres electrodos. Se siguió el procedimiento detallado en la guía BiTalino,**(BITalino HOME-GUIDE #3 ELECTROENCEPHALOGRAPHY (EEG) Exploring Brain Signals ")** [4], como referencia para posicionar correctamente los electrodos en el sujeto de prueba. 
+Para capturar las señales EEG, se empleó el dispositivo BITalino y su conjunto de sensores EEG de tres electrodos. Se siguió el procedimiento detallado en la guía BiTalino,**(BITalino HOME-GUIDE #3 ELECTROENCEPHALOGRAPHY (EEG) Exploring Brain Signals ")** [1], como referencia para posicionar correctamente los electrodos en el sujeto de prueba. 
 
 Para el registro de las señales de EEG con el BITalino, es común utilizar la modalidad de medición bipolar. En esta modalidad se requieren dos electrodos de medición (IN + e IN -) y uno de referencia. Este último se coloca adicionalmente en una zona ósea para garantizar una referencia estable y consistente durante la adquisición de las señales cerebrales. La guía BITalino Home Guide #3 sigue el sistema internacional 10-20 para la colocación de los electrodos. 
 
@@ -84,11 +84,11 @@ Para el registro de las señales de EEG con el BITalino, es común utilizar la m
 </p>
 
 
-En este sistema, los puntos de referencia se nombran de acuerdo con la distancia entre ellos, que es aproximadamente el 10% o el 20% de la distancia total entre el nasión (parte superior del puente de la nariz) y el inión (punto más prominente en la parte posterior del cráneo). Como se puede observar en la Figura 2. Los puntos etiquetados con "F" corresponden a la región frontal, mientras que los etiquetados con "P" corresponden a la región parietal. Por otro lado: Los numeros indican la distancia del nasión- inión. Donde "1" indica que el punto está a una distancia del 10% en esa dirección, mientras que el "2" indica que está a una distancia del 20% [4]. 
+En este sistema, los puntos de referencia se nombran de acuerdo con la distancia entre ellos, que es aproximadamente el 10% o el 20% de la distancia total entre el nasión (parte superior del puente de la nariz) y el inión (punto más prominente en la parte posterior del cráneo). Como se puede observar en la Figura 2. Los puntos etiquetados con "F" corresponden a la región frontal, mientras que los etiquetados con "P" corresponden a la región parietal. Por otro lado: Los numeros indican la distancia del nasión- inión. Donde "1" indica que el punto está a una distancia del 10% en esa dirección, mientras que el "2" indica que está a una distancia del 20% [1]. 
 
 A continuación, se presentan los protocolos de conexión específicos utilizados en cada prueba llevada a cabo en este laboratorio:
 
-| Figura 2. Colocación de electrodos según el sistema 10-20 (posiciones referenciales) [4]. | Figura 3. Colocación de los electrodos en el laboratorio para la derivación en el sujeto de prueba     |
+| Figura 3. Colocación de electrodos según el sistema 10-20 (posiciones referenciales) [4]. | Figura 4. Colocación de los electrodos en el laboratorio para la derivación en el sujeto de prueba     |
 |------------------------------------------------------------|---------------------------------------------------------------------------|
 | ![Electrodos de guía](Imagenes_L5/Posicion_referencial.png) | <img src="Imagenes_L5/Electrodos_posicion_renato.png" alt="Electrodos de guía" width="700"> |
 
@@ -102,7 +102,7 @@ El protocolo seguido para evaluar la actividad neuronal en vivo con el encefalog
 
 **3. Lectura de la Señal Basal 2 (paso 1):** Tras la Prueba N°2, se debe registrar una segunda fase de referencia en el que el participante se mantendra en una posición estable por un tiempo de 30 segundos.
 
-**4. Resolución de preguntas :** En esta prueba uno de los compañeros se encontrará leyendo en voz alta una serie de ejercicios obtenidos de [referencia elsevier], los ejercicios se dividiran en dos secciones de preguntas: simples y complejas. El particpante evaluado dbe intentar resolverlas manteniendo una posición estable. Las preguntas realizadas se observan en la Tabla X.
+**4. Resolución de preguntas :** En esta prueba uno de los compañeros se encontrará leyendo en voz alta una serie de ejercicios obtenidos de [2], los ejercicios se dividiran en dos secciones de preguntas: simples y complejas. El particpante evaluado dbe intentar resolverlas manteniendo una posición estable. Las preguntas realizadas se observan en la Tabla 2.
 
 | Categoría| Pregunta |
 | --------- | --------- |
@@ -390,6 +390,9 @@ plt.show()
 
 
 ## ** Bibliografía** : <a name="t12"></a>
+
+[1] BITalino, “BITalino HOME-GUIDE #3 ELECTROENCEPHALOGRAPHY (EEG) Exploring Brain signals” 2020 Accessed: Apr. 19, 2023. [Online]. Available from:https://bitalino.com/storage/uploads/media/homeguide3-eeg.pdf
+[4] J. Molina del Río, M. A. Guevara, M. Hernández González, R. M. Hidalgo Aguirre, y M. A. Cruz Aguilar, “EEG correlation during the solving of simple and complex logical–mathematical problems”, Cogn. Affect. Behav. Neurosci., vol. 19, núm. 4, pp. 1036–1046, 2019.
 
 
 ‌
