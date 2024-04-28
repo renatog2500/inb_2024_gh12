@@ -214,20 +214,17 @@ A continuación se mostrará la señal junto con el código de Python utilizado 
   <b>Tabla 5. Ploteo del protocolo en Python de la señal del BITalino </b>
 </p>
 
-**Descripción de las señales obtenidas**: 
-
 
 
 **Código en Python para ploteo de señales de BiTalino:**
 ```python
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import re
 
 # Cargar datos desde el archivo de texto según la ubicación del 
-archivo = "C:/Users/Equipo/OneDrive/Escritorio/Introduccion_a_señales_biomedicas/Github/inb_2024_gh12/Documentación/EMG/Lectura_antebrazo_supinación_EMG.txt"
+archivo = "C:/Users/Equipo/OneDrive/Escritorio/Introduccion_a_señales_biomedicas/Github/inb_2024_gh12/ISB_Informes/L5_Lectura_de_EEG/EEG_L5/BiTalino/Prueba_ojos_abiertos_cerrado_5s.txt"
 def extraer_nombres_columnas(archivo):
     with open(archivo, 'r') as f:
         for linea in f:
@@ -251,7 +248,7 @@ def extraer_nombres_columnas(archivo):
 #Me devuelve una tupla pues esta en "(...)"
 nombres_columnas,Entrada=extraer_nombres_columnas(archivo) #Aquí te devuelve la lista como un string dentro de otra lista y también el nombre del canal usado
 #print(nombres_columnas) Imprime la lista: ['nSeq', 'I1', 'I2', 'O1', 'O2', 'A1']
-print(type(Entrada))
+#print(Entrada)
 #Leyendo el TxT que nos da OpenSignal, podemos entender que las columnas para nuestro Dataframe serán las siguientes:
 #Se le coloca una columna "NaN" debido a que en el txt cada ultimo valor de fila tiene un espacio que lee como NaN
 #nombres_columnas = ["nSeq", "I1", "I2", "O1", "O2", "A1"]
@@ -266,37 +263,49 @@ datos = pd.read_csv(archivo, sep='\t', skiprows=3, header=None, usecols=[0, 1 ,2
 datos.columns = nombres_columnas
 
 #Imprimimos el Dataframe resultante para ver si se obtuvo un buen resultado
-print(datos)
+#print(datos.columns)
 #Comprobado el resultado solo escogemos la columna "A1", la cual usamos para nuestra medición
-Lectura_EMG = datos[Entrada]
-
+Lectura = datos[Entrada]
+#print(Lectura)
 # Convertir los datos a números
-Lectura_EMG = Lectura_EMG.apply(pd.to_numeric)
+Lectura = Lectura.apply(pd.to_numeric)
 
 # Calculate FFT
-fft_result = np.fft.fft(Lectura_EMG)
+fft_result = np.fft.fft(Lectura)
 
 # Calculate frequencies
-frequencies = np.fft.fftfreq(len(Lectura_EMG), d=1/1000)
+frequencies = np.fft.fftfreq(len(Lectura), d=1/1000)
 
 # Compute the FFT magnitude
 magnitudes_db = -20*np.log10(np.abs(fft_result))
 
-#print(Lectura_EMG)
-Lectura_EMG.index = Lectura_EMG.index / 1000
+#print(Lectura)
+Lectura.index = Lectura.index / 1000
+
+#Convertimos los valores digitales de una resoluciónde 10 bit a una analógica para un EEG
+# Define the constants from the transfer function image
+VCC = 3.3  # Operating voltage
+G_EEG = 41782  # Sensor gain
+n_bits = 10  # Number of bits for ADC
+
+# Convert ADC to EEG(V)
+Lectura = (Lectura / (2**n_bits) - 0.5) * VCC / G_EEG
+
+# Convert EEG(V) to EEG(uV)
+Lectura = Lectura * 1e6
 
 # Plotear la señal de EMG en el dominio del tiempo
 plt.figure(figsize=(13,9))
 plt.subplot(211)
-plt.plot(Lectura_EMG)
-plt.title("Lectura del pulgar supinación EMG en el dominio del tiempo")
+plt.plot(Lectura, color="red",linewidth=1)
+plt.title("Lectura del EEG en la fase de abrir y cerrar los ojos en el dominio del tiempo")
 plt.xlabel("Tiempo (s)")
-plt.ylabel("Amplitud (mV)")
+plt.ylabel("Amplitud (uV)")
 plt.grid(True)
 
 # Plotear el espectro de amplitud de la FFT (escala logarítmica - decibelios)
 plt.subplot(212)
-plt.plot(frequencies[:len(frequencies)//2], magnitudes_db[:len(frequencies)//2])
+plt.plot(frequencies[:len(frequencies)//2], magnitudes_db[:len(frequencies)//2],color="Blue",linewidth=1)
 plt.title("Espectro de amplitud de la FFT (escala logarítmica - decibelios)")
 plt.xlabel("Frecuencia (Hz)")
 plt.ylabel("Magnitud (dB)")
@@ -305,6 +314,23 @@ plt.grid(True)
 plt.show()
 
 ```
+**Descripción del código en python:** 
+Este código de Python utiliza las bibliotecas pandas, numpy, matplotlib y re para cargar y analizar datos de un archivo de texto que contiene mediciones de un electroencefalograma (EEG), específicamente para un experimento de abrir y cerrar los ojos. El código sigue varios pasos para procesar los datos, realizar una transformada rápida de Fourier (FFT) y visualizar tanto la señal temporal como el espectro de frecuencias. Aquí te explico cada parte del código:
+
+Importación de Librerías: Importa las librerías necesarias para manejo de datos (pandas y numpy), visualización (matplotlib.pyplot), y expresiones regulares (re).
+Definición de la Función extraer_nombres_columnas:
+  El código abre y lee un archivo especificado, buscando líneas que comienzan con "#" para identificar metadatos relevantes, como los nombres de las columnas y el canal utilizado. Emplea expresiones regulares para extraer eficazmente esta información del texto.
+Carga de Datos:
+  Utilizamos pandas.read_csv para leer el archivo de OpenSignal, omitiendo las primeras tres filas las cuales no tienen información necesaria para el ploteo. Extraemos las primeras 6 columnas según los canales que tenga el BiTalino.
+Procesamiento y Conversión de Datos:
+  Selecciona la columna correspondiente al canal utilizado (extraído anteriormente) para las mediciones.
+  Convierte los valores de la columna seleccionada de string a int para realizar operaciones matemáticas.
+Transformada Rápida de Fourier (FFT):
+  El código aplica la Transformada Rápida de Fourier (FFT) a la serie temporal para obtener el espectro de frecuencias. Luego, calcula las frecuencias asociadas con los puntos de la FFT y determina las magnitudes en decibelios de estos resultados para visualizar la amplitud de la señal en una escala logarítmica.
+Conversión de Valores Digitales a Analógicos:
+  Convierte los valores digitales a voltaje usando las especificaciones del ADC (voltaje de operación y ganancia del sensor) del data sheet del BiTalino [9R], donde extraemos los valores de ganancia de 41782, una resolución de 10 bits ya que en los canales A1-A4 usan esa resolución y un voltaje de referencia de 3.3V. Para luego convertir los voltajes a microvoltios para presentar la señal en un rango típico para EEG.
+Visualización:
+  El código crea figuras para mostrar la señal de EEG tanto en el dominio del tiempo como en el dominio de la frecuencia. Utiliza dos subplots: uno dedicado a la visualización de la señal en el tiempo y el otro al espectro de frecuencias. Para facilitar la interpretación, se añaden títulos, etiquetas y cuadrículas a los gráficos.
 
 
 ### **OpenBCI GUI: Ploteo de la señal en Python** <a name="t10"></a>
@@ -321,8 +347,6 @@ A continuación se muestra el ploteo en Python del procedimiento utilizado para 
 <p align="center">
   <b>Tabla 6. Ploteo en Python del protocolo en UltraCortex </b>
 </p>
-
-- **Descripción de las señales obtenidas:**
 
 
 **-Código de ploteo para señal de OpenBCI:**
@@ -404,9 +428,32 @@ fig.text(0.005, 0.5, 'Amplitude (uV)', ha='center', va='center', rotation='verti
 plt.show()
 ```
 
+- **Descripción del código:**
+En el código proporcionado, se describe un proceso completo para cargar, transformar y visualizar datos de EEG (electroencefalograma) provenientes de un archivo de texto usando Python. Este código utiliza las bibliotecas pandas y matplotlib para realizar estas tareas. Aquí está el desglose de lo que cada parte del código hace:
+
+Importación de Librerías: 
+  Importa las librerías pandas para manipulación de datos y matplotlib.pyplot para visualización.
+Definición de Función: 
+  Define la función interpret16bitAsInt32, que convierte valores de 16 bits a enteros de 32 bits con signo. Esta función maneja la representación de enteros negativos que están en formato de complemento a dos. Esta función fue extraia de la guía de OpenBCI para hacer la transformación de 16 bit con signo a 32 bit enteros sin signo. [10R]
+Preparación de Datos:
+  Definimos constantes para el cálculo (Vref, Gain, Resolucion)
+  
+Carga de Datos:
+  Carga los datos desde un archivo de texto especificado en la ruta archivo. Se omiten las primeras cinco filas y se seleccionan las primeras 16 columnas para enfocarnos en la lectura de EEG directamente. Convertimos los datos a enteros (si es necesario) y aplica la función interpret16bitAsInt32 [10R] para ajustar los datos de 16 bits a valores de 32 bits con signo.
+Transformación de Datos:
+  Para obtener una gráfica que se asemeje a la lectura del OpenBCI se centró los datos ya convertidos a  vU, restando la media de cada columna a todos los valores de 
+Visualización:
+  Crea una figura y un conjunto de subtramas para visualizar los datos de cada uno de los 16 canales.
+  Utiliza un color distinto para cada canal y configura títulos y etiquetas apropiados para cada gráfico.
+  Ajusta la configuración del gráfico para mejorar la legibilidad, incluyendo títulos y etiquetas generales para los ejes.
+Función de Visualización: 
+  Muestra los gráficos en pantalla.
+
+
 ### **Archivos de la señal ploteada en Python y datos de la señal** <a name="t11"></a>
 - [Documentos (.txt)](https://github.com/renatog2500/inb_2024_gh12/tree/main/ISB_Informes/L5_Lectura_de_EEG/EEG_L5)
-- [Programa de ploteo (python)](colocar link) COLOCAR EL ARCHIVOOO
+- [Programa de ploteo de OpenSignal (python)](https://github.com/renatog2500/inb_2024_gh12/blob/main/Software/Ploteo_de_datos_lab.py) 
+- [Programa de ploteo de UltraCortex (python)](https://github.com/renatog2500/inb_2024_gh12/blob/main/Software/Ploteo_datos_EEG_ultracortex.py) 
 
 
 ## ** Bibliografía** : <a name="t12"></a>
@@ -433,6 +480,9 @@ plt.show()
 
 [8R] P. Pinti et al., “The present and future use of functional near‐infrared spectroscopy (fNIRS) for cognitive neuroscience”, Ann. New York Acad. Sci., vol. 1464, n.º 1, pp. 5–29, marzo de 2020. Accedido el 28 de abril de 2024. [En línea]. Disponible: https://doi.org/10.1111/nyas.13948
 
+[9R] BiTalino, “BITalino (r)evolution Board Kit Data Sheet”, 2016. 2020 Accessed: Apr. 27, 2024. [Online]
+
+[10R] “Cyton data format”, Openbci.com. [En línea]. Disponible en: https://docs.openbci.com/Cyton/CytonDataFormat/. [Consultado: 28-abr-2024].
 
 
 
