@@ -104,7 +104,7 @@ En la figura 6 se muestra la colocación del UltraCortex, para garantizar la mej
 | ![Electrodos de guía](Imagenes_L5/tabla_ultra.png) | <img src="Imagenes_L5/conexiones_ultra.jpg" alt="Electrodos de guía" width="700"> |
 
 **Protocolo para las pruebas realizadas:**
-El protocolo seguido para evaluar la actividad neuronal en vivo con el encefalograma fue el de la guía experimental de BITalino [1]:
+El protocolo seguido para evaluar la actividad neuronal en vivo con el encefalograma fue el de la guía experimental de BITalino [1], estas mismas pruebas se tomaron como referencia para la segunda actividad del laboratorio usando el UltraCortex:
 
 **1. Lectura de la señal Basal:** Para adquirir esta señal el sujeto de prueba debe permanecer en una posición estable  , con ello se registrará la línea base de señal con poco ruido y sin movimientos (respiración normal,sin movimientos oculares/ojos cerrados) durante 30 segundos. Este estado sirve como nuestra prueba de referencia.
 
