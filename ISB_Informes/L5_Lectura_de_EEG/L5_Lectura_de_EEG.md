@@ -197,7 +197,7 @@ Los picos de gran amplitud observados en múltiples canales al abrir o cerrar lo
 
 **3. Registro de fase de referencia**
 
-
+La consistencia entre la primera y la segunda lectura basal en los 16 canales de EEG indica una buena reproducibilidad de las mediciones y una estabilidad en la actividad cerebral de fondo [9R]
 
 **4. Resolución de preguntas matemáticas:**
 
@@ -439,7 +439,7 @@ plt.show()
 
 [8R] P. Pinti et al., “The present and future use of functional near‐infrared spectroscopy (fNIRS) for cognitive neuroscience”, Ann. New York Acad. Sci., vol. 1464, n.º 1, pp. 5–29, marzo de 2020. Accedido el 28 de abril de 2024. [En línea]. Disponible: https://doi.org/10.1111/nyas.13948
 
-
+[9R] A. J. Casson, “Wearable EEG and beyond”, Biomed. Eng. Lett., vol. 9, n.º 1, pp. 53–71, enero de 2019. Accedido el 28 de abril de 2024. [En línea]. Disponible: (https://pubmed.ncbi.nlm.nih.gov/30956880/) 
 
 
 
