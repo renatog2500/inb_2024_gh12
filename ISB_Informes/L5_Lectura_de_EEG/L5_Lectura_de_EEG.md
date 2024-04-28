@@ -77,10 +77,12 @@ Para capturar las señales EEG, se empleó el dispositivo BITalino y su conjunto
 Para el registro de las señales de EEG con el BITalino, es común utilizar la modalidad de medición bipolar. En esta modalidad se requieren dos electrodos de medición (IN + e IN -) y uno de referencia. Este último se coloca adicionalmente en una zona ósea para garantizar una referencia estable y consistente durante la adquisición de las señales cerebrales. La guía BITalino Home Guide #3 sigue el sistema internacional 10-20 para la colocación de los electrodos. 
 
 
-![Configuración 10-20](Imagenes_L5/Configuracion_10_20.png)
-
-  <b>Figura 2. Vista superior de una cabeza con la posición de electrodos de acuerdo al sistema internacional 10-20 </b>
+<p align="center">
+  <img src="Imagenes_L5/Configuracion_10_20.png" alt="Configuración 10-20">
+  <br>
+  <b>Figura 2. Vista superior de una cabeza con la posición de electrodos de acuerdo al sistema internacional 10-20</b>
 </p>
+
 
 En este sistema, los puntos de referencia se nombran de acuerdo con la distancia entre ellos, que es aproximadamente el 10% o el 20% de la distancia total entre el nasión (parte superior del puente de la nariz) y el inión (punto más prominente en la parte posterior del cráneo). Como se puede observar en la Figura 2. Los puntos etiquetados con "F" corresponden a la región frontal, mientras que los etiquetados con "P" corresponden a la región parietal. Por otro lado: Los numeros indican la distancia del nasión- inión. Donde "1" indica que el punto está a una distancia del 10% en esa dirección, mientras que el "2" indica que está a una distancia del 20% [4]. 
 
