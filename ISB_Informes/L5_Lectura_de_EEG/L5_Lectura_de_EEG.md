@@ -169,7 +169,8 @@ Los cambios en los picos negativos y positivos de la señal de EEG durante la re
 
 **5. Resolución de preguntas Complejas:**
 
-
+Resolución de preguntas complejas:
+Los cambios en la señal de EEG durante la resolución de preguntas complejas pueden reflejar una mayor demanda cognitiva y la activación de múltiples áreas cerebrales. La complejidad de las preguntas puede requerir un procesamiento más profundo y una mayor integración de la información, lo que se manifiesta como cambios en la actividad oscilatoria del EEG [7R]. Según Pinti et al. (2020), "la resolución de problemas complejos implica la coordinación de múltiples regiones cerebrales y se asocia con cambios en la conectividad funcional medida por el EEG" [8R].
 
 ### **Visualización de señal eléctrica mediante video y OpenBCI** <a name="t8"></a>
 
@@ -427,6 +428,10 @@ plt.show()
 [5R] A. M. Norcia, L. G. Appelbaum, J. M. Ales, B. R. Cottereau y B. Rossion, “The steady-state visual evoked potential in vision research: A review”, J. Vis., vol. 15, n.º 6, p. 4, mayo de 2015. Accedido el 28 de abril de 2024. [En línea]. Disponible: https://doi.org/10.1167/15.6.4
 
 [6R] Y. Zhou, S. Huang, Z. Xu, P. Wang, X. Wu and D. Zhang, "Cognitive Workload Recognition Using EEG Signals and Machine Learning: A Review," in IEEE Transactions on Cognitive and Developmental Systems, vol. 14, no. 3, pp. 799-818, Sept. 2022, doi: 10.1109/TCDS.2021.3090217.
+
+[7R] A. Curtin y H. Ayaz, “The Age of Neuroergonomics: Towards Ubiquitous and Continuous Measurement of Brain Function with fNIRS”, Japanese Psycholog. Res., vol. 60, n.º 4, pp. 374–386, agosto de 2018. Accedido el 28 de abril de 2024. [En línea]. Disponible: https://doi.org/10.1111/jpr.12227
+
+[8R] P. Pinti et al., “The present and future use of functional near‐infrared spectroscopy (fNIRS) for cognitive neuroscience”, Ann. New York Acad. Sci., vol. 1464, n.º 1, pp. 5–29, marzo de 2020. Accedido el 28 de abril de 2024. [En línea]. Disponible: https://doi.org/10.1111/nyas.13948
 
 
 
