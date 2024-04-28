@@ -189,9 +189,15 @@ Los cambios en la señal de EEG durante la resolución de preguntas complejas pu
 
 **1. Lectura del Estado Basal:**
 
+Durante el estado de reposo, la señal de EEG de 16 derivaciones muestra un patrón estable y sincronizado en múltiples canales, lo que refleja una actividad cerebral basal coherente [1R]. Según Gu et al. (2020), "el EEG de múltiples canales permite una evaluación más completa de la actividad cerebral espontánea durante el estado de reposo, revelando patrones espaciales y temporales de sincronización" [2R].
+
 **2. Lectura de los ciclos de Ojos Abiertos y Cerrados (Fases de 5 segundos):**
 
+Los picos de gran amplitud observados en múltiples canales al abrir o cerrar los ojos se deben a artefactos oculares, que se propagan a través de los electrodos cercanos a los ojos [3R]. Blum et al. (2021) señalan que "los artefactos oculares pueden contaminar varios canales de EEG, especialmente los ubicados en las regiones frontal y temporal" [4R].
+
 **3. Registro de fase de referencia**
+
+La consistencia entre la primera y la segunda lectura basal en los 16 canales de EEG indica una buena reproducibilidad de las mediciones y una estabilidad en la actividad cerebral de fondo [9R]
 
 **4. Resolución de preguntas matemáticas:**
 
@@ -328,7 +334,7 @@ Procesamiento y Conversión de Datos:
 Transformada Rápida de Fourier (FFT):
   El código aplica la Transformada Rápida de Fourier (FFT) a la serie temporal para obtener el espectro de frecuencias. Luego, calcula las frecuencias asociadas con los puntos de la FFT y determina las magnitudes en decibelios de estos resultados para visualizar la amplitud de la señal en una escala logarítmica.
 Conversión de Valores Digitales a Analógicos:
-  Convierte los valores digitales a voltaje usando las especificaciones del ADC (voltaje de operación y ganancia del sensor) del data sheet del BiTalino [9R], donde extraemos los valores de ganancia de 41782, una resolución de 10 bits ya que en los canales A1-A4 usan esa resolución y un voltaje de referencia de 3.3V. Para luego convertir los voltajes a microvoltios para presentar la señal en un rango típico para EEG.
+  Convierte los valores digitales a voltaje usando las especificaciones del ADC (voltaje de operación y ganancia del sensor) del data sheet del BiTalino [10R], donde extraemos los valores de ganancia de 41782, una resolución de 10 bits ya que en los canales A1-A4 usan esa resolución y un voltaje de referencia de 3.3V. Para luego convertir los voltajes a microvoltios para presentar la señal en un rango típico para EEG.
 Visualización:
   El código crea figuras para mostrar la señal de EEG tanto en el dominio del tiempo como en el dominio de la frecuencia. Utiliza dos subplots: uno dedicado a la visualización de la señal en el tiempo y el otro al espectro de frecuencias. Para facilitar la interpretación, se añaden títulos, etiquetas y cuadrículas a los gráficos.
 
@@ -439,7 +445,7 @@ Preparación de Datos:
   Definimos constantes para el cálculo (Vref, Gain, Resolucion)
   
 Carga de Datos:
-  Carga los datos desde un archivo de texto especificado en la ruta archivo. Se omiten las primeras cinco filas y se seleccionan las primeras 16 columnas para enfocarnos en la lectura de EEG directamente. Convertimos los datos a enteros (si es necesario) y aplica la función interpret16bitAsInt32 [10R] para ajustar los datos de 16 bits a valores de 32 bits con signo.
+  Carga los datos desde un archivo de texto especificado en la ruta archivo. Se omiten las primeras cinco filas y se seleccionan las primeras 16 columnas para enfocarnos en la lectura de EEG directamente. Convertimos los datos a enteros (si es necesario) y aplica la función interpret16bitAsInt32 [11R] para ajustar los datos de 16 bits a valores de 32 bits con signo.
 Transformación de Datos:
   Para obtener una gráfica que se asemeje a la lectura del OpenBCI se centró los datos ya convertidos a  vU, restando la media de cada columna a todos los valores de 
 Visualización:
@@ -479,6 +485,12 @@ Función de Visualización:
 [7R] A. Curtin y H. Ayaz, “The Age of Neuroergonomics: Towards Ubiquitous and Continuous Measurement of Brain Function with fNIRS”, Japanese Psycholog. Res., vol. 60, n.º 4, pp. 374–386, agosto de 2018. Accedido el 28 de abril de 2024. [En línea]. Disponible: https://doi.org/10.1111/jpr.12227
 
 [8R] P. Pinti et al., “The present and future use of functional near‐infrared spectroscopy (fNIRS) for cognitive neuroscience”, Ann. New York Acad. Sci., vol. 1464, n.º 1, pp. 5–29, marzo de 2020. Accedido el 28 de abril de 2024. [En línea]. Disponible: https://doi.org/10.1111/nyas.13948
+
+[9R] A. J. Casson, “Wearable EEG and beyond”, Biomed. Eng. Lett., vol. 9, n.º 1, pp. 53–71, enero de 2019. Accedido el 28 de abril de 2024. [En línea]. Disponible: (https://pubmed.ncbi.nlm.nih.gov/30956880/) 
+
+[10R] BiTalino, “BITalino (r)evolution Board Kit Data Sheet”, 2016. 2020 Accessed: Apr. 27, 2024. [Online]
+
+[11R] “Cyton data format”, Openbci.com. [En línea]. Disponible en: https://docs.openbci.com/Cyton/CytonDataFormat/. [Consultado: 28-abr-2024].
 
 [9R] BiTalino, “BITalino (r)evolution Board Kit Data Sheet”, 2016. 2020 Accessed: Apr. 27, 2024. [Online]
 
