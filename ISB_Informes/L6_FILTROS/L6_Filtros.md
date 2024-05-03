@@ -1,19 +1,22 @@
-# Laboratorio N°5 - Uso de BITalino para EEG
+# Laboratorio N°6 - Diseño de Filtros IIR y FIR 
 
 ## Tabla de contenidos:
  __________________________________________________________________________________________________
 1. [Lista de participantes](#t1)
 2. [Introducción](#t2)
 3. [Objetivos del laboratorio](#t3)
-4. [Materiales y Equipo Utilizado](#t4)
-5. [Protocolo de conexión](#t5)
-6. [Resultados y discusión](#t6)\
+4. [Metodología](#t4)
+5. [Resultados](#t5)
+   5.1 [Visualización de la señal mediante video y OpenSignals ](#t7)\
+   5.2 [Visualización de la señal mediante video y OpenBCI ](#t8)\
+   5.3 [BITalino: Ploteo de la señal en Python](#t9)\
+6. [Discusión](#t6)\
    6.1 [Visualización de la señal mediante video y OpenSignals ](#t7)\
    6.2 [Visualización de la señal mediante video y OpenBCI ](#t8)\
    6.3 [BITalino: Ploteo de la señal en Python](#t9)\
    6.4 [OpenBCI GUI: Ploteo de la señal en Python](#t10)\
    6.5 [Archivos de la señal ploteada en Python y datos de la señal](#t11)\
-7. [Bibliografía](#t12)
+8. [Bibliografía](#t12)
 __________________________________________________________________________________________________
 ## **Lista de participantes** <a name = "t1"></a>
 * Jimena Alpiste Espinoza - 74297329
@@ -22,114 +25,17 @@ ________________________________________________________________________________
 
 
 ## Introducción  <a name = "t2"></a>
-La electroencefalografía (EEG) es una técnica no invasiva que se utiliza para registrar la actividad eléctrica del cerebro. El EEG mide las fluctuaciones de voltaje resultantes de las corrientes iónicas dentro de las neuronas del cerebro [1]. Estas señales eléctricas se detectan mediante electrodos colocados sobre el cuero cabelludo y se registran en función del tiempo, lo que permite obtener una representación de los patrones de actividad cerebral [2].
-El EEG es capaz de detectar y registrar diferentes tipos de ondas cerebrales, que se clasifican según su frecuencia y amplitud [3]. Los principales tipos de ondas cerebrales son:
-
-- **Ondas Delta (0.5-4 Hz)**: Estas ondas de baja frecuencia y alta amplitud se asocian con el sueño profundo y los estados de inconsciencia [4].
-- **Ondas Theta (4-8 Hz)**: Las ondas theta se relacionan con la somnolencia, la meditación y algunos estados emocionales [4].
-- **Ondas Alfa (8-13 Hz)**: Estas ondas se observan durante estados de relajación, vigilia tranquila y actividades mentales poco exigentes [4].
-- **Ondas Beta (13-30 Hz)**: Las ondas beta se asocian con estados de alerta, atención activa, concentración y pensamiento activo [4].
-- **Ondas Gamma (30-100 Hz)**: Estas ondas de alta frecuencia se relacionan con la percepción consciente, la integración de información y los procesos cognitivos de alto nivel [4].
 
 
 
-## **Objetivos del Laboratorio** <a name = "t3"></a>
-* Adquirir señales biomédicas de EEG.
-* Hacer una correcta configuración de BiTalino.
-* Extraer la información de las señales EEG del software OpenSignals (r)evolution
+
+## **Objetivos  Laboratorio** <a name = "t3"></a>
+* Filtrar las señales ECG para eliminar ruido y artefactos, y aislar la actividad cardiáca efectiva.
+* Filtrar las señales EMG para eliminar ruido y artefactos, y aislar la actividad muscular efectiva.
+* Preprocesar señales EEG para reducir el ruido y extraer características de interés como ondas cerebrales específicas.
   
-## **Materiales y Equipo Utilizado** <a name="t4"></a>
-<table align="center">
-  <tr>
-    <th>Modelo</th>
-    <th>Descripción</th>
-    <th>Cantidad</th>
-  </tr>
-  <tr>
-    <td>(R)EVOLUTION</td>
-    <td>Kit de BITalino</td>
-    <td>1</td>
-  </tr>
-  <tr>
-    <td>-</td>
-    <td>Laptop</td>
-    <td>1</td>
-  </tr>
-   <tr>
-    <td>-</td>
-    <td>Electrodos</td>
-    <td>3</td>
-  </tr>
-  <tr>
-    <td>OpenBCI</td>
-    <td>Ultracortex Mark IV EEG Headset	</td>
-    <td>1</td>
-  </tr>
-  <tr>
-    <td>OpenBCI</td>
-    <td>OpenBCI Cyton 8-channel Board	</td>
-    <td>1</td>
-  </tr>
-</table>
-<p align="center">
-  <b>Tabla 1. Materiales y equipos utilizados</b>
-</p>
+## Metodología <a name="t4"></a>
 
-## Protocolo de conexión <a name="t5"></a>
-Para capturar las señales EEG, se empleó el dispositivo BITalino y su conjunto de sensores EEG de tres electrodos. Se siguió el procedimiento detallado en la guía BiTalino,**(BITalino HOME-GUIDE #3 ELECTROENCEPHALOGRAPHY (EEG) Exploring Brain Signals ")** [5], como referencia para posicionar correctamente los electrodos en el sujeto de prueba. 
-
-Para el registro de las señales de EEG con el BITalino, es común utilizar la modalidad de medición bipolar. En esta modalidad se requieren dos electrodos de medición (IN + e IN -) y uno de referencia. Este último se coloca adicionalmente en una zona ósea para garantizar una referencia estable y consistente durante la adquisición de las señales cerebrales. La guía BITalino Home Guide #3 sigue el sistema internacional 10-20 para la colocación de los electrodos. 
-
-
-<p align="center">
-  <img src="Imagenes_L5/Configuracion_10_20.png" alt="Configuración 10-20">
-  <br>
-  <b>Figura 2. Vista superior de una cabeza con la posición de electrodos de acuerdo al sistema internacional 10-20</b>
-</p>
-
-
-En este sistema, los puntos de referencia se nombran de acuerdo con la distancia entre ellos, que es aproximadamente el 10% o el 20% de la distancia total entre el nasión (parte superior del puente de la nariz) y el inión (punto más prominente en la parte posterior del cráneo). Como se puede observar en la Figura 2. Los puntos etiquetados con "F" corresponden a la región frontal, mientras que los etiquetados con "P" corresponden a la región parietal. Por otro lado: Los numeros indican la distancia del nasión- inión. Donde "1" indica que el punto está a una distancia del 10% en esa dirección, mientras que el "2" indica que está a una distancia del 20% [5]. 
-
-A continuación, se presentan los protocolos de conexión específicos utilizados en cada prueba llevada a cabo en este laboratorio:
-
-| Figura 3. Colocación de electrodos según el sistema 10-20 (posiciones referenciales) [6]. | Figura 4. Colocación de los electrodos en el laboratorio para la derivación en el sujeto de prueba     |
-|------------------------------------------------------------|---------------------------------------------------------------------------|
-| ![Electrodos de guía](Imagenes_L5/Posicion_referencial.png) | <img src="Imagenes_L5/Electrodos_posicion_renato.png" alt="Electrodos de guía" width="700"> |
-
-La siguiente actividad implica el uso de la plataforma Open BCI, la cual actúa como una interfaz entre el cerebro y la computadora para simular señales de electroencefalograma y analizar e interpretar la actividad cerebral. Se utilizó el "Ultracortex Mark IV EEG Headset" como casco con electrodos, siguiendo también el sistema 10-20. Es relevante mencionar que OpenBCI puede mostrar información en las cinco bandas de frecuencia (delta, theta, alpha, beta y gamma). [7]
-
-
-Las imágenes a continuación fueron tomadas del grupo 11 debido a que no se pudo realizar la prueba por falta de tiempo. En la figura 5 se indican las ubicaciones predeterminadas de 10 a 20 electrodos que la intergaz OpenBCI espera al recibir una señal. El kit OpenBCI permite la adquisición para la adquisición y análisis de señales cerebrales utilizando hasta 16 canales de EEG . Los puntos marcados en azul en una representación gráfica identifican los primeros 8 canales de la placa Cyton de OpenBCI. Estos canales, numerados del 1 al 8, están predefinidos para ciertos propósitos o ubicaciones en la placa. Mientras que aquellos puntos marcados en rojo en la representación gráfica corresponden a los canales restantes, del 9 al 16. Estos canales pueden tener funciones distintas o estar destinados a ubicaciones específicas en la placa Cyton.
-
-En la figura 6 se muestra la colocación del UltraCortex, para garantizar la mejor toma de señales se busca que el nodo central posterior esté aproximadamente a la misma distancia, por encima del inion, que el nodo central frontal, el cual está por encima del puente de la nariz.
-
-| Figura 5.Ubicaciones predeterminadas de OpenBCI [7]. | Figura 6. Colocación de los electrodos en el laboratorio para la derivación en el sujeto de prueba     |
-|------------------------------------------------------------|---------------------------------------------------------------------------|
-| ![Electrodos de guía](Imagenes_L5/tabla_ultra.png) | <img src="Imagenes_L5/conexiones_ultra.jpg" alt="Electrodos de guía" width="700"> |
-
-**Protocolo para las pruebas realizadas:**
-El protocolo seguido para evaluar la actividad neuronal en vivo con el encefalograma fue el de la guía experimental de BITalino [1], estas mismas pruebas se tomaron como referencia para la segunda actividad del laboratorio usando el UltraCortex:
-
-**1. Lectura de la señal Basal:** Para adquirir esta señal el sujeto de prueba debe permanecer en una posición estable  , con ello se registrará la línea base de señal con poco ruido y sin movimientos (respiración normal,sin movimientos oculares/ojos cerrados) durante 30 segundos. Este estado sirve como nuestra prueba de referencia.
-
-**2. Lectura de Ojos Abiertos - Ojos Cerrados:** A continuación el participante repetirá un ciclo de OJOS ABIERTOS - OJOS CERRADOS cinco veces, manteniendo ambas fases durante 5 segundos. El sujeto debe permanecer en una posición estable y mirando a un poco fijo para evitar ruido en la señal.
-
-**3. Lectura de la Señal Basal 2 (paso 1):** Tras la Prueba N°2, se debe registrar una segunda fase de referencia en el que el participante se mantendra en una posición estable por un tiempo de 30 segundos.
-
-**4. Resolución de preguntas :** En esta prueba uno de los compañeros se encontrará leyendo en voz alta una serie de ejercicios obtenidos de [2], los ejercicios se dividiran en dos secciones de preguntas: simples y complejas. El particpante evaluado dbe intentar resolverlas manteniendo una posición estable. Las preguntas realizadas se observan en la Tabla 2.
-
-| Categoría| Pregunta |
-| --------- | --------- |
-| Simple | Hay 3 pájaros en un árbol; Llegan 7 más. ¿Cuántos pájaros hay ahora?  |
-| Simple  | Jonás tiene 5 manzanas y Mary tiene 4. ¿Cuántas manzanas tienen en total?  |
-| Simple  | Hanna tiene 9 dólares pero gastó 4. ¿Cuántos dólares le quedan? |
-| Compleja   | John anotó 45 puntos para su equipo; 10 más que José. Marie anotó 13 puntos más que John y Joseph juntos. ¿Cuántos puntos obtuvieron en total? |
-| Compleja   | El grupo A tiene 24 estudiantes; 13 menos que el grupo B. El grupo C tiene 12 alumnos más que los grupos A y B juntos. ¿Cuál es el número total de estudiantes? |
-| Compleja | Una tienda vendió 21 refrescos por la mañana y 13 más que por la tarde. Por la noche vendió 10 más que por la mañana y por la tarde juntas. ¿Cuántos refrescos se vendieron en total? |
-
-<p align="center">
-  <b>Tabla 2. Preguntas de lógica y matemáticas utilizadas </b>
-</p>
 
 
 ## Resultados y discusión  <a name="t6"></a>
