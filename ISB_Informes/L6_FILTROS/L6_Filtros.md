@@ -9,7 +9,7 @@
 6. [Resultados](#t5)\
    5.1 [Ejercicio ECG](#t6)\
    5.2 [Ejercicio EMG ](#t7)\
-   5.3 [Ejercicio EEG](#t8)\
+   5.3 [Ejercicio EEG](#t8)
 7. [Discusión](#t9)\
    6.1 [Señal ECG](#t10)\
    6.2 [Señal EMG](#t11)\
