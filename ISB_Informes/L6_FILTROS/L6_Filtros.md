@@ -6,17 +6,15 @@
 2. [Introducción](#t2)
 3. [Objetivos del laboratorio](#t3)
 4. [Metodología](#t4)
-5. [Resultados](#t5)
-   5.1 [Visualización de la señal mediante video y OpenSignals ](#t7)\
-   5.2 [Visualización de la señal mediante video y OpenBCI ](#t8)\
-   5.3 [BITalino: Ploteo de la señal en Python](#t9)\
-6. [Discusión](#t6)\
-   6.1 [Visualización de la señal mediante video y OpenSignals ](#t7)\
-   6.2 [Visualización de la señal mediante video y OpenBCI ](#t8)\
-   6.3 [BITalino: Ploteo de la señal en Python](#t9)\
-   6.4 [OpenBCI GUI: Ploteo de la señal en Python](#t10)\
-   6.5 [Archivos de la señal ploteada en Python y datos de la señal](#t11)\
-8. [Bibliografía](#t12)
+6. [Resultados](#t5)
+   5.1 [Ejercicio ECG](#t6)\
+   5.2 [Ejercicio EMG ](#t7)\
+   5.3 [Ejercicio EEG](#t8)\
+7. [Discusión](#t9)\
+   6.1 [Señal ECG](#t10)\
+   6.2 [Señal EMG](#t11)\
+   6.3 [Señal EEG](#t12)\
+8. [Bibliografía](#t13)
 __________________________________________________________________________________________________
 ## **Lista de participantes** <a name = "t1"></a>
 * Jimena Alpiste Espinoza - 74297329
@@ -30,15 +28,23 @@ ________________________________________________________________________________
 
 
 ## **Objetivos  Laboratorio** <a name = "t3"></a>
-* Filtrar las señales ECG para eliminar ruido y artefactos, y aislar la actividad cardiáca efectiva.
-* Filtrar las señales EMG para eliminar ruido y artefactos, y aislar la actividad muscular efectiva.
-* Preprocesar señales EEG para reducir el ruido y extraer características de interés como ondas cerebrales específicas.
+* Comprender los principios básicos de filtros digitales, en particular, los relacionados con los filtros de respuesta infinita al impulso (IRR) y los de respuesta finita al impulso (FIR).
+* Filtrar las señales ECG, EMG y EEG para la eliminación de ruidos y artefactos
+* Analizar las señales obtenidas y extraer características de interés de cada una. 
   
 ## Metodología <a name="t4"></a>
+aqui colocar el codigo utilizado 
 
 
 
-## Resultados y discusión  <a name="t6"></a>
+
+## Resultados   <a name="t5"></a>
+
+
+## Ejercicio ECG   <a name="t6"></a>
+## Ejercicio EMG   <a name="t7"></a>
+
+## Ejercicio EEG   <a name="t8"></a>
 
 ### **Visualización de señal eléctrica mediante video y OpenSignalsl** <a name="t7"></a>
 A continuación se mostrarán los videos de la señal EEG en OpenSignals. Seguimos el protocolo mencionado previamente, manteniendo las mismas conexiones de electrodos para cada medición. Con esto se asegura la coherencia de los datos recopilados y la fiabilidad de los resultados obtenidos.
@@ -95,23 +101,6 @@ Los cambios en la señal de EEG durante la resolución de preguntas complejas pu
   <b>Tabla 4. Videos de la señal ploteada en OpenBCI del protocolo </b>
 </p>
 
-### **Explicación de la variación de la señal ploteada en OpenBCI**
-
-**1. Lectura del Estado Basal:**
-
-Durante el estado de reposo, la señal de EEG de 16 derivaciones muestra un patrón estable y sincronizado en múltiples canales, lo que refleja una actividad cerebral basal coherente [8]. Según Gu et al. (2020), "el EEG de múltiples canales permite una evaluación más completa de la actividad cerebral espontánea durante el estado de reposo, revelando patrones espaciales y temporales de sincronización" [9].
-
-**2. Lectura de los ciclos de Ojos Abiertos y Cerrados (Fases de 5 segundos):**
-
-Los picos de gran amplitud observados en múltiples canales al abrir o cerrar los ojos se deben a artefactos oculares, que se propagan a través de los electrodos cercanos a los ojos [10]. Blum et al. (2021) señalan que "los artefactos oculares pueden contaminar varios canales de EEG, especialmente los ubicados en las regiones frontal y temporal" [11].
-
-**3. Registro de fase de referencia**
-
-La consistencia entre la primera y la segunda lectura basal en los 16 canales de EEG indica una buena reproducibilidad de las mediciones y una estabilidad en la actividad cerebral de fondo [16]
-
-**4. Resolución de preguntas matemáticas:**
-
-Las ondas tetha se asocian con la memoria de trabajo, la concentración y el procesamiento de información compleja [17], las ondas alfa se relacionan con la atención interna, la visualización mental y la inhibición de estímulos irrelevantes, y se produce una desincronización de las ondas alfa en las regiones occipitales y parietales durante la resolución de ejercicios mentales que implican imaginación visual o manipulación espacial[18]. Por último, se debe observar un aumento en la potencia de las ondas beta durante la resolución de ejercicios mentales que requieren un alto nivel de concentración y control cognitivo [12]
 
 
 ### **Ploteo de la señal en Python** 
@@ -131,106 +120,6 @@ A continuación se mostrará la señal junto con el código de Python utilizado 
   <b>Tabla 5. Ploteo del protocolo en Python de la señal del BITalino </b>
 </p>
 
-
-
-**Código en Python para ploteo de señales de BiTalino:**
-```python
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import re
-
-# Cargar datos desde el archivo de texto según la ubicación del 
-archivo = "C:/Users/Equipo/OneDrive/Escritorio/Introduccion_a_señales_biomedicas/Github/inb_2024_gh12/ISB_Informes/L5_Lectura_de_EEG/EEG_L5/BiTalino/Prueba_ojos_abiertos_cerrado_5s.txt"
-def extraer_nombres_columnas(archivo):
-    with open(archivo, 'r') as f:
-        for linea in f:
-            if linea.startswith("#"):
-                columnas = re.findall(r'column":\s*\[(.*?)\]', linea)
-                entrada = re.findall(r'label":\s*\[(.*?)\]', linea)
-                if columnas:
-                    if entrada:
-                        # Extraer la lista de nombres de columna de la línea
-                        column_names = [name.strip().strip('"') for name in columnas[0].split(',')]
-                        # Extraemos los canales usados
-                        entrada = [name.strip().strip('"') for name in entrada[0].split(',')]
-                        return column_names, entrada [0]
-                    else:
-                        continue
-                else:
-                    continue
-
-
-                    
-#Me devuelve una tupla pues esta en "(...)"
-nombres_columnas,Entrada=extraer_nombres_columnas(archivo) #Aquí te devuelve la lista como un string dentro de otra lista y también el nombre del canal usado
-#print(nombres_columnas) Imprime la lista: ['nSeq', 'I1', 'I2', 'O1', 'O2', 'A1']
-#print(Entrada)
-#Leyendo el TxT que nos da OpenSignal, podemos entender que las columnas para nuestro Dataframe serán las siguientes:
-#Se le coloca una columna "NaN" debido a que en el txt cada ultimo valor de fila tiene un espacio que lee como NaN
-#nombres_columnas = ["nSeq", "I1", "I2", "O1", "O2", "A1"]
-
-#Una vez tenemos claro, convertirmos nuestro TXT un dataframe
-#Eliminamos las 3 primeras filas
-#Declaramos la separación de tabulación
-#Se elimina la ultima fila debido a que en el txt cada ultimo valor de fila tiene un espacio que se lee como NaN
-datos = pd.read_csv(archivo, sep='\t', skiprows=3, header=None, usecols=[0, 1 ,2,3,4,5])
-
-#Declaramos las columnas para poder tener una mejor observación del resultado
-datos.columns = nombres_columnas
-
-#Imprimimos el Dataframe resultante para ver si se obtuvo un buen resultado
-#print(datos.columns)
-#Comprobado el resultado solo escogemos la columna "A1", la cual usamos para nuestra medición
-Lectura = datos[Entrada]
-#print(Lectura)
-# Convertir los datos a números
-Lectura = Lectura.apply(pd.to_numeric)
-
-# Calculate FFT
-fft_result = np.fft.fft(Lectura)
-
-# Calculate frequencies
-frequencies = np.fft.fftfreq(len(Lectura), d=1/1000)
-
-# Compute the FFT magnitude
-magnitudes_db = -20*np.log10(np.abs(fft_result))
-
-#print(Lectura)
-Lectura.index = Lectura.index / 1000
-
-#Convertimos los valores digitales de una resoluciónde 10 bit a una analógica para un EEG
-# Define the constants from the transfer function image
-VCC = 3.3  # Operating voltage
-G_EEG = 41782  # Sensor gain
-n_bits = 10  # Number of bits for ADC
-
-# Convert ADC to EEG(V)
-Lectura = (Lectura / (2**n_bits) - 0.5) * VCC / G_EEG
-
-# Convert EEG(V) to EEG(uV)
-Lectura = Lectura * 1e6
-
-# Plotear la señal de EMG en el dominio del tiempo
-plt.figure(figsize=(13,9))
-plt.subplot(211)
-plt.plot(Lectura, color="red",linewidth=1)
-plt.title("Lectura del EEG en la fase de abrir y cerrar los ojos en el dominio del tiempo")
-plt.xlabel("Tiempo (s)")
-plt.ylabel("Amplitud (uV)")
-plt.grid(True)
-
-# Plotear el espectro de amplitud de la FFT (escala logarítmica - decibelios)
-plt.subplot(212)
-plt.plot(frequencies[:len(frequencies)//2], magnitudes_db[:len(frequencies)//2],color="Blue",linewidth=1)
-plt.title("Espectro de amplitud de la FFT (escala logarítmica - decibelios)")
-plt.xlabel("Frecuencia (Hz)")
-plt.ylabel("Magnitud (dB)")
-plt.grid(True)
-
-plt.show()
-
-```
 **Descripción del código en python:** 
 Este código de Python utiliza las bibliotecas pandas, numpy, matplotlib y re para cargar y analizar datos de un archivo de texto que contiene mediciones de un electroencefalograma (EEG), específicamente para un experimento de abrir y cerrar los ojos. El código sigue varios pasos para procesar los datos, realizar una transformada rápida de Fourier (FFT) y visualizar tanto la señal temporal como el espectro de frecuencias. Aquí te explico cada parte del código:
 
@@ -250,170 +139,14 @@ Visualización:
   El código crea figuras para mostrar la señal de EEG tanto en el dominio del tiempo como en el dominio de la frecuencia. Utiliza dos subplots: uno dedicado a la visualización de la señal en el tiempo y el otro al espectro de frecuencias. Para facilitar la interpretación, se añaden títulos, etiquetas y cuadrículas a los gráficos.
 
 
-### **OpenBCI GUI: Ploteo de la señal en Python** <a name="t10"></a>
----
-A continuación se muestra el ploteo en Python del procedimiento utilizado para examinar la alteración en la actividad neuronal a través de la plataforma OpenBCI: 
-
-| Prueba     | Ploteo de la señal en el tiempo y su dominio en frecuencia     |
-| -------------- | -------------- |
-| **1.Estado de reposo (lectura basal**| <img src="Imagenes_L5/Ultracortex_Base.png" alt="Electrodos de guía" width="700">|
-| **2.Lectura de los ciclos de Ojos Abiertos y Cerrados (Fases de 5 segundos)** | <img src="Imagenes_L5/Ultra_cortex_Abrir_y_ cerrar_los_ojos.png" alt="Electrodos de guía" width="700">|
-| **3. Segunda lectura Basal** | <img src="Imagenes_L5/UltraCortex_Basal2.png" alt="Electrodos de guía" width="700">|
-| **4. Resolución de preguntas matemáticas** | <img src="Imagenes_L5/Preguntas_matematicas_ultracortex.png" alt="Electrodos de guía" width="700">|
-
-<p align="center">
-  <b>Tabla 6. Ploteo en Python del protocolo en UltraCortex </b>
-</p>
 
 
-**-Código de ploteo para señal de OpenBCI:**
-```python
-import pandas as pd
-import matplotlib.pyplot as plt
 
 
-def interpret16bitAsInt32(two_byte_value):
-    # Asumimos que two_byte_value es un entero de 16 bits y extrae los bytes
-    high_byte = (two_byte_value >> 8) & 0xFF
-    low_byte = two_byte_value & 0xFF
-    
-    # Combina los bytes en un nuevo entero de 16 bits
-    newInt = (high_byte << 8) | low_byte
-    
-    # Extiende el signo si es necesario
-    if newInt & 0x8000:  # Si el bit de signo está establecido
-        newInt = newInt - 0x10000  # Extiende el signo a 32 bits
-        
-    return newInt
-
-# Cargar datos desde el archivo de texto según la ubicación del archivo
-archivo = "C:/Users/Equipo/OneDrive/Escritorio/Introduccion_a_señales_biomedicas/Github/inb_2024_gh12/ISB_Informes/L5_Lectura_de_EEG/EEG_L5/EEG_Casco/OpenBCI-RAW-mate_Grupo_12.txt"
-
-# Definir las constantes del ADC
-vref = 4.5  # Voltaje de referencia en volts
-ganancia = 24  # Ganancia del ADC
-resolucion = 16  # Resolución en bits
-
-# Calcular el voltaje por bit en volts
-voltaje_por_bit = vref / (ganancia) /(2**16 - 1)
-
-# Load the data
-data = pd.read_csv(archivo, skiprows=5, usecols=range(1, 17))
-
-# Convertir los datos a enteros si no lo son ya
-data = data.applymap(int)
-
-# Aplica la función de interpretación a cada elemento
-data_signed_32 = data.applymap(interpret16bitAsInt32)
-
-data_centered = data_signed_32.sub(data_signed_32.mean(axis=0), axis=1)
-
-# Convertir de bits a voltaje y luego a microvoltios
-data_uV = data_centered * voltaje_por_bit * 1e6  # Multiplica por 1e6 para convertir de V a uV
-
-# Imprimir los primeros datos transformados
-print(data_uV)
-
-#Se convierten los ms en segundos
-data_uV.index = data_uV.index / 1000
-
-# Plotting
-fig, axes = plt.subplots(16, 1, figsize=(150, 100))  # Crea una figura y un conjunto de subplots
-colors = [
-    '#1f77b4', '#ff7f0e', '#2ca02c', '#d62728',
-    '#9467bd', '#8c564b', '#e377c2', '#7f7f7f',
-    '#bcbd22', '#17becf', '#1b9e77', '#d95f02',
-    '#7570b3', '#e7298a', '#66a61e', '#e6ab02',
-]
-
-for i in range(16):
-    axes[i].plot(data_uV.iloc[:, i],color=colors[i])
-    axes[i].set_title(f'EXG Channel {i+1}', fontsize=8)
-    axes[i].grid(True)
-
-# Configuración de la figura
-fig.tight_layout()
-fig.subplots_adjust(top=0.95)
-
-# Agrega un título general a la figura completa
-fig.suptitle("EEG Channel Outputs para estado de preguntas matematicas", fontsize=14)
-
-# Configurar etiquetas para toda la figura (ajuste las coordenadas según sea necesario)
-fig.text(0.5, 0.005, 'Time', ha='center', va='center', fontsize=12)
-fig.text(0.005, 0.5, 'Amplitude (uV)', ha='center', va='center', rotation='vertical', fontsize=12)
-
-plt.show()
-```
-
-- **Descripción del código:**
-En el código proporcionado, se describe un proceso completo para cargar, transformar y visualizar datos de EEG (electroencefalograma) provenientes de un archivo de texto usando Python. Este código utiliza las bibliotecas pandas y matplotlib para realizar estas tareas. Aquí está el desglose de lo que cada parte del código hace:
-
-Importación de Librerías: 
-  Importa las librerías pandas para manipulación de datos y matplotlib.pyplot para visualización.
-Definición de Función: 
-  Define la función interpret16bitAsInt32, que convierte valores de 16 bits a enteros de 32 bits con signo. Esta función maneja la representación de enteros negativos que están en formato de complemento a dos. Esta función fue extraia de la guía de OpenBCI para hacer la transformación de 16 bit con signo a 32 bit enteros sin signo. [18]
-Preparación de Datos:
-  Definimos constantes para el cálculo (Vref, Gain, Resolucion)
-  
-Carga de Datos:
-  Carga los datos desde un archivo de texto especificado en la ruta archivo. Se omiten las primeras cinco filas y se seleccionan las primeras 16 columnas para enfocarnos en la lectura de EEG directamente. Convertimos los datos a enteros (si es necesario) y aplica la función interpret16bitAsInt32 [18] para ajustar los datos de 16 bits a valores de 32 bits con signo.
-Transformación de Datos:
-  Para obtener una gráfica que se asemeje a la lectura del OpenBCI se centró los datos ya convertidos a  vU, restando la media de cada columna a todos los valores de 
-Visualización:
-  Crea una figura y un conjunto de subtramas para visualizar los datos de cada uno de los 16 canales.
-  Utiliza un color distinto para cada canal y configura títulos y etiquetas apropiados para cada gráfico.
-  Ajusta la configuración del gráfico para mejorar la legibilidad, incluyendo títulos y etiquetas generales para los ejes.
-Función de Visualización: 
-  Muestra los gráficos en pantalla.
-
-
-### **Archivos de la señal ploteada en Python y datos de la señal** <a name="t11"></a>
-- [Documentos (.txt)](https://github.com/renatog2500/inb_2024_gh12/tree/main/ISB_Informes/L5_Lectura_de_EEG/EEG_L5)
-- [Programa de ploteo de OpenSignal (python)](https://github.com/renatog2500/inb_2024_gh12/blob/main/Software/Ploteo_de_datos_lab.py) 
-- [Programa de ploteo de UltraCortex (python)](https://github.com/renatog2500/inb_2024_gh12/blob/main/Software/Ploteo_datos_EEG_ultracortex.py) 
 
 
 ## ** Bibliografía** : <a name="t12"></a>
 
-[1] Chaddad A, Wu Y, Kateb R, Bouridane A. Electroencephalography Signal Processing: A Comprehensive Review and Analysis of Methods and Techniques. Sensors (Basel). 2023 Jul 16;23(14):6434. doi: 10.3390/s23146434. PMID: 37514728; PMCID: PMC10385593.
-
-[2] Cohen MX. Where Does EEG Come From and What Does It Mean? Trends Neurosci. 2017 Apr;40(4):208-218. doi: 10.1016/j.tins.2017.02.004. Epub 2017 Mar 15. PMID: 28314445.
-
-[3] K. S. Bayram, M. A. Kızrak and B. Bolat, "Classification of EEG signals by using support vector machines," 2013 IEEE INISTA, Albena, Bulgaria, 2013, pp. 1-3, doi: 10.1109/INISTA.2013.6577636.
-
-[4] Priyanka A. Abhang, Bharti W. Gawali, Suresh C. Mehrotra, "Technological Basics of EEG Recording and Operation of Apparatus", en Introduction to EEG- and Speech-Based Emotion Recognition, Academic Press, 2016, pp. 19-50, doi:10.1016/B978-0-12-804490-2.00002-6
-
-[5] BITalino, “BITalino HOME-GUIDE #3 ELECTROENCEPHALOGRAPHY (EEG) Exploring Brain signals” 2020 Accessed: Apr. 19, 2023. [Online]. Available from:https://bitalino.com/storage/uploads/media/homeguide3-eeg.pdf
-
-[6] J. Molina del Río, M. A. Guevara, M. Hernández González, R. M. Hidalgo Aguirre, y M. A. Cruz Aguilar, “EEG correlation during the solving of simple and complex logical–mathematical problems”, Cogn. Affect. Behav. Neurosci., vol. 19, núm. 4, pp. 1036–1046, 2019.
-
-[7] “Ultracortex Mark IV”, Openbci.com, 2016. [En línea]. Disponible en: https://docs.openbci.com/AddOns/Headwear/MarkIV/
-
-[‌1R] X. Gu et al., "EEG-Based Brain-Computer Interfaces (BCIs): A Survey of Recent Studies on Signal Sensing Technologies and Computational Intelligence Approaches and Their Applications," in IEEE/ACM Transactions on Computational Biology and Bioinformatics, vol. 18, no. 5, pp. 1645-1666, 1 Sept.-Oct. 2021, doi: 10.1109/TCBB.2021.3052811.
-
-[9] B. Yang, K. Duan, C. Fan, C. Hu y J. Wang, “Automatic ocular artifacts removal in EEG using deep learning”, Biomed. Signal Process. Control, vol. 43, pp. 148–158, mayo de 2018. Accedido el 28 de abril de 2024. [En línea]. Disponible: https://doi.org/10.1016/j.bspc.2018.02.021
-
-[10] L. Gila, A. Villanueva y R. Cabeza, “Fisiopatología y técnicas de registro de los movimientos oculares”, Anales del Sist. Sanitario de Navarra, vol. 32, 2009. Accedido el 28 de abril de 2024. [En línea]. Disponible: https://doi.org/10.4321/s1137-66272009000600002 
-
-[11] M. M. Plichta et al., “Event-related functional near-infrared spectroscopy (fNIRS): Are the measurements reliable?”, NeuroImage, vol. 31, n.º 1, pp. 116–124, mayo de 2006. Accedido el 28 de abril de 2024. [En línea]. Disponible: https://doi.org/10.1016/j.neuroimage.2005.12.008
-
-[12] A. M. Norcia, L. G. Appelbaum, J. M. Ales, B. R. Cottereau y B. Rossion, “The steady-state visual evoked potential in vision research: A review”, J. Vis., vol. 15, n.º 6, p. 4, mayo de 2015. Accedido el 28 de abril de 2024. [En línea]. Disponible: https://doi.org/10.1167/15.6.4
-
-[13] Y. Zhou, S. Huang, Z. Xu, P. Wang, X. Wu and D. Zhang, "Cognitive Workload Recognition Using EEG Signals and Machine Learning: A Review," in IEEE Transactions on Cognitive and Developmental Systems, vol. 14, no. 3, pp. 799-818, Sept. 2022, doi: 10.1109/TCDS.2021.3090217.
-
-[14] A. Curtin y H. Ayaz, “The Age of Neuroergonomics: Towards Ubiquitous and Continuous Measurement of Brain Function with fNIRS”, Japanese Psycholog. Res., vol. 60, n.º 4, pp. 374–386, agosto de 2018. Accedido el 28 de abril de 2024. [En línea]. Disponible: https://doi.org/10.1111/jpr.12227
-
-[15] P. Pinti et al., “The present and future use of functional near‐infrared spectroscopy (fNIRS) for cognitive neuroscience”, Ann. New York Acad. Sci., vol. 1464, n.º 1, pp. 5–29, marzo de 2020. Accedido el 28 de abril de 2024. [En línea]. Disponible: https://doi.org/10.1111/nyas.13948
-
-[16] A. J. Casson, “Wearable EEG and beyond”, Biomed. Eng. Lett., vol. 9, n.º 1, pp. 53–71, enero de 2019. Accedido el 28 de abril de 2024. [En línea]. Disponible: (https://pubmed.ncbi.nlm.nih.gov/30956880/) 
-
-[17] Snipes S, Krugliakova E, Meier E, Huber R. The Theta Paradox: 4-8 Hz EEG Oscillations Reflect Both Sleep Pressure and Cognitive Control. J Neurosci. 2022 Nov 9;42(45):8569-8586. doi: 10.1523/JNEUROSCI.1063-22.2022. Epub 2022 Oct 6. PMID: 36202618; PMCID: PMC9665934.
-
-[18] W. Klimesch, “Alpha-band oscillations, attention, and controlled access to stored information”, Trends Cogn. Sci., vol. 16, n.º 12, pp. 606–617, diciembre de 2012. Accedido el 28 de abril de 2024. [En línea]. Disponible: https://doi.org/10.1016/j.tics.2012.10.007
-
-[20] BiTalino, “BITalino (r)evolution Board Kit Data Sheet”, 2016. 2020 Accessed: Apr. 27, 2024. [Online]
-
-[21] “Cyton data format”, Openbci.com. [En línea]. Disponible en: https://docs.openbci.com/Cyton/CytonDataFormat/. [Consultado: 28-abr-2024].
 
 
 
