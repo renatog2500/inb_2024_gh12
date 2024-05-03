@@ -6,7 +6,7 @@
 2. [Introducción](#t2)
 3. [Objetivos del laboratorio](#t3)
 4. [Metodología](#t4)
-6. [Resultados](#t5)
+6. [Resultados](#t5)\
    5.1 [Ejercicio ECG](#t6)\
    5.2 [Ejercicio EMG ](#t7)\
    5.3 [Ejercicio EEG](#t8)\
