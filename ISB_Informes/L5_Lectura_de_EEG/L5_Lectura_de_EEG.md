@@ -339,7 +339,7 @@ Procesamiento y Conversión de Datos:
 Transformada Rápida de Fourier (FFT):
   El código aplica la Transformada Rápida de Fourier (FFT) a la serie temporal para obtener el espectro de frecuencias. Luego, calcula las frecuencias asociadas con los puntos de la FFT y determina las magnitudes en decibelios de estos resultados para visualizar la amplitud de la señal en una escala logarítmica.
 Conversión de Valores Digitales a Analógicos:
-  Convierte los valores digitales a voltaje usando las especificaciones del ADC (voltaje de operación y ganancia del sensor) del data sheet del BiTalino [17], donde extraemos los valores de ganancia de 41782, una resolución de 10 bits ya que en los canales A1-A4 usan esa resolución y un voltaje de referencia de 3.3V. Para luego convertir los voltajes a microvoltios para presentar la señal en un rango típico para EEG.
+  Convierte los valores digitales a voltaje usando las especificaciones del ADC (voltaje de operación y ganancia del sensor) del data sheet del BiTalino [19], donde extraemos los valores de ganancia de 41782, una resolución de 10 bits ya que en los canales A1-A4 usan esa resolución y un voltaje de referencia de 3.3V. Para luego convertir los voltajes a microvoltios para presentar la señal en un rango típico para EEG.
 Visualización:
   El código crea figuras para mostrar la señal de EEG tanto en el dominio del tiempo como en el dominio de la frecuencia. Utiliza dos subplots: uno dedicado a la visualización de la señal en el tiempo y el otro al espectro de frecuencias. Para facilitar la interpretación, se añaden títulos, etiquetas y cuadrículas a los gráficos.
 
@@ -445,12 +445,12 @@ En el código proporcionado, se describe un proceso completo para cargar, transf
 Importación de Librerías: 
   Importa las librerías pandas para manipulación de datos y matplotlib.pyplot para visualización.
 Definición de Función: 
-  Define la función interpret16bitAsInt32, que convierte valores de 16 bits a enteros de 32 bits con signo. Esta función maneja la representación de enteros negativos que están en formato de complemento a dos. Esta función fue extraia de la guía de OpenBCI para hacer la transformación de 16 bit con signo a 32 bit enteros sin signo. [18]
+  Define la función interpret16bitAsInt32, que convierte valores de 16 bits a enteros de 32 bits con signo. Esta función maneja la representación de enteros negativos que están en formato de complemento a dos. Esta función fue extraia de la guía de OpenBCI para hacer la transformación de 16 bit con signo a 32 bit enteros sin signo. [20]
 Preparación de Datos:
   Definimos constantes para el cálculo (Vref, Gain, Resolucion)
   
 Carga de Datos:
-  Carga los datos desde un archivo de texto especificado en la ruta archivo. Se omiten las primeras cinco filas y se seleccionan las primeras 16 columnas para enfocarnos en la lectura de EEG directamente. Convertimos los datos a enteros (si es necesario) y aplica la función interpret16bitAsInt32 [18] para ajustar los datos de 16 bits a valores de 32 bits con signo.
+  Carga los datos desde un archivo de texto especificado en la ruta archivo. Se omiten las primeras cinco filas y se seleccionan las primeras 16 columnas para enfocarnos en la lectura de EEG directamente. Convertimos los datos a enteros (si es necesario) y aplica la función interpret16bitAsInt32 [20] para ajustar los datos de 16 bits a valores de 32 bits con signo.
 Transformación de Datos:
   Para obtener una gráfica que se asemeje a la lectura del OpenBCI se centró los datos ya convertidos a  vU, restando la media de cada columna a todos los valores de 
 Visualización:
@@ -483,7 +483,7 @@ Función de Visualización:
 
 [7] “Ultracortex Mark IV”, Openbci.com, 2016. [En línea]. Disponible en: https://docs.openbci.com/AddOns/Headwear/MarkIV/
 
-[‌1R] X. Gu et al., "EEG-Based Brain-Computer Interfaces (BCIs): A Survey of Recent Studies on Signal Sensing Technologies and Computational Intelligence Approaches and Their Applications," in IEEE/ACM Transactions on Computational Biology and Bioinformatics, vol. 18, no. 5, pp. 1645-1666, 1 Sept.-Oct. 2021, doi: 10.1109/TCBB.2021.3052811.
+[‌8] X. Gu et al., "EEG-Based Brain-Computer Interfaces (BCIs): A Survey of Recent Studies on Signal Sensing Technologies and Computational Intelligence Approaches and Their Applications," in IEEE/ACM Transactions on Computational Biology and Bioinformatics, vol. 18, no. 5, pp. 1645-1666, 1 Sept.-Oct. 2021, doi: 10.1109/TCBB.2021.3052811.
 
 [9] B. Yang, K. Duan, C. Fan, C. Hu y J. Wang, “Automatic ocular artifacts removal in EEG using deep learning”, Biomed. Signal Process. Control, vol. 43, pp. 148–158, mayo de 2018. Accedido el 28 de abril de 2024. [En línea]. Disponible: https://doi.org/10.1016/j.bspc.2018.02.021
 
@@ -505,9 +505,9 @@ Función de Visualización:
 
 [18] W. Klimesch, “Alpha-band oscillations, attention, and controlled access to stored information”, Trends Cogn. Sci., vol. 16, n.º 12, pp. 606–617, diciembre de 2012. Accedido el 28 de abril de 2024. [En línea]. Disponible: https://doi.org/10.1016/j.tics.2012.10.007
 
-[20] BiTalino, “BITalino (r)evolution Board Kit Data Sheet”, 2016. 2020 Accessed: Apr. 27, 2024. [Online]
+[19] BiTalino, “BITalino (r)evolution Board Kit Data Sheet”, 2016. 2020 Accessed: Apr. 27, 2024. [Online]
 
-[21] “Cyton data format”, Openbci.com. [En línea]. Disponible en: https://docs.openbci.com/Cyton/CytonDataFormat/. [Consultado: 28-abr-2024].
+[20] “Cyton data format”, Openbci.com. [En línea]. Disponible en: https://docs.openbci.com/Cyton/CytonDataFormat/. [Consultado: 28-abr-2024].
 
 
 
