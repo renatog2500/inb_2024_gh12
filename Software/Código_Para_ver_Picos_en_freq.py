@@ -30,7 +30,7 @@ X3 = X3[0:N//2]
 X3m = np.abs(X3)
 F = np.linspace(0,1000/2,N//2)
 
-band = [1.94, 4.84]  # Frecuencias de corte para el rechazo
+band = [25, 457]  # Frecuencias de corte para el rechazo
 trans_width = 0.3  # Anchura de la banda de transición en Hz
 numtaps = 401      # Número de coeficientes del filtro (orden + 1)
 

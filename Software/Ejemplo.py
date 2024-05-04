@@ -24,15 +24,34 @@ frecuencia_muestreo = 1000
 tiempo = np.arange(len(ecg)) / frecuencia_muestreo
 
 # Frecuencia de corte de los filtros
-cutoff_frequency_fir = 25 / (frecuencia_muestreo / 2)
-cutoff_frequency_iir= 20 / (frecuencia_muestreo/2) # Normalización de la frecuencia de corte
-#cutoff_frequency_iir = 25 / (frecuencia_muestreo / 2)
+cutoff_frequency_fir = 2 / (frecuencia_muestreo / 2) # Normalización de la frecuencia de corte
+
+
+#Declaramos la frecuencia de corte para un filtro pasa banda
+frecuencia_low_cut=0.05/ (frecuencia_muestreo / 2)
+frecuencia_high_cut=100/ (frecuencia_muestreo / 2)
+
+band = [60]  # Frecuencias de corte para el rechazo
+trans_width = 0.3  # Anchura de la banda de transición en Hz
+numtaps = 401      # Número de coeficientes del filtro (orden + 1)
 
 # Diseñar filtros
 num_taps = 101
-fir_filter = firwin(num_taps, cutoff_frequency_fir,window="hamming")
-iir_filter = iirfilter(N=4, Wn=cutoff_frequency_iir, btype='low', ftype='butter')
+fir_filter = firwin(numtaps, cutoff_frequency_fir, window='hamming')
+iir_filter = iirfilter(N=4, Wn=[frecuencia_low_cut, frecuencia_high_cut], btype='band', ftype='butter')
 
+# Diseño del filtro rechazo de banda
+# Parámetros del filtro
+numtaps = 101  # Número de coeficientes
+fs = 500  # Frecuencia de muestreo en Hz
+notch_freq = 60  # Frecuencia a rechazar en Hz
+bandwidth = 0.55  # Ancho de banda alrededor de la frecuencia a rechazar
+f1 = notch_freq - bandwidth / 2
+f2 = notch_freq + bandwidth / 2
+
+# Crear filtro rechaza banda con ventana de Hamming
+fir_coeff_notch = firwin(numtaps, [f1, f2], window='hamming', pass_zero=True, fs=fs)
+ecg_fir = lfilter(fir_coeff_notch, 1.0, ecg)
 
 # Respuesta en frecuencia del filtro FIR
 w, h = freqz(fir_filter, worN=8000)
@@ -44,14 +63,22 @@ plt.xlabel('Frecuencia [Hz]')
 plt.grid(True)
 
 # Respuesta en frecuencia del filtro IIR (Butterworth)
-w, h = freqz(*butter(4, cutoff_frequency_iir, btype='low'))
+w, h = freqz(*butter(4, Wn=[frecuencia_low_cut, frecuencia_high_cut], btype='band'))
 plt.subplot(3, 1, 2)
 plt.plot(0.5*frecuencia_muestreo*w/np.pi, np.abs(h), 'g')
-plt.title('Respuesta en Frecuencia del Filtro IIR (Butterworth)')
+plt.title('Respuesta en Frecuencia del Filtro IIR (Butterworth) pasabanda')
+plt.xlabel('Frecuencia [Hz]')
+plt.grid(True)
+
+
+
+w, h = freqz(fir_coeff_notch, worN=8000)
+plt.subplot(3, 1, 3)
+plt.plot(0.5*frecuencia_muestreo*w/np.pi, np.abs(h), 'g')
+plt.title('Respuesta en Frecuencia del Filtro IIR (Butterworth) pasabanda')
 plt.xlabel('Frecuencia [Hz]')
 plt.grid(True)
 plt.tight_layout()
-# El filtro Wavelet no es un filtro en el dominio de la frecuencia 
 
 # Aplicar los filtros
 ecg_fir = lfilter(fir_filter, 1.0, ecg)
@@ -59,8 +86,8 @@ ecg_iir = lfilter(iir_filter[0], iir_filter[1], ecg)
 #ecg_wavelet, _ = pywt.dwt(ecg, wavelet_filter)
 
 # Define el intervalo de tiempo que deseas visualizar (segundos)
-inicio_segundo = 5
-fin_segundo = 8
+inicio_segundo = 1
+fin_segundo = 10
 inicio_muestra = int(inicio_segundo * frecuencia_muestreo)
 fin_muestra = int(fin_segundo * frecuencia_muestreo)
 
