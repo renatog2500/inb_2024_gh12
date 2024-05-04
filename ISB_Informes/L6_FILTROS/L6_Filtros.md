@@ -83,8 +83,8 @@ iir_filter = iirfilter(N=5, Wn=[cutoff_frequency], btype='low', ftype='butter')
 wc_delta=[0.2/ (fs / 2), 4/ (fs / 2)]
 wc_tetha=[4/ (fs / 2), 8/ (fs / 2)]
 wc_alfa=[8/ (fs / 2), 12/ (fs / 2)]
-wc_beta=[12/ (fs / 2), 30/ (fs / 2)]
-wc_gamma=[30/ (fs / 2), 90/ (fs / 2)]
+wc_beta=[12/ (fs / 2), 24/ (fs / 2)]
+wc_gamma=[24/ (fs / 2), 48/ (fs / 2)]
 
 # Diseñar filtros
 num_taps = 101 # Número de coeficientes
