@@ -483,7 +483,8 @@ Función de Visualización:
 
 [7] “Ultracortex Mark IV”, Openbci.com, 2016. [En línea]. Disponible en: https://docs.openbci.com/AddOns/Headwear/MarkIV/
 
-[‌8] X. Gu et al., "EEG-Based Brain-Computer Interfaces (BCIs): A Survey of Recent Studies on Signal Sensing Technologies and Computational Intelligence Approaches and Their Applications," in IEEE/ACM Transactions on Computational Biology and Bioinformatics, vol. 18, no. 5, pp. 1645-1666, 1 Sept.-Oct. 2021, doi: 10.1109/TCBB.2021.3052811.
+[‌8] Hernán Díaz M., Fernando Maureira Cid, Jaime Otárola, Roberto Rojas, Oscar Alarcón, Lucio Cañete, EEG Beta band frequency domain evaluation for assessing stress and anxiety in resting, eyes closed, basal conditions, Procedia Computer Science, Volume 162, 2019, Pages 974-981,
+ISSN 1877-0509, https://doi.org/10.1016/j.procs.2019.12.075. (https://www.sciencedirect.com/science/article/pii/S1877050919320873)
 
 [9] B. Yang, K. Duan, C. Fan, C. Hu y J. Wang, “Automatic ocular artifacts removal in EEG using deep learning”, Biomed. Signal Process. Control, vol. 43, pp. 148–158, mayo de 2018. Accedido el 28 de abril de 2024. [En línea]. Disponible: https://doi.org/10.1016/j.bspc.2018.02.021
 
