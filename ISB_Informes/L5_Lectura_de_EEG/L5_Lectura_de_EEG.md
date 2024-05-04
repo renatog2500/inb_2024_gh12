@@ -201,7 +201,7 @@ Los picos de gran amplitud observados en múltiples canales al abrir o cerrar lo
 
 **3. Registro de fase de referencia**
 
-La consistencia entre la primera y la segunda lectura basal en los 16 canales de EEG indica una buena reproducibilidad de las mediciones y una estabilidad en la actividad cerebral de fondo [16]
+La consistencia entre la primera y la segunda lectura basal en los 16 canales de EEG indica una buena reproducibilidad de las mediciones y una estabilidad en la actividad cerebral [16]
 
 **4. Resolución de preguntas matemáticas:**
 
@@ -500,7 +500,7 @@ ISSN 1877-0509, https://doi.org/10.1016/j.procs.2019.12.075. (https://www.scienc
 
 [15] P. Pinti et al., “The present and future use of functional near‐infrared spectroscopy (fNIRS) for cognitive neuroscience”, Ann. New York Acad. Sci., vol. 1464, n.º 1, pp. 5–29, marzo de 2020. Accedido el 28 de abril de 2024. [En línea]. Disponible: https://doi.org/10.1111/nyas.13948
 
-[16] A. J. Casson, “Wearable EEG and beyond”, Biomed. Eng. Lett., vol. 9, n.º 1, pp. 53–71, enero de 2019. Accedido el 28 de abril de 2024. [En línea]. Disponible: (https://pubmed.ncbi.nlm.nih.gov/30956880/) 
+[16] [A. J. Casson, “Wearable EEG and beyond”, Biomed. Eng. Lett., vol. 9, n.º 1, pp. 53–71, enero de 2019. Accedido el 28 de abril de 2024. [En línea]. Disponible: (https://pubmed.ncbi.nlm.nih.gov/30956880/) ](https://doi.org/10.17488/rmib.37.3.3)
 
 [17] Snipes S, Krugliakova E, Meier E, Huber R. The Theta Paradox: 4-8 Hz EEG Oscillations Reflect Both Sleep Pressure and Cognitive Control. J Neurosci. 2022 Nov 9;42(45):8569-8586. doi: 10.1523/JNEUROSCI.1063-22.2022. Epub 2022 Oct 6. PMID: 36202618; PMCID: PMC9665934.
 
