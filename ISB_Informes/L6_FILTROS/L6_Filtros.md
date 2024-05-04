@@ -46,13 +46,23 @@ aqui colocar el codigo utilizado
 ### **Ejercicio EMG** <a name="t7"></a>
 
 
-## Discusión <a name="t8"></a>
+### **Ejercicio EEG** <a name="t8"></a>
+
+
+## Discusión <a name="t9"></a>
+
+
+### **ECG** <a name="t10"></a>
+
+
+### **EMG** <a name="t11"></a>
+
+
+### **EEG** <a name="t12"></a>
 
 
 
-
-
-## ** Bibliografía** : <a name="t12"></a>
+## ** Bibliografía** : <a name="t13"></a>
 
 
 
