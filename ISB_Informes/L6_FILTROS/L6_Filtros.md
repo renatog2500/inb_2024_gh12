@@ -482,7 +482,7 @@ plt.show()
 ### **Ejercicio EEG** <a name="t8"></a>
 | Campo | Señal Cruda | Filtro IIR | Filtro FIR |
 |-----------|-----------|-----------|-----------|
-| Basal  | Valor 2   | Valor 3   | Valor 4   |
+| Basal  | Antes del filtrado, la señal de EKG contiene ruido de baja frecuencia, como la deriva de la línea base, y ruido de alta frecuencia, como la interferencia electromagnética. Estos ruidos dificultan la identificación de las ondas características del EKG, como las ondas P, QRS y T.| Valor 3   | Valor 4   |
 | Parpadero de ojos  | Valor 6   | Valor 7   | Valor 8   |
 | Actvidad  | Valor 6   | Valor 7   | Valor 8   |
 
@@ -490,7 +490,16 @@ plt.show()
 
 
 ### **ECG** <a name="t10"></a>
+| Campo  | CRUDA | IIR| FIR |
+|--------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
+| ECG  |Antes del filtrado, la señal de EKG contiene ruido de baja frecuencia, como la deriva de la línea base, y ruido de alta frecuencia, como la interferencia electromagnética. Estos ruidos dificultan la identificación de las ondas características del EKG, como las ondas P, QRS y T.       | Antes del filtrado, la señal de EKG contiene ruido de baja frecuencia, como la deriva de la línea base, y ruido de alta frecuencia, como la interferencia electromagnética. Estos ruidos dificultan la identificación de las ondas características del EKG, como las ondas P, QRS y T. Después del filtrado con un filtro IIR, el ruido de baja y alta frecuencia se atenúa, lo que resulta en una señal más limpia. Las ondas P, QRS y T son más prominentes y fáciles de identificar. Sin embargo, se observa una ligera distorsión de la forma de onda debido a la fase no lineal del filtro IIR. | Valor 1 |
+| Basal  | FIR      
 
+| SEÑAL | CRUDA | IIR | FIR |
+|-----------|-----------|-----------|-----------|
+| ECG |           |   Antes del filtrado, la señal de EKG contiene ruido de baja frecuencia, como la deriva de la línea base, y ruido de alta frecuencia, como la interferencia electromagnética. Estos ruidos dificultan la identificación de las ondas características del EKG, como las ondas P, QRS y T.  |    Después del filtrado con un filtro IIR, el ruido de baja y alta frecuencia se atenúa, lo que resulta en una señal más limpia. Las ondas P, QRS y T son más prominentes y fáciles de identificar. Sin embargo,se observa una ligera distorsión de la forma de onda debido a la fase no lineal del filtro IIR.       | Con un filtro FIR, se ve una atenuación similar del ruido de baja y alta frecuencia. La señal resultante también es más limpia, con las ondas P, QRS y T claramente visibles. A diferencia del filtro IIR, el filtro FIR no introduce distorsión de fase, por lo que la forma de onda se preserva mejor.
+|  EMG         |      La señal EMG contiene ruido de baja frecuencia que pueden ser debidos a artefactos en movimiento y ruido de alta frecuencia debido a interferencias electromagnéticas. Este ruido puede ocultar la información relevante relacionada con la actividad muscular.      |    Después del filtrado con un filtro IIR, se observa una reducción del ruido de baja y alta frecuencia, lo que resulta en una señal más limpia. Las componentes espectrales características del EMG, que contienen información sobre la frecuencia y amplitud de la actividad muscular, son más evidentes.        |    Después del filtrado con un filtro FIR, se observa atenuación similar del ruido de baja y alta frecuencia. La señal resultante también es más limpia, con las componentes espectrales del EMG claramente visibles.       |
+|   EEG        |   Observamos una gran cantidad de ruido en las señales al momento de plotear cada una. Lo cual dificulta su lectura de informaciòn.         |   La señal EEG, después de pasar por un filtro Butterworth, nos permite reconocer las magnitudes de las oscilaciones en distintos rangos de frecuencia, tales como delta, theta, alpha, beta y gamma. Este diagrama nos facilita la medición de la amplitud en microvoltios (uV) o en unidades relativas.        |  Cuando aplicamos la ventana Hamming en el análisis de una señal EEG, estamos seleccionando una ventana específica para la respuesta de frecuencia. Esto influye en la percepción y el análisis de las oscilaciones en la señal EEG. Esperaríamos poder distinguir las ondas alfa, delta, beta y gamma; sin embargo, en algunos casos, podríamos notar que la calidad de la señal no es óptima y la identificación de la banda de frecuencia con mayor amplitud en momentos específicos no es clara. Esto resalta la importancia de comprender las diferencias entre las ventanas Hamming y Hann, y cómo afectan el procesamiento de la señal.         |
 
 ### **EMG** <a name="t11"></a>
 
@@ -500,6 +509,28 @@ plt.show()
 
 
 ## ** Bibliografía** : <a name="t13"></a>
+
+
+[1] E. C. Ifeachor and B. W. Jervis, "Digital signal processing: a practical approach," Pearson Education, pp. 367-379, 2002.
+
+[2] M. Parker, “Finite Impulse Response (FIR) Filters,” Elsevier eBooks, pp. 41–57, Jan. 2017, doi: https://doi.org/10.1016/b978-0-12-811453-7.00005-6.
+
+[3] M. Parker, “Infinite Impulse Response (IIR) Filters,” Elsevier eBooks, pp. 75–82, Jan. 2017, doi: https://doi.org/10.1016/b978-0-12-811453-7.00008-1.
+
+[4] P. Ramesh Babu, "Digital Signal Processing", 4th ed. Chennai: Scitech Publication (India) Pvt. Ltd, 2008.
+
+[5] Renatog2500, "L4_Lectura_de_ECG", GitHub, 2024. [Online]. Available: https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L4_Lectura_de_ECG/L4_Lectura_de_ECG.md. [Accessed: May 05, 2024].
+
+[6] N. Das y M. Chakraborty, "Performance Analysis of FIR and IIR Filters for ECG Signal Denoising based on SNR," en 2017 IEEE International Conference on Intelligent Techniques in Control, Optimization and Signal Processing (INCOS), 2017, pp. 1-6, doi: 10.1109/ITCOSP.2017.8303099.  https://sci-hub.se/https://ieeexplore.ieee.org/abstract/document/8234487 
+
+[7] BITalino, “Electrocardiography (ECG) Sensor Data Sheet”, Lisboa, DataSheet, 2020. https://www.bitalino.com/storage/uploads/media/revolution-ecg-sensor-datasheet-revb-1.pdf 
+
+[8] T. Roland, S. Amsuess, M. Russold y W. Baumgartner, “Ultra-Low-Power Digital Filtering for Insulated EMG Sensing”, Sensors, vol. 19, n.º 4, p. 959, febrero de 2019. Accedido el 5 de mayo de 2024. [En línea]. Disponible: https://doi.org/10.3390/s19040959 
+
+[9] S. Tiwari, S. Goel, y A. Bhardwaj, "Classification of imagined speech of vowels from EEG signals using multi-headed CNNs feature fusion network", Digital Signal Processing, vol. 148, p. 104447, 2024, doi: 10.1016/j.dsp.2024.104447. https://www.sciencedirect.com/science/article/pii/S1051200424000721 
+
+[10] J. G. Proakis y D. G. Manolakis, "Digital Signal Processing: Principles, Algorithms, and Applications", 4th ed., Prentice-Hall, 2007.https://www.academia.edu/75221190/Digital_signal_processing_principles_algorithms_and_applications?auto=download 
+
 
 
 
