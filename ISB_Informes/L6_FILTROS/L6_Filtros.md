@@ -465,9 +465,15 @@ plt.show()
 ### **Ejercicio ECG** <a name="t6"></a>
 | Campo | Señal Cruda | Filtro IIR | Filtro FIR |
 |-----------|-----------|-----------|-----------|
-| Basal   | <img src="Imagenes_L6/Imagenes_ECG/ Ecuacion 1.png" alt="Electrodos de guía" >  | <img src="Imagenes_L6/Imagenes_ECG/ Ecuacion 1.png" alt="Electrodos de guía"   | <img src="Imagenes_L6/Imagenes_ECG/ Ecuacion 1.png" alt="Electrodos de guía" |
+| Basal   | <img src="Imagenes_L6/Imagenes_ECG/ Basal_ECG_cruda.png" alt="Electrodos de guía" >  | <img src="Imagenes_L6/Imagenes_ECG/ Ecuacion 1.png" alt="Electrodos de guía"   | <img src="Imagenes_L6/Imagenes_ECG/ Ecuacion 1.png" alt="Electrodos de guía" |
 | Respiración   | Valor 6   | Valor 7   | Valor 8   |
 | Post Ejercicio | Valor 6   | Valor 7   | Valor 8   |
+| Campo          | Señal Cruda                                                                                          | Filtro IIR                                                                                            | Filtro FIIR  Hanning                                                                                          | Filtro FIIR HAMMING                                                                                       |
+|----------------|------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
+| Basal          | <img src="Imagenes_L6/Imagenes_ECG/ Basal_ECG_cruda.png" alt="Electrodos de guía" >                | <img src="Imagenes_L6/Imagenes_ECG/ Ecuacion 1.png" alt="Electrodos de guía" >                        | <img src="Imagenes_L6/Imagenes_ECG/ Ecuacion 1.png" alt="Electrodos de guía" >                        |    <img src="Imagenes_L6/Imagenes_ECG/ Ecuacion 1.png" alt="Electrodos de guía" >                                                                                                   |
+| Respiración    | Valor 6               | Valor 8        |                           |
+| Post Ejercicio | Valor 6                                                                                              | Valor 7                                                                                                | Valor 8                                                                                                |                                                                                                      |
+
 
 
 ### **Ejercicio EMG** <a name="t7"></a>
