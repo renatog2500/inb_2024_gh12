@@ -35,7 +35,7 @@ Mediante algoritmos matemáticos implementados en hardware o software, los filtr
 - Tanto los datos filtrados como los no filtrados pueden ser almacenados para su posterior uso, brindando una mayor capacidad de procesamiento y análisis.
 
 <div align="center">
-    <img src="Imagenes_L6/Filtro digital intro.png" alt="wCF14V" width="300">
+    <img src="Imagenes_L6/Filtro digital intro.png" alt="wCF14V" width="400">
     <p><b>Figura 1. Representación de un filtro digital</b> - Extraído de [1]</p>
 </div>
 
@@ -47,7 +47,7 @@ Podemos dividir los  filtros digitales en dos grupos: filtros de respuesta al im
 
 | Ecuación 1      | Ecuación 2 |
 |-------------|------|
-| <img src="Imagenes_L6/Ecuacion 1.png" alt="Electrodos de guía" width="500">     | <img src="Imagenes_L6/ecuacion 2.png" alt="Electrodos de guía" width="500">   |
+| <img src="Imagenes_L6/Ecuacion 1.png" alt="Electrodos de guía" width="300">     | <img src="Imagenes_L6/ecuacion 2.png" alt="Electrodos de guía" width="300">   |
 |                        Filtro IIR                   |                     Filtro FIR                      | 
 
 </div>
