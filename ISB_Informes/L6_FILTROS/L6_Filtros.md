@@ -127,15 +127,61 @@ El rango de frecuencia útil para el modo de monitorización de ECG que se acept
 
 Dado que el estudio de Das y Chakraborty (2017) demostró que los filtros Butterworth de orden 2 a 4 proporcionan un buen rendimiento de SNR para la eliminación de ruido en señales de ECG en modo de monitorización, se recomienda probar el filtro Butterworth con órdenes en este rango.
 
-
 **Señal EMG**
+
+**Justificación de uso del filtro IIR en EMG**
+
+Según el estudio realizado por Roland et al. (2019) [8], los filtros IIR de segundo orden, tanto Chebyshev como Butterworth, son adecuados para la eliminación de artefactos de movimiento y ruido de baja frecuencia en señales de EMG aisladas.
+
+Los autores evaluaron diferentes frecuencias de corte para estos filtros y encontraron que un filtro Chebyshev de segundo orden con una frecuencia de corte de 60 Hz proporcionó el mejor equilibrio entre la atenuación de artefactos y el mantenimiento de la potencia de la señal de EMG. Este filtro mostró la máxima diferencia entre la pérdida de señal de artefactos y la pérdida de señal de EMG, lo que indica un rendimiento óptimo.
+
+Para el diseño del filtro Chebyshev, se pueden utilizar los siguientes parámetros:
+
+- Frecuencia de esquina de la banda de paso (Wp) = 301.59 rad/s
+- Frecuencia de esquina de la banda de atenuación (Ws) = 389.02 rad/s
+
+Estos valores de frecuencia son consistentes con el rango de frecuencia útil para la señal de EMG, que se acepta generalmente de 20 a 500 Hz [8].
+
+Aunque el filtro Butterworth de segundo orden también mostró un buen rendimiento, el filtro Chebyshev fue seleccionado para la implementación final en el sistema de medición de EMG aislado debido a su mejor atenuación de artefactos.
+
+En resumen, el uso de un filtro IIR Chebyshev de segundo orden con una frecuencia de corte de 60 Hz y los parámetros Wp = 301.59 rad/s y Ws = 389.02 rad/s está justificado por los resultados del estudio de Roland et al. (2019) [8] para la eliminación efectiva de artefactos de movimiento y ruido de baja frecuencia en señales de EMG aisladas, manteniendo al mismo tiempo la potencia de la señal de EMG.
 
 
 **Señal EEG**
 
+**Justificación de uso del filtro IIR en EMG**
+
+Según el estudio realizado por Tiwari, Goel y Bhardwaj (2024) [9], se utilizó un filtro pasabanda Butterworth de 5to orden para realizar el sub-bandeo de las señales de EEG en seis bandas más pequeñas: delta (0.5-4 Hz), theta (4-8 Hz), alfa (8-12 Hz), beta baja (12-16 Hz), beta alta (16-24 Hz) y gamma (24-40 Hz).
+
+Este procesamiento de señales fue un paso importante antes de aplicar la Transformada de Hilbert-Huang (HHT) a las señales de EEG de cada sub-banda. La HHT se utilizó para obtener la Amplitud Instantánea (IA), la Fase Instantánea (IP) y la Frecuencia Instantánea (IF) de las señales de EEG en dicho estudio.
+
+El uso del filtro Butterworth pasabanda de 5to orden para el sub-bandeo de las señales de EEG en las bandas delta, theta, alfa, beta y gamma, seguido de la HHT, resultó en un preprocesamiento híbrido y eficiente de las señales. 
+
+Los autores reportaron una precisión promedio de clasificación del 97.67% usando la técnica de validación cruzada de 5 pliegues en las seis sub-bandas. Esto demuestra la eficacia del enfoque de preprocesamiento que emplea el filtro Butterworth pasabanda de 5to orden para el sub-bandeo de las señales de EEG.
+
+
+**Justificación de uso del filtro FIR para las señales de ECG, EMG y EEG**
+
+De acuerdo con Proakis y Manolakis en su libro "Digital Signal Processing: Principles, Algorithms, and Applications" [10], las ventanas de Hamming y Hanning son dos de las mejores opciones para el diseño de filtros FIR en el procesamiento de señales debido a las siguientes razones:
+
+1. Ventana de Hamming:
+La ventana de Hamming tiene un buen equilibrio entre la selectividad en frecuencia y la atenuación de los lóbulos laterales.
+Proporciona una buena supresión de los lóbulos laterales, lo que reduce la interferencia de las frecuencias no deseadas en la señal filtrada.
+Tiene una transición relativamente estrecha entre la banda de paso y la banda de rechazo, lo que permite una buena separación entre las bandas de frecuencia.
+
+2. Ventana de Hanning:
+La ventana de Hanning tiene una forma similar a la ventana de Hamming, pero con una atenuación de los lóbulos laterales ligeramente menor.
+Ofrece una buena selectividad en frecuencia y una transición suave entre la banda de paso y la banda de rechazo.
+Produce una distorsión mínima de la señal en la banda de paso debido a su forma de campana suave.
+
+Proakis y Manolakis destacan que tanto la ventana de Hamming como la ventana de Hanning son ampliamente utilizadas en el diseño de filtros FIR debido a sus características favorables en términos de selectividad en frecuencia, atenuación de los lóbulos laterales y distorsión de la señal. Estas ventanas proporcionan un buen compromiso entre el rendimiento del filtro y la complejidad computacional, lo que las hace adecuadas para una variedad de aplicaciones de procesamiento de señales, incluyendo el filtrado de señales de EEG.
+
+En resumen, según Proakis y Manolakis [10], las ventanas de Hamming y Hanning son dos de las mejores opciones para el diseño de filtros FIR debido a su buen equilibrio entre la selectividad en frecuencia, la atenuación de los lóbulos laterales y la distorsión mínima de la señal en la banda de paso.
+
 
  
-aqui colocar el codigo utilizado 
+**CÓDIGOS UTILIZADOS**
+--------------------------------------------------------------------------------------------------------------
 **Código de ploteo para EEG y adquisición de las ondas cerebrales:**
 ```python
 import numpy as np
@@ -419,7 +465,7 @@ plt.show()
 ### **Ejercicio ECG** <a name="t6"></a>
 | Campo | Señal Cruda | Filtro IIR | Filtro FIR |
 |-----------|-----------|-----------|-----------|
-| Basal   | Valor 2   | Valor 3   | Valor 4   |
+| Basal   | <img src="Imagenes_L6/Imagenes_ECG/ Ecuacion 1.png" alt="Electrodos de guía" >  | <img src="Imagenes_L6/Imagenes_ECG/ Ecuacion 1.png" alt="Electrodos de guía"   | <img src="Imagenes_L6/Imagenes_ECG/ Ecuacion 1.png" alt="Electrodos de guía" |
 | Respiración   | Valor 6   | Valor 7   | Valor 8   |
 | Post Ejercicio | Valor 6   | Valor 7   | Valor 8   |
 
