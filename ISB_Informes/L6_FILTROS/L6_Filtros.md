@@ -45,7 +45,7 @@ Podemos dividir los  filtros digitales en dos grupos: filtros de respuesta al im
 
 | Ecuación 1      | Ecuación 2 |
 |-------------|------|
-| img src="Ecuacion 1.png"        | img src="ecuacion 2.png"      |
+| <img src="Imagenes_L6/Ecuacion 1" alt="Electrodos de guía" width="700">     | <img src="Imagenes_L6/ecuacion 2.png" alt="Electrodos de guía" width="700">      |
 | Filtro IIR       | Filtro FIR   | 
 
 
