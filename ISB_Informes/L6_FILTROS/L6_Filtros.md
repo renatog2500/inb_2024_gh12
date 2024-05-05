@@ -44,14 +44,15 @@ Mediante algoritmos matemáticos implementados en hardware o software, los filtr
 
 Podemos dividir los  filtros digitales en dos grupos: filtros de respuesta al impulso infinito (IIR) y filtros de respuesta al impulso finito (FIR). Ambos tipos de filtros, en su forma más elemental, pueden ser representados por su secuencia de respuesta al impulso, denotada como h(k) (donde k = 0, 1, ...), tal como se ilustra en la Figura 1. La relación entre las señales de entrada y salida del filtro se establece mediante la operación de convolución, expresada en las ecuación 1 para el filtro IIR y en 2 para el filtro FIR.
 
-<center>
+<div style="margin: 0 auto; width: fit-content;">
 
 | Ecuación 1      | Ecuación 2 |
 |-------------|------|
 | <img src="Imagenes_L6/Ecuacion 1.png" alt="Electrodos de guía" width="300">     | <img src="Imagenes_L6/ecuacion 2.png" alt="Electrodos de guía" width="300">   |
 | Filtro IIR       | Filtro FIR   | 
 
-</center>
+</div>
+
 
 
 **Filtros FIR [2]**
