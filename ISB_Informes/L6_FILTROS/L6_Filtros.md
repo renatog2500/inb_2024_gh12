@@ -162,7 +162,7 @@ Los autores reportaron una precisión promedio de clasificación del 97.67% usan
 
 **Justificación de uso del filtro FIR para las señales de ECG, EMG y EEG**
 
-De acuerdo con Proakis y Manolakis en su libro "Digital Signal Processing: Principles, Algorithms, and Applications" [10], las ventanas de Hamming y Hanning son dos de las mejores opciones para el diseño de filtros FIR en el procesamiento de señales debido a las siguientes razones:
+De acuerdo con Proakis y Manolakis en su libro "Digital Signal Processing: Principles, Algorithms, and Applications" [10], las ventanas de Hamming, Hanning y Blackman son tres de las mejores opciones para el diseño de filtros FIR en el procesamiento de señales debido a las siguientes razones:
 
 1. Ventana de Hamming:
 La ventana de Hamming tiene un buen equilibrio entre la selectividad en frecuencia y la atenuación de los lóbulos laterales.
@@ -174,9 +174,16 @@ La ventana de Hanning tiene una forma similar a la ventana de Hamming, pero con 
 Ofrece una buena selectividad en frecuencia y una transición suave entre la banda de paso y la banda de rechazo.
 Produce una distorsión mínima de la señal en la banda de paso debido a su forma de campana suave.
 
-Proakis y Manolakis destacan que tanto la ventana de Hamming como la ventana de Hanning son ampliamente utilizadas en el diseño de filtros FIR debido a sus características favorables en términos de selectividad en frecuencia, atenuación de los lóbulos laterales y distorsión de la señal. Estas ventanas proporcionan un buen compromiso entre el rendimiento del filtro y la complejidad computacional, lo que las hace adecuadas para una variedad de aplicaciones de procesamiento de señales, incluyendo el filtrado de señales de EEG.
+3. Ventana de Blackman:
+La ventana de Blackman tiene una atenuación de los lóbulos laterales aún mayor que las ventanas de Hamming y Hanning.
+Proporciona una excelente supresión de los lóbulos laterales, lo que minimiza la interferencia de las frecuencias no deseadas en la señal filtrada.
+Tiene una transición más gradual entre la banda de paso y la banda de rechazo en comparación con las ventanas de Hamming y Hanning.
 
-En resumen, según Proakis y Manolakis [10], las ventanas de Hamming y Hanning son dos de las mejores opciones para el diseño de filtros FIR debido a su buen equilibrio entre la selectividad en frecuencia, la atenuación de los lóbulos laterales y la distorsión mínima de la señal en la banda de paso.
+Proakis y Manolakis destacan que las ventanas de Hamming, Hanning y Blackman son ampliamente utilizadas en el diseño de filtros FIR debido a sus características favorables en términos de selectividad en frecuencia, atenuación de los lóbulos laterales y distorsión de la señal. Estas ventanas proporcionan un buen compromiso entre el rendimiento del filtro y la complejidad computacional, lo que las hace adecuadas para una variedad de aplicaciones de procesamiento de señales.
+
+La elección entre estas tres ventanas dependerá de los requisitos específicos de la aplicación. Si se requiere una mayor selectividad en frecuencia y una transición más estrecha entre las bandas, la ventana de Hamming puede ser la mejor opción. Si se desea una atenuación de los lóbulos laterales ligeramente mayor y una transición más suave, la ventana de Hanning puede ser preferible. Si la supresión de los lóbulos laterales es la principal prioridad y se puede tolerar una transición más gradual entre las bandas, la ventana de Blackman puede ser la elección óptima.
+
+En resumen, según Proakis y Manolakis [10], las ventanas de Hamming, Hanning y Blackman son tres de las mejores opciones para el diseño de filtros FIR debido a su buen equilibrio entre la selectividad en frecuencia, la atenuación de los lóbulos laterales y la distorsión mínima de la señal en la banda de paso.
 
 
  
