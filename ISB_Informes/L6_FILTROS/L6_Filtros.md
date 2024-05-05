@@ -35,7 +35,7 @@ Mediante algoritmos matemáticos implementados en hardware o software, los filtr
 - Tanto los datos filtrados como los no filtrados pueden ser almacenados para su posterior uso, brindando una mayor capacidad de procesamiento y análisis.
 
 <div align="center">
-     <img src="Imagenes_L6/Filtro Digital intro.png" alt="wCF14V">
+     <img src="Imagenes_L6/Filtro digital intro.png" alt="wCF14V">
     <p><b>Figura 1. Representación de un filtro digital </b> - Extraído de [1] </p>
 </div>
 ## **Objetivos  Laboratorio** <a name = "t3"></a>
