@@ -81,23 +81,67 @@ Los filtros IIR tienden a ser más eficientes computacionalmente que los FIR, ya
 Los filtros electrónicos analógicos tradicionales se construyen utilizando componentes pasivos como resistencias, capacitores e inductores interconectados en configuraciones específicas. Estos implementan inherentemente funciones de transferencia con realimentación, lo que da como resultado una respuesta al impulso de duración infinita, característica de los filtros IIR. Esto se debe a la naturaleza recursiva de los capacitores e inductores, donde la salida en un instante depende no solo de la entrada actual, sino también de entradas y salidas pasadas [4]. 
 
 
-
-
-
-
-
-
-
-
-
 ## **Objetivos  Laboratorio** <a name = "t3"></a>
 * Comprender los principios básicos de filtros digitales, en particular, los relacionados con los filtros de respuesta infinita al impulso (IRR) y los de respuesta finita al impulso (FIR).
 * Filtrar las señales ECG, EMG y EEG para la eliminación de ruidos y artefactos
 * Analizar las señales obtenidas y extraer características de interés de cada una. 
   
 ## Metodología <a name="t4"></a>
+En este laboratorio, nos enfocamos en el diseño e implementación de filtros digitales FIR e IIR con el objetivo de atenuar las frecuencias altas indeseadas, originadas por el ruido presente en las señales ECG, EMG y EEG adquiridas previamente utilizando el Kit BITalino. 
+
+**Materiales y Equipo Utilizado**
+<table align="center">
+  <tr>
+    <th>Modelo</th>
+    <th>Descripción</th>
+    <th>Cantidad</th>
+  </tr>
+  <tr>
+    <td>(R)EVOLUTION</td>
+    <td>Kit de BITalino</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td>Laptop</td>
+    <td>1</td>
+  </tr>
+</table>
+<p align="center">
+  <b>Tabla 1. Materiales y equipos utilizados</b>
+</p>
+
+**Procedimiento**
+
+**Señal ECG**
+El electrocardiograma (ECG) es una herramienta crucial que registra la actividad eléctrica del corazón, proporcionando información vital sobre su funcionamiento. Este registro capta las variaciones de voltaje generadas por la actividad eléctrica que rige la contracción y relajación de las distintas regiones del músculo cardíaco. Para el proceso de filtrado de la señal ECG correspondiente a este laboratorio, se tomaron como referencia las mediciones realizadas en el laboratorio 3 [5]. En dicho laboratorio, se pudo capturar el potencial eléctrico de las derivaciones entre dos electrodos en distintas condiciones, tales como: reposo, respiración controlada y posterior a ejercicios.
+
+**Justificación de uso del filtro IIR en ECG:**
+
+Para justificar la elección de los valores del filtro IIR Butterworth en el contexto del estudio, es importante considerar el rendimiento observado en investigaciones previas.
+
+Según el estudio realizado por Das y Chakraborty (2017), los filtros IIR Butterworth mostraron un buen rendimiento en términos de relación señal-ruido (SNR) para la eliminación de ruido en señales de ECG en el modo de monitorización. Los autores encontraron que los filtros Butterworth alcanzaron valores máximos de SNR cuando el orden del filtro estaba en el rango de 2 a 4 [6].
+
+El rango de frecuencia útil para el modo de monitorización de ECG que se acepta generalmente es de 0.5 a 40 Hz según lo que indica el manual Electrocardiography (ECG) Sensor Datasheet [7].
+
+Dado que el estudio de Das y Chakraborty (2017) demostró que los filtros Butterworth de orden 2 a 4 proporcionan un buen rendimiento de SNR para la eliminación de ruido en señales de ECG en modo de monitorización, se recomienda probar el filtro Butterworth con órdenes en este rango.
+
+
+| Campo | Señal Cruda | Filtro IIR | Filtro FIR |
+|-----------|-----------|-----------|-----------|
+| Basal   | Valor 2   | Valor 3   | Valor 4   |
+| Respiración   | Valor 6   | Valor 7   | Valor 8   |
+| Post Ejercicio | Valor 6   | Valor 7   | Valor 8   |
+
+**Señal EMG**
+
+
+**Señal EEG**
+
+
+ 
 aqui colocar el codigo utilizado 
-**-Código de ploteo para EEG y adquisición de las ondas cerebrales:**
+**Código de ploteo para EEG y adquisición de las ondas cerebrales:**
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
