@@ -378,13 +378,26 @@ plt.show()
 ## Resultados   <a name="t5"></a>
 
 ### **Ejercicio ECG** <a name="t6"></a>
+| Campo | Señal Cruda | Filtro IIR | Filtro FIR |
+|-----------|-----------|-----------|-----------|
+| Basal   | Valor 2   | Valor 3   | Valor 4   |
+| Respiración   | Valor 6   | Valor 7   | Valor 8   |
+| Post Ejercicio | Valor 6   | Valor 7   | Valor 8   |
 
 
 ### **Ejercicio EMG** <a name="t7"></a>
-
+| Campo | Señal Cruda | Filtro IIR | Filtro FIR |
+|-----------|-----------|-----------|-----------|
+| Descanso  | Valor 2   | Valor 3   | Valor 4   |
+| Contracción Leve   | Valor 6   | Valor 7   | Valor 8   |
+| Contracción Fuerte | Valor 6   | Valor 7   | Valor 8   |
 
 ### **Ejercicio EEG** <a name="t8"></a>
-
+| Campo | Señal Cruda | Filtro IIR | Filtro FIR |
+|-----------|-----------|-----------|-----------|
+| Basal  | Valor 2   | Valor 3   | Valor 4   |
+| Parpadero de ojos  | Valor 6   | Valor 7   | Valor 8   |
+| Actvidad  | Valor 6   | Valor 7   | Valor 8   |
 
 ## Discusión <a name="t9"></a>
 
