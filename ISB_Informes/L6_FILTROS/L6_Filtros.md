@@ -490,22 +490,28 @@ plt.show()
 
 
 ### **ECG** <a name="t10"></a>
-| Campo  | CRUDA | IIR| FIR |
-|--------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
-| ECG  |Antes del filtrado, la señal de EKG contiene ruido de baja frecuencia, como la deriva de la línea base, y ruido de alta frecuencia, como la interferencia electromagnética. Estos ruidos dificultan la identificación de las ondas características del EKG, como las ondas P, QRS y T.       | Antes del filtrado, la señal de EKG contiene ruido de baja frecuencia, como la deriva de la línea base, y ruido de alta frecuencia, como la interferencia electromagnética. Estos ruidos dificultan la identificación de las ondas características del EKG, como las ondas P, QRS y T. Después del filtrado con un filtro IIR, el ruido de baja y alta frecuencia se atenúa, lo que resulta en una señal más limpia. Las ondas P, QRS y T son más prominentes y fáciles de identificar. Sin embargo, se observa una ligera distorsión de la forma de onda debido a la fase no lineal del filtro IIR. | Valor 1 |
-| Basal  | FIR      
+Basal: Antes del filtrado, la señal de EKG contiene ruido de baja frecuencia, como la deriva de la línea base, y ruido de alta frecuencia, como la interferencia electromagnética. Estos ruidos dificultan la identificación de las ondas características del EKG, como las ondas P, QRS y T.
 
-| SEÑAL | CRUDA | IIR | FIR |
-|-----------|-----------|-----------|-----------|
-| ECG |           |   Antes del filtrado, la señal de EKG contiene ruido de baja frecuencia, como la deriva de la línea base, y ruido de alta frecuencia, como la interferencia electromagnética. Estos ruidos dificultan la identificación de las ondas características del EKG, como las ondas P, QRS y T.  |    Después del filtrado con un filtro IIR, el ruido de baja y alta frecuencia se atenúa, lo que resulta en una señal más limpia. Las ondas P, QRS y T son más prominentes y fáciles de identificar. Sin embargo,se observa una ligera distorsión de la forma de onda debido a la fase no lineal del filtro IIR.       | Con un filtro FIR, se ve una atenuación similar del ruido de baja y alta frecuencia. La señal resultante también es más limpia, con las ondas P, QRS y T claramente visibles. A diferencia del filtro IIR, el filtro FIR no introduce distorsión de fase, por lo que la forma de onda se preserva mejor.
-|  EMG         |      La señal EMG contiene ruido de baja frecuencia que pueden ser debidos a artefactos en movimiento y ruido de alta frecuencia debido a interferencias electromagnéticas. Este ruido puede ocultar la información relevante relacionada con la actividad muscular.      |    Después del filtrado con un filtro IIR, se observa una reducción del ruido de baja y alta frecuencia, lo que resulta en una señal más limpia. Las componentes espectrales características del EMG, que contienen información sobre la frecuencia y amplitud de la actividad muscular, son más evidentes.        |    Después del filtrado con un filtro FIR, se observa atenuación similar del ruido de baja y alta frecuencia. La señal resultante también es más limpia, con las componentes espectrales del EMG claramente visibles.       |
-|   EEG        |   Observamos una gran cantidad de ruido en las señales al momento de plotear cada una. Lo cual dificulta su lectura de informaciòn.         |   La señal EEG, después de pasar por un filtro Butterworth, nos permite reconocer las magnitudes de las oscilaciones en distintos rangos de frecuencia, tales como delta, theta, alpha, beta y gamma. Este diagrama nos facilita la medición de la amplitud en microvoltios (uV) o en unidades relativas.        |  Cuando aplicamos la ventana Hamming en el análisis de una señal EEG, estamos seleccionando una ventana específica para la respuesta de frecuencia. Esto influye en la percepción y el análisis de las oscilaciones en la señal EEG. Esperaríamos poder distinguir las ondas alfa, delta, beta y gamma; sin embargo, en algunos casos, podríamos notar que la calidad de la señal no es óptima y la identificación de la banda de frecuencia con mayor amplitud en momentos específicos no es clara. Esto resalta la importancia de comprender las diferencias entre las ventanas Hamming y Hann, y cómo afectan el procesamiento de la señal.         |
+IIR: Después del filtrado con un filtro IIR, el ruido de baja y alta frecuencia se atenúa, lo que resulta en una señal más limpia. Las ondas P, QRS y T son más prominentes y fáciles de identificar. Sin embargo,se observa una ligera distorsión de la forma de onda debido a la fase no lineal del filtro IIR.
+
+FIR:Con un filtro FIR, se ve una atenuación similar del ruido de baja y alta frecuencia. La señal resultante también es más limpia, con las ondas P, QRS y T claramente visibles. A diferencia del filtro IIR, el filtro FIR no introduce distorsión de fase, por lo que la forma de onda se preserva mejor.
+
 
 ### **EMG** <a name="t11"></a>
 
+Basal: La señal EMG contiene ruido de baja frecuencia que pueden ser debidos a artefactos en movimiento y ruido de alta frecuencia debido a interferencias electromagnéticas. Este ruido puede ocultar la información relevante relacionada con la actividad muscular. 
+
+IIR: Después del filtrado con un filtro IIR, se observa una reducción del ruido de baja y alta frecuencia, lo que resulta en una señal más limpia. Las componentes espectrales características del EMG, que contienen información sobre la frecuencia y amplitud de la actividad muscular, son más evidentes. 
+
+FIR: Después del filtrado con un filtro FIR, se observa atenuación similar del ruido de baja y alta frecuencia. La señal resultante también es más limpia, con las componentes espectrales del EMG claramente visibles.
 
 ### **EEG** <a name="t12"></a>
 
+Basal: Observamos una gran cantidad de ruido en las señales al momento de plotear cada una. Lo cual dificulta su lectura de informaciòn. 
+
+IIR: La señal EEG, después de pasar por un filtro Butterworth, nos permite reconocer las magnitudes de las oscilaciones en distintos rangos de frecuencia, tales como delta, theta, alpha, beta y gamma. Este diagrama nos facilita la medición de la amplitud en microvoltios (uV) o en unidades relativas.
+
+FIR: Cuando aplicamos la ventana Hamming en el análisis de una señal EEG, estamos seleccionando una ventana específica para la respuesta de frecuencia. Esto influye en la percepción y el análisis de las oscilaciones en la señal EEG. Esperaríamos poder distinguir las ondas alfa, delta, beta y gamma; sin embargo, en algunos casos, podríamos notar que la calidad de la señal no es óptima y la identificación de la banda de frecuencia con mayor amplitud en momentos específicos no es clara. Esto resalta la importancia de comprender las diferencias entre las ventanas Hamming y Hann, y cómo afectan el procesamiento de la señal.
 
 
 ## ** Bibliografía** : <a name="t13"></a>
