@@ -487,11 +487,15 @@ plt.show()
 
 
 ### **Ejercicio EEG** <a name="t8"></a>
-| Campo | Señal Cruda | Filtro IIR | Filtro FIR |
+| Campo | BASAL | OJOS CERRADOS - ABIERTOS | PREGUNTAS COMPLEJAS |
 |-----------|-----------|-----------|-----------|
-| Basal  | Antes del filtrado, la señal de EKG contiene ruido de baja frecuencia, como la deriva de la línea base, y ruido de alta frecuencia, como la interferencia electromagnética. Estos ruidos dificultan la identificación de las ondas características del EKG, como las ondas P, QRS y T.| Valor 3   | Valor 4   |
-| Parpadero de ojos  | Valor 6   | Valor 7   | Valor 8   |
-| Actvidad  | Valor 6   | Valor 7   | Valor 8   |
+| Señal Cruda
+Filtro IIR
+Filtro FIR ondas delta
+Filtro FIR ondas tetha
+Filtro FIR ondas alfa
+Filtro FIR ondas beta
+Filtro FIR ondas gamma | <img src="Imagenes_L6/Imagenes_EEG/Fase_referencia_30seg_filtrada.png" alt="Electrodos de guía" >  | <img src="Imagenes_L6/Imagenes_EEG/Prueba_ojos_abiertos_cerrado_5s_filtrada.png" alt="Electrodos de guía" >   | <img src="Imagenes_L6/Imagenes_EEG/Prueba_Preguntas_complejas_filtrada.png" alt="Electrodos de guía" > |
 
 <p align="center">
   <b>Tabla 4. Resumen de la señal filtrada con filtros FIR e IIR para la data EEG</b>
