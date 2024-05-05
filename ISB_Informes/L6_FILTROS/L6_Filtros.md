@@ -35,11 +35,9 @@ Mediante algoritmos matemáticos implementados en hardware o software, los filtr
 - Tanto los datos filtrados como los no filtrados pueden ser almacenados para su posterior uso, brindando una mayor capacidad de procesamiento y análisis.
 
 <div align="center">
-     <img src="https://github.com/renatog2500/inb_2024_gh12/assets/130946164/6ced31e4-9fb6-4254-a8ea-e8a6aec2d043" alt="wCF14V">
+     <img src="Imagenes_L6/Filtro Digital intro.png" alt="wCF14V">
     <p><b>Figura 1. Representación de un filtro digital </b> - Extraído de [1] </p>
 </div>
-
-
 ## **Objetivos  Laboratorio** <a name = "t3"></a>
 * Comprender los principios básicos de filtros digitales, en particular, los relacionados con los filtros de respuesta infinita al impulso (IRR) y los de respuesta finita al impulso (FIR).
 * Filtrar las señales ECG, EMG y EEG para la eliminación de ruidos y artefactos
