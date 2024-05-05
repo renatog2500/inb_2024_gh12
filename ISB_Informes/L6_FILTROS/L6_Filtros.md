@@ -114,6 +114,7 @@ En este laboratorio, nos enfocamos en el diseño e implementación de filtros di
 **Procedimiento**
 
 **Señal ECG**
+
 El electrocardiograma (ECG) es una herramienta crucial que registra la actividad eléctrica del corazón, proporcionando información vital sobre su funcionamiento. Este registro capta las variaciones de voltaje generadas por la actividad eléctrica que rige la contracción y relajación de las distintas regiones del músculo cardíaco. Para el proceso de filtrado de la señal ECG correspondiente a este laboratorio, se tomaron como referencia las mediciones realizadas en el laboratorio 3 [5]. En dicho laboratorio, se pudo capturar el potencial eléctrico de las derivaciones entre dos electrodos en distintas condiciones, tales como: reposo, respiración controlada y posterior a ejercicios.
 
 **Justificación de uso del filtro IIR en ECG:**
@@ -126,12 +127,6 @@ El rango de frecuencia útil para el modo de monitorización de ECG que se acept
 
 Dado que el estudio de Das y Chakraborty (2017) demostró que los filtros Butterworth de orden 2 a 4 proporcionan un buen rendimiento de SNR para la eliminación de ruido en señales de ECG en modo de monitorización, se recomienda probar el filtro Butterworth con órdenes en este rango.
 
-
-| Campo | Señal Cruda | Filtro IIR | Filtro FIR |
-|-----------|-----------|-----------|-----------|
-| Basal   | Valor 2   | Valor 3   | Valor 4   |
-| Respiración   | Valor 6   | Valor 7   | Valor 8   |
-| Post Ejercicio | Valor 6   | Valor 7   | Valor 8   |
 
 **Señal EMG**
 
