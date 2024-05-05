@@ -24,6 +24,15 @@ ________________________________________________________________________________
 
 ## Introducción  <a name = "t2"></a>
 
+**Filtros Digitales**
+En el procesamiento de señales, los filtros digitales surgen como una herramienta que permite manipular las características de las señales como la forma, amplitud, frecuencia o fase de una onda de interés . Los objetivos comunes del filtrado son mejorar la calidad de una señal que requiera suprimir el ruido , extraer información relevante o la separación de señales combinadas [1]. 
+
+Mediante algoritmos matemáticos implementados en hardware o software, los filtros digitales pueden adaptarse de manera flexible a diferentes requisitos de filtrado, ofreciendo una solución precisa y adaptable para una amplia gama de aplicaciones en el procesamiento de señales. En comparación con los filtros analógicos, estos se prefieren en una amplia gama de aplicaciones biomédicas por las siguientes ventajas [1]: 
+- Ofrecen  una respuesta de fase  lineal, una característica que no es posible lograr con los filtros analógicos.
+- Su rendimiento no se ve afectado por cambios ambientales, como las variaciones térmicas. Lo cual elimina la necesidad de realizar ajustes o calibraciones periódicas para mantener su funcionamiento óptimo.
+- Permiten filtrar varias señales o canales de entrada sin necesidad de replicar el hardware, lo que resulta en una mayor eficiencia y flexibilidad.
+- Tanto los datos filtrados como los no filtrados pueden ser almacenados para su posterior uso, brindando una mayor capacidad de procesamiento y análisis.
+
 
 
 
