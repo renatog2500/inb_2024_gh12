@@ -58,12 +58,24 @@ Un filtro FIR (Respuesta al Impulso Finita) es un tipo de filtro digital emplead
 El funcionamiento básico de un filtro FIR consiste en realizar una operación de convolución entre la secuencia de entrada y una secuencia finita de coeficientes predeterminados. Cada muestra de salida es una suma ponderada de un número finito de muestras de entrada recientes, donde los pesos son los coeficientes del filtro. Estos coeficientes determinan la respuesta en frecuencia, es decir, cómo el filtro modifica la amplitud de las diferentes componentes de frecuencia presentes en la señal de entrada. Por lo tanto, es crucial seleccionar con precisión los coeficientes durante el diseño del filtro para alcanzar las especificaciones deseadas, tales como las características de paso de banda, el rechazo de banda y las transiciones entre ellas.
 
 La ventaja principal de estos filtros es que tiene una respuesta de fase lineal ,  lo que significa que no introducen distorsión de fase en la señal filtrada, solo un retraso constante. Esto los hace atractivos para aplicaciones donde la integridad de la forma de onda es importante.
+
 <div align="center">
-     <img src="Imagenes_L6/fff.png" alt="wCF14V">
-    <p><b>Figura 2. Estructura de filtro de respuesta de impulso finito. </b> - Extraído de [1] </p>
+     <img src="Imagenes_L6/FIR imagen libro.png" alt="wCF14V">
+    <p><b>Figura 2. Estructura de filtro de respuesta de impulso finito. </b> - Extraído de [2] </p>
 </div>
 
+**Filtros IIR [3]**
 
+Un filtro IIR es un tipo de filtro digital que se caracteriza por utilizar una estructura de retroalimentación, donde la salida del filtro se realimenta como entrada. Esta configuración hace que la respuesta del filtro pueda prolongarse indefinidamente en el tiempo, a diferencia de los filtros FIR.  La implementación de este filtro implica el uso de ecuaciones de diferencias que involucran polos y ceros en el dominio de la transformada Z. Los polos están relacionados con la retroalimentación y determinan la estabilidad del sistema, mientras que los ceros influyen en la respuesta impulsiva del filtro.
+
+Los filtros IIR tienden a ser más eficientes computacionalmente que los FIR, ya que requieren menos coeficientes para lograr una respuesta en frecuencia comparable. Sin embargo, su realimentación puede provocar inestabilidad y problemas de representación numérica. Derivados de diseños analógicos recursivos como condensadores e inductores, los filtros IIR permiten respuestas de frecuencia más abruptas y pueden preservar mejor características de fase de filtros analógicos. No obstante, introducen distorsión de fase no lineal a diferencia de los FIR. Su diseño, que implica colocar polos y ceros cuidadosamente, los hace más complejos y sensibles que los filtros FIR.
+
+<div align="center">
+     <img src="Imagenes_L6/IIR imagen libro.png" alt="wCF14V">
+    <p><b>Figura 3. Estructura de filtro de respuesta al impulso infinito. </b> - Extraído de [3] </p>
+</div>
+
+Los filtros electrónicos analógicos tradicionales se construyen utilizando componentes pasivos como resistencias, capacitores e inductores interconectados en configuraciones específicas. Estos implementan inherentemente funciones de transferencia con realimentación, lo que da como resultado una respuesta al impulso de duración infinita, característica de los filtros IIR. Esto se debe a la naturaleza recursiva de los capacitores e inductores, donde la salida en un instante depende no solo de la entrada actual, sino también de entradas y salidas pasadas [4]. 
 
 
 
