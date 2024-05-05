@@ -469,7 +469,9 @@ plt.show()
 | Respiración   | <img src="Imagenes_L6/Imagenes_ECG/in_ex_ECG_cruda.png" alt="Electrodos de guía" >  | <img src="Imagenes_L6/Imagenes_ECG/in_ex_ECG_butt.png" alt="Electrodos de guía" >| <img src="Imagenes_L6/Imagenes_ECG/in_ex_ECG_hanni.png" alt="Electrodos de guía"> |
 | Post Ejercicios   | <img src="Imagenes_L6/Imagenes_ECG/post_ECG_cruda.png" alt="Electrodos de guía" >  | <img src="Imagenes_L6/Imagenes_ECG/post_ECG_butt.png" alt="Electrodos de guía" >  | <img src="Imagenes_L6/Imagenes_ECG/post_ECG_hann.png" alt="Electrodos de guía"> |
 
-
+<p align="center">
+  <b>Tabla 2. Resumen de la señal filtrada con filtros FIR e IIR para la data ECG</b>
+</p>
 
 
 ### **Ejercicio EMG** <a name="t7"></a>
@@ -479,12 +481,23 @@ plt.show()
 | Contracción Leve   | Valor 6   | Valor 7   | Valor 8   |
 | Contracción Fuerte | Valor 6   | Valor 7   | Valor 8   |
 
+<p align="center">
+  <b>Tabla 3. Resumen de la señal filtrada con filtros FIR e IIR para la data EMG</b>
+</p>
+
+
 ### **Ejercicio EEG** <a name="t8"></a>
 | Campo | Señal Cruda | Filtro IIR | Filtro FIR |
 |-----------|-----------|-----------|-----------|
 | Basal  | Antes del filtrado, la señal de EKG contiene ruido de baja frecuencia, como la deriva de la línea base, y ruido de alta frecuencia, como la interferencia electromagnética. Estos ruidos dificultan la identificación de las ondas características del EKG, como las ondas P, QRS y T.| Valor 3   | Valor 4   |
 | Parpadero de ojos  | Valor 6   | Valor 7   | Valor 8   |
 | Actvidad  | Valor 6   | Valor 7   | Valor 8   |
+
+<p align="center">
+  <b>Tabla 4. Resumen de la señal filtrada con filtros FIR e IIR para la data EEG</b>
+</p>
+
+
 
 ## Discusión <a name="t9"></a>
 
