@@ -465,14 +465,10 @@ plt.show()
 ### **Ejercicio ECG** <a name="t6"></a>
 | Campo | Señal Cruda | Filtro IIR | Filtro FIR |
 |-----------|-----------|-----------|-----------|
-| Basal   | <img src="Imagenes_L6/Imagenes_ECG/ Basal_ECG_cruda.png" alt="Electrodos de guía" >  | <img src="Imagenes_L6/Imagenes_ECG/ Ecuacion 1.png" alt="Electrodos de guía"   | <img src="Imagenes_L6/Imagenes_ECG/ Ecuacion 1.png" alt="Electrodos de guía" |
-| Respiración   | Valor 6   | Valor 7   | Valor 8   |
-| Post Ejercicio | Valor 6   | Valor 7   | Valor 8   |
-| Campo          | Señal Cruda                                                                                          | Filtro IIR                                                                                            | Filtro FIIR  Hanning                                                                                          | Filtro FIIR HAMMING                                                                                       |
-|----------------|------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| Basal          | <img src="Imagenes_L6/Imagenes_ECG/ Basal_ECG_cruda.png" alt="Electrodos de guía" >                | <img src="Imagenes_L6/Imagenes_ECG/ Ecuacion 1.png" alt="Electrodos de guía" >                        | <img src="Imagenes_L6/Imagenes_ECG/ Ecuacion 1.png" alt="Electrodos de guía" >                        |    <img src="Imagenes_L6/Imagenes_ECG/ Ecuacion 1.png" alt="Electrodos de guía" >                                                                                                   |
-| Respiración    | Valor 6               | Valor 8        |                           |
-| Post Ejercicio | Valor 6                                                                                              | Valor 7                                                                                                | Valor 8                                                                                                |                                                                                                      |
+| Basal   | <img src="Imagenes_L6/Imagenes_ECG/ Basal_ECG_cruda.png" alt="Electrodos de guía" >  | <img src="Imagenes_L6/Imagenes_ECG/ basal_ECG_butter.png" alt="Electrodos de guía"   | <img src="Imagenes_L6/Imagenes_ECG/ basal_ECG_hanni.png" alt="Electrodos de guía" |
+| Respiración   | <img src="Imagenes_L6/Imagenes_ECG/ in_ex_ECG_cruda.png" alt="Electrodos de guía" >  | <img src="Imagenes_L6/Imagenes_ECG/ in_ex_ECG_butt.pngg" alt="Electrodos de guía"   | <img src="Imagenes_L6/Imagenes_ECG/ in_ex_ECG_hanni.png" alt="Electrodos de guía" |
+| Post Ejercicios   | <img src="Imagenes_L6/Imagenes_ECG/ post_ECG_cruda.png" alt="Electrodos de guía" >  | <img src="Imagenes_L6/Imagenes_ECG/ post_ECG_butt.png" alt="Electrodos de guía"   | <img src="Imagenes_L6/Imagenes_ECG/ post_ECG_hann.png" alt="Electrodos de guía" |
+
 
 
 
