@@ -38,6 +38,31 @@ Mediante algoritmos matemáticos implementados en hardware o software, los filtr
      <img src="Imagenes_L6/Filtro digital intro.png" alt="wCF14V">
     <p><b>Figura 1. Representación de un filtro digital </b> - Extraído de [1] </p>
 </div>
+
+**Tipos de filtros digitales**
+
+Podemos dividir los  filtros digitales en dos grupos: filtros de respuesta al impulso infinito (IIR) y filtros de respuesta al impulso finito (FIR). Ambos tipos de filtros, en su forma más elemental, pueden ser representados por su secuencia de respuesta al impulso, denotada como h(k) (donde k = 0, 1, ...), tal como se ilustra en la Figura 1. La relación entre las señales de entrada y salida del filtro se establece mediante la operación de convolución, expresada en las ecuación 1 para el filtro IIR y en 2 para el filtro FIR.
+
+| Ecuación 1      | Ecuación 2 |
+|-------------|------|
+| img src="Ecuacion 1.png"        | img src="ecuacion 2.png"      |
+| Filtro IIR       | Filtro FIR   | 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## **Objetivos  Laboratorio** <a name = "t3"></a>
 * Comprender los principios básicos de filtros digitales, en particular, los relacionados con los filtros de respuesta infinita al impulso (IRR) y los de respuesta finita al impulso (FIR).
 * Filtrar las señales ECG, EMG y EEG para la eliminación de ruidos y artefactos
