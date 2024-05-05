@@ -51,6 +51,17 @@ Podemos dividir los  filtros digitales en dos grupos: filtros de respuesta al im
 
 </div>
 
+**Filtros FIR [2]**
+
+Un filtro FIR (Respuesta al Impulso Finita) es un tipo de filtro digital empleado ampliamente en el procesamiento de señales digitales. Se caracteriza por tener una respuesta al impulso de longitud finita, lo que significa que si se aplica un impulso unitario a la entrada del filtro, la salida eventualmente decae a cero después de un número finito de muestras.
+
+El funcionamiento básico de un filtro FIR consiste en realizar una operación de convolución entre la secuencia de entrada y una secuencia finita de coeficientes predeterminados. Cada muestra de salida es una suma ponderada de un número finito de muestras de entrada recientes, donde los pesos son los coeficientes del filtro. Estos coeficientes determinan la respuesta en frecuencia, es decir, cómo el filtro modifica la amplitud de las diferentes componentes de frecuencia presentes en la señal de entrada. Por lo tanto, es crucial seleccionar con precisión los coeficientes durante el diseño del filtro para alcanzar las especificaciones deseadas, tales como las características de paso de banda, el rechazo de banda y las transiciones entre ellas.
+
+La ventaja principal de estos filtros es que tiene una respuesta de fase lineal ,  lo que significa que no introducen distorsión de fase en la señal filtrada, solo un retraso constante. Esto los hace atractivos para aplicaciones donde la integridad de la forma de onda es importante.
+<div align="center">
+     <img src="Imagenes_L6/fff.png" alt="wCF14V">
+    <p><b>Figura 2. Estructura de filtro de respuesta de impulso finito. </b> - Extraído de [1] </p>
+</div>
 
 
 
