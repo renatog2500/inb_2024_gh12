@@ -477,9 +477,9 @@ plt.show()
 ### **Ejercicio EMG** <a name="t7"></a>
 | Campo | Señal Cruda | Filtro IIR | Filtro FIR |
 |-----------|-----------|-----------|-----------|
-| Descanso  | Valor 2   | Valor 3   | Valor 4   |
-| Contracción Leve   | Valor 6   | Valor 7   | Valor 8   |
-| Contracción Fuerte | Valor 6   | Valor 7   | Valor 8   |
+| Bicep Braquial   | <img src="Imagenes_L6/Imagenes_EMG/bicep_EMG_cruda.png" alt="Electrodos de guía" >  | <img src="Imagenes_L6/Imagenes_EMG/bicep_EMG_butt.png" alt="Electrodos de guía"  > | <img src="Imagenes_L6/Imagenes_EMG/bicep_EMG_black.png" alt="Electrodos de guía" >|
+| Antebrazo supinación  | <img src="Imagenes_L6/Imagenes_EMG/antebrazo_EMG_cruda.png" alt="Electrodos de guía" >  | <img src="Imagenes_L6/Imagenes_EMG/antebrazo_EMG_butt.png" alt="Electrodos de guía" >| <img src="Imagenes_L6/Imagenes_EMG/antebrazo_EMG_black.png" alt="Electrodos de guía"> |
+| Pulgar en supinación   | <img src="Imagenes_L6/Imagenes_EMG/pulgar_EMG_cruda.png" alt="Electrodos de guía" >  | <img src="Imagenes_L6/Imagenes_ECG/pulgar_EMG_butt.png" alt="Electrodos de guía" >  | <img src="Imagenes_L6/Imagenes_EMG/pulgar_EMG_black.png" alt="Electrodos de guía"> |
 
 <p align="center">
   <b>Tabla 3. Resumen de la señal filtrada con filtros FIR e IIR para la data EMG</b>
