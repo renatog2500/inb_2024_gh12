@@ -4,7 +4,8 @@ import matplotlib.pyplot as plt
 import re
 
 # Cargar datos desde el archivo de texto según la ubicación del 
-archivo = "C:/Users/Equipo/OneDrive/Escritorio/Introduccion_a_señales_biomedicas/Github/inb_2024_gh12/ISB_Informes/L5_Lectura_de_EEG/EEG_L5/BiTalino/Prueba_Preguntas_complejas.txt"
+archivo = "C:\Users\Jossymar\Desktop\Introduccion a señales\github\inb_2024_gh12\ISB_Informes\L4_Lectura_de_ECG\ECG_L4\Paso1_Simulador.txt"
+
 def extraer_nombres_columnas(archivo):
     with open(archivo, 'r') as f:
         for linea in f:
@@ -50,11 +51,11 @@ Lectura = datos[Entrada]
 # Convertir los datos a números
 Lectura = Lectura.apply(pd.to_numeric)
 
-# Calculate FFT
-fft_result = np.fft.fft(Lectura)
+# Calculate FFT de un pico en específico
+fft_result = np.fft.fft(Lectura[:1000])
 
 # Calculate frequencies
-frequencies = np.fft.fftfreq(len(Lectura), d=1/1000)
+frequencies = np.fft.fftfreq(len(Lectura[:1000]), d=1/1000)
 print(len(Lectura))
 # Compute the FFT magnitude
 magnitudes_db = -20*np.log10(np.abs(fft_result))
