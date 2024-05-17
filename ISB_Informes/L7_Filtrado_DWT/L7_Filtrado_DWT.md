@@ -101,11 +101,18 @@ Los resultados de Phinyomark et al. [] revelaron que las funciones wavelet db1 (
 
 **Uso en señal EEG**
 
-Justificación de parámetos 
+En un estudio realizado por Hossain et al. [], se propusieron dos nuevas técnicas para la corrección de artefactos de movimiento en señales de EEG de un solo canal: (i) Descomposición en paquetes wavelet (WPD) y (ii) WPD en combinación con análisis de correlación canónica (WPD-CCA). Los autores investigaron estas técnicas utilizando cuatro familias de paquetes wavelet diferentes (Daubechies, Symlets, Coiflets y Fejer-Korovkin) con tres momentos de desvanecimiento distintos.
+
+Los resultados de Hossain et al. [] mostraron que la técnica WPD-CCA proporcionó la mejor reducción porcentual de artefactos de movimiento (59.51%) y la mayor relación señal-ruido promedio (30.76 dB) cuando se utilizó el paquete wavelet db1. Entre las técnicas de corrección de artefactos de una sola etapa, WPD con el paquete wavelet db1 produjo el mejor desempeño, logrando una reducción de artefactos del 53.48% y una SNR de 29.26 dB. Además, se propuso un enfoque alternativo utilizando WPD donde se descartó el componente de subbanda de aproximación de frecuencia más baja, reconstruyendo una señal más limpia sumando los componentes de subbanda restantes.
+
 
 *Parámetros*
 
-(ACA VA UN CUADRO CON LOS PARÁMETROS UTILIZADOS AL FINAL)
+WPD:
+
+- Descomposición de la señal de EEG utilizando paquetes wavelet de las familias Daubechies, Symlet, Coiflet y Fejer-Korovkin con diferentes momentos de desvanecimiento (db1, db2, db3, sym4, sym5, sym6, coif1, coif2, coif3, fk4, fk6, fk8).
+- Nivel de descomposición: 4, generando 16 componentes de subbanda.
+
 
 *Señal pre y post procesada*
 
@@ -204,6 +211,12 @@ plt.title(f'Filtrado Wavelet de Señal EMG usando {wavelet_type}')
 plt.show()
 
 ```
+
+**Código de ploteo para EMG pre y post filtrado:**
+```python
+
+```
+
 ## Resultados   <a name="t7"></a>
 
 ### **Ejercicio ECG** <a name="t8"></a>
