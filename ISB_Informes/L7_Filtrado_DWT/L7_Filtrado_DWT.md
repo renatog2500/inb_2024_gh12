@@ -202,7 +202,7 @@ plt.show()
 
 ```
 
-**Código de ploteo para EMG pre y post filtrado:**
+**Código de ploteo para EEG pre y post filtrado:**
 ```python
 
 ```
