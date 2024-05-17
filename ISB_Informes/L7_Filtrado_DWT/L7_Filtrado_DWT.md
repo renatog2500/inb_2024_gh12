@@ -86,11 +86,11 @@ En este laboratorio, nos enfocamos en el diseño e implementación de filtros Wa
 ***Señal ECG***
 Para el ECG, se registró la actividad eléctrica del corazón en diversas condiciones utilizando la primera derivación. Se colocó un electrodo de referencia en la cresta ilíaca para obtener una mejor respuesta contra el ruido. A continuación una breve descripción de las pruebas realizadas: 
 
-**Lectura Basal:** Se registró la actividad eléctrica del corazón en estado de reposo, proporcionando una línea base para comparar las variaciones en otras condiciones.
+- **Lectura Basal:** Se registró la actividad eléctrica del corazón en estado de reposo, proporcionando una línea base para comparar las variaciones en otras condiciones.
 
-**Inhalación y Exhalación:** Se monitorea la actividad eléctrica del corazón mientras se realizan ejercicios de respiración controlada, observando los cambios que ocurren con la inhalación y la exhalación.
+- **Inhalación y Exhalación:** Se monitorea la actividad eléctrica del corazón mientras se realizan ejercicios de respiración controlada, observando los cambios que ocurren con la inhalación y la exhalación.
 
-**Post Ejercicios:** Se registró la actividad eléctrica del corazón inmediatamente después de realizar ejercicios físicos, como polichinelas y planchas, para evaluar la respuesta cardíaca al esfuerzo físico.
+- **Post Ejercicios:** Se registró la actividad eléctrica del corazón inmediatamente después de realizar ejercicios físicos, como polichinelas y planchas, para evaluar la respuesta cardíaca al esfuerzo físico.
 
 ***Justifiación de parámetros para la Señal ECG***
 En un estudio realizado por Kania et. al. [5], se investigó la aplicación del filtrado wavelet para reducir el ruido en señales EKG de alta resolución. Los autores evaluaron diferentes funciones wavelet madre y niveles de descomposición para determinar los parámetros óptimos que minimizaran el error cuadrático medio (MSE) entre la señal original y la señal filtrada, preservando al mismo tiempo las características morfológicas del EKG.
