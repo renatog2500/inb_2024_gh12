@@ -26,7 +26,15 @@ ________________________________________________________________________________
 
 ## Introducción  <a name = "t2"></a>
 
-**Filtros Digitales**
+**Filtros Wavelet**
+
+Los filtros wavelet surgen como una alternativa poderosa para el filtrado de señales biomédicas. A diferencia de los filtros convencionales que operan en el dominio de la frecuencia, los filtros wavelet operan en el dominio tiempo-frecuencia, permitiendo localizar y separar las señales de interés del ruido en ambos dominios.
+Los filtros wavelet se basan en la transformada wavelet, que descompone la señal en versiones escaladas y trasladadas de una función base llamada wavelet madre. Existen diversos tipos de wavelets como Daubechies, Symlet y Coiflet, cada uno con propiedades específicas.
+Entre las principales ventajas de los filtros wavelet sobre otros métodos están:
+- Permiten un análisis multirresolución, descomponiendo la señal en diferentes bandas de frecuencia.
+- Son capaces de detectar eventos transitorios y no estacionarios en la señal.
+- Pueden eliminar el ruido sin suavizar en exceso bordes y picos.
+- Son computacionalmente eficientes gracias a algoritmos rápidos.
 
 
 <div align="center">
