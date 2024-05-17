@@ -63,362 +63,145 @@ En este laboratorio, nos enfocamos en el diseño e implementación de filtros di
   <b>Tabla 1. Materiales y equipos utilizados</b>
 </p>
 
-**Procedimiento**
+## **Procedimiento**
 
-**Señal ECG**
+***Uso de filtros Wavelets***
 
-El electrocardiograma (ECG) es una herramienta crucial que registra la actividad eléctrica del corazón, proporcionando información vital sobre su funcionamiento. Este registro capta las variaciones de voltaje generadas por la actividad eléctrica que rige la contracción y relajación de las distintas regiones del músculo cardíaco. Para el proceso de filtrado de la señal ECG correspondiente a este laboratorio, se tomaron como referencia las mediciones realizadas en el laboratorio 3 [5]. En dicho laboratorio, se pudo capturar el potencial eléctrico de las derivaciones entre dos electrodos en distintas condiciones, tales como: reposo, respiración controlada y posterior a ejercicios.
+**Uso en señal ECG**
 
-**Justificación de uso del filtro IIR en ECG:**
+En un estudio realizado por Kania et al. [], se investigó la aplicación del filtrado wavelet para reducir el ruido en señales EKG de alta resolución. Los autores evaluaron diferentes funciones wavelet madre y niveles de descomposición para determinar los parámetros óptimos que minimizaran el error cuadrático medio (MSE) entre la señal original y la señal filtrada, preservando al mismo tiempo las características morfológicas del EKG.
 
-Para justificar la elección de los valores del filtro IIR Butterworth en el contexto del estudio, es importante considerar el rendimiento observado en investigaciones previas.
+Los resultados de Kania et al. [] mostraron que las funciones wavelet db1 (Daubechies de primer orden) con niveles de descomposición del 4 al 6, sym3 (Symlet de tercer orden) con nivel 4, y sym8 (Symlet de octavo orden) con nivel 4, proporcionaron el mejor desempeño en términos de reducción de ruido y preservación de la morfología del EKG. Además, se destacó la ventaja del filtrado wavelet sobre técnicas convencionales como el promediado de latidos, especialmente en casos de arritmia donde el promediado puede distorsionar la señal.
 
-Según el estudio realizado por Das y Chakraborty (2017), los filtros IIR Butterworth mostraron un buen rendimiento en términos de relación señal-ruido (SNR) para la eliminación de ruido en señales de ECG en el modo de monitorización. Los autores encontraron que los filtros Butterworth alcanzaron valores máximos de SNR cuando el orden del filtro estaba en el rango de 2 a 4 [6].
+*Parámetros*
 
-El rango de frecuencia útil para el modo de monitorización de ECG que se acepta generalmente es de 0.5 a 40 Hz según lo que indica el manual Electrocardiography (ECG) Sensor Datasheet [7].
+(ACA VA UN CUADRO CON LOS PARÁMETROS UTILIZADOS AL FINAL)
 
-Dado que el estudio de Das y Chakraborty (2017) demostró que los filtros Butterworth de orden 2 a 4 proporcionan un buen rendimiento de SNR para la eliminación de ruido en señales de ECG en modo de monitorización, se recomienda probar el filtro Butterworth con órdenes en este rango.
+*Señal pre y post procesada*
 
-**Señal EMG**
-
-**Justificación de uso del filtro IIR en EMG**
-
-Según el estudio realizado por Roland et al. (2019) [8], los filtros IIR de segundo orden, tanto Chebyshev como Butterworth, son adecuados para la eliminación de artefactos de movimiento y ruido de baja frecuencia en señales de EMG aisladas.
-
-Los autores evaluaron diferentes frecuencias de corte para estos filtros y encontraron que un filtro Chebyshev de segundo orden con una frecuencia de corte de 60 Hz proporcionó el mejor equilibrio entre la atenuación de artefactos y el mantenimiento de la potencia de la señal de EMG. Este filtro mostró la máxima diferencia entre la pérdida de señal de artefactos y la pérdida de señal de EMG, lo que indica un rendimiento óptimo.
-
-Para el diseño del filtro Chebyshev, se pueden utilizar los siguientes parámetros:
-
-- Frecuencia de esquina de la banda de paso (Wp) = 301.59 rad/s
-- Frecuencia de esquina de la banda de atenuación (Ws) = 389.02 rad/s
-
-Estos valores de frecuencia son consistentes con el rango de frecuencia útil para la señal de EMG, que se acepta generalmente de 20 a 500 Hz [8].
-
-Aunque el filtro Butterworth de segundo orden también mostró un buen rendimiento, el filtro Chebyshev fue seleccionado para la implementación final en el sistema de medición de EMG aislado debido a su mejor atenuación de artefactos.
-
-En resumen, el uso de un filtro IIR Chebyshev de segundo orden con una frecuencia de corte de 60 Hz y los parámetros Wp = 301.59 rad/s y Ws = 389.02 rad/s está justificado por los resultados del estudio de Roland et al. (2019) [8] para la eliminación efectiva de artefactos de movimiento y ruido de baja frecuencia en señales de EMG aisladas, manteniendo al mismo tiempo la potencia de la señal de EMG.
+(IMAGEN DE LA SEÑAL ANTES Y DESPUÉS DEL FILTRADO)
 
 
-**Señal EEG**
+**Uso en señal EMG:**
 
-**Justificación de uso del filtro IIR en EMG**
+En un estudio exhaustivo realizado por Phinyomark et al. [], se investigó el desempeño de diferentes funciones wavelet madre y niveles de descomposición para el filtrado de ruido en señales EMG, con el objetivo de identificar los parámetros óptimos que minimizaran el error cuadrático medio (MSE) entre la señal original y la señal filtrada. Los autores evaluaron un total de 53 funciones wavelet, incluyendo las familias Daubechies, Symlet, Coiflet, BiorSplines y ReverseBior, así como la wavelet Discreta de Meyer.
 
-Según el estudio realizado por Tiwari, Goel y Bhardwaj (2024) [9], se utilizó un filtro pasabanda Butterworth de 5to orden para realizar el sub-bandeo de las señales de EEG en seis bandas más pequeñas: delta (0.5-4 Hz), theta (4-8 Hz), alfa (8-12 Hz), beta baja (12-16 Hz), beta alta (16-24 Hz) y gamma (24-40 Hz).
+Los resultados de Phinyomark et al. [] revelaron que las funciones wavelet db1 (Daubechies de primer orden), bior1.1 (BiorSplines de primer orden) y rbio1.1 (ReverseBior de primer orden) proporcionaron el mejor desempeño en términos de reducción de ruido, con el mínimo MSE. Además, se encontró que el nivel de descomposición óptimo para el filtrado wavelet de señales EMG era el nivel 4. Los autores también destacaron que wavelets con forma simple y baja frecuencia eran más adecuadas para las características morfológicas de las señales EMG.
 
-Este procesamiento de señales fue un paso importante antes de aplicar la Transformada de Hilbert-Huang (HHT) a las señales de EEG de cada sub-banda. La HHT se utilizó para obtener la Amplitud Instantánea (IA), la Fase Instantánea (IP) y la Frecuencia Instantánea (IF) de las señales de EEG en dicho estudio.
+*Parámetros*
 
-El uso del filtro Butterworth pasabanda de 5to orden para el sub-bandeo de las señales de EEG en las bandas delta, theta, alfa, beta y gamma, seguido de la HHT, resultó en un preprocesamiento híbrido y eficiente de las señales. 
+(ACA VA UN CUADRO CON LOS PARÁMETROS UTILIZADOS AL FINAL)
 
-Los autores reportaron una precisión promedio de clasificación del 97.67% usando la técnica de validación cruzada de 5 pliegues en las seis sub-bandas. Esto demuestra la eficacia del enfoque de preprocesamiento que emplea el filtro Butterworth pasabanda de 5to orden para el sub-bandeo de las señales de EEG.
+*Señal pre y post procesada*
+
+(IMAGEN DE LA SEÑAL ANTES Y DESPUÉS DEL FILTRADO)
 
 
-**Justificación de uso del filtro FIR para las señales de ECG, EMG y EEG**
+**Uso en señal EEG**
 
-De acuerdo con Proakis y Manolakis en su libro "Digital Signal Processing: Principles, Algorithms, and Applications" [10], las ventanas de Hamming, Hanning y Blackman son tres de las mejores opciones para el diseño de filtros FIR en el procesamiento de señales debido a las siguientes razones:
+Justificación de parámetos 
 
-1. Ventana de Hamming:
-La ventana de Hamming tiene un buen equilibrio entre la selectividad en frecuencia y la atenuación de los lóbulos laterales.
-Proporciona una buena supresión de los lóbulos laterales, lo que reduce la interferencia de las frecuencias no deseadas en la señal filtrada.
-Tiene una transición relativamente estrecha entre la banda de paso y la banda de rechazo, lo que permite una buena separación entre las bandas de frecuencia.
+*Parámetros*
 
-2. Ventana de Hanning:
-La ventana de Hanning tiene una forma similar a la ventana de Hamming, pero con una atenuación de los lóbulos laterales ligeramente menor.
-Ofrece una buena selectividad en frecuencia y una transición suave entre la banda de paso y la banda de rechazo.
-Produce una distorsión mínima de la señal en la banda de paso debido a su forma de campana suave.
+(ACA VA UN CUADRO CON LOS PARÁMETROS UTILIZADOS AL FINAL)
 
-3. Ventana de Blackman:
-La ventana de Blackman tiene una atenuación de los lóbulos laterales aún mayor que las ventanas de Hamming y Hanning.
-Proporciona una excelente supresión de los lóbulos laterales, lo que minimiza la interferencia de las frecuencias no deseadas en la señal filtrada.
-Tiene una transición más gradual entre la banda de paso y la banda de rechazo en comparación con las ventanas de Hamming y Hanning.
+*Señal pre y post procesada*
 
-Proakis y Manolakis destacan que las ventanas de Hamming, Hanning y Blackman son ampliamente utilizadas en el diseño de filtros FIR debido a sus características favorables en términos de selectividad en frecuencia, atenuación de los lóbulos laterales y distorsión de la señal. Estas ventanas proporcionan un buen compromiso entre el rendimiento del filtro y la complejidad computacional, lo que las hace adecuadas para una variedad de aplicaciones de procesamiento de señales.
-
-La elección entre estas tres ventanas dependerá de los requisitos específicos de la aplicación. Si se requiere una mayor selectividad en frecuencia y una transición más estrecha entre las bandas, la ventana de Hamming puede ser la mejor opción. Si se desea una atenuación de los lóbulos laterales ligeramente mayor y una transición más suave, la ventana de Hanning puede ser preferible. Si la supresión de los lóbulos laterales es la principal prioridad y se puede tolerar una transición más gradual entre las bandas, la ventana de Blackman puede ser la elección óptima.
-
-En resumen, según Proakis y Manolakis [10], las ventanas de Hamming, Hanning y Blackman son tres de las mejores opciones para el diseño de filtros FIR debido a su buen equilibrio entre la selectividad en frecuencia, la atenuación de los lóbulos laterales y la distorsión mínima de la señal en la banda de paso.
-
+(IMAGEN DE LA SEÑAL ANTES Y DESPUÉS DEL FILTRADO)
 
  
 **CÓDIGOS UTILIZADOS**
 --------------------------------------------------------------------------------------------------------------
-**Código de ploteo para EEG y adquisición de las ondas cerebrales:**
+**Código de ploteo para EKG pre y post filtrado:**
 ```python
+import pywt
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.signal import firwin, freqz, lfilter, iirfilter, butter
-import pywt
 
-# Cargar los datos desde el archivo TXT
-archivo_txt = "C:/Users/Equipo/OneDrive/Escritorio/Introduccion_a_señales_biomedicas/Github/inb_2024_gh12/ISB_Informes/L5_Lectura_de_EEG/EEG_L5/BiTalino/Prueba_ojos_abiertos_cerrado_5s.txt"
-datos = np.loadtxt(archivo_txt)
-lectura = datos[:, 5]  # Sexta columna
+def wavelet_denoising(signal, wavelet, level, threshold_method='soft'):
+    # Descomposición wavelet
+    coeffs = pywt.wavedec(signal, wavelet, level=level)
+    
+    # Umbralización de coeficientes de detalle
+    threshold = np.sqrt(2 * np.log(len(signal)))
+    for i in range(1, len(coeffs)):
+        coeffs[i] = pywt.threshold(coeffs[i], threshold * np.std(coeffs[i]), mode=threshold_method)
+    
+    # Reconstrucción de la señal
+    denoised_signal = pywt.waverec(coeffs, wavelet)
+    
+    return denoised_signal
 
-fs = 1000
-VCC = 3.3  # Operating voltage
-G = 41782  # Sensor gain
-n_bits = 10  # Number of bits for ADC
+# Cargar señal EKG (reemplaza esto con tu propio código de carga de datos)
+ecg_signal = np.loadtxt('ecg_data.txt')
 
-# Convert ADC to EEG(V)
-#Lectura = (Lectura / ((2**n_bits) - 0.5)) * VCC / G_EEG
-lectura = ((((lectura)/(2**n_bits))-1/2)*VCC)/G
+# Parámetros del filtro wavelet
+wavelet_type = 'db4'
+decomposition_level = 4
 
-# Convert EEG(V) to EEG(uV)
-lectura = lectura * 1e6
+# Aplicar filtrado wavelet
+denoised_ecg = wavelet_denoising(ecg_signal, wavelet_type, decomposition_level)
 
-# Crear un arreglo de tiempo en segundos
-tiempo = np.arange(len(lectura)) / fs
-
-# Frecuencia de corte de los filtros
-cutoff_frequency = 60 / (fs / 2) # Normalización de la frecuencia de corte
-iir_filter = iirfilter(N=5, Wn=[cutoff_frequency], btype='low', ftype='butter')
-
-#Todo esto es para otros módulos para filtrar
-    # #Declaramos la frecuencia de corte para un filtro pasa banda
-    # frecuencia_low_cut=0.2/ (fs / 2)
-    # frecuencia_high_cut=4/ (fs / 2)
-
-    # Diseño del filtro rechazo de banda
-    # Parámetros del filtro
-
-    # Frecuencia de muestreo en Hz
-    # notch_freq = 60  # Frecuencia a rechazar en Hz
-    # bandwidth = 0.005  # Ancho de banda alrededor de la frecuencia a rechazar
-    # f1 = notch_freq - bandwidth / 2
-    # f2 = notch_freq + bandwidth / 2
-
-#Declaramos la frecuencia de corte para un filtro pasa banda
-wc_delta=[0.2/ (fs / 2), 4/ (fs / 2)]
-wc_tetha=[4/ (fs / 2), 8/ (fs / 2)]
-wc_alfa=[8/ (fs / 2), 12/ (fs / 2)]
-wc_beta=[12/ (fs / 2), 24/ (fs / 2)]
-wc_gamma=[24/ (fs / 2), 48/ (fs / 2)]
-
-# Diseñar filtros
-num_taps = 101 # Número de coeficientes
-fir_filter_delta = firwin(num_taps, wc_delta, window="hann" ,pass_zero=False)
-
-fir_filter_tetha = firwin(num_taps, wc_tetha, window="hann" ,pass_zero=False)
-
-fir_filter_alfa = firwin(num_taps, wc_alfa, window="hann" ,pass_zero=False)
-
-fir_filter_beta = firwin(num_taps, wc_beta, window="hann" ,pass_zero=False)
-
-fir_filter_gamma = firwin(num_taps, wc_gamma, window="hann" ,pass_zero=False)
-
-# Respuesta en frecuencia del filtro FIR
-w, h = freqz(fir_filter_delta, worN=8000)
-plt.figure(figsize=(9, 9))
-plt.subplot(6, 1, 2)
-plt.plot(0.5*fs*w/np.pi, np.abs(h), 'b')
-plt.title('Respuesta en Frecuencia del Filtro FIR (hanning)')
-plt.xlabel('Frecuencia [Hz]')
-plt.grid(True)
-
-# Respuesta en frecuencia del filtro IIR (Butterworth)
-w, h = freqz(*butter(4, Wn=[cutoff_frequency], btype='low'))
-plt.subplot(6, 1, 1)
-plt.plot(0.5*fs*w/np.pi, np.abs(h), 'g')
-plt.title('Respuesta en Frecuencia del Filtro IIR (Butterworth) pasabaja')
-plt.xlabel('Frecuencia [Hz]')
-plt.grid(True)
-
-w, h = freqz(fir_filter_tetha, worN=8000)
-
-plt.subplot(6, 1, 3)
-plt.plot(0.5*fs*w/np.pi, np.abs(h), 'r')
-plt.title('Respuesta en Frecuencia del Filtro FIR (hanning)')
-plt.xlabel('Frecuencia [Hz]')
-plt.grid(True)
-
-w, h = freqz(fir_filter_alfa, worN=8000)
-
-plt.subplot(6, 1, 4)
-plt.plot(0.5*fs*w/np.pi, np.abs(h), 'brown')
-plt.title('Respuesta en Frecuencia del Filtro FIR (hanning)')
-plt.xlabel('Frecuencia [Hz]')
-plt.grid(True)
-
-w, h = freqz(fir_filter_beta, worN=8000)
-
-plt.subplot(6, 1, 5)
-plt.plot(0.5*fs*w/np.pi, np.abs(h), 'pink')
-plt.title('Respuesta en Frecuencia del Filtro FIR (hanning)')
-plt.xlabel('Frecuencia [Hz]')
-plt.grid(True)
-
-w, h = freqz(fir_filter_gamma, worN=8000)
-
-plt.subplot(6, 1, 6)
-plt.plot(0.5*fs*w/np.pi, np.abs(h), 'black')
-plt.title('Respuesta en Frecuencia del Filtro FIR (hanning)')
-plt.xlabel('Frecuencia [Hz]')
-plt.grid(True)
-
-plt.tight_layout()
-
-# Aplicar los filtros
-eeg_iir = lfilter(iir_filter[0], iir_filter[1], lectura)
-
-eeg_fir_delta = lfilter(fir_filter_delta, 1.0, eeg_iir)
-eeg_fir_tetha = lfilter(fir_filter_tetha, 1.0, eeg_iir)
-eeg_fir_alfa = lfilter(fir_filter_alfa, 1.0, eeg_iir)
-eeg_fir_beta = lfilter(fir_filter_beta, 1.0, eeg_iir)
-eeg_fir_gamma = lfilter(fir_filter_gamma, 1.0, eeg_iir)
-
-# Define el intervalo de tiempo que deseas visualizar (segundos)
-inicio_segundo = 25
-fin_segundo = 50
-inicio_muestra = int(inicio_segundo * fs)
-fin_muestra = int(fin_segundo * fs)
-
-# Crear gráficos de las señales filtradas
-plt.figure(figsize=(12, 9))
-plt.subplot(7, 1, 1)
-plt.plot(tiempo[inicio_muestra:fin_muestra], lectura[inicio_muestra:fin_muestra], lw=1, color='blue')
-plt.title('Valor EEG (Original) Prueba_ojos_abiertos_cerrado_5s')
-plt.xlabel('Tiempo (s)')
-plt.ylabel('Amplitud (uV)')
-plt.grid(True)
-
-plt.subplot(7, 1, 3)
-plt.plot(tiempo[inicio_muestra:fin_muestra], eeg_fir_delta[inicio_muestra:fin_muestra], lw=1, color='red')
-plt.title('Valor EEG del Filtro FIR (blackman) pasabanda para ondas delta')
-plt.xlabel('Tiempo (s)')
-plt.ylabel('Amplitud (uV)')
-plt.grid(True)
-
-plt.subplot(7, 1, 2)
-plt.plot(tiempo[inicio_muestra:fin_muestra], eeg_iir[inicio_muestra:fin_muestra], lw=1, color='green')
-plt.title('Valor EEG Filtro IIR (Butterworth) pasabaja')
-plt.xlabel('Tiempo (s)')
-plt.ylabel('Amplitud (uV)')
-plt.grid(True)
-
-plt.subplot(7, 1, 4)
-plt.plot(tiempo[inicio_muestra:fin_muestra], eeg_fir_tetha[inicio_muestra:fin_muestra], lw=1, color='yellow')
-plt.title('Valor EEG del Filtro FIR (blackman) pasabanda para ondas tetha')
-plt.xlabel('Tiempo (s)')
-plt.ylabel('Amplitud (uV)')
-plt.grid(True)
-
-plt.subplot(7, 1, 5)
-plt.plot(tiempo[inicio_muestra:fin_muestra], eeg_fir_alfa[inicio_muestra:fin_muestra], lw=1, color='pink')
-plt.title('Valor EEG del Filtro FIR (blackman) pasabanda para ondas alfa')
-plt.xlabel('Tiempo (s)')
-plt.ylabel('Amplitud (uV)')
-plt.grid(True)
-
-plt.subplot(7, 1, 6)
-plt.plot(tiempo[inicio_muestra:fin_muestra], eeg_fir_beta[inicio_muestra:fin_muestra], lw=1, color='brown')
-plt.title('Valor EEG del Filtro FIR (blackman) pasabanda para ondas beta')
-plt.xlabel('Tiempo (s)')
-plt.ylabel('Amplitud (uV)')
-plt.grid(True)
-
-plt.subplot(7, 1, 7)
-plt.plot(tiempo[inicio_muestra:fin_muestra], eeg_fir_gamma[inicio_muestra:fin_muestra], lw=1, color='black')
-plt.title('Valor EEG del Filtro FIR (blackman) pasabanda para ondas gamma')
-plt.xlabel('Tiempo (s)')
-plt.ylabel('Amplitud (mV)')
-
-plt.grid(True)
-plt.tight_layout()
+# Graficar resultados
+plt.figure(figsize=(10, 4))
+plt.plot(ecg_signal, label='Señal EKG original')
+plt.plot(denoised_ecg, label='Señal EKG filtrada')
+plt.legend()
+plt.xlabel('Muestras')
+plt.ylabel('Amplitud')
+plt.title('Filtrado Wavelet de Señal EKG')
 plt.show()
+
 ```
 
-**-Código de ploteo para EMG y ECG:**
+
+**Código de ploteo para EMG pre y post filtrado:**
 ```python
+import pywt
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.signal import firwin, freqz, lfilter, iirfilter, butter
-import pywt
 
-# Cargar los datos desde el archivo TXT
-archivo_txt = "C:/Users/Equipo/OneDrive/Escritorio/Introduccion_a_señales_biomedicas/Github/inb_2024_gh12/ISB_Informes/L4_Lectura_de_ECG/ECG_L4/Post_ejercicio.txt"
-datos_emg = np.loadtxt(archivo_txt)
-ecg = datos_emg[:, 5]  # Sexta columna
+def wavelet_denoising_emg(signal, wavelet, level, threshold_method='universal'):
+    # Descomposición wavelet
+    coeffs = pywt.wavedec(signal, wavelet, level=level)
+    
+    # Estimación del umbral usando el método universal
+    threshold = np.sqrt(2 * np.log(len(signal)))
+    
+    # Umbralización suave de los coeficientes de detalle
+    for i in range(1, len(coeffs)):
+        coeffs[i] = pywt.threshold(coeffs[i], threshold * np.median(np.abs(coeffs[i])) / 0.6745, mode='soft')
+    
+    # Reconstrucción de la señal
+    denoised_signal = pywt.waverec(coeffs, wavelet)
+    
+    return denoised_signal
 
-VCC = 3.3  # Operating voltage
-G_EMG = 1100  # Sensor gain
-n_bits = 10  # Number of bits for ADC
+# Cargar señal EMG (reemplaza esto con tu propio código de carga de datos)
+emg_signal = np.loadtxt('emg_data.txt')
 
-# Convert ADC to EEG(V)
-#Lectura = (Lectura / ((2**n_bits) - 0.5)) * VCC / G_EEG
-ecg = ((((ecg)/(2**n_bits))-1/2)*VCC)/G_EMG
+# Parámetros del filtro wavelet óptimos según Phinyomark et al.
+wavelet_type = 'db1'  # También puedes probar 'bior1.1' o 'rbio1.1'
+decomposition_level = 4
 
-# Convert EEG(V) to EEG(uV)
-ecg = ecg * 1e3
+# Aplicar filtrado wavelet
+denoised_emg = wavelet_denoising_emg(emg_signal, wavelet_type, decomposition_level)
 
-# Crear un arreglo de tiempo en segundos
-frecuencia_muestreo = 1000
-tiempo = np.arange(len(ecg)) / frecuencia_muestreo
+# Calcular MSE entre señal original y filtrada
+mse = np.mean((emg_signal - denoised_emg) ** 2)
+print(f"MSE: {mse:.4f}")
 
-# Frecuencia de corte de los filtros
-cutoff_frequency_fir = 25 / (frecuencia_muestreo / 2)
-cutoff_frequency_iir= 20 / (frecuencia_muestreo/2) # Normalización de la frecuencia de corte
-#cutoff_frequency_iir = 25 / (frecuencia_muestreo / 2)
-
-# Diseñar filtros
-num_taps = 101
-fir_filter = firwin(num_taps, cutoff_frequency_fir,window="hamming")
-iir_filter = iirfilter(N=4, Wn=cutoff_frequency_iir, btype='low', ftype='butter')
-
-
-# Respuesta en frecuencia del filtro FIR
-w, h = freqz(fir_filter, worN=8000)
-plt.figure(figsize=(9, 9))
-plt.subplot(3, 1, 1)
-plt.plot(0.5*frecuencia_muestreo*w/np.pi, np.abs(h), 'b')
-plt.title('Respuesta en Frecuencia del Filtro FIR')
-plt.xlabel('Frecuencia [Hz]')
-plt.grid(True)
-
-# Respuesta en frecuencia del filtro IIR (Butterworth)
-w, h = freqz(*butter(4, cutoff_frequency_iir, btype='low'))
-plt.subplot(3, 1, 2)
-plt.plot(0.5*frecuencia_muestreo*w/np.pi, np.abs(h), 'g')
-plt.title('Respuesta en Frecuencia del Filtro IIR (Butterworth)')
-plt.xlabel('Frecuencia [Hz]')
-plt.grid(True)
-plt.tight_layout()
-# El filtro Wavelet no es un filtro en el dominio de la frecuencia 
-
-# Aplicar los filtros
-ecg_fir = lfilter(fir_filter, 1.0, ecg)
-ecg_iir = lfilter(iir_filter[0], iir_filter[1], ecg)
-#ecg_wavelet, _ = pywt.dwt(ecg, wavelet_filter)
-
-# Define el intervalo de tiempo que deseas visualizar (segundos)
-inicio_segundo = 5
-fin_segundo = 8
-inicio_muestra = int(inicio_segundo * frecuencia_muestreo)
-fin_muestra = int(fin_segundo * frecuencia_muestreo)
-
-# Crear gráficos de las señales filtradas
-plt.figure(figsize=(12, 9))
-plt.subplot(3, 1, 1)
-plt.plot(tiempo[inicio_muestra:fin_muestra], ecg[inicio_muestra:fin_muestra], lw=1, color='blue')
-plt.xlabel('Tiempo (s)')
-plt.ylabel('Valor ECG (Original)')
-plt.grid(True)
-
-plt.subplot(3, 1, 2)
-plt.plot(tiempo[inicio_muestra:fin_muestra], ecg_fir[inicio_muestra:fin_muestra], lw=1, color='red')
-plt.xlabel('Tiempo (s)')
-plt.ylabel('Valor ECG (FIR Filtro)')
-plt.grid(True)
-
-plt.subplot(3, 1, 3)
-plt.plot(tiempo[inicio_muestra:fin_muestra], ecg_iir[inicio_muestra:fin_muestra], lw=1, color='green')
-plt.xlabel('Tiempo (s)')
-plt.ylabel('Valor ECG (IIR Filtro)')
-plt.grid(True)
-
-
-plt.tight_layout()
+# Graficar resultados
+plt.figure(figsize=(10, 4))
+plt.plot(emg_signal, label='Señal EMG original')
+plt.plot(denoised_emg, label='Señal EMG filtrada')
+plt.legend()
+plt.xlabel('Muestras')
+plt.ylabel('Amplitud')
+plt.title(f'Filtrado Wavelet de Señal EMG usando {wavelet_type}')
 plt.show()
-```
 
+```
 ## Resultados   <a name="t5"></a>
 
 ### **Ejercicio ECG** <a name="t6"></a>
