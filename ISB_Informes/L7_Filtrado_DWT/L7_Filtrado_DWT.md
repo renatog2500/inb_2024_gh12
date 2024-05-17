@@ -5,16 +5,18 @@
 1. [Lista de participantes](#t1)
 2. [Introducción](#t2)
 3. [Objetivos del laboratorio](#t3)
-4. [Metodología](#t4)
-6. [Resultados](#t5)\
-   5.1 [Ejercicio ECG](#t6)\
-   5.2 [Ejercicio EMG ](#t7)\
-   5.3 [Ejercicio EEG](#t8)
-7. [Discusión](#t9)\
-   6.1 [Señal ECG](#t10)\
-   6.2 [Señal EMG](#t11)\
-   6.3 [Señal EEG](#t12)\
-8. [Bibliografía](#t13)
+4. [Metodología](#t4)\
+   4.1.[Materiales y Equipo utilizado](#t5)\
+   4.2.[Procedimiento](#t6)
+5. [Resultados](#t7)\
+   5.1 [Ejercicio ECG](#t8)\
+   5.2 [Ejercicio EMG ](#t9)\
+   5.3 [Ejercicio EEG](#t10)
+6. [Discusión](#t11)\
+   6.1 [Señal ECG](#t12)\
+   6.2 [Señal EMG](#t13)\
+   6.3 [Señal EEG](#t14)\
+7. [Bibliografía](#t15)
 __________________________________________________________________________________________________
 ## **Lista de participantes** <a name = "t1"></a>
 * Jimena Alpiste Espinoza - 74297329
@@ -41,7 +43,7 @@ ________________________________________________________________________________
 ## Metodología <a name="t4"></a>
 En este laboratorio, nos enfocamos en el diseño e implementación de filtros Wavelets con el objetivo de atenuar las frecuencias altas indeseadas, originadas por el ruido presente en las señales ECG, EMG y EEG adquiridas previamente utilizando el Kit BITalino. 
 
-**Materiales y Equipo Utilizado**
+### **Materiales y Equipo Utilizado** <a name="t5"></a>
 <table align="center">
   <tr>
     <th>Modelo</th>
@@ -63,7 +65,7 @@ En este laboratorio, nos enfocamos en el diseño e implementación de filtros Wa
   <b>Tabla 1. Materiales y equipos utilizados</b>
 </p>
 
-## **Procedimiento**
+### **Procedimiento** <a name="t6"></a>
 
 ***Uso de filtros Wavelets***
 
@@ -202,9 +204,9 @@ plt.title(f'Filtrado Wavelet de Señal EMG usando {wavelet_type}')
 plt.show()
 
 ```
-## Resultados   <a name="t5"></a>
+## Resultados   <a name="t7"></a>
 
-### **Ejercicio ECG** <a name="t6"></a>
+### **Ejercicio ECG** <a name="t8"></a>
 | Campo | Señal Cruda | Filtro IIR | Filtro FIR |
 |-----------|-----------|-----------|-----------|
 | Basal   | <img src="Imagenes_L6/Imagenes_ECG/Basal_ECG_cruda.png" alt="Electrodos de guía" >  | <img src="Imagenes_L6/Imagenes_ECG/basal_ECG_butter.png" alt="Electrodos de guía"  > | <img src="Imagenes_L6/Imagenes_ECG/basal_ECG_hanni.png" alt="Electrodos de guía" >|
@@ -216,7 +218,7 @@ plt.show()
 </p>
 
 
-### **Ejercicio EMG** <a name="t7"></a>
+### **Ejercicio EMG** <a name="t9"></a>
 | Campo | Señal Cruda | Filtro IIR | Filtro FIR |
 |-----------|-----------|-----------|-----------|
 | Bicep Braquial   | <img src="Imagenes_L6/Imagenes_EMG/bicep_EMG_cruda.png" alt="Electrodos de guía" >  | <img src="Imagenes_L6/Imagenes_EMG/bicep_EMG_butt.png" alt="Electrodos de guía"  > | <img src="Imagenes_L6/Imagenes_EMG/bicep_EMG_black.png" alt="Electrodos de guía" >|
@@ -228,7 +230,7 @@ plt.show()
 </p>
 
 
-### **Ejercicio EEG** <a name="t8"></a>
+### **Ejercicio EEG** <a name="t10"></a>
 | Campo | BASAL | OJOS CERRADOS - ABIERTOS | PREGUNTAS COMPLEJAS |
 |-----------|-----------|-----------|-----------|
 | Señal Cruda ---------------Filtro IIR --------------Filtro FIR ondas delta ------Filtro FIR ondas tetha ------Filtro FIR ondas alfa------ Filtro FIR ondas beta ------Filtro FIR ondas gamma | <img src="Imagenes_L6/Imagenes_EEG/Fase_referencia_30seg_filtrada.png" alt="Electrodos de guía" >  | <img src="Imagenes_L6/Imagenes_EEG/Prueba_ojos_abiertos_cerrado_5s_filtrada.png" alt="Electrodos de guía" >   | <img src="Imagenes_L6/Imagenes_EEG/Prueba_Preguntas_complejas_filtrada.png" alt="Electrodos de guía" > |
@@ -239,23 +241,23 @@ plt.show()
 
 
 
-## Discusión <a name="t9"></a>
+## Discusión <a name="t11"></a>
 
 
-### **ECG** <a name="t10"></a>
-
-
-
-### **EMG** <a name="t11"></a>
+### **ECG** <a name="t12"></a>
 
 
 
-### **EEG** <a name="t12"></a>
+### **EMG** <a name="t13"></a>
+
+
+
+### **EEG** <a name="t14"></a>
 
 
 
 
-## ** Bibliografía** : <a name="t13"></a>
+## ** Bibliografía** : <a name="t15"></a>
 
 
 
