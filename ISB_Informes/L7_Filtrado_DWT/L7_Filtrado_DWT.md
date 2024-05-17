@@ -1,4 +1,4 @@
-# Laboratorio N°7 - Filtrado de las señales DWT
+![image](https://github.com/renatog2500/inb_2024_gh12/assets/130946164/ffba9b30-c433-4852-8776-b0e91562fa89)# Laboratorio N°7 - Filtrado de las señales DWT
 
 ## Tabla de contenidos:
  __________________________________________________________________________________________________
@@ -83,39 +83,54 @@ En este laboratorio, nos enfocamos en el diseño e implementación de filtros Wa
 
 ### **Procedimiento** <a name="t6"></a>
 
-***Uso de filtros Wavelets***
+***Señal ECG***
+Para el ECG, se registró la actividad eléctrica del corazón en diversas condiciones utilizando la primera derivación. Se colocó un electrodo de referencia en la cresta ilíaca para obtener una mejor respuesta contra el ruido. A continuación una breve descripción de las pruebas realizadas: 
 
-**Uso en señal ECG**
+**Lectura Basal:** Se registró la actividad eléctrica del corazón en estado de reposo, proporcionando una línea base para comparar las variaciones en otras condiciones.
 
-En un estudio realizado por Kania et al. [], se investigó la aplicación del filtrado wavelet para reducir el ruido en señales EKG de alta resolución. Los autores evaluaron diferentes funciones wavelet madre y niveles de descomposición para determinar los parámetros óptimos que minimizaran el error cuadrático medio (MSE) entre la señal original y la señal filtrada, preservando al mismo tiempo las características morfológicas del EKG.
+**Inhalación y Exhalación:** Se monitorea la actividad eléctrica del corazón mientras se realizan ejercicios de respiración controlada, observando los cambios que ocurren con la inhalación y la exhalación.
 
-Los resultados de Kania et al. [] mostraron que las funciones wavelet db1 (Daubechies de primer orden) con niveles de descomposición del 4 al 6, sym3 (Symlet de tercer orden) con nivel 4, y sym8 (Symlet de octavo orden) con nivel 4, proporcionaron el mejor desempeño en términos de reducción de ruido y preservación de la morfología del EKG. Además, se destacó la ventaja del filtrado wavelet sobre técnicas convencionales como el promediado de latidos, especialmente en casos de arritmia donde el promediado puede distorsionar la señal.
+**Post Ejercicios:** Se registró la actividad eléctrica del corazón inmediatamente después de realizar ejercicios físicos, como polichinelas y planchas, para evaluar la respuesta cardíaca al esfuerzo físico.
 
-*Parámetros*
+***Justifiación de parámetros para la Señal ECG***
+En un estudio realizado por Kania et. al. [5], se investigó la aplicación del filtrado wavelet para reducir el ruido en señales EKG de alta resolución. Los autores evaluaron diferentes funciones wavelet madre y niveles de descomposición para determinar los parámetros óptimos que minimizaran el error cuadrático medio (MSE) entre la señal original y la señal filtrada, preservando al mismo tiempo las características morfológicas del EKG.
 
-(ACA VA UN CUADRO CON LOS PARÁMETROS UTILIZADOS AL FINAL)
+Los resultados de Kania et al.[5] mostraron que las funciones wavelet db1 (Daubechies de primer orden) con niveles de descomposición del 4 al 6, sym3 (Symlet de tercer orden) con nivel 4, y sym8 (Symlet de octavo orden) con nivel 4, proporcionaron el mejor desempeño en términos de reducción de ruido y preservación de la morfología del EKG. Además, se destacó la ventaja del filtrado wavelet sobre técnicas convencionales como el promediado de latidos, especialmente en casos de arritmia donde el promediado puede distorsionar la señal.
 
-
-**Uso en señal EMG:**
-
-En un estudio exhaustivo realizado por Phinyomark et al. [], se investigó el desempeño de diferentes funciones wavelet madre y niveles de descomposición para el filtrado de ruido en señales EMG, con el objetivo de identificar los parámetros óptimos que minimizaran el error cuadrático medio (MSE) entre la señal original y la señal filtrada. Los autores evaluaron un total de 53 funciones wavelet, incluyendo las familias Daubechies, Symlet, Coiflet, BiorSplines y ReverseBior, así como la wavelet Discreta de Meyer.
-
-Los resultados de Phinyomark et al. [] revelaron que las funciones wavelet db1 (Daubechies de primer orden), bior1.1 (BiorSplines de primer orden) y rbio1.1 (ReverseBior de primer orden) proporcionaron el mejor desempeño en términos de reducción de ruido, con el mínimo MSE. Además, se encontró que el nivel de descomposición óptimo para el filtrado wavelet de señales EMG era el nivel 4. Los autores también destacaron que wavelets con forma simple y baja frecuencia eran más adecuadas para las características morfológicas de las señales EMG.
-
-*Parámetros*
+***Parámetros elegidos***
 
 (ACA VA UN CUADRO CON LOS PARÁMETROS UTILIZADOS AL FINAL)
 
 
+**Señal EMG**
+Para el EMG, se tomaron mediciones de los siguiente músculos en distintos estados:
 
-**Uso en señal EEG**
+**Actividad muscular del bíceps braquial (brazo):** Durante esta prueba, se registró la actividad eléctrica del bíceps braquial en estados de reposo y contracción. Para minimizar las interferencias, el electrodo de referencia se ubicó en la región del codo.
 
-En un estudio realizado por Hossain et al. [], se propusieron dos nuevas técnicas para la corrección de artefactos de movimiento en señales de EEG de un solo canal: (i) Descomposición en paquetes wavelet (WPD) y (ii) WPD en combinación con análisis de correlación canónica (WPD-CCA). Los autores investigaron estas técnicas utilizando cuatro familias de paquetes wavelet diferentes (Daubechies, Symlets, Coiflets y Fejer-Korovkin) con tres momentos de desvanecimiento distintos.
+**Actividad muscular del flexor profundo de los dedos (antebrazo):** En estas mediciones, se registró la actividad eléctrica durante la flexión de los dedos hacia la palma de la mano. Al igual que en el ensayo anterior, el electrodo de referencia se colocó en la región del codo.
 
-Los resultados de Hossain et al. [] mostraron que la técnica WPD-CCA proporcionó la mejor reducción porcentual de artefactos de movimiento (59.51%) y la mayor relación señal-ruido promedio (30.76 dB) cuando se utilizó el paquete wavelet db1. Entre las técnicas de corrección de artefactos de una sola etapa, WPD con el paquete wavelet db1 produjo el mejor desempeño, logrando una reducción de artefactos del 53.48% y una SNR de 29.26 dB. Además, se propuso un enfoque alternativo utilizando WPD donde se descartó el componente de subbanda de aproximación de frecuencia más baja, reconstruyendo una señal más limpia sumando los componentes de subbanda restantes.
+**Actividad muscular del abductor corto del pulgar:** En esta serie de mediciones, se evaluó la actividad eléctrica del abductor corto del pulgar en estados de reposo y durante la realización de movimientos de abducción (separación) del pulgar con oposición de fuerza.
+
+***Justifiación de parámetros para la Señal EMG***
+En un estudio exhaustivo realizado por Phinyomark et al. [6], se investigó el desempeño de diferentes funciones wavelet madre y niveles de descomposición para el filtrado de ruido en señales EMG, con el objetivo de identificar los parámetros óptimos que minimizaran el error cuadrático medio (MSE) entre la señal original y la señal filtrada. Los autores evaluaron un total de 53 funciones wavelet, incluyendo las familias Daubechies, Symlet, Coiflet, BiorSplines y ReverseBior, así como la wavelet Discreta de Meyer.
+
+Los resultados de Phinyomark et al. [6] revelaron que las funciones wavelet db1 (Daubechies de primer orden), bior1.1 (BiorSplines de primer orden) y rbio1.1 (ReverseBior de primer orden) proporcionaron el mejor desempeño en términos de reducción de ruido, con el mínimo MSE. Además, se encontró que el nivel de descomposición óptimo para el filtrado wavelet de señales EMG era el nivel 4. Los autores también destacaron que wavelets con forma simple y baja frecuencia eran más adecuadas para las características morfológicas de las señales EMG.
+
+***Parámetros elegidos***
+
+(ACA VA UN CUADRO CON LOS PARÁMETROS UTILIZADOS AL FINAL)
 
 
-*Parámetros*
+
+**Señal EEG**
+
+***Justifiación de parámetros para la Señal EEG***
+En un estudio realizado por Hossain et al. [7], se propusieron dos nuevas técnicas para la corrección de artefactos de movimiento en señales de EEG de un solo canal: (i) Descomposición en paquetes wavelet (WPD) y (ii) WPD en combinación con análisis de correlación canónica (WPD-CCA). Los autores investigaron estas técnicas utilizando cuatro familias de paquetes wavelet diferentes (Daubechies, Symlets, Coiflets y Fejer-Korovkin) con tres momentos de desvanecimiento distintos.
+
+Los resultados de Hossain et al. [7] mostraron que la técnica WPD-CCA proporcionó la mejor reducción porcentual de artefactos de movimiento (59.51%) y la mayor relación señal-ruido promedio (30.76 dB) cuando se utilizó el paquete wavelet db1. Entre las técnicas de corrección de artefactos de una sola etapa, WPD con el paquete wavelet db1 produjo el mejor desempeño, logrando una reducción de artefactos del 53.48% y una SNR de 29.26 dB. Además, se propuso un enfoque alternativo utilizando WPD donde se descartó el componente de subbanda de aproximación de frecuencia más baja, reconstruyendo una señal más limpia sumando los componentes de subbanda restantes.
+
+
+***Parámetros elegidos***
 
 WPD:
 
@@ -226,33 +241,37 @@ plt.show()
 ## Resultados   <a name="t7"></a>
 
 ### **Ejercicio ECG** <a name="t8"></a>
-| Campo | Señal Cruda | Filtro IIR | Filtro FIR |
-|-----------|-----------|-----------|-----------|
-| Basal   | <img src="Imagenes_L6/Imagenes_ECG/Basal_ECG_cruda.png" alt="Electrodos de guía" >  | <img src="Imagenes_L6/Imagenes_ECG/basal_ECG_butter.png" alt="Electrodos de guía"  > | <img src="Imagenes_L6/Imagenes_ECG/basal_ECG_hanni.png" alt="Electrodos de guía" >|
-| Respiración   | <img src="Imagenes_L6/Imagenes_ECG/in_ex_ECG_cruda.png" alt="Electrodos de guía" >  | <img src="Imagenes_L6/Imagenes_ECG/in_ex_ECG_butt.png" alt="Electrodos de guía" >| <img src="Imagenes_L6/Imagenes_ECG/in_ex_ECG_hanni.png" alt="Electrodos de guía"> |
-| Post Ejercicios   | <img src="Imagenes_L6/Imagenes_ECG/post_ECG_cruda.png" alt="Electrodos de guía" >  | <img src="Imagenes_L6/Imagenes_ECG/post_ECG_butt.png" alt="Electrodos de guía" >  | <img src="Imagenes_L6/Imagenes_ECG/post_ECG_hann.png" alt="Electrodos de guía"> |
+| Campo de actividad | Señal Cruda | Filtro Wavelet |
+|-----------------|-------------------------|-----------|
+| Basal             |                        |     |
+| Inhalación Exhalación            |                      |      |
+| Post Ejercicios            |                      |  |
+
 
 <p align="center">
-  <b>Tabla 2. Resumen de la señal filtrada con filtros FIR e IIR para la data ECG</b>
+  <b>Tabla 2. Resumen de la señal filtrada para la data ECG</b>
 </p>
 
 
 ### **Ejercicio EMG** <a name="t9"></a>
-| Campo | Señal Cruda | Filtro IIR | Filtro FIR |
-|-----------|-----------|-----------|-----------|
-| Bicep Braquial   | <img src="Imagenes_L6/Imagenes_EMG/bicep_EMG_cruda.png" alt="Electrodos de guía" >  | <img src="Imagenes_L6/Imagenes_EMG/bicep_EMG_butt.png" alt="Electrodos de guía"  > | <img src="Imagenes_L6/Imagenes_EMG/bicep_EMG_black.png" alt="Electrodos de guía" >|
-| Antebrazo supinación  | <img src="Imagenes_L6/Imagenes_EMG/antebrazo_EMG_cruda.png" alt="Electrodos de guía" >  | <img src="Imagenes_L6/Imagenes_EMG/antebrazo_EMG_butt.png" alt="Electrodos de guía" >| <img src="Imagenes_L6/Imagenes_EMG/antebrazo_EMG_black.png" alt="Electrodos de guía"> |
-| Pulgar en supinación   | <img src="Imagenes_L6/Imagenes_EMG/pulgar_EMG_cruda.png" alt="Electrodos de guía" >  | <img src="Imagenes_L6/Imagenes_EMG/pulgar_EMG_butt.png" alt="Electrodos de guía">  | <img src="Imagenes_L6/Imagenes_EMG/pulgar_EMG_black.png" alt="Electrodos de guía"> |
+| Campo de actividad | Señal Cruda | Filtro Wavelet |
+|-----------------|-------------------------|-----------|
+| Bicep Braquial             |                        |     |
+| Antebrazo en Supinación        |                      |      |
+| Pulgar en supinacion            |                      |  |
 
 <p align="center">
-  <b>Tabla 3. Resumen de la señal filtrada con filtros FIR e IIR para la data EMG</b>
+  <b>Tabla 3. Resumen de la señal filtrada para la data EMG</b>
 </p>
 
 
 ### **Ejercicio EEG** <a name="t10"></a>
-| Campo | BASAL | OJOS CERRADOS - ABIERTOS | PREGUNTAS COMPLEJAS |
-|-----------|-----------|-----------|-----------|
-| Señal Cruda ---------------Filtro IIR --------------Filtro FIR ondas delta ------Filtro FIR ondas tetha ------Filtro FIR ondas alfa------ Filtro FIR ondas beta ------Filtro FIR ondas gamma | <img src="Imagenes_L6/Imagenes_EEG/Fase_referencia_30seg_filtrada.png" alt="Electrodos de guía" >  | <img src="Imagenes_L6/Imagenes_EEG/Prueba_ojos_abiertos_cerrado_5s_filtrada.png" alt="Electrodos de guía" >   | <img src="Imagenes_L6/Imagenes_EEG/Prueba_Preguntas_complejas_filtrada.png" alt="Electrodos de guía" > |
+| Campo de actividad | Señal Cruda | Filtro Wavelet |
+|-----------------|-------------------------|-----------|
+| Basal           |                        |     |
+| OJOS CERRADOS - ABIERTOS       |                      |      |
+| PREGUNTAS COMPLEJAS           |                      |  |
+
 
 <p align="center">
   <b>Tabla 4. Resumen de la señal filtrada con filtros FIR e IIR para la data EEG</b>
@@ -266,9 +285,7 @@ plt.show()
 ### **ECG** <a name="t12"></a>
 
 
-
 ### **EMG** <a name="t13"></a>
-
 
 
 ### **EEG** <a name="t14"></a>
