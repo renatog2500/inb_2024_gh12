@@ -25,17 +25,24 @@ ________________________________________________________________________________
 
 
 ## Introducción  <a name = "t2"></a>
+Las señales biomédicas, tales como el electrocardiograma (EKG) [1], la electromiografía (EMG) [2] y la electroencefalografía (EEG) [3], suelen estar contaminadas por ruido y artefactos, lo que dificulta su análisis e interpretación adecuada. Por lo tanto, es fundamental aplicar técnicas de filtrado a estas señales con el fin de eliminar el ruido y mejorar su calidad.
+
+No obstante, si bien los métodos convencionales de filtrado FIR e IIR, que incluyen los filtros pasa-baja, pasa-alta y pasa-banda, pueden ser efectivos para eliminar parte del ruido presente, su aplicación puede traer consigo ciertas limitaciones. Ya que el uso de estos pueden provocar distorsiones indeseadas en la señal original y, en consecuencia, eliminar componentes de interés relevantes para el análisis posterior.
 
 **Filtros Wavelet**
+Frente a las limitaciones de los métodos convencionales de filtrado, los filtros wavelet surgen como una alternativa poderosa para el procesamiento de señales biomédicas. A diferencia de los filtros convencionales que operan en el dominio de la frecuencia, los filtros wavelet operan en el dominio tiempo-frecuencia, permitiendo localizar y separar las señales de interés del ruido en ambos dominios de manera más efectiva [4].
 
-Los filtros wavelet surgen como una alternativa poderosa para el filtrado de señales biomédicas. A diferencia de los filtros convencionales que operan en el dominio de la frecuencia, los filtros wavelet operan en el dominio tiempo-frecuencia, permitiendo localizar y separar las señales de interés del ruido en ambos dominios.
-Los filtros wavelet se basan en la transformada wavelet, que descompone la señal en versiones escaladas y trasladadas de una función base llamada wavelet madre. Existen diversos tipos de wavelets como Daubechies, Symlet y Coiflet, cada uno con propiedades específicas.
-Entre las principales ventajas de los filtros wavelet sobre otros métodos están:
-- Permiten un análisis multirresolución, descomponiendo la señal en diferentes bandas de frecuencia.
-- Son capaces de detectar eventos transitorios y no estacionarios en la señal.
-- Pueden eliminar el ruido sin suavizar en exceso bordes y picos.
-- Son computacionalmente eficientes gracias a algoritmos rápidos.
+La base fundamental de los filtros wavelet es la transformada wavelet, la cual descompone la señal en versiones escaladas y trasladadas de una función base denominada wavelet madre. Existen diversos tipos de wavelets, como Daubechies, Symlet y Coiflet, cada uno con propiedades específicas que los hacen adecuados para diferentes aplicaciones[4].
 
+Entre las principales ventajas que ofrecen los filtros wavelet sobre otros métodos de filtrado se encuentran las siguientes[4]:
+
+- Permiten un análisis multirresolución, descomponiendo la señal en diferentes bandas de frecuencia, lo que facilita la identificación y separación de componentes de interés.
+  
+- Son capaces de detectar eventos transitorios y no estacionarios en la señal, lo que es especialmente útil para señales biomédicas que suelen presentar comportamientos no lineales y variaciones temporales complejas.
+  
+- Pueden eliminar el ruido sin suavizar en exceso bordes y picos, preservando así las características importantes de la señal original.
+  
+- Son computacionalmente eficientes gracias a la existencia de algoritmos rápidos para el cálculo de la transformada wavelet, lo que los hace adecuados para aplicaciones en tiempo real.
 
 <div align="center">
     <img src="Imagenes_L6/Filtro digital intro.png" alt="wCF14V" width="400">
