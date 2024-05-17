@@ -79,10 +79,6 @@ Los resultados de Kania et al. [] mostraron que las funciones wavelet db1 (Daube
 
 (ACA VA UN CUADRO CON LOS PARÁMETROS UTILIZADOS AL FINAL)
 
-*Señal pre y post procesada*
-
-(IMAGEN DE LA SEÑAL ANTES Y DESPUÉS DEL FILTRADO)
-
 
 **Uso en señal EMG:**
 
@@ -94,9 +90,6 @@ Los resultados de Phinyomark et al. [] revelaron que las funciones wavelet db1 (
 
 (ACA VA UN CUADRO CON LOS PARÁMETROS UTILIZADOS AL FINAL)
 
-*Señal pre y post procesada*
-
-(IMAGEN DE LA SEÑAL ANTES Y DESPUÉS DEL FILTRADO)
 
 
 **Uso en señal EEG**
@@ -114,9 +107,6 @@ WPD:
 - Nivel de descomposición: 4, generando 16 componentes de subbanda.
 
 
-*Señal pre y post procesada*
-
-(IMAGEN DE LA SEÑAL ANTES Y DESPUÉS DEL FILTRADO)
 
  
 **CÓDIGOS UTILIZADOS**
