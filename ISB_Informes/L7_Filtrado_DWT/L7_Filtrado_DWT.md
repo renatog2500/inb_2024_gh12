@@ -47,7 +47,7 @@ Entre las principales ventajas que ofrecen los filtros wavelet sobre otros méto
 
 <div align="center">
     <img src="Imagenes_L6/Filtro digital intro.png" alt="wCF14V" width="400">
-    <p><b>Figura 1. Representación de un filtro digital</b> - Extraído de [1]</p>
+    <p><b>Figura 1. Representación de un filtro digital</b> - Extraído de </p>
 </div>
 
 
@@ -94,7 +94,7 @@ Para el ECG, se registró la actividad eléctrica del corazón en diversas condi
 - **Post Ejercicios:** Se registró la actividad eléctrica del corazón inmediatamente después de realizar ejercicios físicos, como polichinelas y planchas, para evaluar la respuesta cardíaca al esfuerzo físico.
 
 
-***Justifiación de parámetros para la Señal ECG***
+***Justificación de parámetros para la Señal ECG***
 
 En un estudio realizado por Kania et. al. [5], se investigó la aplicación del filtrado wavelet para reducir el ruido en señales EKG de alta resolución. Los autores evaluaron diferentes funciones wavelet madre y niveles de descomposición para determinar los parámetros óptimos que minimizaran el error cuadrático medio (MSE) entre la señal original y la señal filtrada, preservando al mismo tiempo las características morfológicas del EKG.
 
@@ -114,7 +114,7 @@ Para el EMG, se tomaron mediciones de los siguiente músculos en distintos estad
 
 - **Actividad muscular del flexor radial del caropo (antebrazo)**: En estas mediciones, se registró la actividad eléctrica durante la supinación del antebrazo . Al igual que en el ensayo anterior, el electrodo de referencia se colocó en la región del codo.
 
-***Justifiación de parámetros para la Señal EMG***
+***Justificación de parámetros para la Señal EMG***
 
 En un estudio exhaustivo realizado por Phinyomark et al. [6], se investigó el desempeño de diferentes funciones wavelet madre y niveles de descomposición para el filtrado de ruido en señales EMG, con el objetivo de identificar los parámetros óptimos que minimizaran el error cuadrático medio (MSE) entre la señal original y la señal filtrada. Los autores evaluaron un total de 53 funciones wavelet, incluyendo las familias Daubechies, Symlet, Coiflet, BiorSplines y ReverseBior, así como la wavelet Discreta de Meyer.
 
@@ -129,6 +129,7 @@ Los resultados de Phinyomark et al. [6] revelaron que las funciones wavelet db1 
 **Señal EEG**
 
 Para evaluar la actividad neuronal a partir del electroencefalograma (EEG) utilizamos las señales obtenidas en el Laboratorio 05 a partir de las siguientes pruebas: 
+
 **1. Lectura de la señal Basal:** Para adquirir esta señal el sujeto de prueba debe permanecer en una posición estable  , con ello se registrará la línea base de señal con poco ruido y sin movimientos (respiración normal,sin movimientos oculares/ojos cerrados) durante 30 segundos. Este estado sirve como nuestra prueba de referencia.
 
 **2. Lectura de Ojos Abiertos - Ojos Cerrados:** A continuación el participante repetirá un ciclo de OJOS ABIERTOS - OJOS CERRADOS cinco veces, manteniendo ambas fases durante 5 segundos. El sujeto debe permanecer en una posición estable y mirando a un poco fijo para evitar ruido en la señal.
@@ -149,7 +150,7 @@ Para evaluar la actividad neuronal a partir del electroencefalograma (EEG) utili
 </p>
 
 
-***Justifiación de parámetros para la Señal EEG***
+***Justificación de parámetros para la Señal EEG***
 
 En un estudio realizado por Hossain et al. [8], se propusieron dos nuevas técnicas para la corrección de artefactos de movimiento en señales de EEG de un solo canal: (i) Descomposición en paquetes wavelet (WPD) y (ii) WPD en combinación con análisis de correlación canónica (WPD-CCA). Los autores investigaron estas técnicas utilizando cuatro familias de paquetes wavelet diferentes (Daubechies, Symlets, Coiflets y Fejer-Korovkin) con tres momentos de desvanecimiento distintos.
 
