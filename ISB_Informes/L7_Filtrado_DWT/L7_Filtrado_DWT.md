@@ -30,6 +30,7 @@ Las señales biomédicas, tales como el electrocardiograma (EKG) [1], la electro
 No obstante, si bien los métodos convencionales de filtrado FIR e IIR, que incluyen los filtros pasa-baja, pasa-alta y pasa-banda, pueden ser efectivos para eliminar parte del ruido presente, su aplicación puede traer consigo ciertas limitaciones. Ya que el uso de estos pueden provocar distorsiones indeseadas en la señal original y, en consecuencia, eliminar componentes de interés relevantes para el análisis posterior.
 
 **Filtros Wavelet**
+
 Frente a las limitaciones de los métodos convencionales de filtrado, los filtros wavelet surgen como una alternativa poderosa para el procesamiento de señales biomédicas. A diferencia de los filtros convencionales que operan en el dominio de la frecuencia, los filtros wavelet operan en el dominio tiempo-frecuencia, permitiendo localizar y separar las señales de interés del ruido en ambos dominios de manera más efectiva [4].
 
 La base fundamental de los filtros wavelet es la transformada wavelet, la cual descompone la señal en versiones escaladas y trasladadas de una función base denominada wavelet madre. Existen diversos tipos de wavelets, como Daubechies, Symlet y Coiflet, cada uno con propiedades específicas que los hacen adecuados para diferentes aplicaciones[4].
