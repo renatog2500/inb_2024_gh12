@@ -84,6 +84,7 @@ En este laboratorio, nos enfocamos en el diseño e implementación de filtros Wa
 ### **Procedimiento** <a name="t6"></a>
 
 ***Señal ECG***
+
 Para el ECG, se registró la actividad eléctrica del corazón en diversas condiciones utilizando la primera derivación. Se colocó un electrodo de referencia en la cresta ilíaca para obtener una mejor respuesta contra el ruido. A continuación una breve descripción de las pruebas realizadas: 
 
 - **Lectura Basal:** Se registró la actividad eléctrica del corazón en estado de reposo, proporcionando una línea base para comparar las variaciones en otras condiciones.
@@ -92,7 +93,9 @@ Para el ECG, se registró la actividad eléctrica del corazón en diversas condi
 
 - **Post Ejercicios:** Se registró la actividad eléctrica del corazón inmediatamente después de realizar ejercicios físicos, como polichinelas y planchas, para evaluar la respuesta cardíaca al esfuerzo físico.
 
+
 ***Justifiación de parámetros para la Señal ECG***
+
 En un estudio realizado por Kania et. al. [5], se investigó la aplicación del filtrado wavelet para reducir el ruido en señales EKG de alta resolución. Los autores evaluaron diferentes funciones wavelet madre y niveles de descomposición para determinar los parámetros óptimos que minimizaran el error cuadrático medio (MSE) entre la señal original y la señal filtrada, preservando al mismo tiempo las características morfológicas del EKG.
 
 Los resultados de Kania et al.[5] mostraron que las funciones wavelet db1 (Daubechies de primer orden) con niveles de descomposición del 4 al 6, sym3 (Symlet de tercer orden) con nivel 4, y sym8 (Symlet de octavo orden) con nivel 4, proporcionaron el mejor desempeño en términos de reducción de ruido y preservación de la morfología del EKG. Además, se destacó la ventaja del filtrado wavelet sobre técnicas convencionales como el promediado de latidos, especialmente en casos de arritmia donde el promediado puede distorsionar la señal.
@@ -105,13 +108,14 @@ Los resultados de Kania et al.[5] mostraron que las funciones wavelet db1 (Daube
 **Señal EMG**
 Para el EMG, se tomaron mediciones de los siguiente músculos en distintos estados:
 
-**Actividad muscular del bíceps braquial (brazo):** Durante esta prueba, se registró la actividad eléctrica del bíceps braquial en estados de reposo y contracción. Para minimizar las interferencias, el electrodo de referencia se ubicó en la región del codo.
+- **Actividad muscular del bíceps braquial (brazo):** Durante esta prueba, se registró la actividad eléctrica del bíceps braquial en estados de reposo y contracción. Para minimizar las interferencias, el electrodo de referencia se ubicó en la región del codo.
 
-**Actividad muscular del flexor profundo de los dedos (antebrazo):** En estas mediciones, se registró la actividad eléctrica durante la flexión de los dedos hacia la palma de la mano. Al igual que en el ensayo anterior, el electrodo de referencia se colocó en la región del codo.
+- **Actividad muscular del flexor profundo de los dedos (antebrazo):** En estas mediciones, se registró la actividad eléctrica durante la flexión de los dedos hacia la palma de la mano. Al igual que en el ensayo anterior, el electrodo de referencia se colocó en la región del codo.
 
-**Actividad muscular del flexor radial del caropo (antebrazo)**: En estas mediciones, se registró la actividad eléctrica durante la supinación del antebrazo . Al igual que en el ensayo anterior, el electrodo de referencia se colocó en la región del codo.
+- **Actividad muscular del flexor radial del caropo (antebrazo)**: En estas mediciones, se registró la actividad eléctrica durante la supinación del antebrazo . Al igual que en el ensayo anterior, el electrodo de referencia se colocó en la región del codo.
 
 ***Justifiación de parámetros para la Señal EMG***
+
 En un estudio exhaustivo realizado por Phinyomark et al. [6], se investigó el desempeño de diferentes funciones wavelet madre y niveles de descomposición para el filtrado de ruido en señales EMG, con el objetivo de identificar los parámetros óptimos que minimizaran el error cuadrático medio (MSE) entre la señal original y la señal filtrada. Los autores evaluaron un total de 53 funciones wavelet, incluyendo las familias Daubechies, Symlet, Coiflet, BiorSplines y ReverseBior, así como la wavelet Discreta de Meyer.
 
 Los resultados de Phinyomark et al. [6] revelaron que las funciones wavelet db1 (Daubechies de primer orden), bior1.1 (BiorSplines de primer orden) y rbio1.1 (ReverseBior de primer orden) proporcionaron el mejor desempeño en términos de reducción de ruido, con el mínimo MSE. Además, se encontró que el nivel de descomposición óptimo para el filtrado wavelet de señales EMG era el nivel 4. Los autores también destacaron que wavelets con forma simple y baja frecuencia eran más adecuadas para las características morfológicas de las señales EMG.
@@ -123,6 +127,7 @@ Los resultados de Phinyomark et al. [6] revelaron que las funciones wavelet db1 
 
 
 **Señal EEG**
+
 Para evaluar la actividad neuronal a partir del electroencefalograma (EEG) utilizamos las señales obtenidas en el Laboratorio 05 a partir de las siguientes pruebas: 
 **1. Lectura de la señal Basal:** Para adquirir esta señal el sujeto de prueba debe permanecer en una posición estable  , con ello se registrará la línea base de señal con poco ruido y sin movimientos (respiración normal,sin movimientos oculares/ojos cerrados) durante 30 segundos. Este estado sirve como nuestra prueba de referencia.
 
@@ -145,10 +150,10 @@ Para evaluar la actividad neuronal a partir del electroencefalograma (EEG) utili
 
 
 ***Justifiación de parámetros para la Señal EEG***
+
 En un estudio realizado por Hossain et al. [8], se propusieron dos nuevas técnicas para la corrección de artefactos de movimiento en señales de EEG de un solo canal: (i) Descomposición en paquetes wavelet (WPD) y (ii) WPD en combinación con análisis de correlación canónica (WPD-CCA). Los autores investigaron estas técnicas utilizando cuatro familias de paquetes wavelet diferentes (Daubechies, Symlets, Coiflets y Fejer-Korovkin) con tres momentos de desvanecimiento distintos.
 
 Los resultados de Hossain et al. [8] mostraron que la técnica WPD-CCA proporcionó la mejor reducción porcentual de artefactos de movimiento (59.51%) y la mayor relación señal-ruido promedio (30.76 dB) cuando se utilizó el paquete wavelet db1. Entre las técnicas de corrección de artefactos de una sola etapa, WPD con el paquete wavelet db1 produjo el mejor desempeño, logrando una reducción de artefactos del 53.48% y una SNR de 29.26 dB. Además, se propuso un enfoque alternativo utilizando WPD donde se descartó el componente de subbanda de aproximación de frecuencia más baja, reconstruyendo una señal más limpia sumando los componentes de subbanda restantes.
-
 
 ***Parámetros elegidos***
 
