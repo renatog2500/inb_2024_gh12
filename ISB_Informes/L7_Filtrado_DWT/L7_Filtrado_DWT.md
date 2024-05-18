@@ -46,8 +46,8 @@ Entre las principales ventajas que ofrecen los filtros wavelet sobre otros méto
 - Son computacionalmente eficientes gracias a la existencia de algoritmos rápidos para el cálculo de la transformada wavelet, lo que los hace adecuados para aplicaciones en tiempo real.
 
 <div align="center">
-    <img src="Imagenes_L6/Filtro digital intro.png" alt="wCF14V" width="400">
-    <p><b>Figura 1. Representación de un filtro digital</b> - Extraído de </p>
+    <img src="Imagenes_L7/wavelet.png" alt="wCF14V" width="400">
+    <p><b>Figura 1. Representación del wavelet </b> </p>
 </div>
 
 
@@ -103,7 +103,7 @@ Los resultados de Kania et al.[5] mostraron que las funciones wavelet db1 (Daube
 ***Parámetros elegidos***
 | Función Wavelet | Nivel  | Umbral | 
 | --------------- | -----  | ------ |
-|       sym8      |   5    |  $\sigma \sqrt{2 \log N}$|
+|       sym8      |   4    |  $\sigma \sqrt{2 \log N}$|
 
 Donde: donde σ es la desviación estándar del ruido y 𝑁 es la longitud de la señal
 
@@ -247,8 +247,8 @@ emg_signal = emg_v * 1e6
 
 
 # Parámetros del filtro wavelet óptimos según Phinyomark et al.
-wavelet_type = 'db1'  # También puedes probar 'bior1.1' o 'rbio1.1'
-decomposition_level = 6
+wavelet_type = 'syms8'  # También puedes probar 'bior1.1' o 'rbio1.1'
+decomposition_level = 4
 
 # Aplicar filtrado wavelet
 denoised_emg = wavelet_denoising_emg(emg_signal, wavelet_type, decomposition_level)
@@ -345,7 +345,7 @@ emg_signal = emg_v * 1e6
 
 # Parámetros del filtro wavelet óptimos según Phinyomark et al.
 wavelet_type = 'db1'  # También puedes probar 'bior1.1' o 'rbio1.1'
-decomposition_level = 6
+decomposition_level = 4
 
 # Aplicar filtrado wavelet
 denoised_emg = wavelet_denoising_emg(emg_signal, wavelet_type, decomposition_level)
@@ -509,20 +509,20 @@ plt.show()
   <b>Tabla 4. Resumen de la señal filtrada para la data EEG</b>
 </p>
 
-
-
 ## Discusión <a name="t11"></a>
 
 
 ### **ECG** <a name="t12"></a>
 
+Según los resultados esperados guíandonos de la literatura mencionada en la justificación, se aplicó la filtración wavelet para la eliminación de ruido de las señales de ECG y se comparó con los resultados de la medición original, donde obtuvimos una señal filtrada final usando la función sym8 con un nivel de descomposicón de 4. Donde comparando con el MSE del ruido pudimos corroborar que la señal filtrada es óptima y no se pierde mucha información.
 
 ### **EMG** <a name="t13"></a>
 
+Para evaluación de los resultados obtenidos para la reducción de ruido de las señales de EMG, nos guiamos directamente del estudio mencionado en la justificación donde se hacen diferentes pruebas para obtener la mejor opción de las funciones wavelet y sus niveles de descomposición. Para el procesamiento de la señal, elegimos una función wavelet de db1 con 4 niveles de descomposición, donde pudimos observar que la señal tuvo una atenuación ligera, sin embargo no hubo una perdida de información signifcativa concluyendo que el filtro elegido es óptimo para las señales EMG. 
 
 ### **EEG** <a name="t14"></a>
 
-
+Para evaluación de los resultados obtenidos para la reducción de ruido de las señales de EEG, nos guiamos directamente del estudio mencionado en la justificación donde se hacen diferentes pruebas para obtener la mejor opción de las funciones wavelet y sus niveles de descomposición. Para el procesamiento de la señal, aplicamos la técnica mencionada WPD y elegimos una función wavelet de db1 con 4 niveles de descomposición, donde pudimos observar que un ploteo no muy común donde si se le hace un acercamientos e pueden ver pequeñas mesetas donde irián los picos usuales, sin embargo no hubo una perdida de información signifcativa concluyendo que el filtro elegido es óptimo para las señales EMG. 
 
 
 ## ** Bibliografía** : <a name="t15"></a>
