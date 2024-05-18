@@ -514,6 +514,21 @@ plt.show()
 
 ## ** Bibliografía** : <a name="t15"></a>
 
+[1] S. Ari, M. K. Das y A. Chacko, “ECG signal enhancement using S-Transform”, Comput. Biol. Medicine, vol. 43, n.º 6, pp. 649–660, julio de 2013. Accedido el 17 de mayo de 2024. [En línea]. Disponible: https://doi.org/10.1016/j.compbiomed.2013.02.015
+
+[2] Chowdhury RH, Reaz MB, Ali MA, Bakar AA, Chellappan K, Chang TG. Surface electromyography signal processing and classification techniques. Sensors (Basel). 2013 Sep 17;13(9):12431-66. doi: 10.3390/s130912431. PMID: 24048337; PMCID: PMC3821366.
+
+[3] Brophy, Eoin et al. “Denoising EEG Signals for Real-World BCI Applications Using GANs.” Frontiers in neuroergonomics vol. 2 805573. 13 Jan. 2022, doi:10.3389/fnrgo.2021.805573
+
+[4] Wahab MF, O'Haver TC. Wavelet transforms in separation science for denoising and peak overlap detection. J Sep Sci. 2020; 43: 1998–2010. https://doi.org/10.1002/jssc.202000013
+
+[5] M. Kania, M. Fereniec y R. Maniewski, “Wavelet Denoising for Multi-lead High Resolution ECG Signals”, MEAS. SCI. REV., vol. 7, n.º 4, pp. 30–33, 2007. Accedido el 17 de mayo de 2024. [En línea]. Disponible: https://www.measurement.sk/2007/S2/Kania.pdf
+
+[6] A. Phinyomark, C. Limsakul, and P. Phukpattaranont, “An optimal wavelet function based on wavelet denoising for multifunction myoelectric control,” May 2009, doi: https://doi.org/10.1109/ecticon.2009.5137236.
+
+[7] J. Molina del Río, M. A. Guevara, M. Hernández González, et al., "EEG correlation during the solving of simple and complex logical–mathematical problems," Cogn Affect Behav Neurosci, vol. 19, pp. 1036–1046, 2019. https://doi.org/10.3758/s13415-019-00703-5  
+
+[8] Md Shafayet Hossain et al., “Motion Artifacts Correction from Single-Channel EEG and fNIRS Signals Using Novel Wavelet Packet Decomposition in Combination with Canonical Correlation Analysis,” Sensors, vol. 22, no. 9, pp. 3169–3169, Apr. 2022, doi: https://doi.org/10.3390/s22093169.
 
 
 
