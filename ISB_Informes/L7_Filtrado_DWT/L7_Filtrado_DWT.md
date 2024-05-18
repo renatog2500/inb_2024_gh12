@@ -101,9 +101,9 @@ En un estudio realizado por Kania et. al. [5], se investigó la aplicación del 
 Los resultados de Kania et al.[5] mostraron que las funciones wavelet db1 (Daubechies de primer orden) con niveles de descomposición del 4 al 6, sym3 (Symlet de tercer orden) con nivel 4, y sym8 (Symlet de octavo orden) con nivel 4, proporcionaron el mejor desempeño en términos de reducción de ruido y preservación de la morfología del EKG. Además, se destacó la ventaja del filtrado wavelet sobre técnicas convencionales como el promediado de latidos, especialmente en casos de arritmia donde el promediado puede distorsionar la señal.
 
 ***Parámetros elegidos***
-
-(ACA VA UN CUADRO CON LOS PARÁMETROS UTILIZADOS AL FINAL)
-
+| Función Wavelet | Nivel  | Umbral | 
+| --------------- | -----  | ------ |
+|       sym8      |   5    |  \[ \sigma \sqrt{2 \log N} \]|
 
 **Señal EMG**
 Para el EMG, se tomaron mediciones de los siguiente músculos en distintos estados:
@@ -122,7 +122,10 @@ Los resultados de Phinyomark et al. [6] revelaron que las funciones wavelet db1 
 
 ***Parámetros elegidos***
 
-(ACA VA UN CUADRO CON LOS PARÁMETROS UTILIZADOS AL FINAL)
+| Función Wavelet | Nivel  | Umbral | 
+| --------------- | -----  | ------ |
+|       db1      |   4    |  \[ \sigma \sqrt{2 \log N} \]|
+
 
 
 
@@ -158,7 +161,13 @@ Los resultados de Hossain et al. [8] mostraron que la técnica WPD-CCA proporcio
 
 ***Parámetros elegidos***
 
+| Función Wavelet | Nivel  | Umbral | 
+| --------------- | -----  | ------ |
+|       db1      |   6    |  \[ \sigma \sqrt{2 \log N} \]|
+
+
 WPD:
+
 
 - Descomposición de la señal de EEG utilizando paquetes wavelet de las familias Daubechies, Symlet, Coiflet y Fejer-Korovkin con diferentes momentos de desvanecimiento (db1, db2, db3, sym4, sym5, sym6, coif1, coif2, coif3, fk4, fk6, fk8).
 - Nivel de descomposición: 4, generando 16 componentes de subbanda.
