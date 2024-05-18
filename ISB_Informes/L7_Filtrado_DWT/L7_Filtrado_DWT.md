@@ -475,7 +475,7 @@ plt.show()
 ### **Ejercicio EMG** <a name="t9"></a>
 | Campo de actividad | Señal Cruda | Filtro Wavelet |
 |-----------------|-------------------------|-----------|
-| Bicep Braquial             |![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|
+| Bicep Braquial             |![Ejemplo](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|
 | Antebrazo en Supinación        |![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|
 | Pulgar en supinacion            |![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|
 
