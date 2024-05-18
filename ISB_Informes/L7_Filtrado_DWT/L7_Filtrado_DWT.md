@@ -103,7 +103,10 @@ Los resultados de Kania et al.[5] mostraron que las funciones wavelet db1 (Daube
 ***Parámetros elegidos***
 | Función Wavelet | Nivel  | Umbral | 
 | --------------- | -----  | ------ |
-|       sym8      |   5    |  \[ \sigma \sqrt{2 \log N} \]|
+|       sym8      |   5    |  $\sigma \sqrt{2 \log N}$|
+
+Donde: donde σ es la desviación estándar del ruido y 𝑁 es la longitud de la señal
+
 
 **Señal EMG**
 Para el EMG, se tomaron mediciones de los siguiente músculos en distintos estados:
@@ -126,6 +129,7 @@ Los resultados de Phinyomark et al. [6] revelaron que las funciones wavelet db1 
 | --------------- | -----  | ------ |
 |       db1      |   4    |  $\sigma \sqrt{2 \log N}$  |
 
+Donde: donde σ es la desviación estándar del ruido y 𝑁 es la longitud de la señal
 
 
 
@@ -163,11 +167,11 @@ Los resultados de Hossain et al. [8] mostraron que la técnica WPD-CCA proporcio
 
 | Función Wavelet | Nivel  | Umbral | 
 | --------------- | -----  | ------ |
-|       db1      |   6    |  \[ \sigma \sqrt{2 \log N} \]|
+|       db1      |   6    |  $\sigma \sqrt{2 \log N}$|
 
+Donde: donde σ es la desviación estándar del ruido y 𝑁 es la longitud de la señal
 
 WPD:
-
 
 - Descomposición de la señal de EEG utilizando paquetes wavelet de las familias Daubechies, Symlet, Coiflet y Fejer-Korovkin con diferentes momentos de desvanecimiento (db1, db2, db3, sym4, sym5, sym6, coif1, coif2, coif3, fk4, fk6, fk8).
 - Nivel de descomposición: 4, generando 16 componentes de subbanda.
