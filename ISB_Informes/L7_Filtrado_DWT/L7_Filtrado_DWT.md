@@ -124,9 +124,7 @@ Los resultados de Phinyomark et al. [6] revelaron que las funciones wavelet db1 
 
 | Función Wavelet | Nivel  | Umbral | 
 | --------------- | -----  | ------ |
-|       db1      |   4    |  $$
-\sigma \sqrt{2 \log N} \
-$$ |
+|       db1      |   4    |  $\sigma \sqrt{2 \log N}$  |
 
 
 
