@@ -172,53 +172,11 @@ WPD:
 ```python
 import pywt
 import numpy as np
+import pandas as pd
 import matplotlib.pyplot as plt
-
-def wavelet_denoising(signal, wavelet, level, threshold_method='soft'):
-    # Descomposición wavelet
-    coeffs = pywt.wavedec(signal, wavelet, level=level)
-    
-    # Umbralización de coeficientes de detalle
-    threshold = np.sqrt(2 * np.log(len(signal)))
-    for i in range(1, len(coeffs)):
-        coeffs[i] = pywt.threshold(coeffs[i], threshold * np.std(coeffs[i]), mode=threshold_method)
-    
-    # Reconstrucción de la señal
-    denoised_signal = pywt.waverec(coeffs, wavelet)
-    
-    return denoised_signal
-
-# Cargar señal EKG (reemplaza esto con tu propio código de carga de datos)
-ecg_signal = np.loadtxt('ecg_data.txt')
-
-# Parámetros del filtro wavelet
-wavelet_type = 'db4'
-decomposition_level = 4
-
-# Aplicar filtrado wavelet
-denoised_ecg = wavelet_denoising(ecg_signal, wavelet_type, decomposition_level)
-
-# Graficar resultados
-plt.figure(figsize=(10, 4))
-plt.plot(ecg_signal, label='Señal EKG original')
-plt.plot(denoised_ecg, label='Señal EKG filtrada')
-plt.legend()
-plt.xlabel('Muestras')
-plt.ylabel('Amplitud')
-plt.title('Filtrado Wavelet de Señal EKG')
-plt.show()
-
-```
-
-
-**Código de ploteo para EMG pre y post filtrado:**
-```python
-import pywt
-import numpy as np
-import matplotlib.pyplot as plt
-
+import re
 def wavelet_denoising_emg(signal, wavelet, level, threshold_method='universal'):
-    # Descomposición wavelet
+    # Descomposición wavelet 
     coeffs = pywt.wavedec(signal, wavelet, level=level)
     
     # Estimación del umbral usando el método universal
@@ -233,12 +191,51 @@ def wavelet_denoising_emg(signal, wavelet, level, threshold_method='universal'):
     
     return denoised_signal
 
-# Cargar señal EMG (reemplaza esto con tu propio código de carga de datos)
-emg_signal = np.loadtxt('emg_data.txt')
+def extraer_nombres_columnas(archivo):
+    with open(archivo, 'r') as f:
+        for linea in f:
+            if linea.startswith("#"):
+                columnas = re.findall(r'column":\s*\[(.*?)\]', linea)
+                entrada = re.findall(r'label":\s*\[(.*?)\]', linea)
+                if columnas:
+                    if entrada:
+                        # Extraer la lista de nombres de columna de la línea
+                        column_names = [name.strip().strip('"') for name in columnas[0].split(',')]
+                        # Extraemos los canales usados
+                        entrada = [name.strip().strip('"') for name in entrada[0].split(',')]
+                        return column_names, entrada [0]
+                    else:
+                        continue
+                else:
+                    continue
+
+# Cargar los datos desde el archivo TXT
+archivo = "C:/Users/Equipo/OneDrive/Escritorio/Introduccion_a_señales_biomedicas/Github/inb_2024_gh12/ISB_Informes/L5_Lectura_de_EEG/EEG_L5/BiTalino/Prueba_Preguntas_complejas.txt"
+
+#Del código de ploteo de datos del laboratorio de emg
+nombres_columnas,Entrada=extraer_nombres_columnas(archivo)
+datos = pd.read_csv(archivo, sep='\t', skiprows=3, header=None, usecols=[0, 1 ,2,3,4,5])
+datos.columns = nombres_columnas
+Lectura = datos[Entrada]
+# Convertir los datos a números
+emg = Lectura.apply(pd.to_numeric)
+
+emg.index = emg.index / 1000
+VCC = 3.3  # Operating voltage
+G_EMG = 1100  # Sensor gain
+n_bits = 10  # Number of bits for ADC
+
+# Convert ADC to EEG(V)
+#Lectura = (Lectura / ((2**n_bits) - 0.5)) * VCC / G_EEG
+emg_v = ((((emg)/(2**n_bits))-1/2)*VCC)/G_EMG
+
+# Convert EEG(V) to EEG(uV)
+emg_signal = emg_v * 1e6
+
 
 # Parámetros del filtro wavelet óptimos según Phinyomark et al.
 wavelet_type = 'db1'  # También puedes probar 'bior1.1' o 'rbio1.1'
-decomposition_level = 4
+decomposition_level = 6
 
 # Aplicar filtrado wavelet
 denoised_emg = wavelet_denoising_emg(emg_signal, wavelet_type, decomposition_level)
@@ -247,20 +244,216 @@ denoised_emg = wavelet_denoising_emg(emg_signal, wavelet_type, decomposition_lev
 mse = np.mean((emg_signal - denoised_emg) ** 2)
 print(f"MSE: {mse:.4f}")
 
-# Graficar resultados
-plt.figure(figsize=(10, 4))
-plt.plot(emg_signal, label='Señal EMG original')
-plt.plot(denoised_emg, label='Señal EMG filtrada')
-plt.legend()
-plt.xlabel('Muestras')
-plt.ylabel('Amplitud')
+# Plotear la señal de EMG en el dominio del tiempo
+plt.figure()
+plt.subplot(121) 
+plt.plot(emg_signal[0:15], label='Señal ECG original')
+plt.title('Señal orignal de ECG Lectura de la prueba de preguntas complejas')
+plt.xlabel("Tiempo (s)")
+plt.ylabel("Amplitud (uV)")
+plt.grid(True)
+
+plt.subplot(122)
+plt.plot(emg.index[0:15000], denoised_emg[0:15000],label='Señal ECG filtrada',color="orange")
+plt.title(f'Filtrado Wavelet de Señal ECG usando {wavelet_type}')
+plt.xlabel("Tiempo (s)")
+plt.ylabel("Amplitud (uV)")
+plt.grid(True)
+
+plt.show() 
+
+```
+
+
+**Código de ploteo para EMG pre y post filtrado:**
+```python
+import pywt
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import re
+def wavelet_denoising_emg(signal, wavelet, level, threshold_method='universal'):
+    # Descomposición wavelet 
+    coeffs = pywt.wavedec(signal, wavelet, level=level)
+    
+    # Estimación del umbral usando el método universal
+    threshold = np.sqrt(2 * np.log(len(signal)))
+    
+    # Umbralización suave de los coeficientes de detalle
+    for i in range(1, len(coeffs)):
+        coeffs[i] = pywt.threshold(coeffs[i], threshold * np.median(np.abs(coeffs[i])) / 0.6745, mode='soft')
+    
+    # Reconstrucción de la señal
+    denoised_signal = pywt.waverec(coeffs, wavelet)
+    
+    return denoised_signal
+
+def extraer_nombres_columnas(archivo):
+    with open(archivo, 'r') as f:
+        for linea in f:
+            if linea.startswith("#"):
+                columnas = re.findall(r'column":\s*\[(.*?)\]', linea)
+                entrada = re.findall(r'label":\s*\[(.*?)\]', linea)
+                if columnas:
+                    if entrada:
+                        # Extraer la lista de nombres de columna de la línea
+                        column_names = [name.strip().strip('"') for name in columnas[0].split(',')]
+                        # Extraemos los canales usados
+                        entrada = [name.strip().strip('"') for name in entrada[0].split(',')]
+                        return column_names, entrada [0]
+                    else:
+                        continue
+                else:
+                    continue
+
+# Cargar los datos desde el archivo TXT
+archivo = "C:/Users/Equipo/OneDrive/Escritorio/Introduccion_a_señales_biomedicas/Github/inb_2024_gh12/ISB_Informes/L5_Lectura_de_EEG/EEG_L5/BiTalino/Prueba_Preguntas_complejas.txt"
+
+#Del código de ploteo de datos del laboratorio de emg
+nombres_columnas,Entrada=extraer_nombres_columnas(archivo)
+datos = pd.read_csv(archivo, sep='\t', skiprows=3, header=None, usecols=[0, 1 ,2,3,4,5])
+datos.columns = nombres_columnas
+Lectura = datos[Entrada]
+# Convertir los datos a números
+emg = Lectura.apply(pd.to_numeric)
+
+emg.index = emg.index / 1000
+VCC = 3.3  # Operating voltage
+G_EMG = 1009  # Sensor gain
+n_bits = 10  # Number of bits for ADC
+
+# Convert ADC to EEG(V)
+#Lectura = (Lectura / ((2**n_bits) - 0.5)) * VCC / G_EEG
+emg_v = ((((emg)/(2**n_bits))-1/2)*VCC)/G_EMG
+
+# Convert EEG(V) to EEG(uV)
+emg_signal = emg_v * 1e6
+
+
+# Parámetros del filtro wavelet óptimos según Phinyomark et al.
+wavelet_type = 'db1'  # También puedes probar 'bior1.1' o 'rbio1.1'
+decomposition_level = 6
+
+# Aplicar filtrado wavelet
+denoised_emg = wavelet_denoising_emg(emg_signal, wavelet_type, decomposition_level)
+
+# Calcular MSE entre señal original y filtrada
+mse = np.mean((emg_signal - denoised_emg) ** 2)
+print(f"MSE: {mse:.4f}")
+
+# Plotear la señal de EMG en el dominio del tiempo
+plt.figure()
+plt.subplot(121) 
+plt.plot(emg_signal[0:15], label='Señal EMG original')
+plt.title('Señal orignal de EMG Lectura de la prueba de preguntas complejas')
+plt.xlabel("Tiempo (s)")
+plt.ylabel("Amplitud (uV)")
+plt.grid(True)
+
+plt.subplot(122)
+plt.plot(emg.index[0:15000], denoised_emg[0:15000],label='Señal EMG filtrada',color="orange")
 plt.title(f'Filtrado Wavelet de Señal EMG usando {wavelet_type}')
-plt.show()
+plt.xlabel("Tiempo (s)")
+plt.ylabel("Amplitud (uV)")
+plt.grid(True)
+
+plt.show() 
 
 ```
 
 **Código de ploteo para EEG pre y post filtrado:**
 ```python
+import pywt
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import re
+def wavelet_denoising_emg(signal, wavelet, level, threshold_method='universal'):
+    # Descomposición wavelet 
+    coeffs = pywt.wavedec(signal, wavelet, level=level)
+    
+    # Estimación del umbral usando el método universal
+    threshold = np.sqrt(2 * np.log(len(signal)))
+    
+    # Umbralización suave de los coeficientes de detalle
+    for i in range(1, len(coeffs)):
+        coeffs[i] = pywt.threshold(coeffs[i], threshold * np.median(np.abs(coeffs[i])) / 0.6745, mode='soft')
+    
+    # Reconstrucción de la señal
+    denoised_signal = pywt.waverec(coeffs, wavelet)
+    
+    return denoised_signal
+
+def extraer_nombres_columnas(archivo):
+    with open(archivo, 'r') as f:
+        for linea in f:
+            if linea.startswith("#"):
+                columnas = re.findall(r'column":\s*\[(.*?)\]', linea)
+                entrada = re.findall(r'label":\s*\[(.*?)\]', linea)
+                if columnas:
+                    if entrada:
+                        # Extraer la lista de nombres de columna de la línea
+                        column_names = [name.strip().strip('"') for name in columnas[0].split(',')]
+                        # Extraemos los canales usados
+                        entrada = [name.strip().strip('"') for name in entrada[0].split(',')]
+                        return column_names, entrada [0]
+                    else:
+                        continue
+                else:
+                    continue
+
+# Cargar los datos desde el archivo TXT
+archivo = "C:/Users/Equipo/OneDrive/Escritorio/Introduccion_a_señales_biomedicas/Github/inb_2024_gh12/ISB_Informes/L5_Lectura_de_EEG/EEG_L5/BiTalino/Prueba_Preguntas_complejas.txt"
+
+#Del código de ploteo de datos del laboratorio de emg
+nombres_columnas,Entrada=extraer_nombres_columnas(archivo)
+datos = pd.read_csv(archivo, sep='\t', skiprows=3, header=None, usecols=[0, 1 ,2,3,4,5])
+datos.columns = nombres_columnas
+Lectura = datos[Entrada]
+# Convertir los datos a números
+emg = Lectura.apply(pd.to_numeric)
+
+emg.index = emg.index / 1000
+VCC = 3.3  # Operating voltage
+G_EMG = 41782  # Sensor gain
+n_bits = 10  # Number of bits for ADC
+
+# Convert ADC to EEG(V)
+#Lectura = (Lectura / ((2**n_bits) - 0.5)) * VCC / G_EEG
+emg_v = ((((emg)/(2**n_bits))-1/2)*VCC)/G_EMG
+
+# Convert EEG(V) to EEG(uV)
+emg_signal = emg_v * 1e6
+
+
+# Parámetros del filtro wavelet óptimos según Phinyomark et al.
+wavelet_type = 'db1'  # También puedes probar 'bior1.1' o 'rbio1.1'
+decomposition_level = 6
+
+# Aplicar filtrado wavelet
+denoised_emg = wavelet_denoising_emg(emg_signal, wavelet_type, decomposition_level)
+
+# Calcular MSE entre señal original y filtrada
+mse = np.mean((emg_signal - denoised_emg) ** 2)
+print(f"MSE: {mse:.4f}")
+
+# Plotear la señal de EMG en el dominio del tiempo
+plt.figure()
+plt.subplot(121) 
+plt.plot(emg_signal[0:15], label='Señal EEG original')
+plt.title('Señal orignal de EEG Lectura de la prueba de preguntas complejas')
+plt.xlabel("Tiempo (s)")
+plt.ylabel("Amplitud (uV)")
+plt.grid(True)
+
+plt.subplot(122)
+plt.plot(emg.index[0:15000], denoised_emg[0:15000],label='Señal EEG filtrada',color="orange")
+plt.title(f'Filtrado Wavelet de Señal EEG usando {wavelet_type}')
+plt.xlabel("Tiempo (s)")
+plt.ylabel("Amplitud (uV)")
+plt.grid(True)
+
+plt.show() 
 
 ```
 
@@ -268,10 +461,10 @@ plt.show()
 
 ### **Ejercicio ECG** <a name="t8"></a>
 | Campo de actividad | Señal Cruda | Filtro Wavelet |
-|-----------------|-------------------------|-----------|
-| Basal             |                        |     |
-| Inhalación Exhalación            |                      |      |
-| Post Ejercicios            |                      |  |
+|--------------------|-------------------------|-----------|
+| Basal              |![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|
+| Inhalación Exhalación            |![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|
+| Post Ejercicios            |![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|
 
 
 <p align="center">
@@ -282,9 +475,9 @@ plt.show()
 ### **Ejercicio EMG** <a name="t9"></a>
 | Campo de actividad | Señal Cruda | Filtro Wavelet |
 |-----------------|-------------------------|-----------|
-| Bicep Braquial             |                        |     |
-| Antebrazo en Supinación        |                      |      |
-| Pulgar en supinacion            |                      |  |
+| Bicep Braquial             |![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|
+| Antebrazo en Supinación        |![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|
+| Pulgar en supinacion            |![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|
 
 <p align="center">
   <b>Tabla 3. Resumen de la señal filtrada para la data EMG</b>
@@ -294,9 +487,9 @@ plt.show()
 ### **Ejercicio EEG** <a name="t10"></a>
 | Campo de actividad | Señal Cruda | Filtro Wavelet |
 |-----------------|-------------------------|-----------|
-| Basal           |                        |     |
-| OJOS CERRADOS - ABIERTOS       |                      |      |
-| PREGUNTAS COMPLEJAS           |                      |  |
+| Basal           |![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|
+| OJOS CERRADOS - ABIERTOS       |![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|
+| PREGUNTAS COMPLEJAS           |![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|
 
 
 <p align="center">
