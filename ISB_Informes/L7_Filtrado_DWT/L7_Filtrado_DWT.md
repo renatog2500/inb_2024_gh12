@@ -462,9 +462,9 @@ plt.show()
 ### **Ejercicio ECG** <a name="t8"></a>
 | Campo de actividad | Señal Cruda | Filtro Wavelet |
 |--------------------|-------------------------|-----------|
-| Basal              |![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|
-| Inhalación Exhalación            |![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|
-| Post Ejercicios            |![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|
+| Basal              |![Ejemplo](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|![Ejemplo](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Wavelet_Lectura_ECG_basal.png)|
+| Inhalación Exhalación            |![Ejemplo](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_inhalaci%C3%B3n_exhalaci%C3%B3n.png)|![Ejemplo](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Wavelet_Lectura_ECG_inhalaci%C3%B3n_exhalaci%C3%B3n.png)|
+| Post Ejercicios            |![Ejemplo](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_post_ejercicio.png)|![Ejemplo](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Wavelet_Lectura_ECG_post_ejercicio.png)|
 
 
 <p align="center">
@@ -475,9 +475,9 @@ plt.show()
 ### **Ejercicio EMG** <a name="t9"></a>
 | Campo de actividad | Señal Cruda | Filtro Wavelet |
 |-----------------|-------------------------|-----------|
-| Bicep Braquial             |![Ejemplo](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|
-| Antebrazo en Supinación        |![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|
-| Pulgar en supinacion            |![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|
+| Bicep Braquial             |![Ejemplo](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_bicep_braquial.png)|![Ejemplo](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/WaveLet_Lectura_bicep_braquial.png)|
+| Antebrazo en Supinación        |![Ejemplo](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_supinaci%C3%B3n_antebrazo.png)|![Ejemplo](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/WaveLet_Lectura_supinaci%C3%B3n_antebrazo.png)|
+| Pulgar en supinacion            |![Ejemplo](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_pulgar_supinaci%C3%B3n_EMG.png)|![Ejemplo](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/WaveLet_Lectura_pulgar_supinaci%C3%B3n_EMG.png)|
 
 <p align="center">
   <b>Tabla 3. Resumen de la señal filtrada para la data EMG</b>
@@ -487,9 +487,9 @@ plt.show()
 ### **Ejercicio EEG** <a name="t10"></a>
 | Campo de actividad | Señal Cruda | Filtro Wavelet |
 |-----------------|-------------------------|-----------|
-| Basal           |![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|
-| OJOS CERRADOS - ABIERTOS       |![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|
-| PREGUNTAS COMPLEJAS           |![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|![Ejemplo](ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_ECG_basal.png)|
+| Basal           |![Ejemplo](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_EEG_referencial.png)|![Ejemplo](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Wavelet_Lectura_EEG_referencial.png)|
+| OJOS CERRADOS - ABIERTOS       |![Ejemplo](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_EEG_Prueba_ojos_abiertos_cerrado_5s.png)|![Ejemplo](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Wavelet_Lectura_EEG_Prueba_ojos_abiertos_cerrado_5s.png)|
+| PREGUNTAS COMPLEJAS           |![Ejemplo](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_EEG_Prueba_Preguntas_complejas.png)|![Ejemplo](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Wavelet_Lectura_EEG_Prueba_Preguntas_complejas.png)|
 
 
 <p align="center">
