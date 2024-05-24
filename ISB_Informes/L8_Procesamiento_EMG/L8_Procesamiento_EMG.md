@@ -9,10 +9,9 @@
    4.1.[Materiales y Equipo utilizado](#t5)\
    4.2.[Procedimiento](#t6)
 6. [Resultados](#t7)\
-   5.1 [Ejercicio ECG](#t8)\
-7. [Discusión](#t9)\
-8. [Códigos](#t10)\
-7. [Bibliografía](#t11)
+7. [Discusión](#t8)\
+8. [Archivos](#t19)\
+7. [Bibliografía](#t10)
 __________________________________________________________________________________________________
 ## **Lista de participantes** <a name = "t1"></a>
 * Jimena Alpiste Espinoza - 74297329
@@ -29,7 +28,7 @@ ________________________________________________________________________________
 * Verificar el comportamiento de la señal EMG: Asegúrate de examinar el comportamiento general de la señal EMG para identificar patrones, tendencias o anomalías que puedan ser relevantes para tu análisis o aplicación específica.
   
 ## Metodología <a name="t4"></a>
-En este laboratorio, nos enfocamos en el diseño e implementación de filtros Wavelets con el objetivo de atenuar las frecuencias altas indeseadas, originadas por el ruido presente en las señales ECG, EMG y EEG adquiridas previamente utilizando el Kit BITalino. 
+En este laboratorio, nos enfocaremos en el tratamiento de la señal de EMG adquirida previamente utilizando el Kit BITalino. 
 
 ### **Materiales y Equipo Utilizado** <a name="t5"></a>
 <table align="center">
@@ -55,9 +54,6 @@ En este laboratorio, nos enfocamos en el diseño e implementación de filtros Wa
 
 ### **Procedimiento** <a name="t6"></a>
 
-
-
-***Justificación de parámetros para la Señal ECG***
 **Señal EMG**
 Para el EMG, se tomaron mediciones de los siguiente músculos en distintos estados:
 
@@ -85,7 +81,8 @@ Donde: donde σ es la desviación estándar del ruido y 𝑁 es la longitud de l
 
 ## Resultados   <a name="t7"></a>
 
-### **Ejercicio EMG** <a name="t9"></a>
+**Ejercicio EMG** 
+
 | Campo de actividad | Señal Cruda | Filtro Wavelet |
 |-----------------|-------------------------|-----------|
 | Bicep Braquial             |![Ejemplo](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_bicep_braquial.png)|![Ejemplo](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/WaveLet_Lectura_bicep_braquial.png)|
@@ -97,12 +94,14 @@ Donde: donde σ es la desviación estándar del ruido y 𝑁 es la longitud de l
 </p>
 
 
-## Discusión <a name="t11"></a>
+## Discusión <a name="t8"></a>
+
+
+## Archivos <a name="t9"></a>
 
 
 
-
-## Bibliografía: <a name="t15"></a>
+## Bibliografía: <a name="t10"></a>
 
 
 
