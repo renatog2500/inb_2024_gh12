@@ -4,7 +4,8 @@ from scipy.signal import firwin, freqz, lfilter, iirfilter, butter
 
 
 # Cargar los datos desde el archivo TXT
-archivo_txt = "C:/Users/Equipo/OneDrive/Escritorio/Introduccion_a_señales_biomedicas/Github/inb_2024_gh12/ISB_Informes/L5_Lectura_de_EEG/EEG_L5/BiTalino/Prueba_ojos_abiertos_cerrado_5s.txt"
+archivo_txt = "C:/Users/Jossymar/Desktop/Introduccion a señales/github/inb_2024_gh12/ISB_Informes/L5_Lectura_de_EEG/EEG_L5/BiTalino/Pruebas_ojos_abiertos_cerrado_5s.txt"
+
 datos = np.loadtxt(archivo_txt)
 lectura = datos[:, 5]  # Sexta columna
 

@@ -1,10 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.signal import firwin, freqz, lfilter, iirfilter, butter
-import pywt
+#import pywt
 
 # Cargar los datos desde el archivo TXT
-archivo_txt = "C:/Users/Equipo/OneDrive/Escritorio/Introduccion_a_señales_biomedicas/Github/inb_2024_gh12/ISB_Informes/L4_Lectura_de_ECG/ECG_L4/Post_ejercicio.txt"
+archivo_txt = "C:/Users/Jossymar/Desktop/Introduccion a señales/github/inb_2024_gh12/ISB_Informes/L4_Lectura_de_ECG/ECG_L4/basal_1_normal.txt"
 datos_emg = np.loadtxt(archivo_txt)
 ecg = datos_emg[:, 5]  # Sexta columna
 
