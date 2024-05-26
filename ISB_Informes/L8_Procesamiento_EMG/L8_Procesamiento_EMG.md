@@ -7,15 +7,14 @@
 3. [Objetivos del laboratorio](#t3)
 4. [Metodología](#t4)\
    4.1.[Materiales y Equipo utilizado](#t5)\
-   4.2.[Procedimiento](#t6)
-       4.2.1.[Filtrado](#t7)
-       4.2.2.[Elección del filtro](#t8)
-       4.2.3.[Segmentación](#t9)
-       4.2.4.[Extracción de características](#t10)
-6. [Resultados](#t11)
-7. [Discusión](#t12)
-8. [Archivos](#t13)
-7. [Bibliografía](#t14)
+   4.2.[Procedimiento](#t6)\
+       4.2.1.[Filtrado](#t7)\
+       4.2.2.[Elección del filtro](#t8)\
+       4.2.3.[Segmentación](#t9)\
+       4.2.4.[Extracción de características](#t10)\
+7. [Discusión](#t11)
+8. [Archivos](#t12)
+7. [Bibliografía](#t13)
 __________________________________________________________________________________________________
 ## **Lista de participantes** <a name = "t1"></a>
 * Jimena Alpiste Espinoza - 74297329
@@ -87,7 +86,7 @@ En este laboratorio, nos enfocaremos en el tratamiento de la señal de EMG adqui
 
 ### **Procedimiento** <a name="t6"></a>
 
-**Procesamiento EMG**
+## Filtros para el procesamiento de EMG <a name="t7"></a>
 El artículo "Surface Electromyography Signal Processing and Classification Techniques" [3] fue creado por Rubana et. al, aborda dos áreas principales en el procesamiento y clasificación de señales de electromiografía de superficie (sEMG). La primera área se enfoca en los métodos de preprocesamiento para eliminar posibles artefactos y ruido de las señales sEMG, con el objetivo de mejorar la calidad de la señal antes de su análisis posterior. La segunda área se centra en una explicación concisa de las diferentes técnicas utilizadas para procesar y clasificar las señales sEMG.
 
 El propósito fundamental de este estudio fue revisar los desarrollos y avances más recientes relacionados con el procesamiento y clasificación de señales sEMG. Los autores realizaron una comparación de diversos métodos de análisis de señales sEMG en términos de su rendimiento, con el objetivo de proporcionar una evaluación más estandarizada y precisa de los hallazgos neurofisiológicos, de rehabilitación y de tecnología asistencial [3].
@@ -204,8 +203,7 @@ coefficients_filtered = pywt.threshold(coefficients, threshold, mode='soft')
 emg_filtered_db6 = pywt.waverec(coefficients_filtered, 'db6')
 ```
 
-
-**Comparación de filtros**
+## Comparación de filtros  <a name="t8"></a>
 En el artículo "Surface electromyography signal denoising via EEMD and improved wavelet thresholds" de Sun et al. [5], los autores comparan el rendimiento de diferentes algoritmos de filtrado de señales EMG utilizando tres métodos cuantitativos: la relación señal-ruido (SNR), que mide la relación entre la energía de la señal y la energía del error; la relación señal-ruido pico (PSNR), que representa la relación entre la máxima potencia posible de una señal y la potencia del ruido que afecta su fidelidad; y el error cuadrático medio (RMSE), que define la energía de la señal de error durante el filtrado. Los autores aplican estos métodos a señales EMG con diferentes niveles de ruido gaussiano blanco y comparan los resultados para determinar qué algoritmo logra el mejor rendimiento de filtrado. Haciendo estas comparaciones, se basan en los valores más altos de SNR y PSNR, y el valor más bajo de RMSE para determinar cuál es el mejor filtro utilizado. Donde el resuldato del código nos indicó que el tercer filtro es el mejor.
 
 ***Código:***
@@ -266,7 +264,7 @@ compare_filtering_methods(original_signal, filtered_signal1, filtered_signal2, f
 </div>
 
 
-**Segmentación:**
+## Segmentación  <a name="t9"></a>
 
 El ventaneo es una técnica crucial para la extracción de características de las señales de electromiografía de superficie (sEMG) con el fin de reconocer movimientos y patrones musculares. Aunque existe una relación entre las regiones de actividad muscular y los movimientos de las extremidades, esta relación no es totalmente directa. La intensidad de la actividad muscular en función de la posición de los músculos activos proporciona una representación más precisa de estos movimientos complejos. En este contexto, la longitud de la ventana determina la cantidad de muestras utilizadas para el reconocimiento, dónde ventanas más grandes mejoran la precisión, pero a costa de una mayor latencia. Basándonos en la investigación del paper “An Improved Feature Extraction Method for Surface Electromyography Based on Muscle Activity Regions”  se emplea un algoritmo de ventana deslizante con una ventana de 1000 ms y un incremento de 200 ms para extraer características de sEMG de manera óptima [6].
 
@@ -326,7 +324,7 @@ plt.show()
 </div>
 
 
-**Extracción de características**
+## Extracción de características  <a name="t10"></a>
 
 En el artículo "Surface Electromyography Signal Processing and Classification Techniques" [3], los autores respaldan la elección de la extracción de características en el dominio del tiempo para las señales de electromiografía de superficie (sEMG) en lugar de las técnicas en el dominio de la frecuencia y tiempo-frecuencia, debido a varias ventajas significativas.
 
@@ -419,7 +417,7 @@ plt.show()
 </div>
 
 
-## Discusión de los resultados  <a name="t8"></a>
+## Discusión de los resultados  <a name="t11"></a>
 
 * Comparación de Filtros:
   
@@ -453,12 +451,12 @@ Finalmente los cruces por cero (ZC) cuentan el número de veces que la señal EM
 
 
 
-## Archivos <a name="t9"></a>
+## Archivos <a name="t12"></a>
 
 - [Programa de procesamiento de señal EMG (python)](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L8_Procesamiento_EMG/LAB_8.ipynb) 
 
 
-## Bibliografía: <a name="t10"></a>
+## Bibliografía: <a name="t13"></a>
 
 [1] M. B. I. Reaz, M. S. Hussain, y F. Mohd-Yasin, “Techniques of EMG signal analysis: detection, processing, classification and applications”, Biological Procedures Online, vol. 8, n.o 1, pp. 11-35, dic. 2006, doi: 10.1251/bpo115.
  
