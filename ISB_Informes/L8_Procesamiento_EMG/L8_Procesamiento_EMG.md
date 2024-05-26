@@ -20,6 +20,35 @@ ________________________________________________________________________________
 
 
 ## Introducción  <a name = "t2"></a>
+La electromiografía (EMG) es una técnica versátil que nos permite estudiar las señales eléctricas generadas por la actividad muscular. En ella, se registran los potenciales eléctricos producidos por las corrientes iónicas que fluyen durante la contracción muscular, reflejando así la actividad neuromuscular [1]. Estas señales bioeléctricas son iniciadas por las neuronas motoras del sistema nervioso central, que controlan la función muscular [2].
+
+Las señales EMG pueden clasificarse en dos tipos principales según el método de adquisición: EMG de superficie y EMG intramuscular. La EMG de superficie utiliza electrodos no invasivos colocados sobre la piel, mientras que la EMG intramuscular implica la inserción de electrodos dentro del músculo [3]. Actualmente, se prefieren las señales detectadas en la superficie debido a su carácter no invasivo y su capacidad para obtener información sobre el tiempo o la intensidad de la activación muscular superficial [3].
+
+Las señales electromiográficas (EMG) se consideran altamente útiles como señales electrofisiológicas, tanto en el campo médico como en el de ingeniería. Sin embargo, cada vez que se captura una señal EMG del músculo, esta tiende a contaminarse con varios tipos de ruido. Factores como el movimiento de los electrodos, la actividad muscular cercana, las interferencias electromagnéticas y el ruido inherente de los dispositivos de adquisición pueden introducir artefactos indeseados en la señal [3].
+
+Por lo tanto, un adecuado procesamiento de la señal EMG es crucial para eliminar o minimizar estos ruidos y obtener información confiable y significativa de la actividad neuromuscular. Técnicas avanzadas de procesamiento de señales, como el filtrado, la eliminación de artefactos y la extracción de características, son fundamentales para aprovechar al máximo el potencial de la EMG en aplicaciones médicas, biomecánicas y de ingeniería. 
+
+**Adquisición de señales**
+
+Las señales de electromiografía de superficie (sEMG) se caracterizan por no ser estacionarias, lo que implica que su comportamiento y características no permanecen constantes a lo largo del tiempo. A pesar de esta variabilidad, es posible capturar estas señales utilizando electrodos superficiales, tal como se mencionó anteriormente. 
+Estos se pueden clasificar según su diseño y su disposición. En cuanto a la adquisición precisa de estas señales sEMG, el sensor utilizado debe cumplir con el teorema de muestreo de Nyquist-Shannon. Esto significa que la frecuencia de muestreo debe ser al menos el doble de la frecuencia más alta presente en las señales sEMG. Por lo tanto, se recomienda una frecuencia de muestreo superior a 1000 Hz para capturar adecuadamente estas señales [4].
+
+
+**Pre procesamiento**
+
+Las señales obtenidas a través de electrodos de superficie presentan una amplitud baja y un nivel considerable de ruido, lo que dificulta su análisis directo. Por lo tanto, es necesario realizar una serie de pasos de preparación antes de poder extraer información significativa de estas señales.
+
+* **Filtrado**: En esta etapa, se aplican técnicas de filtrado para eliminar cualquier tipo de interferencia no deseada presente en las señales electromiográficas. Esto ayuda a mejorar la calidad de los datos al eliminar artefactos y ruido, permitiendo un análisis más preciso y confiable [4] .
+
+* **Rectificación**: La rectificación es un proceso esencial que se utiliza para abordar la parte negativa de las señales electromiográficas. Al rectificar las señales, se convierten en valores absolutos, lo que facilita la interpretación de la activación neural y mejora la representación de la señal para su posterior análisis[4] .
+
+* **Normalización**: Dado que las señales electromiográficas pueden variar significativamente entre diferentes individuos, es crucial normalizar la amplitud de estas señales para poder compararlas de manera efectiva. La normalización implica ajustar las señales a un valor de referencia bajo condiciones idénticas, lo que facilita la comparación entre sujetos y mejora la eficiencia computacional en etapas posteriores de procesamiento [4]. Sin embargo, para este laboratorio, no se realizará este análisis, ya que se estarán comparando las mediciones de una misma persona.
+
+* **Segmentación**: La segmentación divide las señales procesadas en segmentos más pequeños, lo que facilita la extracción de características relevantes de cada segmento. Esta división en segmentos permite un análisis más detallado de las señales y ayuda a equilibrar la necesidad de extraer características precisas con la minimización de retrasos computacionales, especialmente en sistemas en tiempo real [4].
+
+**Extracción de características:** 
+La extracción de características es un paso crítico en el análisis de señales electromiográficas, donde se identifican y derivan atributos significativos de los datos preprocesados para mejorar la precisión de la clasificación. Esta etapa implica la selección y extracción de características relevantes de las señales, lo que ayuda a reducir la complejidad de los datos y simplifica los procesos de clasificación posteriores. La extracción de características puede incluir atributos como el dominio del tiempo, dominio de la frecuencia y dominio tiempo-frecuencia, con el objetivo de proporcionar información relevante para la clasificación precisa de las señales electromiográficas [4] .
+
 
 
 ## **Objetivos del Laboratorio** <a name = "t3"></a>
@@ -54,44 +83,223 @@ En este laboratorio, nos enfocaremos en el tratamiento de la señal de EMG adqui
 
 ### **Procedimiento** <a name="t6"></a>
 
-**Señal EMG**
-Para el EMG, se tomaron mediciones de los siguiente músculos en distintos estados:
+**Procesamiento EMG**
+El artículo "Surface Electromyography Signal Processing and Classification Techniques" [3] fue creado por Rubana et. al, aborda dos áreas principales en el procesamiento y clasificación de señales de electromiografía de superficie (sEMG). La primera área se enfoca en los métodos de preprocesamiento para eliminar posibles artefactos y ruido de las señales sEMG, con el objetivo de mejorar la calidad de la señal antes de su análisis posterior. La segunda área se centra en una explicación concisa de las diferentes técnicas utilizadas para procesar y clasificar las señales sEMG.
 
-- **Actividad muscular del bíceps braquial (brazo):** Durante esta prueba, se registró la actividad eléctrica del bíceps braquial en estados de reposo y contracción. Para minimizar las interferencias, el electrodo de referencia se ubicó en la región del codo.
+El propósito fundamental de este estudio fue revisar los desarrollos y avances más recientes relacionados con el procesamiento y clasificación de señales sEMG. Los autores realizaron una comparación de diversos métodos de análisis de señales sEMG en términos de su rendimiento, con el objetivo de proporcionar una evaluación más estandarizada y precisa de los hallazgos neurofisiológicos, de rehabilitación y de tecnología asistencial [3].
 
-- **Actividad muscular del flexor profundo de los dedos (antebrazo):** En estas mediciones, se registró la actividad eléctrica durante la flexión de los dedos hacia la palma de la mano. Al igual que en el ensayo anterior, el electrodo de referencia se colocó en la región del codo.
+En el contexto de este laboratorio, este estudio resulta de gran relevancia ya que proporciona una base sólida para seleccionar y aplicar técnicas de filtrado adecuadas a las señales sEMG. En particular, nos enfocaremos en el uso de tres filtros basados en la transformada wavelet discreta (DWT) con diferentes funciones wavelet: Daubechies 2 (db2), Daubechies 4 (db4) y Daubechies 6 (db6), todas aplicadas a un nivel de descomposición 4.
 
-- **Actividad muscular del flexor radial del caropo (antebrazo)**: En estas mediciones, se registró la actividad eléctrica durante la supinación del antebrazo . Al igual que en el ensayo anterior, el electrodo de referencia se colocó en la región del codo.
+La selección de estos filtros se basa en las recomendaciones y hallazgos presentados en el artículo, donde se destaca la capacidad de la DWT para reducir el ruido y preservar las características importantes de las señales sEMG. Además, el estudio sugiere que el nivel de descomposición 4 proporciona un buen compromiso en la reducción de ruido para diferentes niveles de contaminación de la señal.
 
-***Justificación de parámetros para la Señal EMG***
+**1. Transformada Wavelet Discreta (DWT) con filtro Daubechies 2 (db2):**
 
-En un estudio exhaustivo realizado por Phinyomark et al. [6], se investigó el desempeño de diferentes funciones wavelet madre y niveles de descomposición para el filtrado de ruido en señales EMG, con el objetivo de identificar los parámetros óptimos que minimizaran el error cuadrático medio (MSE) entre la señal original y la señal filtrada. Los autores evaluaron un total de 53 funciones wavelet, incluyendo las familias Daubechies, Symlet, Coiflet, BiorSplines y ReverseBior, así como la wavelet Discreta de Meyer.
+***Justificación de uso:*** La DWT con filtro db2 al nivel de descomposición 4 se seleccionó como una opción para filtrar señales EMG debido a su capacidad para reducir el ruido y preservar las características importantes de la señal.
 
-Los resultados de Phinyomark et al. [6] revelaron que las funciones wavelet db1 (Daubechies de primer orden), bior1.1 (BiorSplines de primer orden) y rbio1.1 (ReverseBior de primer orden) proporcionaron el mejor desempeño en términos de reducción de ruido, con el mínimo MSE. Además, se encontró que el nivel de descomposición óptimo para el filtrado wavelet de señales EMG era el nivel 4. Los autores también destacaron que wavelets con forma simple y baja frecuencia eran más adecuadas para las características morfológicas de las señales EMG.
+| Parámetro                 | Valor                                                |
+|---------------------------|----------------------------------------------------|
+| Función wavelet           | Daubechies 2 (db2)                                |
+| Nivel de descomposición   | 4                                                 |
+| Método de umbralización   | Umbralización universal con estimación de sigma   |
 
-***Parámetros elegidos***
+***Código de implementación***
+```python
+import pywt
+import numpy as np
 
-| Función Wavelet | Nivel  | Umbral | 
-| --------------- | -----  | ------ |
-|       db1      |   4    |  $\sigma \sqrt{2 \log N}$  |
+# Cargar la señal EMG
+emg_signal = [...]
 
-Donde: donde σ es la desviación estándar del ruido y 𝑁 es la longitud de la señal
+# Aplicar la DWT con filtro db2 al nivel de descomposición 4
+coefficients = pywt.wavedec(emg_signal, 'db2', level=4)
+
+# Estimar la desviación estándar del ruido
+sigma = np.median(np.abs(coefficients[1])) / 0.6745
+
+# Calcular el umbral universal
+threshold = sigma * np.sqrt(2 * np.log(len(emg_signal)))
+
+# Realizar la umbralización suave
+coefficients_filtered = pywt.threshold(coefficients, threshold, mode='soft')
+
+# Reconstruir la señal filtrada
+emg_filtered_db2 = pywt.waverec(coefficients_filtered, 'db2')
+```
+
+**2.  Transformada Wavelet Discreta (DWT) con filtro Daubechies 4 (db4):**
+
+***Justificación de uso:*** La DWT con filtro db4 al nivel de descomposición 4 se seleccionó debido a su capacidad para proporcionar un buen compromiso en la reducción de ruido y la preservación de características importantes en señales EMG con diferentes niveles de ruido.
+
+| Parámetro                 | Valor                                                |
+|---------------------------|----------------------------------------------------|
+| Función wavelet           | Daubechies 4 (db4)                                |
+| Nivel de descomposición   | 4                                                 |
+| Método de umbralización   | Umbralización universal con estimación de sigma   |
+
+***Código:***
+
+```
+python
+import pywt
+import numpy as np
+
+# Cargar la señal EMG
+emg_signal = [...]
+
+# Aplicar la DWT con filtro db4 al nivel de descomposición 4
+coefficients = pywt.wavedec(emg_signal, 'db4', level=4)
+
+# Estimar la desviación estándar del ruido
+sigma = np.median(np.abs(coefficients[1])) / 0.6745
+
+# Calcular el umbral universal
+threshold = sigma * np.sqrt(2 * np.log(len(emg_signal)))
+
+# Realizar la umbralización suave
+coefficients_filtered = pywt.threshold(coefficients, threshold, mode='soft')
+
+# Reconstruir la señal filtrada
+emg_filtered_db4 = pywt.waverec(coefficients_filtered, 'db4')
+```
+
+**3. Transformada Wavelet Discreta (DWT) con filtro Daubechies 6 (db6):**
+
+***Justificación del uso:*** La DWT con filtro db6 al nivel de descomposición 4 se seleccionó como otra opción para filtrar señales EMG, proporcionando un equilibrio entre la reducción de ruido y la preservación de características relevantes.
 
 
+| Parámetro                           | Valor                                                                       |
+|-------------------------------------|---------------------------------------------------------------------|
+| Función wavelet                 | Daubechies 6 (db6)                                                  |
+| Nivel de descomposición   | 4                                                                               |
+| Método de umbralización   | Umbralización universal con estimación de sigma   |
 
-## Resultados   <a name="t7"></a>
+***Código:***
 
-**Ejercicio EMG** 
+```
+python
+import pywt
+import numpy as np
 
-| Campo de actividad | Señal Cruda | Filtro Wavelet |
-|-----------------|-------------------------|-----------|
-| Bicep Braquial             |![Ejemplo](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_bicep_braquial.png)|![Ejemplo](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/WaveLet_Lectura_bicep_braquial.png)|
-| Antebrazo en Supinación        |![Ejemplo](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_supinaci%C3%B3n_antebrazo.png)|![Ejemplo](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/WaveLet_Lectura_supinaci%C3%B3n_antebrazo.png)|
-| Pulgar en supinacion            |![Ejemplo](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/Lectura_pulgar_supinaci%C3%B3n_EMG.png)|![Ejemplo](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L7_Filtrado_DWT/Imagenes_L7/WaveLet_Lectura_pulgar_supinaci%C3%B3n_EMG.png)|
+# Cargar la señal EMG
+emg_signal = [...]
 
-<p align="center">
-  <b>Tabla 3. Resumen de la señal filtrada para la data EMG</b>
-</p>
+# Aplicar la DWT con filtro db6 al nivel de descomposición 4
+coefficients = pywt.wavedec(emg_signal, 'db6', level=4)
+
+# Estimar la desviación estándar del ruido
+sigma = np.median(np.abs(coefficients[1])) / 0.6745
+
+# Calcular el umbral universal
+threshold = sigma * np.sqrt(2 * np.log(len(emg_signal)))
+
+# Realizar la umbralización suave
+coefficients_filtered = pywt.threshold(coefficients, threshold, mode='soft')
+
+# Reconstruir la señal filtrada
+emg_filtered_db6 = pywt.waverec(coefficients_filtered, 'db6')
+```
+
+
+**Comparación de filtros**
+En el artículo "Surface electromyography signal denoising via EEMD and improved wavelet thresholds" de Sun et al. [5], los autores comparan el rendimiento de diferentes algoritmos de filtrado de señales EMG utilizando tres métodos cuantitativos: la relación señal-ruido (SNR), que mide la relación entre la energía de la señal y la energía del error; la relación señal-ruido pico (PSNR), que representa la relación entre la máxima potencia posible de una señal y la potencia del ruido que afecta su fidelidad; y el error cuadrático medio (RMSE), que define la energía de la señal de error durante el filtrado. Los autores aplican estos métodos a señales EMG con diferentes niveles de ruido gaussiano blanco y comparan los resultados para determinar qué algoritmo logra el mejor rendimiento de filtrado. Haciendo estas comparaciones, se basan en los valores más altos de SNR y PSNR, y el valor más bajo de RMSE para determinar cuál es el mejor filtro utilizado.
+
+***Código:***
+
+```
+import numpy as np
+
+def snr(signal, filtered_signal):
+    noise = signal - filtered_signal
+    return 10 * np.log10(np.sum(signal**2) / np.sum(noise**2))
+
+def psnr(signal, filtered_signal):
+    mse = np.mean((signal - filtered_signal)**2)
+    return 20 * np.log10(np.max(signal) / np.sqrt(mse))
+
+def rmse(signal, filtered_signal):
+    return np.sqrt(np.mean((signal - filtered_signal)**2))
+
+def compare_filtering_methods(original_signal, filtered_signal1, filtered_signal2, filtered_signal3):
+    snr_results = [snr(original_signal, filtered_signal) for filtered_signal in [filtered_signal1, filtered_signal2, filtered_signal3]]
+    psnr_results = [psnr(original_signal, filtered_signal) for filtered_signal in [filtered_signal1, filtered_signal2, filtered_signal3]]
+    rmse_results = [rmse(original_signal, filtered_signal) for filtered_signal in [filtered_signal1, filtered_signal2, filtered_signal3]]
+
+    best_snr_index = np.argmax(snr_results)
+    best_psnr_index = np.argmax(psnr_results)
+    best_rmse_index = np.argmin(rmse_results)
+
+    if best_snr_index == best_psnr_index == best_rmse_index:
+        best_method = best_snr_index + 1
+    else:
+        best_method = np.argmax([snr_results[best_snr_index], psnr_results[best_psnr_index], -rmse_results[best_rmse_index]]) + 1
+
+    print(f"SNR Results: {snr_results}")
+    print(f"PSNR Results: {psnr_results}")
+    print(f"RMSE Results: {rmse_results}")
+    print(f"Best Filtering Method: Signal {best_method}")
+
+# Load the original EMG signal and the three filtered signals
+original_signal = signal_vm
+filtered_signal1 = emg_filtered_db2 
+filtered_signal2 = emg_filtered_db4 
+filtered_signal3 = emg_filtered_db6 
+
+# Compare the filtering methods
+compare_filtering_methods(original_signal, filtered_signal1, filtered_signal2, filtered_signal3)
+```
+
+
+**Segmentación:**
+El ventaneo es una técnica crucial para la extracción de características de las señales de electromiografía de superficie (sEMG) con el fin de reconocer movimientos y patrones musculares. Aunque existe una relación entre las regiones de actividad muscular y los movimientos de las extremidades, esta relación no es totalmente directa. La intensidad de la actividad muscular en función de la posición de los músculos activos proporciona una representación más precisa de estos movimientos complejos. En este contexto, la longitud de la ventana determina la cantidad de muestras utilizadas para el reconocimiento, dónde ventanas más grandes mejoran la precisión, pero a costa de una mayor latencia. Basándonos en la investigación del paper “An Improved Feature Extraction Method for Surface Electromyography Based on Muscle Activity Regions”  se emplea un algoritmo de ventana deslizante con una ventana de 1000 ms y un incremento de 200 ms para extraer características de sEMG de manera óptima [6].
+
+Además, esta elección se respalda con lo expuesto en el artículo "A Review of Classification Techniques of EMG Signals during Isotonic and Isometric Contractions" [7], el cual indica que las distintas longitudes de los datos de EMG impactan en su error de clasificación. Se ha confirmado que el rendimiento de la clasificación de características se ve comprometido al emplear segmentos de longitud menor a 128 ms, lo que resulta en un sesgo alto y una variación considerable en las características.
+
+Es importante destacar que en la generación de ventanas de datos se emplean dos métodos principales: adyacentes y superpuestos. En el caso de las ventanas adyacentes, la extracción y clasificación de características se lleva a cabo tras un cierto retraso de procesamiento, denotado como τ, que corresponde al tiempo necesario para calcular la característica y clasificar los datos [7]. Sin embargo, esta técnica presenta el inconveniente de que el procesador queda inactivo durante el tiempo restante de la longitud del segmento, como se menciona en la fuente " Moving Approximate Entropy and its Application to the Electromyographic Control of an Artificial Hand" [8].
+
+Por consiguiente, se opta por el enfoque de ventaneo superpuesto, donde el nuevo segmento se desplaza sobre el segmento actual con un tiempo de incremento menor que la longitud del segmento. Si bien esta elección no mejora la precisión de la clasificación, resulta crucial para la utilización de segmentos de 200 ms a fin de evitar retrasos temporales significativos.[9].
+
+***Código:***
+
+```python
+señal_filtrada=emg_filtered_db6
+# Definir la duración de la ventana y el aumento en segundos
+window_duration = 0.250  # 250 ms
+window_shift = 0.064     # 64 ms
+
+# Convertir la duración de la ventana y el aumento a muestras
+sampling_rate = len(señal_filtrada) / time[-1]  # Frecuencia de muestreo en muestras por segundo
+window_size = int(window_duration * sampling_rate)
+shift_size = int(window_shift * sampling_rate)
+
+segundo=30
+# Encontrar el índice a partir del cual la señal comienza desde el segundo 30
+start_index = np.searchsorted(time, segundo)
+
+# Segmentar la señal en ventanas a partir del segundo 9
+segments = []
+for start in range(start_index, len(signal_mv) - window_size + 1, shift_size):
+    end = start + window_size
+    segment = signal_mv[start:end]
+    segments.append(segment)
+
+# Convertir la lista de segmentos a un array numpy
+segments = np.array(segments)
+
+# Graficar algunos segmentos para ver los resultados
+plt.figure(figsize=(12, 8))
+for i in range(6):  # Graficar hasta 10 segmentos
+    plt.subplot(5, 2, i + 1)
+    plt.plot(np.arange(window_size) / sampling_rate, segments[i])
+    plt.xlabel('Tiempo (s)')
+    plt.ylabel('Valor EMG')
+    plt.title(f'Segmento {i+1} (a partir de {segundo}s)')
+    plt.grid(True)
+
+plt.tight_layout()
+plt.show()
+```
+
+**Extracción de características**
 
 
 ## Discusión <a name="t8"></a>
