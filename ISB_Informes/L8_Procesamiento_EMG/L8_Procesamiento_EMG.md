@@ -254,7 +254,7 @@ compare_filtering_methods(original_signal, filtered_signal1, filtered_signal2, f
 </div>
 
 <div align="center">
-    <img src="Imagenes_L8/Comparacion_Visual.JPG" alt="wCF14V" width="400">
+    <img src="Imagenes_L8/Comparacion_Visual.JPG" alt="wCF14V" width="600">
     <p><b>Figura 2. Comparación visual de los gráficos </b> </p>
 </div>
 
@@ -311,7 +311,7 @@ plt.tight_layout()
 plt.show()
 ```
 <div align="center">
-    <img src="Imagenes_L8/Segmentación.JPG" alt="wCF14V" width="400">
+    <img src="Imagenes_L8/Segmentación.JPG" alt="wCF14V" width="600">
     <p><b>Figura 3. Segmentación de la onda </b> </p>
 </div>
 
@@ -401,7 +401,7 @@ plt.show()
 
 ```
 <div align="center">
-    <img src="Imagenes_L8/Comparación_características.JPG" alt="wCF14V" width="400">
+    <img src="Imagenes_L8/Comparación_características.JPG" alt="wCF14V" width="600">
     <p><b>Figura 4. Representación de las características extraidas </b> </p>
 </div>
 
