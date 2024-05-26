@@ -202,7 +202,7 @@ emg_filtered_db6 = pywt.waverec(coefficients_filtered, 'db6')
 
 
 **Comparación de filtros**
-En el artículo "Surface electromyography signal denoising via EEMD and improved wavelet thresholds" de Sun et al. [5], los autores comparan el rendimiento de diferentes algoritmos de filtrado de señales EMG utilizando tres métodos cuantitativos: la relación señal-ruido (SNR), que mide la relación entre la energía de la señal y la energía del error; la relación señal-ruido pico (PSNR), que representa la relación entre la máxima potencia posible de una señal y la potencia del ruido que afecta su fidelidad; y el error cuadrático medio (RMSE), que define la energía de la señal de error durante el filtrado. Los autores aplican estos métodos a señales EMG con diferentes niveles de ruido gaussiano blanco y comparan los resultados para determinar qué algoritmo logra el mejor rendimiento de filtrado. Haciendo estas comparaciones, se basan en los valores más altos de SNR y PSNR, y el valor más bajo de RMSE para determinar cuál es el mejor filtro utilizado.
+En el artículo "Surface electromyography signal denoising via EEMD and improved wavelet thresholds" de Sun et al. [5], los autores comparan el rendimiento de diferentes algoritmos de filtrado de señales EMG utilizando tres métodos cuantitativos: la relación señal-ruido (SNR), que mide la relación entre la energía de la señal y la energía del error; la relación señal-ruido pico (PSNR), que representa la relación entre la máxima potencia posible de una señal y la potencia del ruido que afecta su fidelidad; y el error cuadrático medio (RMSE), que define la energía de la señal de error durante el filtrado. Los autores aplican estos métodos a señales EMG con diferentes niveles de ruido gaussiano blanco y comparan los resultados para determinar qué algoritmo logra el mejor rendimiento de filtrado. Haciendo estas comparaciones, se basan en los valores más altos de SNR y PSNR, y el valor más bajo de RMSE para determinar cuál es el mejor filtro utilizado. Donde el resuldato del código nos indicó que el tercer filtro es el mejor.
 
 ***Código:***
 
@@ -248,6 +248,15 @@ filtered_signal3 = emg_filtered_db6
 # Compare the filtering methods
 compare_filtering_methods(original_signal, filtered_signal1, filtered_signal2, filtered_signal3)
 ```
+<div align="center">
+    <img src="Imagenes_L8/Resultado.JPG" alt="wCF14V" width="400">
+    <p><b>Figura 1. Resultado del código </b> </p>
+</div>
+
+<div align="center">
+    <img src="Imagenes_L8/Comparacion_Visual.JPG" alt="wCF14V" width="400">
+    <p><b>Figura 2. Comparación visual de los gráficos </b> </p>
+</div>
 
 
 **Segmentación:**
@@ -301,7 +310,10 @@ for i in range(6):  # Graficar hasta 10 segmentos
 plt.tight_layout()
 plt.show()
 ```
-
+<div align="center">
+    <img src="Imagenes_L8/Segmentación.JPG" alt="wCF14V" width="400">
+    <p><b>Figura 3. Segmentación de la onda </b> </p>
+</div>
 
 **Extracción de características**
 
@@ -388,7 +400,10 @@ plt.tight_layout()
 plt.show()
 
 ```
-
+<div align="center">
+    <img src="Imagenes_L8/Comparación_características.JPG" alt="wCF14V" width="400">
+    <p><b>Figura 4. Representación de las características extraidas </b> </p>
+</div>
 
 ## Discusión <a name="t8"></a>
 
