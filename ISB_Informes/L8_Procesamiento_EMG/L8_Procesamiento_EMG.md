@@ -103,7 +103,8 @@ La selección de estos filtros se basa en las recomendaciones y hallazgos presen
 | Método de umbralización   | Umbralización universal con estimación de sigma   |
 
 ***Código de implementación***
-```
+
+```python
 import pywt
 import numpy as np
 
@@ -126,6 +127,7 @@ coefficients_filtered = pywt.threshold(coefficients, threshold, mode='soft')
 emg_filtered_db2 = pywt.waverec(coefficients_filtered, 'db2')
 ```
 
+
 **2.  Transformada Wavelet Discreta (DWT) con filtro Daubechies 4 (db4):**
 
 ***Justificación de uso:*** La DWT con filtro db4 al nivel de descomposición 4 se seleccionó debido a su capacidad para proporcionar un buen compromiso en la reducción de ruido y la preservación de características importantes en señales EMG con diferentes niveles de ruido.
@@ -138,8 +140,8 @@ emg_filtered_db2 = pywt.waverec(coefficients_filtered, 'db2')
 
 ***Código:***
 
-```
-python
+```python
+
 import pywt
 import numpy as np
 
@@ -175,8 +177,7 @@ emg_filtered_db4 = pywt.waverec(coefficients_filtered, 'db4')
 
 ***Código:***
 
-```
-python
+```python
 import pywt
 import numpy as np
 
@@ -205,7 +206,7 @@ En el artículo "Surface electromyography signal denoising via EEMD and improved
 
 ***Código:***
 
-```
+```python
 import numpy as np
 
 def snr(signal, filtered_signal):
