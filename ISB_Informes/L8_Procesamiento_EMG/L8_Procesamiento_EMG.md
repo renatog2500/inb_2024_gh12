@@ -425,6 +425,18 @@ En conclusión, aunque no se observan diferencias sustanciales entre los tres fi
 
 * Segmentación: 
 
+Para la segmentación, hemos empleado una longitud de ventana de 1000 ms con un desplazamiento de 200 ms. A medida que avanzamos en la segmentación, observamos distintos patrones en los segmentos resultantes.
+
+En el primer segmento, notamos una línea evidente que representa la ausencia de información desde el inicio hasta los primeros 0.4 segundos. Posteriormente, la señal exhibe fluctuaciones representativas.
+
+Al comparar en el segundo segmento, la duración de la señal sin información se reduce a la mitad, comenzando desde el tiempo 0.2 del segmento anterior.
+
+Luego notamos que ya para el tercer segmento las fluctuaciones de la señal comienzan de manera inmediata. Este patrón se repite a lo largo de los 10 segmentos restantes. Este fenómeno refleja el desplazamiento en la segmentación, permitiendo un análisis más exhaustivo de la señal al abarcar una mayor cantidad de información en cada segmento. Este enfoque nos facilita la identificación y descarte de características irrelevantes en la extracción de datos de cada segmento que se realizará en la extracción de características.
+
+*Extracción de características: 
+
+
+
 ## Archivos <a name="t9"></a>
 
 - [Programa de procesamiento de señal EMG (python)](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L8_Procesamiento_EMG/LAB_8.ipynb) 
