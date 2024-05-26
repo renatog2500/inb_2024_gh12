@@ -55,9 +55,11 @@ La extracción de características es un paso crítico en el análisis de señal
 
 
 ## **Objetivos del Laboratorio** <a name = "t3"></a>
-* Obtener características estadísticas de la señal: Incluye la extracción de características como la amplitud de la señal, el valor promedio (media), la frecuencia y el valor Root Mean Square (RMS) de la señal EMG.
-* Realizar el análisis de las características y compararlo con valores de la literatura: Evalúa las características extraídas y compáralas con valores de referencia disponibles en la literatura. Esto ayuda a entender cómo se comporta la señal en relación con los datos previamente documentados.
-* Verificar el comportamiento de la señal EMG: Asegúrate de examinar el comportamiento general de la señal EMG para identificar patrones, tendencias o anomalías que puedan ser relevantes para tu análisis o aplicación específica.
+* Examinar detalladamente cada etapa involucrada en la adquisición y análisis de señales electromiográficas (EMG), con el fin de comprender su funcionamiento y aplicación práctica de manera integral.
+* Implementar diferentes técnicas de filtrado para la eliminación de ruido y artefactos presentes en las señales EMG, con el propósito de obtener señales más limpias y precisas para su posterior procesamiento.
+* Evaluar y seleccionar el filtro más adecuado para el tratamiento de las señales EMG, mediante la comparación de su desempeño y la aplicación de criterios objetivos.
+* Segmentar las señales EMG en ventanas temporales, a fin de facilitar su análisis y extracción de características en intervalos específicos.
+* Aplicar métodos de extracción de características relevantes a partir de las señales EMG.
   
 ## Metodología <a name="t4"></a>
 En este laboratorio, nos enfocaremos en el tratamiento de la señal de EMG adquirida previamente utilizando el Kit BITalino. 
