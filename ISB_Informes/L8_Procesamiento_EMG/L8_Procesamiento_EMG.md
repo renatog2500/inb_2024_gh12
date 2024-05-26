@@ -435,6 +435,18 @@ Luego notamos que ya para el tercer segmento las fluctuaciones de la señal comi
 
 *Extracción de características: 
 
+El análisis de las características en el dominio del tiempo es una técnica ampliamente utilizada para evaluar y comprender las señales de electromiografía (EMG). En este estudio, se extrajeron cinco características clave: valor absoluto medio (MAV), pendiente del valor absoluto medio (MAV_slope), cambios de signo de pendiente (SSC), longitud de forma de onda (WL) y cruces por cero (ZC).
+
+El valor absoluto medio (MAV) proporciona una indicación de la amplitud media de la señal EMG. Un valor de MAV más alto sugiere una mayor actividad muscular o una señal con valores más altos en promedio. En los gráficos presentados, los segmentos 2 y 3 muestran los valores más altos de MAV, lo que indica una mayor amplitud de la señal EMG y, por lo tanto, una mayor actividad muscular en esos segmentos.
+
+Para la pendiente del valor absoluto medio (MAV_slope) se observa que el segmento 3 tiene la pendiente de MAV más alta, lo que sugiere un cambio más pronunciado en el valor absoluto medio de la señal en este segmento. Esto nos será útil para detectar transiciones rápidas en la señal.
+
+Los cambios de signo de pendiente (SSC) cuentan los puntos en los que la pendiente de la señal EMG cambia de dirección. Un valor más alto de SSC puede ser indicativo de una señal más compleja o con mayor ruido. Esto es observable en los gráficos del 6 al 10, indicando una actividad muscular más dinámica o una señal más ruidosa en esos segmentos.
+
+La longitud de forma de onda (WL) suma las diferencias absolutas entre puntos adyacentes, proporcionando una medida de la complejidad de la señal EMG. Los valores más elevados para esta característica se presenta en los segmentos  2, 3 y 4.
+
+Finalmente los cruces por cero (ZC) cuentan el número de veces que la señal EMG cruza el eje cero. Un valor más alto de ZC puede indicar una mayor variabilidad o ruido en la señal. En los gráficos, los segmentos 9 y 10 presentan los valores más altos, posiblemente debido a una mayor actividad muscular.
+
 
 
 ## Archivos <a name="t9"></a>
