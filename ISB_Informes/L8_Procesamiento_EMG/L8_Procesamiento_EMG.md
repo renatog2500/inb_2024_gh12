@@ -275,8 +275,8 @@ Por consiguiente, se opta por el enfoque de ventaneo superpuesto, donde el nuevo
 ```python
 señal_filtrada=emg_filtered_db6
 # Definir la duración de la ventana y el aumento en segundos
-window_duration = 0.250  # 250 ms
-window_shift = 0.064     # 64 ms
+window_duration = 1.000  # 1000 ms
+window_shift = 0.200     # 64 ms
 
 # Convertir la duración de la ventana y el aumento a muestras
 sampling_rate = len(señal_filtrada) / time[-1]  # Frecuencia de muestreo en muestras por segundo
