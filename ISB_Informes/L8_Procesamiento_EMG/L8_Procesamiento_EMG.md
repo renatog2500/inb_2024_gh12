@@ -8,10 +8,14 @@
 4. [Metodología](#t4)\
    4.1.[Materiales y Equipo utilizado](#t5)\
    4.2.[Procedimiento](#t6)
-6. [Resultados](#t7)
-7. [Discusión](#t8)
-8. [Archivos](#t9)
-7. [Bibliografía](#t10)
+       4.2.1.[Filtrado](#t7)
+       4.2.2.[Elección del filtro](#t8)
+       4.2.3.[Segmentación](#t9)
+       4.2.4.[Extracción de características](#t10)
+6. [Resultados](#t11)
+7. [Discusión](#t12)
+8. [Archivos](#t13)
+7. [Bibliografía](#t14)
 __________________________________________________________________________________________________
 ## **Lista de participantes** <a name = "t1"></a>
 * Jimena Alpiste Espinoza - 74297329
