@@ -409,7 +409,7 @@ plt.show()
 
 
 ## Archivos <a name="t9"></a>
-
+- [Programa de procesamiento de señal EMG (python)](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L8_Procesamiento_EMG/LAB_8.ipynb) 
 
 
 ## Bibliografía: <a name="t10"></a>
