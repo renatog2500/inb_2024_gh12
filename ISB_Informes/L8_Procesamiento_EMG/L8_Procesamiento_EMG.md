@@ -250,6 +250,7 @@ compare_filtering_methods(original_signal, filtered_signal1, filtered_signal2, f
 
 
 **Segmentación:**
+
 El ventaneo es una técnica crucial para la extracción de características de las señales de electromiografía de superficie (sEMG) con el fin de reconocer movimientos y patrones musculares. Aunque existe una relación entre las regiones de actividad muscular y los movimientos de las extremidades, esta relación no es totalmente directa. La intensidad de la actividad muscular en función de la posición de los músculos activos proporciona una representación más precisa de estos movimientos complejos. En este contexto, la longitud de la ventana determina la cantidad de muestras utilizadas para el reconocimiento, dónde ventanas más grandes mejoran la precisión, pero a costa de una mayor latencia. Basándonos en la investigación del paper “An Improved Feature Extraction Method for Surface Electromyography Based on Muscle Activity Regions”  se emplea un algoritmo de ventana deslizante con una ventana de 1000 ms y un incremento de 200 ms para extraer características de sEMG de manera óptima [6].
 
 Además, esta elección se respalda con lo expuesto en el artículo "A Review of Classification Techniques of EMG Signals during Isotonic and Isometric Contractions" [7], el cual indica que las distintas longitudes de los datos de EMG impactan en su error de clasificación. Se ha confirmado que el rendimiento de la clasificación de características se ve comprometido al emplear segmentos de longitud menor a 128 ms, lo que resulta en un sesgo alto y una variación considerable en las características.
@@ -257,6 +258,7 @@ Además, esta elección se respalda con lo expuesto en el artículo "A Review of
 Es importante destacar que en la generación de ventanas de datos se emplean dos métodos principales: adyacentes y superpuestos. En el caso de las ventanas adyacentes, la extracción y clasificación de características se lleva a cabo tras un cierto retraso de procesamiento, denotado como τ, que corresponde al tiempo necesario para calcular la característica y clasificar los datos [7]. Sin embargo, esta técnica presenta el inconveniente de que el procesador queda inactivo durante el tiempo restante de la longitud del segmento, como se menciona en la fuente " Moving Approximate Entropy and its Application to the Electromyographic Control of an Artificial Hand" [8].
 
 Por consiguiente, se opta por el enfoque de ventaneo superpuesto, donde el nuevo segmento se desplaza sobre el segmento actual con un tiempo de incremento menor que la longitud del segmento. Si bien esta elección no mejora la precisión de la clasificación, resulta crucial para la utilización de segmentos de 200 ms a fin de evitar retrasos temporales significativos.[9].
+
 
 ***Código:***
 
@@ -299,7 +301,92 @@ plt.tight_layout()
 plt.show()
 ```
 
+
 **Extracción de características**
+
+En el artículo "Surface Electromyography Signal Processing and Classification Techniques" [3], los autores respaldan la elección de la extracción de características en el dominio del tiempo para las señales de electromiografía de superficie (sEMG) en lugar de las técnicas en el dominio de la frecuencia y tiempo-frecuencia, debido a varias ventajas significativas.
+
+En este contexto, las características en el dominio del tiempo, como el valor absoluto medio (MAV), la pendiente del valor absoluto medio, los cambios de signo de pendiente (SSC), las longitudes de forma de onda (WL) y los cruces por cero (ZC), desarrolladas por Hudgins et al., se han demostrado efectivas para representar patrones mioeléctricos. Los autores destacan que la selección de estas características resultó en una tasa de clasificación más alta en comparación con las señales sin procesar [3].
+
+Además, se enfatiza la ventaja de las características en el dominio del tiempo sobre las técnicas de tiempo-frecuencia, ya que estas últimas, debido a su alta dimensionalidad y resolución, a menudo requieren recursos computacionales adicionales para la extracción de características [3].
+
+***Código utilizado para la extracción de características:***
+
+```python
+def MAV(segment):
+    return np.mean(np.abs(segment))
+
+def MAV_slope(segment):
+    mav_values = [np.mean(np.abs(segment[i:i+2])) for i in range(len(segment)-1)]
+    return np.mean(np.abs(np.diff(mav_values)))
+
+def SSC(segment):
+    return np.sum(np.diff(np.sign(np.diff(segment))) != 0)
+
+def WL(segment):
+    return np.sum(np.abs(np.diff(segment)))
+
+def ZC(segment, threshold=0):
+    zero_crossings = np.where(np.diff(np.sign(segment)))[0]
+    return np.sum(np.abs(segment[zero_crossings]) > threshold)
+
+# Extraer características de los primeros 10 segmentos
+features = []
+for i in range(10):
+    segment = segments[i]
+    features.append({
+        'MAV': MAV(segment),
+        'MAV_slope': MAV_slope(segment),
+        'SSC': SSC(segment),
+        'WL': WL(segment),
+        'ZC': ZC(segment)
+    })
+
+# Mostrar las características de los primeros 10 segmentos
+#for i, feature_set in enumerate(features, start=1):
+#    print(f"Segmento {i}:")
+#    for feature_name, value in feature_set.items():
+#        print(f"  {feature_name}: {value}")
+#    print()
+
+# Lista de colores
+colors = ['r', 'g', 'b', 'c', 'm', 'y', 'k', 'orange', 'purple', 'brown']
+
+# Graficar características
+fig, axs = plt.subplots(5, 1, figsize=(12, 10))
+
+mav_values = [f['MAV'] for f in features]
+mav_slope_values = [f['MAV_slope'] for f in features]
+ssc_values = [f['SSC'] for f in features]
+wl_values = [f['WL'] for f in features]
+zc_values = [f['ZC'] for f in features]
+
+axs[0].bar(range(1, 11), mav_values, color=colors)
+axs[0].set_title('MAV de los primeros 10 segmentos')
+axs[0].set_ylabel('MAV')
+
+axs[1].bar(range(1, 11), mav_slope_values, color=colors)
+axs[1].set_title('Pendiente MAV de los primeros 10 segmentos')
+axs[1].set_ylabel('Pendiente MAV')
+
+axs[2].bar(range(1, 11), ssc_values, color=colors)
+axs[2].set_title('SSC de los primeros 10 segmentos')
+axs[2].set_ylabel('SSC')
+
+axs[3].bar(range(1, 11), wl_values, color=colors)
+axs[3].set_title('WL de los primeros 10 segmentos')
+axs[3].set_ylabel('WL')
+
+axs[4].bar(range(1, 11), zc_values, color=colors)
+axs[4].set_title('ZC de los primeros 10 segmentos')
+axs[4].set_ylabel('ZC')
+axs[4].set_xlabel('Segmento')
+
+plt.tight_layout()
+
+plt.show()
+
+```
 
 
 ## Discusión <a name="t8"></a>
