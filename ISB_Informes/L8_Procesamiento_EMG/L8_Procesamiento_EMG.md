@@ -103,7 +103,7 @@ La selección de estos filtros se basa en las recomendaciones y hallazgos presen
 | Método de umbralización   | Umbralización universal con estimación de sigma   |
 
 ***Código de implementación***
-```python
+```
 import pywt
 import numpy as np
 
