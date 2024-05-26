@@ -417,6 +417,13 @@ plt.show()
 
 ## Discusión de los resultados  <a name="t8"></a>
 
+* Comparación de Filtros:
+  
+El análisis realizado mediante el código implementado muestra que el filtro 3 es el más apropiado según los parámetros predefinidos. Visualmente, no se observa una pérdida significativa de información relevante, logrando filtrar el ruido innecesario en áreas con poca activación muscular. Al examinar la Figura 2, donde la sombra representa la señal original y las señales de color (azul, verde o rojo) representan las señales filtradas, se nota que para los tres filtros, a los 10 segundos, la señal de color es casi imperceptible, indicando una falta de información relevante en esa sección. Sin embargo, a los 30 segundos, la señal filtrada abarca una porción más amplia, lo que sugiere un filtrado adecuado.
+
+En conclusión, aunque no se observan diferencias sustanciales entre los tres filtros utilizados a simple vista, el código ha sido útil, ya que los parámetros establecidos permitieron descartar los otros dos filtros y seleccionar el filtro 3 como el más adecuado.
+
+* Segmentación: 
 
 ## Archivos <a name="t9"></a>
 
