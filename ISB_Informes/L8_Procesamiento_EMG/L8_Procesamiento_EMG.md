@@ -8,9 +8,9 @@
 4. [Metodología](#t4)\
    4.1.[Materiales y Equipo utilizado](#t5)\
    4.2.[Procedimiento](#t6)
-6. [Resultados](#t7)\
-7. [Discusión](#t8)\
-8. [Archivos](#t19)\
+6. [Resultados](#t7)
+7. [Discusión](#t8)
+8. [Archivos](#t9)
 7. [Bibliografía](#t10)
 __________________________________________________________________________________________________
 ## **Lista de participantes** <a name = "t1"></a>
@@ -248,10 +248,13 @@ filtered_signal3 = emg_filtered_db6
 # Compare the filtering methods
 compare_filtering_methods(original_signal, filtered_signal1, filtered_signal2, filtered_signal3)
 ```
+***Resultados***: 
+
 <div align="center">
     <img src="Imagenes_L8/Resultado.JPG" alt="wCF14V" width="400">
     <p><b>Figura 1. Resultado del código </b> </p>
 </div>
+
 
 <div align="center">
     <img src="Imagenes_L8/Comparacion_Visual.JPG" alt="wCF14V" width="600">
@@ -310,10 +313,14 @@ for i in range(6):  # Graficar hasta 10 segmentos
 plt.tight_layout()
 plt.show()
 ```
+
+***Resultado***: 
+
 <div align="center">
     <img src="Imagenes_L8/Segmentación.JPG" alt="wCF14V" width="600">
     <p><b>Figura 3. Segmentación de la onda </b> </p>
 </div>
+
 
 **Extracción de características**
 
@@ -400,21 +407,41 @@ plt.tight_layout()
 plt.show()
 
 ```
+***Resultado***: 
+
 <div align="center">
     <img src="Imagenes_L8/Comparación_características.JPG" alt="wCF14V" width="600">
     <p><b>Figura 4. Representación de las características extraidas </b> </p>
 </div>
 
-## Discusión <a name="t8"></a>
+
+## Discusión de los resultados  <a name="t8"></a>
 
 
 ## Archivos <a name="t9"></a>
+
 - [Programa de procesamiento de señal EMG (python)](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L8_Procesamiento_EMG/LAB_8.ipynb) 
 
 
 ## Bibliografía: <a name="t10"></a>
 
+[1] M. B. I. Reaz, M. S. Hussain, y F. Mohd-Yasin, “Techniques of EMG signal analysis: detection, processing, classification and applications”, Biological Procedures Online, vol. 8, n.o 1, pp. 11-35, dic. 2006, doi: 10.1251/bpo115.
+ 
+[2] V. Gohel y N. Mehendale, “Review on electromyography signal acquisition and processing”, Biophysical Reviews, vol. 12, n.o 6, pp. 1361-1367, nov. 2020, doi: 10.1007/s12551-020-00770-w.   
 
+[3] R. H. Chowdhury, M. B. I. Reaz, Mohd. A. Mohd. Ali, A. A. A. Bakar, K. Chellappan, y T. G. Chang, “Surface Electromyography Signal Processing and Classification Techniques”, Sensors, vol. 13, n.o 9, pp. 12431-12466, sep. 2013, doi: 10.3390/s130912431.   
+
+[4] A. M. Moslhi, H. H. Aly, y M. ElMessiery, “The Impact of Feature Extraction on Classification Accuracy Examined by Employing a Signal Transformer to Classify Hand Gestures Using Surface Electromyography Signals”, Sensors, vol. 24, n.o 4, p. 1259, feb. 2024, doi: 10.3390/s24041259.
+
+[5] Z. Sun, X. Xi, C. Yuan, Y. Yang, and X. Hua, “Surface electromyography signal denoising via EEMD and improved wavelet thresholds,” Mathematical biosciences and engineering, vol. 17, no. 6, pp. 6945–6962, Jan. 2020, doi: https://doi.org/10.3934/mbe.2020359.
+‌
+[6] “An Improved Feature Extraction Method for Surface Electromyography Based on Muscle Activity Regions”, IEEE Journals & Magazine | IEEE Xplore, 2023. https://ieeexplore.ieee.org/document/10168895
+
+[7] N. Nazmi, M. A. A. Rahman, S.-I. Yamamoto, S. A. Ahmad, H. Zamzuri, y S. A. Mazlan, “A Review of Classification Techniques of EMG Signals during Isotonic and Isometric Contractions”, Sensors, vol. 16, n.o 8, p. 1304, ago. 2016, doi: 10.3390/s16081304.
+
+[8] S. A. Ahmad, “Moving approximate entropy and its application to the electromyographic control of an artificial hand - ePrints Soton,” Soton.ac.uk, Jun. 2009, doi: https://eprints.soton.ac.uk/66794/1/FinalThesis.pdf.
+
+[9] A. Phinyomark, F. Quaine, S. Charbonnier, C. Serviere, F. Tarpin-Bernard, y Y. Laurillau, “EMG feature evaluation for improving myoelectric pattern recognition robustness”, Expert Systems With Applications, vol. 40, n.o 12, pp. 4832-4840, sep. 2013, doi: 10.1016/j.eswa.2013.02.023. 
 
 
 
