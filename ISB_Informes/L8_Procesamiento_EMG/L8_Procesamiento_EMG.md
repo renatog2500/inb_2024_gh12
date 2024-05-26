@@ -433,7 +433,7 @@ Al comparar en el segundo segmento, la duración de la señal sin información s
 
 Luego notamos que ya para el tercer segmento las fluctuaciones de la señal comienzan de manera inmediata. Este patrón se repite a lo largo de los 10 segmentos restantes. Este fenómeno refleja el desplazamiento en la segmentación, permitiendo un análisis más exhaustivo de la señal al abarcar una mayor cantidad de información en cada segmento. Este enfoque nos facilita la identificación y descarte de características irrelevantes en la extracción de datos de cada segmento que se realizará en la extracción de características.
 
-*Extracción de características: 
+* Extracción de características: 
 
 El análisis de las características en el dominio del tiempo es una técnica ampliamente utilizada para evaluar y comprender las señales de electromiografía (EMG). En este estudio, se extrajeron cinco características clave: valor absoluto medio (MAV), pendiente del valor absoluto medio (MAV_slope), cambios de signo de pendiente (SSC), longitud de forma de onda (WL) y cruces por cero (ZC).
 
