@@ -110,6 +110,10 @@ La selección de estos filtros se basa en las recomendaciones y hallazgos presen
 | Nivel de descomposición   | 4                                                 |
 | Método de umbralización   | Umbralización universal con estimación de sigma   |
 
+<p align="center">
+  <b>Tabla 2. Parametros para el filtro db2</b>
+</p>
+
 ***Código de implementación***
 
 ```python
@@ -148,6 +152,10 @@ emg_filtered_db2 = pywt.waverec(coefficients_filtered, 'db2')
 | Función wavelet           | Daubechies 4 (db4)                                |
 | Nivel de descomposición   | 4                                                 |
 | Método de umbralización   | Umbralización universal con estimación de sigma   |
+
+<p align="center">
+  <b>Tabla 2. Parametros para el filtro db4 </b>
+</p>
 
 ***Código:***
 
@@ -189,6 +197,10 @@ emg_filtered_db4 = pywt.waverec(coefficients_filtered, 'db4')
 | Función wavelet                 | Daubechies 6 (db6)                                                  |
 | Nivel de descomposición   | 4                                                                               |
 | Método de umbralización   | Umbralización universal con estimación de sigma   |
+
+<p align="center">
+  <b>Tabla 3. Parametros para el filtro db6</b>
+</p>
 
 ***Código:***
 
