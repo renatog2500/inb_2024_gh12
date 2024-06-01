@@ -426,9 +426,12 @@ plt.show()
 ```
 ***Resultado***: 
 
-<img src="Imagenes_L8/Segmentación.JPG" alt="Imagen 1" style="width: 45%; display: inline-block; margin-right: 10px;">
-<img src="Imagenes_L8/Comparación_características.JPG" alt="Imagen 2" style="width: 45%; display: inline-block;">
-<p><b>Figura 7. Segmentación de la onda </b> </p>
+
+<div style="display: flex; justify-content: space-around;">
+    <img src="Imagenes_L8/Segmentación.JPG" alt="Imagen 1" style="width: 45%; display: inline-block; margin-right: 10px;">
+    <img src="Imagenes_L8/Comparación_características.JPG" alt="Imagen 2" style="width: 45%; display: inline-block;">
+    <p><b>Figura 7. Segmentación de la onda </b> </p>
+</div>
 
 ## Discusión de los resultados  <a name="t11"></a>
 
