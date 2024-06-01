@@ -427,6 +427,7 @@ plt.show()
 ***Resultado***: 
 
 <div align="center">
+    <img src="Imagenes_L8/Segmentación.JPG" alt="wCF14V" width="600">
     <img src="Imagenes_L8/Comparación_características.JPG" alt="wCF14V" width="600">
     <p><b>Figura 4. Representación de las características extraidas </b> </p>
 </div>
