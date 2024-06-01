@@ -133,7 +133,10 @@ coefficients_filtered = pywt.threshold(coefficients, threshold, mode='soft')
 # Reconstruir la señal filtrada
 emg_filtered_db2 = pywt.waverec(coefficients_filtered, 'db2')
 ```
-
+<div align="center">
+    <img src="Imagenes_L8/db2.JPG" alt="wCF14V" width="600">
+    <p><b>Figura 2. Comparación visual de los gráficos </b> </p>
+</div>
 
 **2.  Transformada Wavelet Discreta (DWT) con filtro Daubechies 4 (db4):**
 
@@ -170,6 +173,10 @@ coefficients_filtered = pywt.threshold(coefficients, threshold, mode='soft')
 # Reconstruir la señal filtrada
 emg_filtered_db4 = pywt.waverec(coefficients_filtered, 'db4')
 ```
+<div align="center">
+    <img src="Imagenes_L8/db4.JPG" alt="wCF14V" width="600">
+    <p><b>Figura 2. Comparación visual de los gráficos </b> </p>
+</div>
 
 **3. Transformada Wavelet Discreta (DWT) con filtro Daubechies 6 (db6):**
 
@@ -206,6 +213,10 @@ coefficients_filtered = pywt.threshold(coefficients, threshold, mode='soft')
 # Reconstruir la señal filtrada
 emg_filtered_db6 = pywt.waverec(coefficients_filtered, 'db6')
 ```
+<div align="center">
+    <img src="Imagenes_L8/db6.JPG" alt="wCF14V" width="600">
+    <p><b>Figura 2. Comparación visual de los gráficos </b> </p>
+</div>
 
 ## Comparación de filtros  <a name="t8"></a>
 En el artículo "Surface electromyography signal denoising via EEMD and improved wavelet thresholds" de Sun et al. [5], los autores comparan el rendimiento de diferentes algoritmos de filtrado de señales EMG utilizando tres métodos cuantitativos: la relación señal-ruido (SNR), que mide la relación entre la energía de la señal y la energía del error; la relación señal-ruido pico (PSNR), que representa la relación entre la máxima potencia posible de una señal y la potencia del ruido que afecta su fidelidad; y el error cuadrático medio (RMSE), que define la energía de la señal de error durante el filtrado. Los autores aplican estos métodos a señales EMG con diferentes niveles de ruido gaussiano blanco y comparan los resultados para determinar qué algoritmo logra el mejor rendimiento de filtrado. Haciendo estas comparaciones, se basan en los valores más altos de SNR y PSNR, y el valor más bajo de RMSE para determinar cuál es el mejor filtro utilizado. Donde el resuldato del código nos indicó que el tercer filtro es el mejor.
