@@ -135,7 +135,7 @@ emg_filtered_db2 = pywt.waverec(coefficients_filtered, 'db2')
 ```
 <div align="center">
     <img src="Imagenes_L8/db2.JPG" alt="wCF14V" width="600">
-    <p><b>Figura 2. Comparación visual de los gráficos </b> </p>
+    <p><b>Figura 1. Comparación visual gráfico filtrado en db2 vs original </b> </p>
 </div>
 
 **2.  Transformada Wavelet Discreta (DWT) con filtro Daubechies 4 (db4):**
@@ -175,7 +175,7 @@ emg_filtered_db4 = pywt.waverec(coefficients_filtered, 'db4')
 ```
 <div align="center">
     <img src="Imagenes_L8/db4.JPG" alt="wCF14V" width="600">
-    <p><b>Figura 2. Comparación visual de los gráficos </b> </p>
+    <p><b>Figura 2. Comparación visual gráfico filtrado en db4 vs original </b> </p>
 </div>
 
 **3. Transformada Wavelet Discreta (DWT) con filtro Daubechies 6 (db6):**
@@ -215,7 +215,7 @@ emg_filtered_db6 = pywt.waverec(coefficients_filtered, 'db6')
 ```
 <div align="center">
     <img src="Imagenes_L8/db6.JPG" alt="wCF14V" width="600">
-    <p><b>Figura 2. Comparación visual de los gráficos </b> </p>
+    <p><b>Figura 3. Comparación visual gráfico filtrado en db6 vs original </b> </p>
 </div>
 
 ## Comparación de filtros  <a name="t8"></a>
@@ -268,13 +268,13 @@ compare_filtering_methods(original_signal, filtered_signal1, filtered_signal2, f
 ***Resultados***: 
 
 <div align="center">
-    <img src="Imagenes_L8/Resultado.JPG" alt="wCF14V" width="400">
-    <p><b>Figura 1. Resultado del código </b> </p>
+    <img src="Imagenes_L8/Resultado.JPG" alt="wCF14V" width="800">
+    <p><b>Figura 1. Resultado del cálculo de SNR, PSNR, RMSE de cada filtro y cuál es el filtro ganador </b> </p>
 </div>
 
 
 <div align="center">
-    <img src="Imagenes_L8/Comparacion_Visual.JPG" alt="wCF14V" width="600">
+    <img src="Imagenes_L8/Comparacion_Visual.JPG" alt="wCF14V" width="800">
     <p><b>Figura 2. Comparación visual de los gráficos </b> </p>
 </div>
 
@@ -334,7 +334,7 @@ plt.show()
 ***Resultado***: 
 
 <div align="center">
-    <img src="Imagenes_L8/Segmentación.JPG" alt="wCF14V" width="600">
+    <img src="Imagenes_L8/Segmentación.JPG" alt="wCF14V" width="1000">
     <p><b>Figura 3. Segmentación de la onda </b> </p>
 </div>
 
