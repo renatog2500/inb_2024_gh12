@@ -1,4 +1,4 @@
-# Laboratorio N°8 - Procesamiento EMG
+![image](https://github.com/renatog2500/inb_2024_gh12/assets/164541858/6322cb0c-a8e8-425b-a544-9fc7ad17bdd6)# Laboratorio N°8 - Procesamiento EMG
 
 ## Tabla de contenidos:
  __________________________________________________________________________________________________
@@ -618,8 +618,6 @@ Finalmente los cruces por cero (ZC) cuentan el número de veces que la señal EM
 
 ## Conclusiones <a name="t12"></a>
 
-## Conclusiones
-
 1. El procesamiento adecuado de las señales EMG es fundamental para eliminar ruido y artefactos, y obtener información confiable y significativa de la actividad neuromuscular. Las técnicas como el filtrado, la segmentación y la extracción de características son cruciales en este proceso.
 
 2. La comparación de diferentes filtros basados en la transformada wavelet discreta (DWT) con funciones wavelet db2, db4 y db6 al nivel de descomposición 4, mostró que el filtro db6 fue el más apropiado según los parámetros de relación señal-ruido (SNR), relación señal-ruido pico (PSNR) y error cuadrático medio (RMSE). Aunque visualmente no se observaron diferencias sustanciales entre los filtros, el código implementado permitió seleccionar objetivamente el filtro óptimo.
@@ -627,6 +625,8 @@ Finalmente los cruces por cero (ZC) cuentan el número de veces que la señal EM
 3. La extracción de características en el dominio del tiempo, como el valor absoluto medio (MAV), la pendiente del valor absoluto medio (MAV_slope), los cambios de signo de pendiente (SSC), la longitud de forma de onda (WL) y los cruces por cero (ZC), proporcionó información valiosa sobre la amplitud, complejidad y variabilidad de la señal EMG en diferentes segmentos. Estas características permitieron detectar patrones de actividad muscular y transiciones en la señal.
 
 4. El análisis de las características extraídas de los segmentos de la señal EMG reveló patrones interesantes, como una mayor amplitud y actividad muscular en ciertos segmentos, una mayor complejidad o ruido en otros, y transiciones rápidas en la señal. Estos hallazgos demuestran la utilidad de las técnicas de procesamiento empleadas para comprender y caracterizar la actividad neuromuscular.
+
+En conclusión, este informe de laboratorio resalta la importancia de un procesamiento adecuado de las señales de electromiografía (EMG) para obtener información confiable y significativa sobre la actividad neuromuscular. A través de la implementación de técnicas de filtrado, segmentación y extracción de características, se logró eliminar el ruido y los artefactos de las señales, seleccionar el filtro óptimo basado en la transformada wavelet discreta (DWT) con la función wavelet db6, segmentar la señal en ventanas deslizantes para un análisis exhaustivo y extraer características relevantes en el dominio del tiempo. Los resultados obtenidos permitieron detectar patrones de actividad muscular, transiciones en la señal y revelar información valiosa sobre la amplitud, complejidad y variabilidad de la señal EMG en diferentes segmentos. Este enfoque sistemático y riguroso en el procesamiento de señales EMG valida la eficacia de las técnicas empleadas y sienta las bases para futuras investigaciones y aplicaciones en el campo de la electromiografía.
 
 ## Archivos <a name="t13"></a>
 
