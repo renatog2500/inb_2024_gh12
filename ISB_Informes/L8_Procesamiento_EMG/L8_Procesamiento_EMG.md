@@ -13,8 +13,9 @@
        4.2.3.[Segmentación](#t9)\
        4.2.4.[Extracción de características](#t10)\
 7. [Discusión](#t11)
-8. [Archivos](#t12)
-7. [Bibliografía](#t13)
+8. [Conclusión](#t12)
+9. [Archivos](#t13)
+7. [Bibliografía](#t14)
 __________________________________________________________________________________________________
 ## **Lista de participantes** <a name = "t1"></a>
 * Jimena Alpiste Espinoza - 74297329
@@ -465,14 +466,24 @@ La longitud de forma de onda (WL) suma las diferencias absolutas entre puntos ad
 
 Finalmente los cruces por cero (ZC) cuentan el número de veces que la señal EMG cruza el eje cero. Un valor más alto de ZC puede indicar una mayor variabilidad o ruido en la señal. En los gráficos, los segmentos 9 y 10 presentan los valores más altos, posiblemente debido a una mayor actividad muscular.
 
+## Conclusiones <a name="t12"></a>
 
+## Conclusiones
 
-## Archivos <a name="t12"></a>
+1. El procesamiento adecuado de las señales EMG es fundamental para eliminar ruido y artefactos, y obtener información confiable y significativa de la actividad neuromuscular. Las técnicas como el filtrado, la segmentación y la extracción de características son cruciales en este proceso.
+
+2. La comparación de diferentes filtros basados en la transformada wavelet discreta (DWT) con funciones wavelet db2, db4 y db6 al nivel de descomposición 4, mostró que el filtro db6 fue el más apropiado según los parámetros de relación señal-ruido (SNR), relación señal-ruido pico (PSNR) y error cuadrático medio (RMSE). Aunque visualmente no se observaron diferencias sustanciales entre los filtros, el código implementado permitió seleccionar objetivamente el filtro óptimo.
+
+3. La extracción de características en el dominio del tiempo, como el valor absoluto medio (MAV), la pendiente del valor absoluto medio (MAV_slope), los cambios de signo de pendiente (SSC), la longitud de forma de onda (WL) y los cruces por cero (ZC), proporcionó información valiosa sobre la amplitud, complejidad y variabilidad de la señal EMG en diferentes segmentos. Estas características permitieron detectar patrones de actividad muscular y transiciones en la señal.
+
+4. El análisis de las características extraídas de los segmentos de la señal EMG reveló patrones interesantes, como una mayor amplitud y actividad muscular en ciertos segmentos, una mayor complejidad o ruido en otros, y transiciones rápidas en la señal. Estos hallazgos demuestran la utilidad de las técnicas de procesamiento empleadas para comprender y caracterizar la actividad neuromuscular.
+
+## Archivos <a name="t13"></a>
 
 - [Programa de procesamiento de señal EMG (python)](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L8_Procesamiento_EMG/LAB_8.ipynb) 
 
 
-## Bibliografía: <a name="t13"></a>
+## Bibliografía: <a name="t14"></a>
 
 [1] M. B. I. Reaz, M. S. Hussain, y F. Mohd-Yasin, “Techniques of EMG signal analysis: detection, processing, classification and applications”, Biological Procedures Online, vol. 8, n.o 1, pp. 11-35, dic. 2006, doi: 10.1251/bpo115.
  
