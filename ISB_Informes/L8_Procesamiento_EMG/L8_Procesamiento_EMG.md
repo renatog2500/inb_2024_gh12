@@ -426,12 +426,162 @@ plt.show()
 ```
 ***Resultado***: 
 
-
 <div style="display: flex; justify-content: space-around;">
     <img src="Imagenes_L8/Segmentación.JPG" alt="Imagen 1" style="width: 45%; display: inline-block; margin-right: 10px;">
     <img src="Imagenes_L8/Comparación_características.JPG" alt="Imagen 2" style="width: 45%; display: inline-block;">
-    <p><b>Figura 7. Segmentación de la onda </b> </p>
+    <p><b>Figura 7. Comparación de carácteristicas obtenidas </b> </p>
+</div>  
+
+***Procesamiento mediante la libreria de opensingals***: 
+
+```python
+# Signal Samples
+signal = emg_filtered_db6
+time = bsnb.generate_time(signal)
+# [Baseline Removal]
+pre_pro_signal = signal - average(signal)
+
+# [Signal Filtering]
+low_cutoff = 10 # Hz
+high_cutoff = 300 # Hz
+
+# Application of the signal to the filter.
+pre_pro_signal = bsnb.aux_functions._butter_bandpass_filter(pre_pro_signal, low_cutoff, high_cutoff, sr)
+# [Application of TKEO Operator]
+tkeo = []
+for i in range(0, len(pre_pro_signal)):
+    if i == 0 or i == len(pre_pro_signal) - 1:
+        tkeo.append(pre_pro_signal[i])
+    else:
+        tkeo.append(power(pre_pro_signal[i], 2) - (pre_pro_signal[i + 1] * pre_pro_signal[i - 1]))
+# Plotear la señal y los umbrales
+plt.figure(figsize=(12, 6))
+plt.plot(time, signal, lw=1, color='black', label='Original')
+plt.plot(time, tkeo, lw=1, color='deepskyblue', label='Señal TKEO')
+plt.xlabel('Tiempo (s)')
+plt.ylabel('Valor EMG')
+plt.title('Aplicación del factor TKEO')
+plt.legend()
+plt.grid(True)
+plt.show()
+
+```
+<div align="center">
+    <img src="Imagenes_L8/original_TKEO.JPG" alt="wCF14V" width="1000">
+    <p><b>Figura 8. Comparación de la señal orignal filtrada vs la TKEO </b> </p>
 </div>
+
+```python
+# Smoothing level [Size of sliding window used during the moving average process (a function of sampling frequency)]
+smoothing_level_perc = 20 # Percentage.
+smoothing_level = int((smoothing_level_perc / 100) * sr)
+# [Signal Rectification]
+rect_signal = absolute(tkeo)
+# [First Moving Average Filter]
+rect_signal = bsnb.aux_functions._moving_average(rect_signal, sr / 10)
+# [Second Smoothing Phase]
+smooth_signal = []
+for i in range(0, len(rect_signal)):
+    if smoothing_level < i < len(rect_signal) - smoothing_level:
+        smooth_signal.append(mean(rect_signal[i - smoothing_level:i + smoothing_level]))
+    else:
+        smooth_signal.append(0)
+# Plotear la señal y los umbrales
+plt.figure(figsize=(12, 6))
+# Primer subplot (TKEO)
+ax1 = plt.subplot(2, 1, 1)
+ax1.plot(time, tkeo, lw=1, color='black', label='TKEO')
+ax1.set_ylabel('Valor EMG')
+ax1.legend()
+ax1.grid(True)
+plt.setp(ax1.get_xticklabels(), visible=False)  # Ocultar etiquetas del eje x
+
+# Segundo subplot (Señal Suavizada)
+ax2 = plt.subplot(2, 1, 2, sharex=ax1)
+ax2.plot(time, smooth_signal, lw=1, color='deepskyblue', label='Señal Suavizada')
+ax2.set_xlabel('Tiempo (s)')
+ax2.set_ylabel('Valor EMG')
+ax2.legend()
+ax2.grid(True)
+```
+
+<div align="center">
+    <img src="Imagenes_L8/Comparación_TKEO_Smooth.JPG" alt="wCF14V" width="1000">
+    <p><b>Figura 9. Comparación de la señal TKEO vs la suavizada </b> </p>
+</div>
+
+```python
+# [Threshold]
+avg_pre_pro_signal = average(pre_pro_signal)
+std_pre_pro_signal = std(pre_pro_signal)
+# Regression function.
+def normReg(thresholdLevel):
+    threshold_0_perc_level = (- avg_pre_pro_signal) / float(std_pre_pro_signal)
+    threshold_100_perc_level = (max(smooth_signal) - avg_pre_pro_signal) / float(std_pre_pro_signal)
+    m, b = linregress([0, 100], [threshold_0_perc_level, threshold_100_perc_level])[:2]
+    return m * thresholdLevel + b 
+    
+# Chosen Threshold Level (Example with two extreme values)
+threshold_level = 10 # % Relative to the average value of the smoothed signal
+threshold_level_norm_10 = normReg(threshold_level)
+
+threshold_level = 80 # % Relative to the average value of the smoothed signal
+threshold_level_norm_80 = normReg(threshold_level)
+
+threshold_10 = avg_pre_pro_signal + threshold_level_norm_10 * std_pre_pro_signal
+threshold_80 = avg_pre_pro_signal + threshold_level_norm_80 * std_pre_pro_signal
+
+# Plotear la señal y los umbrales
+plt.figure(figsize=(12, 6))
+plt.plot(time, smooth_signal, lw=1, color='deepskyblue', label='Señal Original')
+plt.axhline(y=threshold_10, color='blue', linestyle='--', label=f'Umbral 10% ({threshold_10:.2f})')
+plt.axhline(y=threshold_80, color='red', linestyle='--', label=f'Umbral 80% ({threshold_80:.2f})')
+plt.xlabel('Tiempo (s)')
+plt.ylabel('Valor EMG')
+plt.title('Señal EMG con Umbrales de 10% y 80%')
+plt.legend()
+plt.grid(True)
+plt.show()
+```
+
+<div align="center">
+    <img src="Imagenes_L8\umbrales.JPG" alt="wCF14V" width="1000">
+    <p><b>Figura 10. Muestra de los umbrales en la señal suavizada </b> </p>
+</div>
+
+```python
+# Generation of a square wave reflecting the activation and inactivation periods.
+binary_signal = []
+for i in range(0, len(time)):
+    if smooth_signal[i] >= threshold_10:
+        binary_signal.append(1)
+    else:
+        binary_signal.append(0)
+# Plotear la señal y los umbrales
+plt.figure(figsize=(12, 6))
+plt.plot(time, tkeo, lw=1, color='black', label='TKEO')
+plt.plot(time, binary_signal, lw=1, color='deepskyblue', label='Señal binarizada')
+plt.xlabel('Tiempo (s)')
+plt.ylabel('Valor EMG')
+plt.legend()
+plt.grid(True)
+plt.show()
+```
+
+<div align="center">
+    <img src="Imagenes_L8\Binarizada.JPG" alt="wCF14V" width="1000">
+    <p><b>Figura 11. Señal binarizada del TKEO </b> </p>
+</div>
+
+```python
+activation_data = bsnb.detect_emg_activations(signal, sr, smooth_level=20, threshold_level=10, time_units=True, volts=False, resolution=None, device=device, plot_result=True)
+```
+
+<div align="center">
+    <img src="Imagenes_L8\deteccion_de_evento.JPG" alt="wCF14V" width="1000">
+    <p><b>Figura 12. Detección de eventos de la señal original usando el comando de la libreria opensignals </b> </p>
+</div>
+
 
 ## Discusión de los resultados  <a name="t11"></a>
 
