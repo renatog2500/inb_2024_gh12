@@ -83,7 +83,6 @@ En la siguiente tabla, elaborada utilizando la referencia [7], se explicará en 
 
 ## **Objetivos del Laboratorio** <a name = "t3"></a>
 * Aplicar técnicas de filtrado para eliminar ruidos e interferencias presentes en las señales ECG, como desviaciones de la línea base, ruido muscular y artefactos de movimiento.
-* Pre-procesar las señales ECG para resaltar y realzar las características de interés.
 * Detectar con precisión las ubicaciones de los picos de las ondas R en las señales ECG filtradas.
 * Graficar y visualizar las ondas R detectadas.
 * Calcular la variabilidad de la frecuencia cardíaca (HRV) a partir de los intervalos R-R.
