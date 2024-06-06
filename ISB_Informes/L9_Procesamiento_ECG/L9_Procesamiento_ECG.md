@@ -117,7 +117,7 @@ Para capturar las señales ECG, se empleó el dispositivo BITalino junto con su 
 
 | Figura 3. Colocación de electrodos para la derivación I referencia[4].                                                                                                   | Figura 4. Colocación de los electrodos en el laboratorio para la derivación I                                                                                                     |
 |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| ![Electrodos de guía](Imagenes_L4/electrodos_guia.png) | <img src="Imagenes_L4/posicion _usada_electrodos.png" alt="Electrodos de guía" width="700"> |
+| ![Electrodos de guía](Imagenes_L9/Figura_3.png) | <img src="Imagenes_L9/Figura_4.png" alt="Electrodos de guía" width="700"> |
 
 
 La derivación 1 en un ECG es una de las vistas básicas utilizadas para monitorear la actividad eléctrica del corazón. La colocación adecuada de los electrodos es fundamental para capturar con precisión esta actividad. En la Figura 3 se muestra la colocación de los electrodos para esta derivación. En esta configuración, se utilizaron tres electrodos: 
