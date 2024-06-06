@@ -115,7 +115,7 @@ En este laboratorio, nos enfocaremos en el tratamiento de la señal de ECG adqui
 
 Para capturar las señales ECG, se empleó el dispositivo BITalino junto con su sensor ECG de tres electrodos. Se siguió el procedimiento detallado en la guía BiTalino,**(BITalino HOME-GUIDE #2 ELECTROCARDIOGRAPHY (ECG) Exploring Cardiac Signals at the Skin Surface")** [8], como referencia para posicionar correctamente los electrodos en el sujeto de prueba. A continuación, se presentan los protocolos de conexión específicos utilizados en cada prueba llevada a cabo en este laboratorio:
 
-| Figura 3. Colocación de electrodos para la derivación I referencia[4].                                                                                                   | Figura 4. Colocación de los electrodos en el laboratorio para la derivación I                                                                                                     |
+| Figura 3. Colocación de electrodos para la derivación I referencia[8].                                                                                                   | Figura 4. Colocación de los electrodos en el laboratorio para la derivación I                                                                                                     |
 |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | ![Electrodos de guía](Imagenes_L9/Figura_3.png) | <img src="Imagenes_L9/Figura_4.png" alt="Electrodos de guía" width="700"> |
 
