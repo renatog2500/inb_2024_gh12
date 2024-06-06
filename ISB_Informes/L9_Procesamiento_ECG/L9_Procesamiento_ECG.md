@@ -39,7 +39,7 @@ Por lo tanto, un adecuado procesamiento de la señal ECG es crucial para elimina
 Hay varios métodos propuestos en la literatura para la clasificación de señales ECG, los cuales se pueden dividir en cuatro categorías: preprocesamiento, segmentación, extracción de características y clasificación. Este procedimiento se explicará a continuación usando las referencias [2] y [5]. Asimismo, estos cuatro pasos del tratamiento de señales ECG se muestran a modo de diagrama en la figura 2, donde A, B, C y D simulan las clasificaciones finales de los latidos analizados.
 
 <div align="center">
-    <img src="Imagenes_L8\deteccion_de_evento.JPG" alt="wCF14V" width="1000">
+    <img src="Imagenes_L9\Figura_2.png" alt="wCF14V" width="300">
     <p><b> Figura 2.Diagrama de la clasificación de la señal ECG. Extraído de [2] </b> </p>
 </div>
 
