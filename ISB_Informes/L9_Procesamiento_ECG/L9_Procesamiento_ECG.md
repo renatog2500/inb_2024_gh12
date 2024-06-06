@@ -11,7 +11,7 @@
        4.2.1.[Filtrado](#t7)\
        4.2.2.[Elección del filtro](#t8)\
        4.2.3.[Segmentación](#t9)\
-       4.2.4.[Extracción de características](#t10)\
+       4.2.4.[Extracción de características](#t10)
 7. [Discusión](#t11)
 8. [Conclusión](#t12)
 9. [Archivos](#t13)
