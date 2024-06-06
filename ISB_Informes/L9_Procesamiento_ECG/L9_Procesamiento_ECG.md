@@ -115,15 +115,23 @@ En este laboratorio, nos enfocaremos en el tratamiento de la señal de ECG adqui
 
 Para capturar las señales ECG, se empleó el dispositivo BITalino junto con su sensor ECG de tres electrodos. Se siguió el procedimiento detallado en la guía BiTalino,**(BITalino HOME-GUIDE #2 ELECTROCARDIOGRAPHY (ECG) Exploring Cardiac Signals at the Skin Surface")** [8], como referencia para posicionar correctamente los electrodos en el sujeto de prueba. A continuación, se presentan los protocolos de conexión específicos utilizados en cada prueba llevada a cabo en este laboratorio:
 
-| Figura 2. Colocación de electrodos para la derivación I referencia[4].                                                                                                   | Figura 3. Colocación de los electrodos en el laboratorio para la derivación I                                                                                                     |
+| Figura 3. Colocación de electrodos para la derivación I referencia[4].                                                                                                   | Figura 4. Colocación de los electrodos en el laboratorio para la derivación I                                                                                                     |
 |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | ![Electrodos de guía](Imagenes_L4/electrodos_guia.png) | <img src="Imagenes_L4/posicion _usada_electrodos.png" alt="Electrodos de guía" width="700"> |
 
 
-La derivación 1 en un ECG es una de las vistas básicas utilizadas para monitorear la actividad eléctrica del corazón. La colocación adecuada de los electrodos es fundamental para capturar con precisión esta actividad. En la Figura 2 se muestra la colocación de los electrodos para esta derivación. En esta configuración, se utilizaron tres electrodos: 
-* IN+ (rojo) se coloca en la muñeca izquierda .
+La derivación 1 en un ECG es una de las vistas básicas utilizadas para monitorear la actividad eléctrica del corazón. La colocación adecuada de los electrodos es fundamental para capturar con precisión esta actividad. En la Figura 3 se muestra la colocación de los electrodos para esta derivación. En esta configuración, se utilizaron tres electrodos: 
+* IN+ (rojo) se coloca en la muñeca izquierda.
 * IN- (negro) se coloca en la muñeca derecha.
 * REF (blanco) se coloca en la cresta ilíaca.
+
+**Protocolo:**
+Se implementaron tres protocolos para medir la señal ECG eléctrica cardíaca en diferentes estados: estado de reposo, estado de respiración prolongada y estado de ejercicio intensivo. Cabe destacar que las ubicaciones mencionadas se mantuvieron para todas las pruebas: 
+
+* Estado de Reposo: En esta prueba, se capturó la señal eléctrica generada por el corazón del sujeto mientras se encontraba en una posición estable y tranquila. Este escenario sirvió como referencia o control. La adquisición de datos se realizó durante un lapso de 30 segundos.
+* Estado de Respiración Prolongada: El individuo retuvo su respiración durante 30 segundos, y se registró la señal eléctrica cardíaca durante la inhalación, retención y exhalación. La grabación de la señal tuvo una duración de 30 segundos. La colocación del electrodo permitió una posición cómoda y no invasiva durante las mediciones, lo cual es beneficioso para evaluar la función cardíaca.
+* Estado de Ejercicio Intensivo: En esta prueba, se registró la actividad eléctrica del corazón del sujeto mientras realizaba planchas durante 3 minutos, capturando la señal durante y después del ejercicio. 
+
 
 ## Filtros para el procesamiento de ECG <a name="t8"></a>
 
