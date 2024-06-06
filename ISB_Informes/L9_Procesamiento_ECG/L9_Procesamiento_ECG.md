@@ -108,7 +108,7 @@ En este laboratorio, nos enfocaremos en el tratamiento de la señal de ECG adqui
   <b>Tabla 2. Materiales y equipos utilizados</b>
 </p>
 
-### **Procedimiento** <a name="t6"></a>
+## **Procedimiento** <a name="t6"></a>
 
 ## Filtros para el procesamiento de ECG <a name="t7"></a>
 
