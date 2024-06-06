@@ -126,12 +126,12 @@ La derivación 1 en un ECG es una de las vistas básicas utilizadas para monitor
 * REF (blanco) se coloca en la cresta ilíaca.
 
 **Protocolo:**
+
 Se implementaron tres protocolos para medir la señal ECG eléctrica cardíaca en diferentes estados: estado de reposo, estado de respiración prolongada y estado de ejercicio intensivo. Cabe destacar que las ubicaciones mencionadas se mantuvieron para todas las pruebas: 
 
 * Estado de Reposo: En esta prueba, se capturó la señal eléctrica generada por el corazón del sujeto mientras se encontraba en una posición estable y tranquila. Este escenario sirvió como referencia o control. La adquisición de datos se realizó durante un lapso de 30 segundos.
 * Estado de Respiración Prolongada: El individuo retuvo su respiración durante 30 segundos, y se registró la señal eléctrica cardíaca durante la inhalación, retención y exhalación. La grabación de la señal tuvo una duración de 30 segundos. La colocación del electrodo permitió una posición cómoda y no invasiva durante las mediciones, lo cual es beneficioso para evaluar la función cardíaca.
 * Estado de Ejercicio Intensivo: En esta prueba, se registró la actividad eléctrica del corazón del sujeto mientras realizaba planchas durante 3 minutos, capturando la señal durante y después del ejercicio. 
-
 
 ## Filtros para el procesamiento de ECG <a name="t8"></a>
 
