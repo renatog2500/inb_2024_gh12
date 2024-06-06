@@ -28,7 +28,7 @@ Cuando el impulso cardíaco se transmite a través del corazón, la corriente el
 El ECG es una modalidad de diagnóstico no invasiva que tiene un impacto clínico sustancial en la investigación de la gravedad de las enfermedades cardiovasculares.  Dado que refleja la actividad eléctrica dentro del corazón durante la contracción, el momento en que ocurre y su forma proporciona mucha información sobre el estado del corazón [2]. En la figura 1, se muestra el registro esquemático de un latido cardíaco normal, en este se observan las ondas P, Q , R, T y U. 
 
 <div align="center">
-    <img src="Imagenes_L8\deteccion_de_evento.JPG" alt="wCF14V" width="1000">
+    <img src="Imagenes_L9\Figura_1.png" alt="wCF14V" width="1000">
     <p><b>Figura 1. Señal de ECG de latido cardíaco normal. Extraído de [2] </b> </p>
 </div>
 
