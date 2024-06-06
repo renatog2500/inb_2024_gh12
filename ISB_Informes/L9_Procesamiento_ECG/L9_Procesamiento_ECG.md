@@ -8,14 +8,15 @@
 4. [Metodología](#t4)\
    4.1.[Materiales y Equipo utilizado](#t5)\
    4.2.[Procedimiento](#t6)\
-       4.2.1.[Filtrado](#t7)\
-       4.2.2.[Elección del filtro](#t8)\
-       4.2.3.[Segmentación](#t9)\
-       4.2.4.[Extracción de características](#t10)
-7. [Discusión](#t11)
-8. [Conclusión](#t12)
-9. [Archivos](#t13)
-7. [Bibliografía](#t14)
+       4.2.1.[Adquisición de la señal](#t7)\
+       4.2.2.[Filtrado](#t8)\
+       4.2.2.[Elección del filtro](#t9)\
+       4.2.3.[Segmentación](#t10)\
+       4.2.4.[Extracción de características](#t11)
+7. [Discusión](#t12)
+8. [Conclusión](#t13)
+9. [Archivos](#t14)
+7. [Bibliografía](#t15)
 __________________________________________________________________________________________________
 ## **Lista de participantes** <a name = "t1"></a>
 * Jimena Alpiste Espinoza - 74297329
@@ -110,38 +111,52 @@ En este laboratorio, nos enfocaremos en el tratamiento de la señal de ECG adqui
 
 ## **Procedimiento** <a name="t6"></a>
 
-## Filtros para el procesamiento de ECG <a name="t7"></a>
+## Adquisición de la señal <a name="t7"></a>
+
+Para capturar las señales ECG, se empleó el dispositivo BITalino junto con su sensor ECG de tres electrodos. Se siguió el procedimiento detallado en la guía BiTalino,**(BITalino HOME-GUIDE #2 ELECTROCARDIOGRAPHY (ECG) Exploring Cardiac Signals at the Skin Surface")** [8], como referencia para posicionar correctamente los electrodos en el sujeto de prueba. A continuación, se presentan los protocolos de conexión específicos utilizados en cada prueba llevada a cabo en este laboratorio:
+
+| Figura 2. Colocación de electrodos para la derivación I referencia[4].                                                                                                   | Figura 3. Colocación de los electrodos en el laboratorio para la derivación I                                                                                                     |
+|-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| ![Electrodos de guía](Imagenes_L4/electrodos_guia.png) | <img src="Imagenes_L4/posicion _usada_electrodos.png" alt="Electrodos de guía" width="700"> |
+
+
+La derivación 1 en un ECG es una de las vistas básicas utilizadas para monitorear la actividad eléctrica del corazón. La colocación adecuada de los electrodos es fundamental para capturar con precisión esta actividad. En la Figura 2 se muestra la colocación de los electrodos para esta derivación. En esta configuración, se utilizaron tres electrodos: 
+* IN+ (rojo) se coloca en la muñeca izquierda .
+* IN- (negro) se coloca en la muñeca derecha.
+* REF (blanco) se coloca en la cresta ilíaca.
+
+## Filtros para el procesamiento de ECG <a name="t8"></a>
 
 
 
 
-## Comparación de filtros  <a name="t8"></a>
+## Comparación de filtros  <a name="t9"></a>
 
 
 
-## Segmentación  <a name="t9"></a>
+## Segmentación  <a name="t10"></a>
 
 
-## Extracción de características  <a name="t10"></a>
+## Extracción de características  <a name="t11"></a>
 
 
 ***Procesamiento mediante la libreria de opensingals***: 
 
 
-## Discusión de los resultados  <a name="t11"></a>
+## Discusión de los resultados  <a name="t12"></a>
 
 
 
-## Conclusiones <a name="t12"></a>
+## Conclusiones <a name="t13"></a>
 
 
 
-## Archivos <a name="t13"></a>
+## Archivos <a name="t14"></a>
 
 - [Programa de procesamiento de señal EMG (python)](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L8_Procesamiento_EMG/LAB_8.ipynb) 
 
 
-## Bibliografía: <a name="t14"></a>
+## Bibliografía: <a name="t15"></a>
 
 
 
