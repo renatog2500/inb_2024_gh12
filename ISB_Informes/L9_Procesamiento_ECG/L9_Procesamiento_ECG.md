@@ -166,7 +166,7 @@ Entre estos, los métodos de dominio de tiempo serían los más fáciles de apli
 
 ## Extracción de características  <a name="t10"></a>
 
-haremos uso de BioSignals [10], un software desarrollado por PLUX, el cual ofrece varias opciones para obtener la variabilidad de la frecuencia cardíaca (HRV) a partir de señales de electrocardiograma (ECG). El programa incluye un módulo dedicado al análisis de HRV que permite a los usuarios calcular y visualizar diversos parámetros de HRV en los dominios de tiempo y frecuencia. En el dominio del tiempo, BioSignals puede calcular métricas como SDNN (desviación estándar de los intervalos NN), RMSSD (raíz cuadrada de la media de las diferencias al cuadrado de intervalos RR sucesivos) y pNN50 (porcentaje de intervalos RR adyacentes que difieren en más de 50 ms). 
+Haremos uso de BioSignals [10], un software desarrollado por PLUX, el cual ofrece varias opciones para obtener la variabilidad de la frecuencia cardíaca (HRV) a partir de señales de electrocardiograma (ECG). El programa incluye un módulo dedicado al análisis de HRV que permite a los usuarios calcular y visualizar diversos parámetros de HRV en los dominios de tiempo y frecuencia. En el dominio del tiempo, BioSignals puede calcular métricas como SDNN (desviación estándar de los intervalos NN), RMSSD (raíz cuadrada de la media de las diferencias al cuadrado de intervalos RR sucesivos) y pNN50 (porcentaje de intervalos RR adyacentes que difieren en más de 50 ms). 
 
 ***Mostramos como obtenemos dichas características del BioSignal***: 
 
