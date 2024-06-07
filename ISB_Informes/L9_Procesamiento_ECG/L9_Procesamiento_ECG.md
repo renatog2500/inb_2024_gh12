@@ -9,10 +9,10 @@
    4.1.[Materiales y Equipo utilizado](#t5)\
    4.2.[Procedimiento](#t6)\
        4.2.1.[Adquisición de la señal](#t7)\
-       4.2.2.[Filtrado](#t8)\
-       4.2.2.[Elección del filtro](#t9)\
-       4.2.3.[Segmentación](#t10)\
-       4.2.4.[Extracción de características](#t11)
+       4.2.3.[Filtrado](#t8)\
+       4.2.4.[Obtención de la variabilidad de la frecuencia cardíaca (HRV)](#t9)\
+       4.2.5.[Extracción de características](#t10)\
+       4.2.6.[Generación de señales](#t11)
 7. [Discusión](#t12)
 8. [Conclusión](#t13)
 9. [Archivos](#t14)
@@ -85,7 +85,7 @@ En la siguiente tabla, elaborada utilizando la referencia [7], se explicará en 
 * Aplicar técnicas de filtrado para eliminar ruidos e interferencias presentes en las señales ECG, como desviaciones de la línea base, ruido muscular y artefactos de movimiento.
 * Detectar con precisión las ubicaciones de los picos de las ondas R en las señales ECG filtradas.
 * Graficar y visualizar las ondas R detectadas.
-* Calcular la variabilidad de la frecuencia cardíaca (HRV) a partir de los intervalos R-R.
+* Calcular la variabilidad de la frecuencia cardíaca (HRV) a partir de los intervalos R-R comparando el uso del programa BioSignals con respecto a un artículo académico. 
   
 ## Metodología <a name="t4"></a>
 En este laboratorio, nos enfocaremos en el tratamiento de la señal de ECG adquirida previamente utilizando el Kit BITalino. 
@@ -138,20 +138,39 @@ Se implementaron tres protocolos para medir la señal ECG eléctrica cardíaca e
 
 ## Filtros para el procesamiento de ECG <a name="t8"></a>
 
+En el artículo "Heart rate variability: a review" de U. Rajendra Acharya et al., se discuten en detalle los diferentes métodos utilizados para analizar la señal de variabilidad de la frecuencia cardíaca (HRV). Sin embargo, no se especifica el método exacto utilizado para el filtrado inicial de la señal de ECG antes de la detección de los intervalos RR. Los autores mencionan la importancia de eliminar cuidadosamente los artefactos y latidos ectópicos antes de calcular los parámetros de HRV en el dominio del tiempo, pero no proporcionan detalles sobre las técnicas de filtrado empleadas. [6]
+
+Es por eso que para el filtrado de las señales EKG nos basaremos en el estudio realizado por Kania et. al. [9], en donde se investigó la aplicación del filtrado wavelet para reducir el ruido en señales EKG de alta resolución. Los autores evaluaron diferentes funciones wavelet madre y niveles de descomposición para determinar los parámetros óptimos que minimizan el error cuadrático medio (MSE) entre la señal original y la señal filtrada, preservando al mismo tiempo las características morfológicas del EKG.
+Los resultados de Kania et al.[9] mostraron que las funciones wavelet db1 (Daubechies de primer orden) con niveles de descomposición del 4 al 6, sym3 (Symlet de tercer orden) con nivel 4, y sym8 (Symlet de octavo orden) con nivel 4, proporcionaron el mejor desempeño en términos de reducción de ruido y preservación de la morfología del EKG. Además, se destacó la ventaja del filtrado wavelet sobre técnicas convencionales como el promediado de latidos, especialmente en casos de arritmia donde el promediado puede distorsionar la señal.
+
+## Obtención de la variabilidad de la frecuencia cardíaca (HRV):  <a name="t9"></a>
+
+El artículo "Heart rate variability: a review" de U. Rajendra Acharya et al. [6] dedica una parte significativa a la discusión de los diferentes métodos utilizados para analizar la señal de HRV. Estos métodos se pueden agrupar en cuatro categorías principales: métodos de dominio de tiempo, métodos de dominio de frecuencia, métodos no lineales y métodos de tiempo-frecuencia.
+
+Todos los métodos han sido extraídos de [6]:
+
+A. Métodos de dominio de tiempo:
+Estos métodos implican el cálculo de parámetros estadísticos a partir de la serie de intervalos RR, como la desviación estándar de los intervalos NN (SDNN), la raíz cuadrada de la media de las diferencias al cuadrado de intervalos RR sucesivos (RMSSD) y el porcentaje de intervalos RR adyacentes que difieren en más de 50 ms (pNN50).
+
+B. Métodos de dominio de frecuencia:
+Estos métodos utilizan la transformada de Fourier para descomponer la señal de HRV en sus componentes de frecuencia. Se calcula la densidad espectral de potencia (PSD) y se analizan las potencias en diferentes bandas de frecuencia, como la banda de muy baja frecuencia (VLF, 0-0.04 Hz), la banda de baja frecuencia (LF, 0.04-0.15 Hz) y la banda de alta frecuencia (HF, 0.15-0.4 Hz). También se calcula la relación LF/HF, que se considera un indicador del equilibrio simpático-vagal.
+
+C. Métodos no lineales:
+Estos métodos buscan cuantificar la complejidad y la predictibilidad de la serie de HRV. Incluyen medidas como la entropía aproximada (ApEn), la dimensión de correlación (CD), los exponentes de Lyapunov, el exponente de Hurst y la dimensión fractal. Estas técnicas se basan en la teoría del caos y los sistemas dinámicos no lineales y pueden proporcionar información adicional sobre la dinámica de la HRV que no se captura con los métodos lineales.
+
+D. Métodos de tiempo-frecuencia:
+Estos métodos, como la transformada wavelet, permiten analizar cambios en el contenido de frecuencia de la HRV a lo largo del tiempo. La transformada wavelet descompone la señal en diferentes escalas y proporciona una representación tiempo-frecuencia de la HRV. Esto es útil para detectar cambios transitorios en la HRV que pueden estar asociados con eventos fisiológicos o patológicos.
+
+Entre estos, los métodos de dominio de tiempo serían los más fáciles de aplicar en una señal de ECG para analizar la variabilidad de la frecuencia cardíaca (HRV) debido a su simplicidad conceptual, facilidad de implementación, interpretación directa y menor complejidad computacional en comparación con los métodos de dominio de frecuencia, no lineales y tiempo-frecuencia. Estos métodos implican el cálculo de parámetros estadísticos como SDNN, RMSSD y pNN50 directamente a partir de la serie de intervalos RR, lo que los hace accesibles y rápidos de aplicar. 
 
 
+## Extracción de características  <a name="t10"></a>
 
-## Comparación de filtros  <a name="t9"></a>
+haremos uso de BioSignals [10], un software desarrollado por PLUX, el cual ofrece varias opciones para obtener la variabilidad de la frecuencia cardíaca (HRV) a partir de señales de electrocardiograma (ECG). El programa incluye un módulo dedicado al análisis de HRV que permite a los usuarios calcular y visualizar diversos parámetros de HRV en los dominios de tiempo y frecuencia. En el dominio del tiempo, BioSignals puede calcular métricas como SDNN (desviación estándar de los intervalos NN), RMSSD (raíz cuadrada de la media de las diferencias al cuadrado de intervalos RR sucesivos) y pNN50 (porcentaje de intervalos RR adyacentes que difieren en más de 50 ms). 
 
+***Mostramos como obtenemos dichas características del BioSignal***: 
 
-
-## Segmentación  <a name="t10"></a>
-
-
-## Extracción de características  <a name="t11"></a>
-
-
-***Procesamiento mediante la libreria de opensingals***: 
+## Generación de señales  <a name="t11"></a>
 
 
 ## Discusión de los resultados  <a name="t12"></a>
