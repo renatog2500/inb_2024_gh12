@@ -153,7 +153,7 @@ Los resultados de Kania et al.[9] mostraron que las funciones wavelet db1 (Daube
 | Método de umbralización   | Umbralización universal con estimación de sigma   |
 
 <p align="center">
-  <b>Tabla 2. Parametros para el filtro db2</b>
+  <b>Tabla 3. Parametros para el filtro db2</b>
 </p>
 
 ***Código de implementación***
@@ -192,7 +192,7 @@ ecg_filtered_db1
 | Método de umbralización   | Umbralización universal con estimación de sigma   |
 
 <p align="center">
-  <b>Tabla 2. Parametros para el filtro db4 </b>
+  <b>Tabla 4. Parametros para el filtro db4 </b>
 </p>
 
 ***Código:***
@@ -232,7 +232,7 @@ ecg_filtered_sym3
 | Método de umbralización   | Umbralización universal con estimación de sigma   |
 
 <p align="center">
-  <b>Tabla 3. Parametros para el filtro db6</b>
+  <b>Tabla 5. Parametros para el filtro db6</b>
 </p>
 
 ```python
@@ -292,12 +292,6 @@ filtered_signal3 = ecg_filtered_sym8
 # Compare the filtering methods
 compare_filtering_methods(original_signal, filtered_signal1, filtered_signal2, filtered_signal3)
 ```
-
-<div align="center">
-    <img src="Imagenes_L9/Resultados.JPG" alt="wCF14V" width="800">
-    <p><b>Figura 3. Resultado del cálculo de SNR, PSNR, RMSE de cada filtro y cuál es el filtro ganador </b> </p>
-</div>
-
 
 <div align="center">
     <img src="Imagenes_L9/Comparacion_filtro.JPG" alt="wCF14V" width="800">
@@ -375,7 +369,7 @@ print(f"pNN50: {pnn50:.2f} %")
 | pNN50 (porcentaje de intervalos RR adyacentes que difieren en más de 50 ms).   |    9.30 %     |
 
 </p>
-  <b> Tabla 3. Extracción de características del EKG del evaluado en reposo </b>
+  <b> Tabla 6. Extracción de características del EKG del evaluado en reposo </b>
 </p>
 
 
@@ -422,7 +416,7 @@ print(f"pNN50: {pnn50:.2f} %")
 | pNN50 (porcentaje de intervalos RR adyacentes que difieren en más de 50 ms).   |         3.57 %       |
 
 </p>
-  <b> Tabla 4. Extracción de características del EKG del evaluado inhalando </b>
+  <b> Tabla 7. Extracción de características del EKG del evaluado inhalando </b>
 </p>
 
 ### Post Ejercicio
@@ -432,7 +426,7 @@ detected_peaks3= bsnb.detect_r_peaks(ecg_filtered_3, sr, time_units=True, plot_r
 ```
 <div align="center">
     <img src="Imagenes_L9/Deteccion_de_RR_post_ejercicio.JPG" alt="wCF14V" width="800">
-    <p><b>Figura 6. Resultado de la detección de picos </b> </p>
+    <p><b>Figura 7 Resultado de la detección de picos </b> </p>
 </div>
 
 ```python
@@ -464,7 +458,7 @@ print(f"pNN50: {pnn50:.2f} %")
 | RMSSD (raíz cuadrada de la media de las diferencias al cuadrado de intervalos RR sucesivos)  |0.0191 s|
 | pNN50 (porcentaje de intervalos RR adyacentes que difieren en más de 50 ms).   |3.57 %|
 </p>
-  <b> Tabla 5. Extracción de características del EKG del evaluado post ejercicio </b>
+  <b> Tabla 8. Extracción de características del EKG del evaluado post ejercicio </b>
 </p>
 
 
