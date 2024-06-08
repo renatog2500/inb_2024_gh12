@@ -374,7 +374,7 @@ print(f"pNN50: {pnn50:.2f} %")
 
 | Parámetro                                                                                   | Valor                                                |
 |---------------------------------------------------------------------------------------------|----------------------------------------------------|
-| SDNN (desviación estándar de los intervalos NN)          |                                  |0.0573 s
+| SDNN (desviación estándar de los intervalos NN)          |                                  | 0.0573 s |
 | RMSSD (raíz cuadrada de la media de las diferencias al cuadrado de intervalos RR sucesivos)  |0.0329 s   |
 | pNN50 (porcentaje de intervalos RR adyacentes que difieren en más de 50 ms).   |    9.30 %     |
 
@@ -421,7 +421,7 @@ print(f"pNN50: {pnn50:.2f} %")
 
 | Parámetro                                                                                   | Valor                                                |
 |---------------------------------------------------------------------------------------------|----------------------------------------------------|
-| SDNN (desviación estándar de los intervalos NN)          |                                  |0.0638 s |
+| SDNN (desviación estándar de los intervalos NN)          |                                  |  0.0638 s |
 | RMSSD (raíz cuadrada de la media de las diferencias al cuadrado de intervalos RR sucesivos)  |                 0.0342 s                              |
 | pNN50 (porcentaje de intervalos RR adyacentes que difieren en más de 50 ms).   |         3.57 %       |
 
@@ -464,7 +464,7 @@ print(f"pNN50: {pnn50:.2f} %")
 
 | Parámetro                                                                                   | Valor                                                |
 |---------------------------------------------------------------------------------------------|----------------------------------------------------|
-| SDNN (desviación estándar de los intervalos NN)          |                                  |0.0214 s|
+| SDNN (desviación estándar de los intervalos NN)          |                                  | 0.0214 s |
 | RMSSD (raíz cuadrada de la media de las diferencias al cuadrado de intervalos RR sucesivos)  |0.0191 s|
 | pNN50 (porcentaje de intervalos RR adyacentes que difieren en más de 50 ms).   |3.57 %|
 </p>
