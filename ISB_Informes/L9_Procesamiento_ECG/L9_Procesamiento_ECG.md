@@ -377,7 +377,7 @@ Los resultados mostraron diferencias notables en los valores de HRV entre los es
 
 ## Archivos <a name="t14"></a>
 
-- [Programa de procesamiento de señal EMG (python)](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L8_Procesamiento_EMG/LAB_8.ipynb) 
+- [Programa de procesamiento de señal EMG (python)](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L9_Procesamiento_ECG/LAB_9.ipynb) 
 
 
 ## Bibliografía: <a name="t15"></a>
