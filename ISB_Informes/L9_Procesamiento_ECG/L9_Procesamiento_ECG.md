@@ -148,13 +148,17 @@ Los resultados de Kania et al.[9] mostraron que las funciones wavelet db1 (Daube
 | --------------- | -----  | ------ |
 |       sym8      |   4    |  $\sigma \sqrt{2 \log N}$|
 
+<p align="center">
+  <b>Tabla 4. Parametros para el filtro sym8</b>
+</p>
+
 Donde: donde σ es la desviación estándar del ruido y 𝑁 es la longitud de la señal
 
 **Transformada Wavelet Discreta (DWT) con filtro Symlet8 de orden 4 (Sym8):**
 
 | Parámetro                           | Valor                                                                       |
 |-------------------------------------|---------------------------------------------------------------------|
-| Función wavelet                 | Symlet 6 (Sym8)                                                  |
+| Función wavelet                 | Symlet 8 (Sym8)                                                  |
 | Nivel de descomposición   | 4                                                                               |
 | Método de umbralización   | Umbralización universal con estimación de sigma   |
 
@@ -226,7 +230,7 @@ detected_peaks3= bsnb.detect_r_peaks(ecg_filtered_1, sr, time_units=True, plot_r
 ```
 <div align="center">
     <img src="Imagenes_L9/Deteccion_de_RR_B1.JPG" alt="wCF14V" width="800">
-    <p><b>Figura 5. Resultado de la detección de picos </b> </p>
+    <p><b>Figura 6. Resultado de la detección de picos </b> </p>
 </div>
 
 
@@ -273,7 +277,7 @@ detected_peaks3= bsnb.detect_r_peaks(ecg_filtered_2, sr, time_units=True, plot_r
 ```
 <div align="center">
     <img src="Imagenes_L9/Deteccion_de_RR_B2.JPG" alt="wCF14V" width="800">
-    <p><b>Figura 6. Resultado de la detección de picos </b> </p>
+    <p><b>Figura 7. Resultado de la detección de picos </b> </p>
 </div>
 
 
@@ -317,7 +321,7 @@ detected_peaks3= bsnb.detect_r_peaks(ecg_filtered_3, sr, time_units=True, plot_r
 ```
 <div align="center">
     <img src="Imagenes_L9/Deteccion_de_RR_post_ejercicio.JPG" alt="wCF14V" width="800">
-    <p><b>Figura 7 Resultado de la detección de picos </b> </p>
+    <p><b>Figura 8 Resultado de la detección de picos </b> </p>
 </div>
 
 ```python
