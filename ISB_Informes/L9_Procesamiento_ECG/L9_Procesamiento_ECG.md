@@ -143,6 +143,7 @@ En el artículo "Heart rate variability: a review" de U. Rajendra Acharya et al.
 Es por eso que para el filtrado de las señales EKG nos basaremos en el estudio realizado por Kania et. al. [9], en donde se investigó la aplicación del filtrado wavelet para reducir el ruido en señales EKG de alta resolución. Los autores evaluaron diferentes funciones wavelet madre y niveles de descomposición para determinar los parámetros óptimos que minimizan el error cuadrático medio (MSE) entre la señal original y la señal filtrada, preservando al mismo tiempo las características morfológicas del EKG.
 Los resultados de Kania et al.[9] mostraron que las funciones wavelet db1 (Daubechies de primer orden) con niveles de descomposición del 4 al 6, sym3 (Symlet de tercer orden) con nivel 4, y sym8 (Symlet de octavo orden) con nivel 4, proporcionaron el mejor desempeño en términos de reducción de ruido y preservación de la morfología del EKG. Además, se destacó la ventaja del filtrado wavelet sobre técnicas convencionales como el promediado de latidos, especialmente en casos de arritmia donde el promediado puede distorsionar la señal.
 
+
 ## Obtención de la variabilidad de la frecuencia cardíaca (HRV):  <a name="t9"></a>
 
 El artículo "Heart rate variability: a review" de U. Rajendra Acharya et al. [6] dedica una parte significativa a la discusión de los diferentes métodos utilizados para analizar la señal de HRV. Estos métodos se pueden agrupar en cuatro categorías principales: métodos de dominio de tiempo, métodos de dominio de frecuencia, métodos no lineales y métodos de tiempo-frecuencia.
@@ -168,10 +169,34 @@ Entre estos, los métodos de dominio de tiempo serían los más fáciles de apli
 
 Haremos uso de BioSignals [10], un software desarrollado por PLUX, el cual ofrece varias opciones para obtener la variabilidad de la frecuencia cardíaca (HRV) a partir de señales de electrocardiograma (ECG). El programa incluye un módulo dedicado al análisis de HRV que permite a los usuarios calcular y visualizar diversos parámetros de HRV en los dominios de tiempo y frecuencia. En el dominio del tiempo, BioSignals puede calcular métricas como SDNN (desviación estándar de los intervalos NN), RMSSD (raíz cuadrada de la media de las diferencias al cuadrado de intervalos RR sucesivos) y pNN50 (porcentaje de intervalos RR adyacentes que difieren en más de 50 ms). 
 
+
 ***Mostramos como obtenemos dichas características del BioSignal***: 
 
 ## Generación de señales  <a name="t11"></a>
 
+### Resposo
+
+| Parámetro                                                                                   | Valor                                                |
+|---------------------------------------------------------------------------------------------|----------------------------------------------------|
+| SDNN (desviación estándar de los intervalos NN)          |                                  |
+| RMSSD (raíz cuadrada de la media de las diferencias al cuadrado de intervalos RR sucesivos)  |                                                 |
+| pNN50 (porcentaje de intervalos RR adyacentes que difieren en más de 50 ms).   |                 |
+
+### Inhalación
+
+| Parámetro                                                                                   | Valor                                                |
+|---------------------------------------------------------------------------------------------|----------------------------------------------------|
+| SDNN (desviación estándar de los intervalos NN)          |                                  |
+| RMSSD (raíz cuadrada de la media de las diferencias al cuadrado de intervalos RR sucesivos)  |                                                 |
+| pNN50 (porcentaje de intervalos RR adyacentes que difieren en más de 50 ms).   |                 |
+
+### Post Ejercicio
+
+| Parámetro                                                                                   | Valor                                                |
+|---------------------------------------------------------------------------------------------|----------------------------------------------------|
+| SDNN (desviación estándar de los intervalos NN)          |                                  |
+| RMSSD (raíz cuadrada de la media de las diferencias al cuadrado de intervalos RR sucesivos)  |                                                 |
+| pNN50 (porcentaje de intervalos RR adyacentes que difieren en más de 50 ms).   |                 |
 
 ## Discusión de los resultados  <a name="t12"></a>
 
