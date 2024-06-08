@@ -185,7 +185,7 @@ ecg_filtered_sym8 = pywt.waverec(coefficients_filtered, 'sym8')
 ***Resultados***: 
 
 <div align="center">
-    <img src="Imagenes_L8/Comparacion_filtro.JPG" alt="wCF14V" width="800">
+    <img src="Imagenes_L9/Comparacion_filtro.JPG" alt="wCF14V" width="800">
     <p><b>Figura 5. Comparación visual de los gráficos </b> </p>
 </div>
 
