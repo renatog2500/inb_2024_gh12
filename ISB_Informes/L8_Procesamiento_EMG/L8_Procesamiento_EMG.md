@@ -117,31 +117,27 @@ La selección de estos filtros se basa en las recomendaciones y hallazgos presen
 ***Código de implementación***
 
 ```python
-import pywt
-import numpy as np
-
-# Cargar la señal EMG
-emg_signal = [...]
+# Cargar la señal EcG
+ecg_signal = signal_mv
 
 # Aplicar la DWT con filtro db2 al nivel de descomposición 4
-coefficients = pywt.wavedec(emg_signal, 'db2', level=4)
+coefficients = pywt.wavedec(ecg_signal, 'db1', level=4)
 
 # Estimar la desviación estándar del ruido
 sigma = np.median(np.abs(coefficients[1])) / 0.6745
 
 # Calcular el umbral universal
-threshold = sigma * np.sqrt(2 * np.log(len(emg_signal)))
+threshold = sigma * np.sqrt(2 * np.log(len(ecg_signal)))
 
 # Realizar la umbralización suave
-coefficients_filtered = pywt.threshold(coefficients, threshold, mode='soft')
+coefficients_filtered = [pywt.threshold(c, threshold, mode='soft') for c in coefficients]
 
 # Reconstruir la señal filtrada
-emg_filtered_db2 = pywt.waverec(coefficients_filtered, 'db2')
+ecg_filtered_db1 = pywt.waverec(coefficients_filtered, 'db1')
+
+# Mostrar la señal filtrada
+ecg_filtered_db1
 ```
-<div align="center">
-    <img src="Imagenes_L8/db2.JPG" alt="wCF14V" width="600">
-    <p><b>Figura 1. Comparación visual gráfico filtrado en db2 vs original </b> </p>
-</div>
 
 **2.  Transformada Wavelet Discreta (DWT) con filtro Daubechies 4 (db4):**
 
@@ -160,32 +156,26 @@ emg_filtered_db2 = pywt.waverec(coefficients_filtered, 'db2')
 ***Código:***
 
 ```python
-
-import pywt
-import numpy as np
-
-# Cargar la señal EMG
-emg_signal = [...]
-
+# Cargar la señal ECG
+ecg_signal = signal_mv
 # Aplicar la DWT con filtro db4 al nivel de descomposición 4
-coefficients = pywt.wavedec(emg_signal, 'db4', level=4)
+coefficients = pywt.wavedec(ecg_signal, 'sym3', level=4)
 
 # Estimar la desviación estándar del ruido
 sigma = np.median(np.abs(coefficients[1])) / 0.6745
 
 # Calcular el umbral universal
-threshold = sigma * np.sqrt(2 * np.log(len(emg_signal)))
+threshold = sigma * np.sqrt(2 * np.log(len(ecg_signal)))
 
-# Realizar la umbralización suave
-coefficients_filtered = pywt.threshold(coefficients, threshold, mode='soft')
+# Realizar la umbralización suave en cada conjunto de coeficientes
+coefficients_filtered = [pywt.threshold(c, threshold, mode='soft') for c in coefficients]
 
 # Reconstruir la señal filtrada
-emg_filtered_db4 = pywt.waverec(coefficients_filtered, 'db4')
+ecg_filtered_sym3 = pywt.waverec(coefficients_filtered, 'sym3')
+
+# Mostrar la señal filtrada
+ecg_filtered_sym3
 ```
-<div align="center">
-    <img src="Imagenes_L8/db4.JPG" alt="wCF14V" width="600">
-    <p><b>Figura 2. Comparación visual gráfico filtrado en db4 vs original </b> </p>
-</div>
 
 **3. Transformada Wavelet Discreta (DWT) con filtro Daubechies 6 (db6):**
 
@@ -205,31 +195,24 @@ emg_filtered_db4 = pywt.waverec(coefficients_filtered, 'db4')
 ***Código:***
 
 ```python
-import pywt
-import numpy as np
-
-# Cargar la señal EMG
-emg_signal = [...]
+# Cargar la señal ECG
+ecg_signal = signal_mv
 
 # Aplicar la DWT con filtro db6 al nivel de descomposición 4
-coefficients = pywt.wavedec(emg_signal, 'db6', level=4)
+coefficients = pywt.wavedec(ecg_signal, 'sym8', level=4)
 
 # Estimar la desviación estándar del ruido
 sigma = np.median(np.abs(coefficients[1])) / 0.6745
 
 # Calcular el umbral universal
-threshold = sigma * np.sqrt(2 * np.log(len(emg_signal)))
+threshold = sigma * np.sqrt(2 * np.log(len(ecg_signal)))
 
-# Realizar la umbralización suave
-coefficients_filtered = pywt.threshold(coefficients, threshold, mode='soft')
+# Realizar la umbralización suave en cada conjunto de coeficientes excepto el primero (cA)
+coefficients_filtered = [coefficients[0]] + [pywt.threshold(c, threshold, mode='soft') for c in coefficients[1:]]
 
 # Reconstruir la señal filtrada
-emg_filtered_db6 = pywt.waverec(coefficients_filtered, 'db6')
+ecg_filtered_sym8 = pywt.waverec(coefficients_filtered, 'sym8')
 ```
-<div align="center">
-    <img src="Imagenes_L8/db6.JPG" alt="wCF14V" width="600">
-    <p><b>Figura 3. Comparación visual gráfico filtrado en db6 vs original </b> </p>
-</div>
 
 ## Comparación de filtros  <a name="t8"></a>
 En el artículo "Surface electromyography signal denoising via EEMD and improved wavelet thresholds" de Sun et al. [5], los autores comparan el rendimiento de diferentes algoritmos de filtrado de señales EMG utilizando tres métodos cuantitativos: la relación señal-ruido (SNR), que mide la relación entre la energía de la señal y la energía del error; la relación señal-ruido pico (PSNR), que representa la relación entre la máxima potencia posible de una señal y la potencia del ruido que afecta su fidelidad; y el error cuadrático medio (RMSE), que define la energía de la señal de error durante el filtrado. Los autores aplican estos métodos a señales EMG con diferentes niveles de ruido gaussiano blanco y comparan los resultados para determinar qué algoritmo logra el mejor rendimiento de filtrado. Haciendo estas comparaciones, se basan en los valores más altos de SNR y PSNR, y el valor más bajo de RMSE para determinar cuál es el mejor filtro utilizado. Donde el resuldato del código nos indicó que el tercer filtro es el mejor.
@@ -238,7 +221,6 @@ En el artículo "Surface electromyography signal denoising via EEMD and improved
 
 ```python
 import numpy as np
-
 def snr(signal, filtered_signal):
     noise = signal - filtered_signal
     return 10 * np.log10(np.sum(signal**2) / np.sum(noise**2))
@@ -269,11 +251,11 @@ def compare_filtering_methods(original_signal, filtered_signal1, filtered_signal
     print(f"RMSE Results: {rmse_results}")
     print(f"Best Filtering Method: Signal {best_method}")
 
-# Load the original EMG signal and the three filtered signals
-original_signal = signal_vm
-filtered_signal1 = emg_filtered_db2 
-filtered_signal2 = emg_filtered_db4 
-filtered_signal3 = emg_filtered_db6 
+# Load the original ECG signal and the three filtered signals
+original_signal = signal_mv
+filtered_signal1 = ecg_filtered_db1
+filtered_signal2 = ecg_filtered_sym3
+filtered_signal3 = ecg_filtered_sym8
 
 # Compare the filtering methods
 compare_filtering_methods(original_signal, filtered_signal1, filtered_signal2, filtered_signal3)

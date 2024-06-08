@@ -142,7 +142,171 @@ En el artículo "Heart rate variability: a review" de U. Rajendra Acharya et al.
 
 Es por eso que para el filtrado de las señales EKG nos basaremos en el estudio realizado por Kania et. al. [9], en donde se investigó la aplicación del filtrado wavelet para reducir el ruido en señales EKG de alta resolución. Los autores evaluaron diferentes funciones wavelet madre y niveles de descomposición para determinar los parámetros óptimos que minimizan el error cuadrático medio (MSE) entre la señal original y la señal filtrada, preservando al mismo tiempo las características morfológicas del EKG.
 Los resultados de Kania et al.[9] mostraron que las funciones wavelet db1 (Daubechies de primer orden) con niveles de descomposición del 4 al 6, sym3 (Symlet de tercer orden) con nivel 4, y sym8 (Symlet de octavo orden) con nivel 4, proporcionaron el mejor desempeño en términos de reducción de ruido y preservación de la morfología del EKG. Además, se destacó la ventaja del filtrado wavelet sobre técnicas convencionales como el promediado de latidos, especialmente en casos de arritmia donde el promediado puede distorsionar la señal.
+**1. Transformada Wavelet Discreta (DWT) con filtro Daubechies 1 (db1):**
 
+***Justificación de uso:*** La DWT con filtro db2 al nivel de descomposición 4 se seleccionó como una opción para filtrar señales EMG debido a su capacidad para reducir el ruido y preservar las características importantes de la señal.
+
+| Parámetro                 | Valor                                                |
+|---------------------------|----------------------------------------------------|
+| Función wavelet           | Daubechies 2 (db2)                                |
+| Nivel de descomposición   | 4                                                 |
+| Método de umbralización   | Umbralización universal con estimación de sigma   |
+
+<p align="center">
+  <b>Tabla 2. Parametros para el filtro db2</b>
+</p>
+
+***Código de implementación***
+
+```python
+# Cargar la señal EcG
+ecg_signal = signal_mv
+
+# Aplicar la DWT con filtro db2 al nivel de descomposición 4
+coefficients = pywt.wavedec(ecg_signal, 'db1', level=4)
+
+# Estimar la desviación estándar del ruido
+sigma = np.median(np.abs(coefficients[1])) / 0.6745
+
+# Calcular el umbral universal
+threshold = sigma * np.sqrt(2 * np.log(len(ecg_signal)))
+
+# Realizar la umbralización suave
+coefficients_filtered = [pywt.threshold(c, threshold, mode='soft') for c in coefficients]
+
+# Reconstruir la señal filtrada
+ecg_filtered_db1 = pywt.waverec(coefficients_filtered, 'db1')
+
+# Mostrar la señal filtrada
+ecg_filtered_db1
+```
+
+**2.  Transformada Wavelet Discreta (DWT) con filtro Daubechies 4 (Sym3):**
+
+***Justificación de uso:*** La DWT con filtro db4 al nivel de descomposición 4 se seleccionó debido a su capacidad para proporcionar un buen compromiso en la reducción de ruido y la preservación de características importantes en señales EMG con diferentes niveles de ruido.
+
+| Parámetro                 | Valor                                                |
+|---------------------------|----------------------------------------------------|
+| Función wavelet           | Daubechies 4 (db4)                                |
+| Nivel de descomposición   | 4                                                 |
+| Método de umbralización   | Umbralización universal con estimación de sigma   |
+
+<p align="center">
+  <b>Tabla 2. Parametros para el filtro db4 </b>
+</p>
+
+***Código:***
+
+```python
+# Cargar la señal ECG
+ecg_signal = signal_mv
+# Aplicar la DWT con filtro db4 al nivel de descomposición 4
+coefficients = pywt.wavedec(ecg_signal, 'sym3', level=4)
+
+# Estimar la desviación estándar del ruido
+sigma = np.median(np.abs(coefficients[1])) / 0.6745
+
+# Calcular el umbral universal
+threshold = sigma * np.sqrt(2 * np.log(len(ecg_signal)))
+
+# Realizar la umbralización suave en cada conjunto de coeficientes
+coefficients_filtered = [pywt.threshold(c, threshold, mode='soft') for c in coefficients]
+
+# Reconstruir la señal filtrada
+ecg_filtered_sym3 = pywt.waverec(coefficients_filtered, 'sym3')
+
+# Mostrar la señal filtrada
+ecg_filtered_sym3
+```
+
+
+**3. Transformada Wavelet Discreta (DWT) con filtro Daubechies 6 (Sym8):**
+
+***Justificación del uso:*** La DWT con filtro db6 al nivel de descomposición 4 se seleccionó como otra opción para filtrar señales EMG, proporcionando un equilibrio entre la reducción de ruido y la preservación de características relevantes.
+
+
+| Parámetro                           | Valor                                                                       |
+|-------------------------------------|---------------------------------------------------------------------|
+| Función wavelet                 | Daubechies 6 (db6)                                                  |
+| Nivel de descomposición   | 4                                                                               |
+| Método de umbralización   | Umbralización universal con estimación de sigma   |
+
+<p align="center">
+  <b>Tabla 3. Parametros para el filtro db6</b>
+</p>
+
+```python
+# Cargar la señal ECG
+ecg_signal = signal_mv
+
+# Aplicar la DWT con filtro db6 al nivel de descomposición 4
+coefficients = pywt.wavedec(ecg_signal, 'sym8', level=4)
+
+# Estimar la desviación estándar del ruido
+sigma = np.median(np.abs(coefficients[1])) / 0.6745
+
+# Calcular el umbral universal
+threshold = sigma * np.sqrt(2 * np.log(len(ecg_signal)))
+
+# Realizar la umbralización suave en cada conjunto de coeficientes excepto el primero (cA)
+coefficients_filtered = [coefficients[0]] + [pywt.threshold(c, threshold, mode='soft') for c in coefficients[1:]]
+
+# Reconstruir la señal filtrada
+ecg_filtered_sym8 = pywt.waverec(coefficients_filtered, 'sym8')
+```
+
+***Resultados***: 
+```python
+def snr(signal, filtered_signal):
+    noise = signal - filtered_signal
+    return 10 * np.log10(np.sum(signal**2) / np.sum(noise**2))
+
+def psnr(signal, filtered_signal):
+    mse = np.mean((signal - filtered_signal)**2)
+    return 20 * np.log10(np.max(signal) / np.sqrt(mse))
+
+def rmse(signal, filtered_signal):
+    return np.sqrt(np.mean((signal - filtered_signal)**2))
+
+def compare_filtering_methods(original_signal, filtered_signal1, filtered_signal2, filtered_signal3):
+    snr_results = [snr(original_signal, filtered_signal) for filtered_signal in [filtered_signal1, filtered_signal2, filtered_signal3]]
+    psnr_results = [psnr(original_signal, filtered_signal) for filtered_signal in [filtered_signal1, filtered_signal2, filtered_signal3]]
+    rmse_results = [rmse(original_signal, filtered_signal) for filtered_signal in [filtered_signal1, filtered_signal2, filtered_signal3]]
+
+    best_snr_index = np.argmax(snr_results)
+    best_psnr_index = np.argmax(psnr_results)
+    best_rmse_index = np.argmin(rmse_results)
+
+    if best_snr_index == best_psnr_index == best_rmse_index:
+        best_method = best_snr_index + 1
+    else:
+        best_method = np.argmax([snr_results[best_snr_index], psnr_results[best_psnr_index], -rmse_results[best_rmse_index]]) + 1
+
+    print(f"SNR Results: {snr_results}")
+    print(f"PSNR Results: {psnr_results}")
+    print(f"RMSE Results: {rmse_results}")
+    print(f"Best Filtering Method: Signal {best_method}")
+
+# Load the original ECG signal and the three filtered signals
+original_signal = signal_mv
+filtered_signal1 = ecg_filtered_db1
+filtered_signal2 = ecg_filtered_sym3
+filtered_signal3 = ecg_filtered_sym8
+
+# Compare the filtering methods
+compare_filtering_methods(original_signal, filtered_signal1, filtered_signal2, filtered_signal3)
+```
+
+<div align="center">
+    <img src="Imagenes_L9/Resultados.JPG" alt="wCF14V" width="800">
+    <p><b>Figura 3. Resultado del cálculo de SNR, PSNR, RMSE de cada filtro y cuál es el filtro ganador </b> </p>
+</div>
+
+
+<div align="center">
+    <img src="Imagenes_L9/Comparacion_filtro.JPG" alt="wCF14V" width="800">
+    <p><b>Figura 4. Comparación visual de los gráficos </b> </p>
+</div>
 
 ## Obtención de la variabilidad de la frecuencia cardíaca (HRV):  <a name="t9"></a>
 
@@ -164,6 +328,7 @@ Estos métodos, como la transformada wavelet, permiten analizar cambios en el co
 
 Entre estos, los métodos de dominio de tiempo serían los más fáciles de aplicar en una señal de ECG para analizar la variabilidad de la frecuencia cardíaca (HRV) debido a su simplicidad conceptual, facilidad de implementación, interpretación directa y menor complejidad computacional en comparación con los métodos de dominio de frecuencia, no lineales y tiempo-frecuencia. Estos métodos implican el cálculo de parámetros estadísticos como SDNN, RMSSD y pNN50 directamente a partir de la serie de intervalos RR, lo que los hace accesibles y rápidos de aplicar. 
 
+***Resultados***: 
 
 ## Extracción de características  <a name="t10"></a>
 
@@ -174,25 +339,91 @@ Haremos uso de BioSignals [10], un software desarrollado por PLUX, el cual ofrec
 
 ## Generación de señales y obtención de características <a name="t11"></a>
 
-### Resposo
+### Reposo
+```python
+detected_peaks3= bsnb.detect_r_peaks(ecg_filtered_1, sr, time_units=True, plot_result=True)
+```
+<div align="center">
+    <img src="Imagenes_L9/Deteccion_de_RR_B1.JPG" alt="wCF14V" width="800">
+    <p><b>Figura 5. Resultado de la detección de picos </b> </p>
+</div>
+
+
+```python
+# Suponiendo que los picos están en el primer elemento de la tupla
+definitive_peaks1 = detected_peaks1[0]  # Ajusta el índice según el contenido
+
+# Ahora continúa con el cálculo de los intervalos RR y las métricas HRV
+rr_intervals = np.diff(definitive_peaks1) 
+
+# Calcular SDNN
+sdnn = np.std(rr_intervals)
+
+# Calcular RMSSD
+rmssd = np.sqrt(np.mean(np.diff(rr_intervals) ** 2))
+
+# Calcular pNN50
+nn50 = np.sum(np.abs(np.diff(rr_intervals)) > 0.05)
+pnn50 = (nn50 / len(rr_intervals)) * 100
+
+# Imprimir los resultados
+print(f"SDNN: {sdnn:.4f} s")
+print(f"RMSSD: {rmssd:.4f} s")
+print(f"pNN50: {pnn50:.2f} %")
+```
 
 | Parámetro                                                                                   | Valor                                                |
 |---------------------------------------------------------------------------------------------|----------------------------------------------------|
-| SDNN (desviación estándar de los intervalos NN)          |                                  |
-| RMSSD (raíz cuadrada de la media de las diferencias al cuadrado de intervalos RR sucesivos)  |                                                 |
-| pNN50 (porcentaje de intervalos RR adyacentes que difieren en más de 50 ms).   |                 |
+| SDNN (desviación estándar de los intervalos NN)          |                                  |0.0573 s
+| RMSSD (raíz cuadrada de la media de las diferencias al cuadrado de intervalos RR sucesivos)  |0.0329 s   |
+| pNN50 (porcentaje de intervalos RR adyacentes que difieren en más de 50 ms).   |    9.30 %     |
 
 </p>
   <b> Tabla 3. Extracción de características del EKG del evaluado en reposo </b>
 </p>
 
-### Inhalación
+
+
+
+### Post Inhalación
+
+```python
+detected_peaks3= bsnb.detect_r_peaks(ecg_filtered_2, sr, time_units=True, plot_result=True)
+```
+<div align="center">
+    <img src="Imagenes_L9/Deteccion_de_RR_B2.JPG" alt="wCF14V" width="800">
+    <p><b>Figura 6. Resultado de la detección de picos </b> </p>
+</div>
+
+
+```python
+# Suponiendo que los picos están en el primer elemento de la tupla
+definitive_peaks2 = detected_peaks2[0]  # Ajusta el índice según el contenido
+
+# Ahora continúa con el cálculo de los intervalos RR y las métricas HRV
+rr_intervals = np.diff(definitive_peaks2) 
+
+# Calcular SDNN
+sdnn = np.std(rr_intervals)
+
+# Calcular RMSSD
+rmssd = np.sqrt(np.mean(np.diff(rr_intervals) ** 2))
+
+# Calcular pNN50
+nn50 = np.sum(np.abs(np.diff(rr_intervals)) > 0.05)
+pnn50 = (nn50 / len(rr_intervals)) * 100
+
+# Imprimir los resultados
+print(f"SDNN: {sdnn:.4f} s")
+print(f"RMSSD: {rmssd:.4f} s")
+print(f"pNN50: {pnn50:.2f} %")
+```
 
 | Parámetro                                                                                   | Valor                                                |
 |---------------------------------------------------------------------------------------------|----------------------------------------------------|
-| SDNN (desviación estándar de los intervalos NN)          |                                  |
-| RMSSD (raíz cuadrada de la media de las diferencias al cuadrado de intervalos RR sucesivos)  |                                                 |
-| pNN50 (porcentaje de intervalos RR adyacentes que difieren en más de 50 ms).   |                 |
+| SDNN (desviación estándar de los intervalos NN)          |                                  |0.0638 s |
+| RMSSD (raíz cuadrada de la media de las diferencias al cuadrado de intervalos RR sucesivos)  |                 0.0342 s                              |
+| pNN50 (porcentaje de intervalos RR adyacentes que difieren en más de 50 ms).   |         3.57 %       |
 
 </p>
   <b> Tabla 4. Extracción de características del EKG del evaluado inhalando </b>
@@ -200,11 +431,42 @@ Haremos uso de BioSignals [10], un software desarrollado por PLUX, el cual ofrec
 
 ### Post Ejercicio
 
+```python
+detected_peaks3= bsnb.detect_r_peaks(ecg_filtered_3, sr, time_units=True, plot_result=True)
+```
+<div align="center">
+    <img src="Imagenes_L9/Deteccion_de_RR_post_ejercicio.JPG" alt="wCF14V" width="800">
+    <p><b>Figura 6. Resultado de la detección de picos </b> </p>
+</div>
+
+```python
+# Suponiendo que los picos están en el primer elemento de la tupla
+definitive_peaks3 = detected_peaks3[0]  # Ajusta el índice según el contenido
+
+# Ahora continúa con el cálculo de los intervalos RR y las métricas HRV
+rr_intervals = np.diff(definitive_peaks3) 
+
+# Calcular SDNN
+sdnn = np.std(rr_intervals)
+
+# Calcular RMSSD
+rmssd = np.sqrt(np.mean(np.diff(rr_intervals) ** 2))
+
+# Calcular pNN50
+nn50 = np.sum(np.abs(np.diff(rr_intervals)) > 0.05)
+pnn50 = (nn50 / len(rr_intervals)) * 100
+
+# Imprimir los resultados
+print(f"SDNN: {sdnn:.4f} s")
+print(f"RMSSD: {rmssd:.4f} s")
+print(f"pNN50: {pnn50:.2f} %")
+```
+
 | Parámetro                                                                                   | Valor                                                |
 |---------------------------------------------------------------------------------------------|----------------------------------------------------|
-| SDNN (desviación estándar de los intervalos NN)          |                                  |
-| RMSSD (raíz cuadrada de la media de las diferencias al cuadrado de intervalos RR sucesivos)  |                                                 |
-| pNN50 (porcentaje de intervalos RR adyacentes que difieren en más de 50 ms).   |                 |
+| SDNN (desviación estándar de los intervalos NN)          |                                  |0.0214 s|
+| RMSSD (raíz cuadrada de la media de las diferencias al cuadrado de intervalos RR sucesivos)  |0.0191 s|
+| pNN50 (porcentaje de intervalos RR adyacentes que difieren en más de 50 ms).   |3.57 %|
 </p>
   <b> Tabla 5. Extracción de características del EKG del evaluado post ejercicio </b>
 </p>
