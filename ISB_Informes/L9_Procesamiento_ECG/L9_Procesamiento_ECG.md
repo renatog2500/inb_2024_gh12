@@ -12,7 +12,7 @@
        4.2.3.[Filtrado](#t8)\
        4.2.4.[Obtención de la variabilidad de la frecuencia cardíaca (HRV)](#t9)\
        4.2.5.[Extracción de características](#t10)\
-       4.2.6.[Generación de señales](#t11)
+       4.2.6.[Generación de señales y obtención de características](#t11)
 7. [Discusión](#t12)
 8. [Conclusión](#t13)
 9. [Archivos](#t14)
@@ -85,7 +85,7 @@ En la siguiente tabla, elaborada utilizando la referencia [7], se explicará en 
 * Aplicar técnicas de filtrado para eliminar ruidos e interferencias presentes en las señales ECG, como desviaciones de la línea base, ruido muscular y artefactos de movimiento.
 * Detectar con precisión las ubicaciones de los picos de las ondas R en las señales ECG filtradas.
 * Graficar y visualizar las ondas R detectadas.
-* Calcular la variabilidad de la frecuencia cardíaca (HRV) a partir de los intervalos R-R comparando el uso del programa BioSignals con respecto a un artículo académico. 
+* Calcular la variabilidad de la frecuencia cardíaca (HRV) a partir de los intervalos R-R. 
   
 ## Metodología <a name="t4"></a>
 En este laboratorio, nos enfocaremos en el tratamiento de la señal de ECG adquirida previamente utilizando el Kit BITalino. 
