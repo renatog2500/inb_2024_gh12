@@ -359,11 +359,21 @@ print(f"pNN50: {pnn50:.2f} %")
 
 ## Discusión de los resultados  <a name="t12"></a>
 
+Los resultados obtenidos en este estudio demuestran la importancia del procesamiento adecuado de las señales de ECG para extraer información relevante sobre la variabilidad de la frecuencia cardíaca (HRV). La aplicación de técnicas de filtrado, como la transformada wavelet discreta con el filtro Symlet8 de orden 4, resultó efectiva para reducir el ruido y mejorar la calidad de la señal ECG.
 
+La detección precisa de los picos R en las señales ECG filtradas fue crucial para el cálculo de los intervalos RR y la posterior obtención de métricas de HRV en el dominio del tiempo, como SDNN, RMSSD y pNN50. Estas métricas proporcionaron información valiosa sobre la variabilidad de la frecuencia cardíaca en diferentes condiciones fisiológicas.
 
+Los resultados mostraron diferencias notables en los valores de HRV entre los estados de reposo, post-inhalación y post-ejercicio.
+
+- En reposo, se observaron valores más altos de SDNN y RMSSD en comparación con los otros estados.
+- En la inhalación, se observó una ligera disminución en los valores de HRV.
+- En la etapa post ejercicio, se observó una marcada disminución en los valores de HRV.
+   
 ## Conclusiones <a name="t13"></a>
 
-
+1. El procesamiento adecuado de las señales de ECG, incluyendo técnicas de filtrado como la transformada wavelet discreta con el filtro Symlet8 de orden 4, es esencial para obtener información precisa sobre la variabilidad de la frecuencia cardíaca (HRV).
+2. La detección precisa de los picos R en las señales ECG filtradas es fundamental para el cálculo de los intervalos RR y la posterior obtención de métricas de HRV en el dominio del tiempo, como SDNN, RMSSD y pNN50.
+3. Los valores de HRV difieren significativamente entre los estados de reposo, post-inhalación y post-ejercicio, lo que sugiere que estas métricas son sensibles a los cambios en el estado fisiológico y la regulación autonómica del corazón.
 
 ## Archivos <a name="t14"></a>
 
@@ -372,7 +382,25 @@ print(f"pNN50: {pnn50:.2f} %")
 
 ## Bibliografía: <a name="t15"></a>
 
+[1] S. Śmigiel, K. Pałczyński, y D. Ledziński, “ECG Signal Classification Using Deep Learning Techniques Based on the PTB-XL Dataset”, Entropy, vol. 23, n.o 9, p. 1121, ago. 2021, doi: 10.3390/e23091121.
 
+[2] E. J. Da S Luz, T. M. Nunes, V. H. C. De Albuquerque, J. P. Papa, y D. Menotti, “ECG arrhythmia classification based on optimum-path forest”, Expert Systems With Applications, vol. 40, n.o 9, pp. 3561-3573, jul. 2013, doi: 10.1016/j.eswa.2012.12.063.  
+
+[3] Y. Sattar y L. Chhabra, “Electrocardiogram”, StatPearls - NCBI Bookshelf, 5 de junio de 2023. https://www.ncbi.nlm.nih.gov/books/NBK549803/
+
+[4] S. Chatterjee, R. S. Thakur, R. N. Yadav, L. Gupta, y D. K. Raghuvanshi, “Review of noise removal techniques in ECG signals”, IET Signal Processing, vol. 14, n.o 9, pp. 569-590, dic. 2020, doi: 10.1049/iet-spr.2020.0104.
+
+[5] T. Li y M. Zhou, “ECG Classification Using Wavelet Packet Entropy and Random Forests”, Entropy, vol. 18, n.o 8, p. 285, ago. 2016, doi: 10.3390/e18080285.
+
+[6] U. R. Acharya, K. P. Joseph, N. Kannathal, C. M. Lim, y J. S. Suri, “Heart rate variability: a review”, Medical & Biological Engineering & Computing, vol. 44, n.o 12, pp. 1031-1051, nov. 2006, doi: 10.1007/s11517-006-0119-0.
+
+[7] M. Malik et al., “Heart rate variability: Standards of measurement, physiological interpretation, and clinical use”, European Heart Journal, vol. 17, n.o 3, pp. 354-381, mar. 1996, doi: 10.1093/oxfordjournals.eurheartj.a014868. 
+
+[8] BITalino (r)evolution Home Guide. PLUX-Wireless Biosignals, S A. Lisbon Portugal 2020.https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide2_ECG.pdf
+
+[9] Kania, M., Fereniec, M., Maniewski, R., & Institute of Biocybernetics and Biomedical Engineering. (2007). Wavelet Denoising for Multi-lead High Resolution ECG Signals. MEASUREMENT SCIENCE REVIEW, 7, 4. https://www.measurement.sk/2007/S2/Kania.pdf 
+
+[10] Heart rate variability (HRV) add-on. (s. f.). PLUX Biosignals. https://www.pluxbiosignals.com/products/heart-rate-variability-hrv-add-on
 
 
 
