@@ -143,7 +143,12 @@ En el artículo "Heart rate variability: a review" de U. Rajendra Acharya et al.
 Es por eso que para el filtrado de las señales EKG nos basaremos en el estudio realizado por Kania et. al. [9], en donde se investigó la aplicación del filtrado wavelet para reducir el ruido en señales EKG de alta resolución. Los autores evaluaron diferentes funciones wavelet madre y niveles de descomposición para determinar los parámetros óptimos que minimizan el error cuadrático medio (MSE) entre la señal original y la señal filtrada, preservando al mismo tiempo las características morfológicas del EKG.
 Los resultados de Kania et al.[9] mostraron que las funciones wavelet db1 (Daubechies de primer orden) con niveles de descomposición del 4 al 6, sym3 (Symlet de tercer orden) con nivel 4, y sym8 (Symlet de octavo orden) con nivel 4, proporcionaron el mejor desempeño en términos de reducción de ruido y preservación de la morfología del EKG. Además, se destacó la ventaja del filtrado wavelet sobre técnicas convencionales como el promediado de latidos, especialmente en casos de arritmia donde el promediado puede distorsionar la señal.
 
+***Parámetros elegidos***
+| Función Wavelet | Nivel  | Umbral | 
+| --------------- | -----  | ------ |
+|       sym8      |   4    |  $\sigma \sqrt{2 \log N}$|
 
+Donde: donde σ es la desviación estándar del ruido y 𝑁 es la longitud de la señal
 
 **Transformada Wavelet Discreta (DWT) con filtro Symlet8 de orden 4 (Sym8):**
 
