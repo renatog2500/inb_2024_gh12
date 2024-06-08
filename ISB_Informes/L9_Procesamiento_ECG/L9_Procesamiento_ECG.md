@@ -182,6 +182,10 @@ Haremos uso de BioSignals [10], un software desarrollado por PLUX, el cual ofrec
 | RMSSD (raíz cuadrada de la media de las diferencias al cuadrado de intervalos RR sucesivos)  |                                                 |
 | pNN50 (porcentaje de intervalos RR adyacentes que difieren en más de 50 ms).   |                 |
 
+</p>
+  <b> Tabla 3. Extracción de características del EKG del evaluado en reposo </b>
+</p>
+
 ### Inhalación
 
 | Parámetro                                                                                   | Valor                                                |
@@ -190,6 +194,10 @@ Haremos uso de BioSignals [10], un software desarrollado por PLUX, el cual ofrec
 | RMSSD (raíz cuadrada de la media de las diferencias al cuadrado de intervalos RR sucesivos)  |                                                 |
 | pNN50 (porcentaje de intervalos RR adyacentes que difieren en más de 50 ms).   |                 |
 
+</p>
+  <b> Tabla 4. Extracción de características del EKG del evaluado inhalando </b>
+</p>
+
 ### Post Ejercicio
 
 | Parámetro                                                                                   | Valor                                                |
@@ -197,6 +205,10 @@ Haremos uso de BioSignals [10], un software desarrollado por PLUX, el cual ofrec
 | SDNN (desviación estándar de los intervalos NN)          |                                  |
 | RMSSD (raíz cuadrada de la media de las diferencias al cuadrado de intervalos RR sucesivos)  |                                                 |
 | pNN50 (porcentaje de intervalos RR adyacentes que difieren en más de 50 ms).   |                 |
+</p>
+  <b> Tabla 5. Extracción de características del EKG del evaluado post ejercicio </b>
+</p>
+
 
 ## Discusión de los resultados  <a name="t12"></a>
 
