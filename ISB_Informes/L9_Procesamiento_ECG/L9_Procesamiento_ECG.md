@@ -172,7 +172,7 @@ Haremos uso de BioSignals [10], un software desarrollado por PLUX, el cual ofrec
 
 ***Mostramos como obtenemos dichas características del BioSignal***: 
 
-## Generación de señales  <a name="t11"></a>
+## Generación de señales y obtención de características <a name="t11"></a>
 
 ### Resposo
 
