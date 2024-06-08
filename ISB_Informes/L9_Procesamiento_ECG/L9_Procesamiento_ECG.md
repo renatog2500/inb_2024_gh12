@@ -282,10 +282,6 @@ def compare_filtering_methods(original_signal, filtered_signal1, filtered_signal
     else:
         best_method = np.argmax([snr_results[best_snr_index], psnr_results[best_psnr_index], -rmse_results[best_rmse_index]]) + 1
 
-    print(f"SNR Results: {snr_results}")
-    print(f"PSNR Results: {psnr_results}")
-    print(f"RMSE Results: {rmse_results}")
-    print(f"Best Filtering Method: Signal {best_method}")
 
 # Load the original ECG signal and the three filtered signals
 original_signal = signal_mv
