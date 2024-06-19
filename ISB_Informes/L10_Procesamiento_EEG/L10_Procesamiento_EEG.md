@@ -47,7 +47,7 @@ Hay varios métodos propuestos en la literatura para la clasificación de señal
 
 <div align="center">
     <img src="Imagenes_L10\Figura2.png" alt="wCF14V" width="500">
-    <p><b> Figura 2. Etapas del ánalisis de la Señal EEG. Extraído de [4] </b> </p>
+    <p><b> Figura 2. Etapas del ánalisis de la Señal EEG. Extraído de [1] </b> </p>
 </div>
 
 
@@ -97,7 +97,13 @@ Hay varios métodos propuestos en la literatura para la clasificación de señal
 
 ## Bibliografía: <a name="t15"></a>
 
+[1] A. Chaddad, Y. Wu, R. Kateb, y A. Bouridane, “Electroencephalography Signal Processing: A Comprehensive Review and Analysis of Methods and Technique” », Sensors, vol. 23, n.o 14, p. 6434, jul. 2023, doi: 10.3390/s23146434.
 
+[2] M. X. Cohen, “Where Does EEG Come From and What Does It Mean?”, Trends In Neurosciences, vol. 40, n.o 4, pp. 208-218, abr. 2017, doi: 10.1016/j.tins.2017.02.004.
+
+[3] P. A. Abhang, B. W. Gawali, y S. C. Mehrotra, “Technological Basics of EEG Recording and Operation of Apparatus”, en Elsevier eBooks, 2016, pp. 19-50. doi: 10.1016/b978-0-12-804490-2.00002-6.
+
+[4] C. S. Nayak and A. C. Anilkumar, "EEG Normal Waveforms," in StatPearls [Internet], Treasure Island (FL): StatPearls Publishing, updated Jul. 24, 2023, Available: https://www.ncbi.nlm.nih.gov/books/NBK539805.
 
 
 
