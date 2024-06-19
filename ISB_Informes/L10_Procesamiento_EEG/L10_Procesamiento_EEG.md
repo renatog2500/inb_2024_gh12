@@ -50,16 +50,17 @@ El EEG es capaz de detectar y registrar diferentes tipos de ondas cerebrales, qu
 Hay varios métodos propuestos en la literatura para la clasificación de señales EEG, los cuales se pueden dividir en cuatro categorías: preprocesamiento, segmentación, extracción de características y clasificación. Este procedimiento se explicará a continuación usando la referencia [1]. Asimismo, estos cuatro pasos del tratamiento de señales ECG se muestran a modo de diagrama en la figura 2. 
 
 <div align="center">
-    <img src="Imagenes_L10\Figura_1.png" alt="wCF14V" width="500">
-    <p><b>Figura 2. Muestras de ondas cerebrales con frecuencias dominantes pertenecientes a las bandas beta, alfa, theta y delta y gamma. Extraído de [1] </b> </p>
-</div>
-
-<div align="center">
     <img src="Imagenes_L9\Figura_2.png" alt="wCF14V" width="300">
     <p><b> Figura 2. Etapas del ánalisis de la Señal EEG. Extraído de [4] </b> </p>
 </div>
 
+
 **Etapas de la clasificación:** 
+
+* **Adquisición**Como se mencionó anteriormente, para adquirir las señales EEG los electrodos se colocan en el cuero cabelludo, donde la data se puede recoger de manera invasiva (con electrodos implantados) o no invasiva (con electrodos en la superficie del cuero cabelludo). La mayoría de los métodos actuales utilizan técnicas no invasivas debido a su menor riesgo y mayor facilidad de uso.
+* **Eliminación de ruido**: Las señales EEG suelen contener ruido y artefactos provenientes de diversas fuentes como movimientos musculares, parpadeos y actividad cardíaca. Para obtener datos precisos, es esencial eliminar estos ruidos utilizando técnicas como la regresión, el análisis de componentes independientes (ICA), y la transformación de wavelet, que ayudan a separar y eliminar las fuentes de ruido manteniendo la señal de interés.
+*  **Ingeniería de características**: Esta etapa consiste en extraer las características más relevantes de las señales EEG para facilitar su análisis. Para ello se analizan las propiedades espectrales, temporales y de conectividad funcional mediante métodos como el análisis de Fourier y de wavelets. Esto nos permite capturar patrones y dinámicas subyacentes, útiles en aplicaciones como interfaces cerebro-computadora, monitoreo cognitivo y diagnóstico de trastornos neurológicos.
+*  **Clasificación**: En esta etapa, las características extraídas se utilizan para clasificar las señales EEG en diferentes categorías. Se aplican algoritmos de machine learning y deep learning, como las máquinas de soporte vectorial (SVM) y las redes neuronales convolucionales (CNN), que pueden aprender a identificar patrones complejos en las señales EEG y realizar tareas como la detección de enfermedades neurológicas, la identificación de estados cognitivos y más.
 
 
 ## **Objetivos del Laboratorio** <a name = "t3"></a>
