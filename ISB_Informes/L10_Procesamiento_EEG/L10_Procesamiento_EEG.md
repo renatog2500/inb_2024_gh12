@@ -25,18 +25,38 @@ ________________________________________________________________________________
 
 
 ## Introducción  <a name = "t2"></a>
+La electroencefalografía (EEG) es una técnica no invasiva que se utiliza para registrar la actividad eléctrica del cerebro. El EEG mide las fluctuaciones de voltaje resultantes de las corrientes iónicas dentro de las neuronas del cerebro [1]. Estas señales eléctricas se detectan mediante electrodos colocados sobre el cuero cabelludo y se registran en función del tiempo, lo que permite obtener una representación de los patrones de actividad cerebral [2].
 
 
 <div align="center">
-    <img src="Imagenes_L9\Figura_1.png" alt="wCF14V" width="500">
-    <p><b>Figura 1. Señal de ECG de latido cardíaco normal. Extraído de [2] </b> </p>
+    <img src="Imagenes_L10\Figura_1.png" alt="wCF14V" width="500">
+    <p><b>Figura 1. Muestras de ondas cerebrales con frecuencias dominantes pertenecientes a las bandas beta, alfa, theta y delta y gamma. Extraído de [3] </b> </p>
 </div>
 
+El EEG es capaz de detectar y registrar diferentes tipos de ondas cerebrales, que se clasifican según su frecuencia y amplitud [3] . A continuación se mostrarán los cinco principales tipos de ondas cerebrales en una tabla, basada en la información de la referencia [4]: 
 
+| **Tipo de Onda** | **Frecuencia (Hz)** | ** Características y Estado Cerebral** |
+|------------------|---------------------|---------------------|
+| **Delta**        | 0.5-4               | Ondas de baja frecuencia y alta amplitud observadas durante el sueño profundo y los estados de inconsciencia, destacándose en las regiones frontocentrales de la cabeza. Patológicamente, se presenta en personas despiertas con encefalopatía generalizada y disfunción cerebral focal, relacionada con epilepsia del lóbulo temporal. |
+| **Theta**        | 4-8                 | Durante la somnolencia y las primeras etapas del sueño, se manifiesta el ritmo theta, destacándose especialmente en las regiones frontocentrales de la cabeza. A medida que la somnolencia avanza, este ritmo se desplaza gradualmente hacia las áreas posteriores del cerebro, sustituyendo progresivamente al ritmo alfa. En estados emocionales intensos, la actividad de la onda theta se intensifica. Además, su presencia durante los estados de vigilia puede indicar una disfunción cerebral focal. |
+| **Alfa**         | 8-13                | Este ritmo se observa durante estados de relajación y vigilia tranquila, así como en actividades mentales poco exigentes. Es predominante en la región occipital de adultos despiertos y constituye un patrón fundamental en el EEG desde temprana edad hasta edades avanzadas en individuos sanos. Las ondas alfa se hacen más notables con los ojos cerrados y durante la relajación mental, disminuyendo cuando se abren los ojos y durante el esfuerzo mental. La amplitud de este ritmo varía entre individuos y también dentro de un mismo individuo en diferentes momentos. En casos de encefalopatía difusa, puede observarse una actividad alfa generalizada que no responde a estímulos, mientras que la disminución del ritmo alfa se considera un indicador de disfunción cerebral generalizada. |
+| **Beta**         | 13-30               | Predominante en adultos y niños sin anomalías, es más notable en las regiones frontal y central de la cabeza, disminuyendo hacia las áreas posteriores. Se asocia con estados de alerta, atención activa, concentración y pensamiento activo. Además, muchos medicamentos sedantes como barbitúricos, hidrato de cloral y benzodiazepinas aumentan tanto la amplitud como la frecuencia del ritmo beta en los individuos. La atenuación focal, regional o hemisférica del ritmo beta puede estar relacionada con lesiones corticales, malformaciones, o acumulaciones de líquido subdural, epidural o subgaleal. |
+| **Gamma**        | 30-100              | Estas ondas de alta frecuencia están asociadas con la percepción consciente, la integración de información y los procesos cognitivos de alto nivel. Se sugiere que estos ritmos están relacionados con la integración de percepciones sensoriales y la atención. Además, estos ritmos pueden ser útiles para detectar desmielinización y otros problemas de integridad cortical. |
+
+<p align="center">
+  <b>Tabla 1. Características de las 5 principales ondas cerebrales. </b>
+</p>
+
+Hay varios métodos propuestos en la literatura para la clasificación de señales EEG, los cuales se pueden dividir en cuatro categorías: preprocesamiento, segmentación, extracción de características y clasificación. Este procedimiento se explicará a continuación usando la referencia [1]. Asimismo, estos cuatro pasos del tratamiento de señales ECG se muestran a modo de diagrama en la figura 2. 
+
+<div align="center">
+    <img src="Imagenes_L10\Figura_1.png" alt="wCF14V" width="500">
+    <p><b>Figura 2. Muestras de ondas cerebrales con frecuencias dominantes pertenecientes a las bandas beta, alfa, theta y delta y gamma. Extraído de [1] </b> </p>
+</div>
 
 <div align="center">
     <img src="Imagenes_L9\Figura_2.png" alt="wCF14V" width="300">
-    <p><b> Figura 2.Diagrama de la clasificación de la señal ECG. Extraído de [2] </b> </p>
+    <p><b> Figura 2. Etapas del ánalisis de la Señal EEG. Extraído de [4] </b> </p>
 </div>
 
 **Etapas de la clasificación:** 
