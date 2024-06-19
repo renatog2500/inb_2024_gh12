@@ -5,12 +5,11 @@
 1. [Lista de participantes](#t1)
 2. [Introducción](#t2)
 3. [Metodología](#t4)\
-   3.1.[Materiales y Equipo utilizado](#t5)\
-   3.2.[Procedimiento](#t6)\
-       3.2.1.[Adquisición de la señal](#t7)\
-       3.2.3.[Filtrado](#t8)\
-       3.2.5.[Extracción de características](#t10)\
-       3.2.6.[Generación de señales y obtención de características](#t11)
+   3.1.[Procedimiento](#t6)\
+   3.2.[Adquisición de la señal](#t7)\
+   3.3.[Filtrado](#t8)\
+   3.4 [Extracción de características](#t10)\
+   3.5.[Generación de señales y obtención de características](#t11)
 7. [Discusión](#t12)
 8. [Conclusión](#t13)
 9. [Archivos](#t14)
@@ -68,18 +67,11 @@ Hay varios métodos propuestos en la literatura para la clasificación de señal
 ## Adquisición de la señal <a name="t7"></a>
 
 
-**Protocolo:**
-
-
-## Filtros para el procesamiento de ECG <a name="t8"></a>
+## Filtros para el procesamiento de EEG <a name="t8"></a>
 
 
 
 ***Resultados***: 
-
-
-
-## Obtención de la variabilidad de la frecuencia cardíaca (HRV):  <a name="t9"></a>
 
 
 ***Resultados***: 
@@ -87,11 +79,10 @@ Hay varios métodos propuestos en la literatura para la clasificación de señal
 ## Extracción de características  <a name="t10"></a>
 
 
-***Mostramos como obtenemos dichas características del BioSignal***: 
 
 ## Generación de señales y obtención de características <a name="t11"></a>
 
-### Reposo
+
 
 
 ## Discusión de los resultados  <a name="t12"></a>
