@@ -25,7 +25,7 @@ La electroencefalografía (EEG) es una técnica no invasiva que se utiliza para 
 
 
 <div align="center">
-    <img src="Imagenes_L10\Figura_1.png" alt="wCF14V" width="500">
+    <img src="Imagenes_L10\Figura1.png" alt="wCF14V" width="500">
     <p><b>Figura 1. Muestras de ondas cerebrales con frecuencias dominantes pertenecientes a las bandas beta, alfa, theta y delta y gamma. Extraído de [3] </b> </p>
 </div>
 
@@ -46,7 +46,7 @@ El EEG es capaz de detectar y registrar diferentes tipos de ondas cerebrales, qu
 Hay varios métodos propuestos en la literatura para la clasificación de señales EEG, los cuales se pueden dividir en cuatro categorías: preprocesamiento, segmentación, extracción de características y clasificación. Este procedimiento se explicará a continuación usando la referencia [1]. Asimismo, estos cuatro pasos del tratamiento de señales ECG se muestran a modo de diagrama en la figura 2. 
 
 <div align="center">
-    <img src="Imagenes_L9\Figura_2.png" alt="wCF14V" width="300">
+    <img src="Imagenes_L10\Figura2.png" alt="wCF14V" width="300">
     <p><b> Figura 2. Etapas del ánalisis de la Señal EEG. Extraído de [4] </b> </p>
 </div>
 
