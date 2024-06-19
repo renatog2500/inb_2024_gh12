@@ -5,11 +5,10 @@
 1. [Lista de participantes](#t1)
 2. [Introducción](#t2)
 3. [Metodología](#t4)\
-   3.1.[Procedimiento](#t6)\
-   3.2.[Adquisición de la señal](#t7)\
-   3.3.[Filtrado](#t8)\
-   3.4 [Extracción de características](#t10)\
-   3.5.[Generación de señales y obtención de características](#t11)
+   3.1.[Adquisición de la señal](#t7)\
+   3.2.[Filtrado](#t8)\
+   3.3. [Extracción de características](#t10)\
+   3.4.[Generación de señales y obtención de características](#t11)
 7. [Discusión](#t12)
 8. [Conclusión](#t13)
 9. [Archivos](#t14)
@@ -18,7 +17,7 @@ ________________________________________________________________________________
 ## **Lista de participantes** <a name = "t1"></a>
 * Jimena Alpiste Espinoza - 74297329
 * Jossymar León Mallma - 74905684
-* Renato Cardoso Cardenas - 73061678
+* Renato Cardoso Reategui - 73061678
 
 
 ## Introducción  <a name = "t2"></a>
