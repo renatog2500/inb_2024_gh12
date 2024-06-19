@@ -60,7 +60,10 @@ Hay varios métodos propuestos en la literatura para la clasificación de señal
 
 
 ## **Objetivos del Laboratorio** <a name = "t3"></a>
-
+- Aplicar técnicas avanzadas de filtrado y eliminación de artefactos en las señales EEG para asegurar una señal limpia y lista para análisis detallado.
+- Normalizar y alinear las señales EEG durante el preprocesamiento para garantizar consistencia y comparabilidad entre sesiones y sujetos.
+- Implementar y optimizar la extracción de características mediante análisis Wavelet y técnicas de feature engineering, mejorando la precisión de los modelos de machine learning en la clasificación de patrones de actividad cerebral.
+  
 ## Metodología <a name="t4"></a>
 
 ## Adquisición de la señal <a name="t7"></a>
