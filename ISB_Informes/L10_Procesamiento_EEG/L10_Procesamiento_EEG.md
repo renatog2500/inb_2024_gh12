@@ -71,7 +71,7 @@ Para la adquisición de la señal se utilizó la base de datos PhysioNet, espec�
 
 Las señales EEG del estudio fueron adquiridas utilizando el sistema Neurocom EEG de 23 canales. Se colocaron electrodos de plata/cloruro de plata en el cuero cabelludo de los sujetos siguiendo el esquema internacional 10/20, con todos los electrodos referenciados a electrodos interconectados en las orejas. Se aplicaron un filtro de paso alto con una frecuencia de corte de 30 Hz y un filtro de muesca de línea eléctrica de 50 Hz para eliminar el ruido. Los segmentos de EEG grabados, cada uno de 60 segundos de duración, estaban libres de artefactos gracias a la aplicación de Análisis de Componentes Independientes (ICA) durante el preprocesamiento de datos, lo que eliminó artefactos de ojos, músculos y pulsaciones cardíacas.
 
-## Adquisición de la señal <a name="t9"></a>
+## Análisis de componentes independientes (ICA)<a name="t9"></a>
 Como se mencionó anteriormente, para el análisis de los datos de EEG es posible utilizar el método de Análisis de Componentes Independientes (ICA) con el objetivo de identificar y eliminar componentes artefactuales. Los criterios para elegir los índices del EEG a utilizar para el ICA incluyen las siguientes medidas, basándonos en la referencia [6]:
 
 1. **Pendiente Espectral**: Esta medida calcula la pendiente del espectro de potencia de cada componente independiente (IC) en una escala log-log entre 7 y 75 Hz. Se espera que los ICs de origen muscular tengan pendientes positivas, mientras que los ICs de origen neural tengan pendientes negativas.
