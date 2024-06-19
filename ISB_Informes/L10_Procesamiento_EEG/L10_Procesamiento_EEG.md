@@ -35,7 +35,7 @@ La electroencefalografía (EEG) es una técnica no invasiva que se utiliza para 
 
 El EEG es capaz de detectar y registrar diferentes tipos de ondas cerebrales, que se clasifican según su frecuencia y amplitud [3] . A continuación se mostrarán los cinco principales tipos de ondas cerebrales en una tabla, basada en la información de la referencia [4]: 
 
-| **Tipo de Onda** | **Frecuencia (Hz)** | ** Características y Estado Cerebral** |
+| **Tipo de Onda** | **Frecuencia (Hz)** | **Características y Estado Cerebral** |
 |------------------|---------------------|---------------------|
 | **Delta**        | 0.5-4               | Ondas de baja frecuencia y alta amplitud observadas durante el sueño profundo y los estados de inconsciencia, destacándose en las regiones frontocentrales de la cabeza. Patológicamente, se presenta en personas despiertas con encefalopatía generalizada y disfunción cerebral focal, relacionada con epilepsia del lóbulo temporal. |
 | **Theta**        | 4-8                 | Durante la somnolencia y las primeras etapas del sueño, se manifiesta el ritmo theta, destacándose especialmente en las regiones frontocentrales de la cabeza. A medida que la somnolencia avanza, este ritmo se desplaza gradualmente hacia las áreas posteriores del cerebro, sustituyendo progresivamente al ritmo alfa. En estados emocionales intensos, la actividad de la onda theta se intensifica. Además, su presencia durante los estados de vigilia puede indicar una disfunción cerebral focal. |
