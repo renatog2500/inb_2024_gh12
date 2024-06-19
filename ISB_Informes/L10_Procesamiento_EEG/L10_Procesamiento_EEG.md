@@ -64,7 +64,9 @@ Hay varios métodos propuestos en la literatura para la clasificación de señal
 ## Metodología <a name="t4"></a>
 
 ## Adquisición de la señal <a name="t7"></a>
+Para la adquisición de la señal se utilizó la base de datos PhysioNet, específicamente el estudio "EEG During Mental Arithmetic Tasks" [5] . Este estudio registró la actividad cerebral de los sujetos antes y durante la realización de tareas de aritmética mental, las cuales consistían en realizar restas en serie de dos números. Cada prueba comenzó con la comunicación oral de un número de 4 dígitos y otro de 2 dígitos.
 
+Las señales EEG del estudio fueron adquiridas utilizando el sistema Neurocom EEG de 23 canales. Se colocaron electrodos de plata/cloruro de plata en el cuero cabelludo de los sujetos siguiendo el esquema internacional 10/20, con todos los electrodos referenciados a electrodos interconectados en las orejas. Se aplicaron un filtro de paso alto con una frecuencia de corte de 30 Hz y un filtro de muesca de línea eléctrica de 50 Hz para eliminar el ruido. Los segmentos de EEG grabados, cada uno de 60 segundos de duración, estaban libres de artefactos gracias a la aplicación de Análisis de Componentes Independientes (ICA) durante el preprocesamiento de datos, lo que eliminó artefactos de ojos, músculos y pulsaciones cardíacas.
 
 ## Filtros para el procesamiento de EEG <a name="t8"></a>
 
@@ -105,6 +107,7 @@ Hay varios métodos propuestos en la literatura para la clasificación de señal
 
 [4] C. S. Nayak and A. C. Anilkumar, "EEG Normal Waveforms," in StatPearls [Internet], Treasure Island (FL): StatPearls Publishing, updated Jul. 24, 2023, Available: https://www.ncbi.nlm.nih.gov/books/NBK539805.
 
+[5] "EEG during Mental Arithmetic Tasks V1.0.0", 17 de diciembre de 2018. https://physionet.org/content/eegmat/1.0.0/
 
 
 
