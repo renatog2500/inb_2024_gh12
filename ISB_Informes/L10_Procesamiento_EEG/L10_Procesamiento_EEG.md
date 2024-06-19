@@ -6,6 +6,7 @@
 2. [Introducción](#t2)
 3. [Metodología](#t4)\
    3.1.[Adquisición de la señal](#t7)\
+   3.2. [Análisis de componentes independientes (ICA)](#t9)\
    3.2.[Filtrado](#t8)\
    3.3. [Extracción de características](#t10)\
    3.4.[Generación de señales y obtención de características](#t11)
@@ -87,7 +88,18 @@ Como se mencionó anteriormente, para el análisis de los datos de EEG es posibl
 ***Resultados***: 
 
 
-***Resultados***: 
+
+### Aplicación de los Criterios para la selección de los ICAs
+
+Para seleccionar los ICAs más adecuados para el análisis, utilicé los siguientes criterios basados en las recomendaciones para el uso del ICA en EEG:
+
+- **ICA006**: Presenta una actividad más concentrada, lo que sugiere una fuente centralizada, típicamente neural.
+- **ICA003**: Muestra una actividad concentrada en el centro y la parte inferior del casquete, lo que sugiere una fuente neural.
+- **ICA002**: Actividad centralizada, sugiriendo una fuente neural.
+- **ICA000**: Similar a los anteriores, con actividad centralizada.
+- **ICA001**: Muestra una actividad concentrada y centralizada.
+- **ICA008**: Actividad dispersa pero con cierta concentración en el centro, lo que sugiere una mezcla con una mayor probabilidad de contener fuentes neuronales.
+- **ICA012**: Actividad dispersa pero con mayor concentración central, sugiriendo una mayor probabilidad de ser neural.
 
 ## Extracción de características  <a name="t10"></a>
 
@@ -121,10 +133,7 @@ Como se mencionó anteriormente, para el análisis de los datos de EEG es posibl
 
 [5] "EEG during Mental Arithmetic Tasks V1.0.0", 17 de diciembre de 2018. https://physionet.org/content/eegmat/1.0.0/
 
-
-
-
-
+[6] Dhani Dharmaprani, Hoang K. Nguyen, Trent W. Lewis, Dylan DeLosAngeles, John O. Willoughby, and Kenneth J. Pope. "A comparison of independent component analysis algorithms and measures to discriminate between EEG and artifact components". In 2016 38th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), 825–828. Orlando, FL, USA, 2016. IEEE. doi:10.1109/EMBC.2016.7590828.
 
 
 
