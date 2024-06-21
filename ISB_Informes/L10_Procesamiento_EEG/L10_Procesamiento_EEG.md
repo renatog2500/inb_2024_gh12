@@ -139,7 +139,7 @@ Como se mencionó anteriormente, para el análisis de los datos de EEG es posibl
 
 <div align="center">
     <img src="Imagenes_L10\ICA010.png" alt="wCF14V" width="400">
-    <p><b>Figura 13. ICA004 </b> </p>
+    <p><b>Figura 13. ICA010 </b> </p>
 </div>
 
 <div align="center">
