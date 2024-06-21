@@ -173,8 +173,35 @@ Para seleccionar los ICAs más adecuados para el análisis, utilicé los siguien
 - **ICA008**: Actividad dispersa pero con cierta concentración en el centro, lo que sugiere una mezcla con una mayor probabilidad de contener fuentes neuronales.
 - **ICA012**: Actividad dispersa pero con mayor concentración central, sugiriendo una mayor probabilidad de ser neural.
 
+
 ## Extracción de características  <a name="t10"></a>
 
+*Extracción de Características de Señales EEG usando OSFBCSP
+
+Nos basaremos en la investigación realizada por Shang et. al. en donde implementan el método de extracción de características haciendo uso del modelo OSFBCSP.
+
+*Descripción del Método
+
+El proceso de extracción de características de las señales EEG se realiza utilizando el método OSFBCSP (Overlapping Sub-band Filter Banks Common Spatial Pattern). Este método consta de tres etapas principales:
+
+1. Filtrado multi-banda
+2. Cálculo de características usando el algoritmo CSP
+3. Selección de características
+
+*Parámetros de Extracción de Características
+
+| Parámetro | Valor/Descripción |
+|-----------|-------------------|
+| Número de sub-bandas | 4 |
+| Ancho de banda de cada sub-banda | 4 Hz |
+| Superposición entre sub-bandas | 2 Hz |
+| Sub-banda 1 | 6-10 Hz |
+| Sub-banda 2 | 8-12 Hz |
+| Sub-banda 3 | 10-14 Hz |
+| Sub-banda 4 | 12-16 Hz |
+| Método de filtrado espacial | Common Spatial Pattern (CSP) |
+| Selección de características | Basada en información mutua |
+| Reducción de dimensionalidad | Análisis Discriminante Lineal (LDA) |
 
 
 ## Generación de señales y obtención de características <a name="t11"></a>
