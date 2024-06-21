@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import re
 
 # Cargar datos desde el archivo de texto según la ubicación del 
-archivo = "C:/Users/Equipo/OneDrive/Escritorio/Introduccion_a_señales_biomedicas/Github/inb_2024_gh12/Documentación/EMG/Lectura_antebrazo_supinación_EMG.txt"
+archivo = "C:/Users/Jossymar/Desktop/Introduccion a señales/github/inb_2024_gh12/Documentación/EMG/Lectura_bicep_braquial_EMG.txt"
 
 def extraer_nombres_columnas(archivo):
     with open(archivo, 'r') as f:
@@ -61,7 +61,11 @@ print(len(Lectura))
 magnitudes_db = -20*np.log10(np.abs(fft_result))
 
 #print(Lectura)
-Lectura.index = Lectura.index / 1000
+#Lectura.index = Lectura.index / 1000
+
+# Guardar el DataFrame en un archivo CSV
+
+Lectura.to_csv("lectura_emg_jimena1.csv", index=True)
 
 #Convertimos los valores digitales de una resoluciónde 10 bit a una analógica para un EEG
 # Define the constants from the transfer function image
