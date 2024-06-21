@@ -161,6 +161,7 @@ Como se mencionó anteriormente, para el análisis de los datos de EEG es posibl
     <img src="Imagenes_L10\ICA014.png" alt="wCF14V" width="400">
     <p><b>Figura 17. ICA014 </b> </p>
 </div>
+
 ### Aplicación de los Criterios para la selección de los ICAs
 
 Para seleccionar los ICAs más adecuados para el análisis, utilicé los siguientes criterios basados en las recomendaciones para el uso del ICA en EEG:
