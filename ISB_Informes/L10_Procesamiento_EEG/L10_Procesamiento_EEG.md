@@ -222,8 +222,37 @@ El proceso de extracción de características de las señales EEG se realiza uti
 
 ## Generación de señales y obtención de características <a name="t11"></a>
 
+<div align="center">
+    <img src="Imagenes_L10\MEDIA.png" alt="wCF14V" width="400">
+    <p><b>Figura 17. MEDIA </b> </p>
+</div>
 
+<div align="center">
+    <img src="Imagenes_L10\MEDIANA.png" alt="wCF14V" width="400">
+    <p><b>Figura 18. mediana </b> </p>
+</div>
 
+<div align="center">
+    <img src="Imagenes_L10\RMS.png" alt="wCF14V" width="400">
+    <p><b>Figura 19. RMS </b> </p>
+</div>
+
+<div align="center">
+    <img src="Imagenes_L10\Señal_antes y despues de limpiar.png" alt="wCF14V" width="400">
+    <p><b>Figura 20. SE </b> </p>
+</div>
+
+<div align="center">
+    <img src="Imagenes_L10\Evoked_for_different_Condiftions.png" alt="wCF14V" width="400">
+    <p><b>Figura 21. EVOKED </b> </p>
+</div>
+
+<div align="center">
+    <img src="Imagenes_L10\Combinandas_GFP.png" alt="wCF14V" width="400">
+    <p><b>Figura 22. GFP combinadas </b> </p>
+</div>
+
+Pese haber encontrado bibliografía con respecto a a la normalización y carácterización de la señal, se optó utilizar y modificar el código del laboratorio que se nos brindó previo al laboratorio.
 
 ## Discusión de los resultados  <a name="t12"></a>
 
@@ -233,7 +262,7 @@ El proceso de extracción de características de las señales EEG se realiza uti
 
 ## Archivos <a name="t14"></a>
 
-- [Programa de procesamiento de señal EEG (python)](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L9_Procesamiento_ECG/LAB_9.ipynb) 
+- [Programa de procesamiento de señal EEG (python)](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L10_Procesamiento_EEG/LAB_10.ipynb) 
 
 
 ## Bibliografía: <a name="t15"></a>
