@@ -176,11 +176,26 @@ Para seleccionar los ICAs más adecuados para el análisis, utilicé los siguien
 
 ## Extracción de características  <a name="t10"></a>
 
-*Extracción de Características de Señales EEG usando OSFBCSP
+**Proceso de Normalización de la señal EEG**
 
-Nos basaremos en la investigación realizada por Shang et. al. en donde implementan el método de extracción de características haciendo uso del modelo OSFBCSP.
+En un estudio realizado por Logesparan [7] en donde realizan la normalización de la señal EEG para el tratamiento de este tipo de señales en pacientes epilépticos, se hace mención de 5 diferentes métodos de normalización de la señal. Estos son:
 
-*Descripción del Método
+- Memoria decreciente de la mediana
+- memoria de la media
+- memoria de la desviación estándar
+- Detector de picos
+- Rango de la señal
+
+En donde: 
+la memoria decreciente de la mediana (fórmula: N_A = F/z, donde z(k) = (1 - λ) * median{F(k-1)...F(k-118)} + λ * z(k-1), con λ = 0.99) emerge como el método superior.
+
+Este método se destaca por su rendimiento óptimo (93% de área bajo la curva ROC), balance entre sensibilidad y especificidad (ambas superiores al 75%), robustez en diferentes canales y sujetos, adaptabilidad a cambios lentos en la señal, resistencia a valores atípicos, y un equilibrio adecuado entre complejidad computacional y efectividad. Su capacidad para proporcionar una normalización efectiva mientras mantiene el poder discriminativo de la característica de longitud de línea, junto con una limitación moderada del rango de salida, lo convierte en la opción más versátil y confiable para la normalización de señales EEG.
+
+**Extracción de Características de Señales EEG usando OSFBCSP**
+
+Nos basaremos en la investigación realizada por Shang et. al. [8] en donde implementan el método de extracción de características haciendo uso del modelo OSFBCSP.
+
+**Descripción del Método**
 
 El proceso de extracción de características de las señales EEG se realiza utilizando el método OSFBCSP (Overlapping Sub-band Filter Banks Common Spatial Pattern). Este método consta de tres etapas principales:
 
@@ -188,7 +203,7 @@ El proceso de extracción de características de las señales EEG se realiza uti
 2. Cálculo de características usando el algoritmo CSP
 3. Selección de características
 
-*Parámetros de Extracción de Características
+**Parámetros de Extracción de Características**
 
 | Parámetro | Valor/Descripción |
 |-----------|-------------------|
@@ -234,5 +249,7 @@ El proceso de extracción de características de las señales EEG se realiza uti
 
 [6] Dhani Dharmaprani, Hoang K. Nguyen, Trent W. Lewis, Dylan DeLosAngeles, John O. Willoughby, and Kenneth J. Pope. "A comparison of independent component analysis algorithms and measures to discriminate between EEG and artifact components". In 2016 38th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), 825–828. Orlando, FL, USA, 2016. IEEE. doi:10.1109/EMBC.2016.7590828.
 
+[7] Logesparan L, Rodriguez-Villegas E, Casson A, Casson AJ. The impact of signal normalization on seizure detection using line length features. Medical & Biological Engineering & Computing [Internet]. 2015 Oct 1 [cited 2024 Jun 21];53(10):929–42. Available from: https://research-ebsco-com.ezproxybib.pucp.edu.pe/linkprocessor/plink?id=3b2906e7-913e-31be-a443-a452d5e4ccbd
 
+[8] Shang Y, Gao X, An A. Multi-band spatial feature extraction and classification for motor imaging EEG signals based on OSFBCSP-GAO-SVM model: EEG signal processing. Medical & Biological Engineering & Computing [Internet]. 2023 Jun 1 [cited 2024 Jun 21];61(6):1581–602. Available from: https://research-ebsco-com.ezproxybib.pucp.edu.pe/linkprocessor/plink?id=2f35fc96-e52f-3998-a091-ea5625b691d9
 
