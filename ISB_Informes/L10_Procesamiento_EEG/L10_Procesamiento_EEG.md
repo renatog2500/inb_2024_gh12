@@ -87,8 +87,80 @@ Como se mencionó anteriormente, para el análisis de los datos de EEG es posibl
 
 ***Resultados***: 
 
+<div align="center">
+    <img src="Imagenes_L10\ICA000.png" alt="wCF14V" width="400">
+    <p><b>Figura 3. ICA000 </b> </p>
+</div>
 
+<div align="center">
+    <img src="Imagenes_L10\ICA001.png" alt="wCF14V" width="400">
+    <p><b>Figura 4. ICA001 </b> </p>
+</div>
 
+<div align="center">
+    <img src="Imagenes_L10\ICA002.png" alt="wCF14V" width="400">
+    <p><b>Figura 5. ICA002 </b> </p>
+</div>
+
+<div align="center">
+    <img src="Imagenes_L10\ICA003.png" alt="wCF14V" width="400">
+    <p><b>Figura 6. ICA003 </b> </p>
+</div>
+
+<div align="center">
+    <img src="Imagenes_L10\ICA004.png" alt="wCF14V" width="400">
+    <p><b>Figura 7. ICA004 </b> </p>
+</div>
+
+<div align="center">
+    <img src="Imagenes_L10\ICA005.png" alt="wCF14V" width="400">
+    <p><b>Figura 8. ICA005 </b> </p>
+</div>
+
+<div align="center">
+    <img src="Imagenes_L10\ICA006.png" alt="wCF14V" width="400">
+    <p><b>Figura 9. ICA006 </b> </p>
+</div>
+
+<div align="center">
+    <img src="Imagenes_L10\ICA007.png" alt="wCF14V" width="400">
+    <p><b>Figura 10. ICA007 </b> </p>
+</div>
+
+<div align="center">
+    <img src="Imagenes_L10\ICA008.png" alt="wCF14V" width="400">
+    <p><b>Figura 11. ICA008 </b> </p>
+</div>
+
+<div align="center">
+    <img src="Imagenes_L10\ICA009.png" alt="wCF14V" width="400">
+    <p><b>Figura 12. ICA009 </b> </p>
+</div>
+
+<div align="center">
+    <img src="Imagenes_L10\ICA010.png" alt="wCF14V" width="400">
+    <p><b>Figura 13. ICA004 </b> </p>
+</div>
+
+<div align="center">
+    <img src="Imagenes_L10\ICA011.png" alt="wCF14V" width="400">
+    <p><b>Figura 14. ICA011 </b> </p>
+</div>
+
+<div align="center">
+    <img src="Imagenes_L10\ICA012.png" alt="wCF14V" width="400">
+    <p><b>Figura 15. ICA012 </b> </p>
+</div>
+
+<div align="center">
+    <img src="Imagenes_L10\ICA013.png" alt="wCF14V" width="400">
+    <p><b>Figura 16. ICA013 </b> </p>
+</div>
+
+<div align="center">
+    <img src="Imagenes_L10\ICA014.png" alt="wCF14V" width="400">
+    <p><b>Figura 17. ICA014 </b> </p>
+</div>
 ### Aplicación de los Criterios para la selección de los ICAs
 
 Para seleccionar los ICAs más adecuados para el análisis, utilicé los siguientes criterios basados en las recomendaciones para el uso del ICA en EEG:
