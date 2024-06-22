@@ -15,13 +15,13 @@ Integrante: Jimena Alpiste Espinoza (74297329)
 
 | Window1 | Window8 | Window 16|
 |-----------|-----------|-----------|
-| Fila 1, C1 | Fila 1, C2 | Fila 1, C3 |
+| ![EKG basal 2](L14_jimena/bicep_braquial_window1.png) | ![EKG basal 2](L14_jimena/bicep_braquial_window8.png)| ![EKG basal 2](L14_jimena/bicep_braquial_window16.png) |
 
 **Pulgar Supinación**
 
 | Window0 | Window5 | Window 10|
 |-----------|-----------|-----------|
-| Fila 1, C1 | Fila 1, C2 | Fila 1, C3 |
+| ![EKG basal 2](L14_jimena/pulgar_supinacion_window00.png) | ![EKG basal 2](L14_jimena/pulgar_supinacion_window05.png)| ![EKG basal 2](L14_jimena/pulgar_supinacion_window10.png) |
 
 
 **Señal ECG**
@@ -30,13 +30,13 @@ Integrante: Jimena Alpiste Espinoza (74297329)
 
 | Window 0 | Window 4 | Window 10|
 |-----------|-----------|-----------|
-| Fila 1, C1 | Fila 1, C2 | Fila 1, C3 |
+| ![EKG basal 2](L14_jimena/post_ejercicio_window0.png) | ![EKG basal 2](L14_jimena/post_ejercicio_window4.png)| ![EKG basal 2](L14_jimena/post_ejercicio_window10.png) |
 
 **Post inhalación**
 
 | Window 0 | Window 4 | Window 9|
 |-----------|-----------|-----------|
-| Fila 1, C1 | Fila 1, C2 | Fila 1, C3 |
+| ![EKG basal 2](L14_jimena/post_inhalacion_window0.png) | ![EKG basal 2](L14_jimena/post_inhalacion_window4.png)| ![EKG basal 2](L14_jimena/post_inhalacion_window9.png) |
 
 
 **Señal EEG**
@@ -45,10 +45,10 @@ Integrante: Jimena Alpiste Espinoza (74297329)
 
 | Window1 | Window3 | Window 5|
 |-----------|-----------|-----------|
-| Fila 1, C1 | Fila 1, C2 | Fila 1, C3 |
+| ![EKG basal 2](L14_jimena/preguntas_simples_window1.png) | ![EKG basal 2](L14_jimena/preguntas_simples_window3.png)| ![EKG basal 2](L14_jimena/preguntas_simples_window5.png) |
 
 **Preguntas Complejas**
 
 | Window 0 | Window13 | Window 14|
 |-----------|-----------|-----------|
-| Fila 1, C1 | Fila 1, C2 | Fila 1, C3 |
+| ![EKG basal 2](L14_jimena/preguntas_complejas_window0.png) | ![EKG basal 2](L14_jimena/preguntas_complejas_window13.png)| ![EKG basal 2](L14_jimena/preguntas_complejas_window24.png) |
