@@ -10,6 +10,7 @@ Integrante: Jimena Alpiste Espinoza (74297329)
 # Imágenes 
 
 **Señal EMG**
+
 **Bicep Braquial**
 
 | Window1 | Window8 | Window 16|
@@ -18,21 +19,36 @@ Integrante: Jimena Alpiste Espinoza (74297329)
 
 **Pulgar Supinación**
 
-| Window1 | Window8 | Window 16|
+| Window0 | Window5 | Window 10|
 |-----------|-----------|-----------|
 | Fila 1, C1 | Fila 1, C2 | Fila 1, C3 |
 
 
 **Señal ECG**
 
-| Señal| Imagen |
-|-----------|-----------|
-| Fila 1, C1 | Fila 1, C2 |
-| Fila 1, C1 | Fila 1, C2 |
+**Post Ejercicio**
+
+| Window 0 | Window 4 | Window 10|
+|-----------|-----------|-----------|
+| Fila 1, C1 | Fila 1, C2 | Fila 1, C3 |
+
+**Post inhalación**
+
+| Window 0 | Window 4 | Window 9|
+|-----------|-----------|-----------|
+| Fila 1, C1 | Fila 1, C2 | Fila 1, C3 |
+
 
 **Señal EEG**
 
-| Señal| Imagen |
-|-----------|-----------|
-| Fila 1, C1 | Fila 1, C2 |
-| Fila 1, C1 | Fila 1, C2 |
+**Preguntas Simples**
+
+| Window1 | Window3 | Window 5|
+|-----------|-----------|-----------|
+| Fila 1, C1 | Fila 1, C2 | Fila 1, C3 |
+
+**Preguntas Complejas**
+
+| Window 0 | Window13 | Window 14|
+|-----------|-----------|-----------|
+| Fila 1, C1 | Fila 1, C2 | Fila 1, C3 |
