@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import re
 
 # Cargar datos desde el archivo de texto según la ubicación del 
-archivo = "C:/Users/Jossymar/Desktop/Introduccion a señales/github/inb_2024_gh12/Documentación/EMG/Lectura_bicep_braquial_EMG.txt"
+archivo = "C:/Users/Equipo/OneDrive/Escritorio/Introduccion_a_señales_biomedicas/Github/inb_2024_gh12/ISB_Informes/L4_Lectura_de_ECG/ECG_L4/Paso2_Simulador.txt"
 
 def extraer_nombres_columnas(archivo):
     with open(archivo, 'r') as f:
@@ -65,20 +65,20 @@ magnitudes_db = -20*np.log10(np.abs(fft_result))
 
 # Guardar el DataFrame en un archivo CSV
 
-Lectura.to_csv("lectura_emg_jimena1.csv", index=True)
+
 
 #Convertimos los valores digitales de una resoluciónde 10 bit a una analógica para un EEG
 # Define the constants from the transfer function image
 VCC = 3.3  # Operating voltage
-G_EEG = 41782  # Sensor gain
+G_EEG = 1100  # Sensor gain
 n_bits = 10  # Number of bits for ADC
 
 # Convert ADC to EEG(V)
 Lectura = (Lectura / (2**n_bits) - 0.5) * VCC / G_EEG
 
 # Convert EEG(V) to EEG(uV)
-Lectura = Lectura * 1e6
-
+Lectura = Lectura * 1e3
+Lectura.to_csv("lectura_ecg2_jossymar.csv", index=True)
 # Plotear la señal de EMG en el dominio del tiempo
 plt.figure(figsize=(13,9))
 plt.subplot(211)

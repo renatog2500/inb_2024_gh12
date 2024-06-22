@@ -5,7 +5,7 @@ import numpy as np
 
 api_key = 'ei_4aefce2f31d32bc9d81c758dfacdc12c8a47dfa19a1c99aad8046b23eac06940'
 # Ruta del archivo CSV
-file_path = 'C:/Users/Jossymar/Desktop/Introduccion a señales/github/inb_2024_gh12/lectura_eeg2.csv'
+file_path = 'C:/Users/Equipo/OneDrive/Escritorio/Introduccion_a_señales_biomedicas/Github/inb_2024_gh12/eeg2_jossymar.csv'
 
 # Leer el archivo CSV como un DataFrame
 dataframe = pd.read_csv(file_path)
@@ -27,7 +27,7 @@ for i in range(num_windows):
     window_df.to_csv(temp_csv_path, index=False)
     
     # Etiqueta para la subida
-    label = 'EEG_2'
+    label = 'Preguntas_simples'
 
     # Subir el archivo CSV temporal a Edge Impulse
     with open(temp_csv_path, 'rb') as file:
