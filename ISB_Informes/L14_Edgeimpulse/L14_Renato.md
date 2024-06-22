@@ -30,9 +30,9 @@ Link EDGE IMPULSE: https://studio.edgeimpulse.com/public/431550/live
 
 ### EMG pulgar supinación
 
-| Imagen 1 | Imagen 2 | Imagen 3 | Imagen 4 | Imagen 5 |
+| EMG pulgar 0 | EMG pulgar 2 | EMG pulgar 4 | EMG pulgar 6 | EMG pulgar 8 |
 |----------|----------|----------|----------|----------|
-| ![EMG pulgar 1](ruta/a/imagen1.jpg) | ![EMG pulgar 2](ruta/a/imagen2.jpg) | ![EMG pulgar 3](ruta/a/imagen3.jpg) | ![EMG pulgar 4](ruta/a/imagen4.jpg) | ![EMG pulgar 5](ruta/a/imagen5.jpg) |
+| ![EMG pulgar 1](L14_Renato/Lectura_pulgar_supinacion_EMG_0.png) | ![EMG pulgar 2](L14_Renato/Lectura_pulgar_supinacion_EMG_2.png) | ![EMG pulgar 3](L14_Renato/Lectura_pulgar_supinacion_EMG_4.png) | ![EMG pulgar 4](L14_Renato/Lectura_pulgar_supinacion_EMG_6.png) | ![EMG pulgar 5](L14_Renato/Lectura_pulgar_supinacion_EMG_8.png) |
 
 ## EEG
 
@@ -40,12 +40,12 @@ Link EDGE IMPULSE: https://studio.edgeimpulse.com/public/431551/live
 
 ### EEG preguntas simples
 
-| Imagen 1 | Imagen 2 | Imagen 3 | Imagen 4 | Imagen 5 |
+| EEG_PS 1 | EEG_PS 2 | EEG_PS 3 | EEG_PS 4 | EEG_PS 5 |
 |----------|----------|----------|----------|----------|
-| ![EEG simple 1](ruta/a/imagen1.jpg) | ![EEG simple 2](ruta/a/imagen2.jpg) | ![EEG simple 3](ruta/a/imagen3.jpg) | ![EEG simple 4](ruta/a/imagen4.jpg) | ![EEG simple 5](ruta/a/imagen5.jpg) |
+| ![EEG simple 1](L14_Renato/Preguntas_simples_EEG_1.png) | ![EEG simple 2](L14_Renato/Preguntas_simples_EEG_2.png) | ![EEG simple 3](L14_Renato/Preguntas_simples_EEG_3.png) | ![EEG simple 4](L14_Renato/Preguntas_simples_EEG_4.png) | ![EEG simple 5](L14_Renato/Preguntas_simples_EEG_5.png) |
 
 ### EEG preguntas compuestas
 
-| Imagen 1 | Imagen 2 | Imagen 3 | Imagen 4 | Imagen 5 |
+| EEG_PC 9 | EEG_PC 11 | EEG_PC 13 | EEG_PC 15 | EEG_PC 17 |
 |----------|----------|----------|----------|----------|
-| ![EEG compuesto 1](ruta/a/imagen1.jpg) | ![EEG compuesto 2](ruta/a/imagen2.jpg) | ![EEG compuesto 3](ruta/a/imagen3.jpg) | ![EEG compuesto 4](ruta/a/imagen4.jpg) | ![EEG compuesto 5](ruta/a/imagen5.jpg) |
+| ![EEG compuesto 1](L14_Renato/Preguntas_complejas_EEG_9.png) | ![EEG compuesto 2](L14_Renato/Preguntas_complejas_EEG_11.png) | ![EEG compuesto 3](L14_Renato/Preguntas_complejas_EEG_13.png) | ![EEG compuesto 4](L14_Renato/Preguntas_complejas_EEG_15.png) | ![EEG compuesto 5](L14_Renato/Preguntas_complejas_EEG_17.png) |
