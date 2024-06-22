@@ -171,24 +171,36 @@ for i in range(num_windows):
     os.remove(temp_csv_path)
 ```
 
+# Imágenes
+
+**EdgeImpulse**
+<div align="center">
+    <img src="L14_jossymar/Edge_Dataacquisition.JPG" alt="wCF14V" width="800">
+    <p><b>Figura 1. Foto del diseño de datasets de EdgeImpulse  </b> </p>
+</div>
+
+
 **ECG**
 <div align="center">
-    <img src="L14_jossymar/Resultado.JPG" alt="wCF14V" width="800">
-    <p><b>Figura 1. Resultado del cálculo de SNR, PSNR, RMSE de cada filtro y cuál es el filtro ganador </b> </p>
+    <img src="L14_jossymar/Ventana_emg2_6.JPG" alt="wCF14V" width="800">
+    <p><b>Figura 2. Foto de la ventana de ECG de 3segundos </b> </p>
 </div>
 
 **EMG**
 
 <div align="center">
-    <img src="L14_jossymar/Resultado.JPG" alt="wCF14V" width="800">
-    <p><b>Figura 1. Resultado del cálculo de SNR, PSNR, RMSE de cada filtro y cuál es el filtro ganador </b> </p>
+    <img src="L14_jossymar/Ventana_emg2_11.JPG" alt="wCF14V" width="800">
+    <p><b>Figura 3. Foto de la ventana de EMG de 3segundos</b> </p>
 </div>
 
 **EEG**
 
 <div align="center">
-    <img src="L14_jossymar/Resultado.JPG" alt="wCF14V" width="800">
-    <p><b>Figura 1. Resultado del cálculo de SNR, PSNR, RMSE de cada filtro y cuál es el filtro ganador </b> </p>
+    <img src="L14_jossymar/Ventana_eeg2_8.JPG" alt="wCF14V" width="800">
+    <p><b>Figura 4. Foto de la ventana de EEG de 3 egundos </b> </p>
 </div>
 
 # Link Dek Edge Impulse
+
+[Visita mi EdgeImpulse](https://studio.edgeimpulse.com/public/431198/live "Página EdgeImpulse")
+
