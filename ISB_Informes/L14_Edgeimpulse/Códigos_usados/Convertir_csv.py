@@ -54,6 +54,7 @@ Lectura = datos[Entrada]
 #print(Lectura)
 # Convertir los datos a números
 Lectura = Lectura.apply(pd.to_numeric)
+
 """
 #Convertimos los valores digitales de una resoluciónde 10 bit a una analógica para un EEG
 # Define the constants from the transfer function image
