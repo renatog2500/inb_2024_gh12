@@ -8,7 +8,7 @@ Este entregable tiene como objetivo mostrar las señales EMG, EKG y EEG tras un 
 
 | Imagen 1 | Imagen 2 | Imagen 3 | Imagen 4 | Imagen 5 |
 |----------|----------|----------|----------|----------|
-| ![EKG basal 1](ruta/a/imagen1.jpg) | ![EKG basal 2](ruta/a/imagen2.jpg) | ![EKG basal 3](ruta/a/imagen3.jpg) | ![EKG basal 4](ruta/a/imagen4.jpg) | ![EKG basal 5](ruta/a/imagen5.jpg) |
+| ![EKG basal 1](ISB_Informes/L14_Edgeimpulse/L14_Renato/EKG_basal_1.png) | ![EKG basal 2](ISB_Informes/L14_Edgeimpulse/L14_Renato/EKG_basal_3.png) | ![EKG basal 3](ISB_Informes/L14_Edgeimpulse/L14_Renato/EKG_basal_6.png) | ![EKG basal 4](ISB_Informes/L14_Edgeimpulse/L14_Renato/EKG_basal_9.png) | ![EKG basal 5](ISB_Informes/L14_Edgeimpulse/L14_Renato/EKG_basal_10.png) |
 
 ### EKG post ejercicio
 
