@@ -1,6 +1,6 @@
-# PENÚLTIMO ENTREGABLE: Visualización de Imágenes Médicas
+# PENÚLTIMO ENTREGABLE: Visualización de Imágenes EDGE IMPULSE
 
-Este proyecto tiene como objetivo mostrar diferentes tipos de imágenes médicas organizadas en recuadros. A continuación, se presenta la estructura del proyecto con tablas para colocar las imágenes correspondientes.
+Este entregable tiene como objetivo mostrar las señales EMG, EKG y EEG tras un proceso de filtrado y ventaneo. Mostrado en EDGE IMPULSE
 
 ## EKG
 
