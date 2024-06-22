@@ -4,11 +4,13 @@ Este entregable tiene como objetivo mostrar las señales EMG, EKG y EEG tras un 
 
 ## EKG
 
+Link EDGE IMPULSE: https://studio.edgeimpulse.com/public/431196/live 
+
 ### EKG basal
 
 | Imagen 1 | Imagen 2 | Imagen 3 | Imagen 4 | Imagen 5 |
 |----------|----------|----------|----------|----------|
-| ![EKG_basal_1](ISB_Informes/L14_Edgeimpulse/L14_Renato/EKG_basal_1.png) | <img src="ISB_Informes/L14_Edgeimpulse/L14_Renato/EKG_basal_9.png" alt="EKG_basal_1" width="700">) | ![EKG basal 2](ISB_Informes/L14_Edgeimpulse/L14_Renato/EKG_basal_3.png) | ![EKG basal 3](ISB_Informes/L14_Edgeimpulse/L14_Renato/EKG_basal_6.png) | ![EKG basal 4](ISB_Informes/L14_Edgeimpulse/L14_Renato/EKG_basal_9.png) | ![EKG basal 5](ISB_Informes/L14_Edgeimpulse/L14_Renato/EKG_basal_10.png) |
+|  <img src= "L14_Renato/EKG_basal_9.png" alt="EKG_basal_1" width="700"> | ![EKG basal 2](ISB_Informes/L14_Edgeimpulse/L14_Renato/EKG_basal_3.png) | ![EKG basal 3](ISB_Informes/L14_Edgeimpulse/L14_Renato/EKG_basal_6.png) | ![EKG basal 4](ISB_Informes/L14_Edgeimpulse/L14_Renato/EKG_basal_9.png) | ![EKG basal 5](ISB_Informes/L14_Edgeimpulse/L14_Renato/EKG_basal_10.png) |
 
 ### EKG post ejercicio
 
@@ -17,6 +19,8 @@ Este entregable tiene como objetivo mostrar las señales EMG, EKG y EEG tras un 
 | ![EKG post 1](ruta/a/imagen1.jpg) | ![EKG post 2](ruta/a/imagen2.jpg) | ![EKG post 3](ruta/a/imagen3.jpg) | ![EKG post 4](ruta/a/imagen4.jpg) | ![EKG post 5](ruta/a/imagen5.jpg) |
 
 ## EMG
+
+Link EDGE IMPULSE: https://studio.edgeimpulse.com/public/431550/live
 
 ### EMG bicep braquial
 
@@ -31,6 +35,8 @@ Este entregable tiene como objetivo mostrar las señales EMG, EKG y EEG tras un 
 | ![EMG pulgar 1](ruta/a/imagen1.jpg) | ![EMG pulgar 2](ruta/a/imagen2.jpg) | ![EMG pulgar 3](ruta/a/imagen3.jpg) | ![EMG pulgar 4](ruta/a/imagen4.jpg) | ![EMG pulgar 5](ruta/a/imagen5.jpg) |
 
 ## EEG
+
+Link EDGE IMPULSE: https://studio.edgeimpulse.com/public/431551/live
 
 ### EEG preguntas simples
 
