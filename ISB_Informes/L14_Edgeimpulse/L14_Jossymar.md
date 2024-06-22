@@ -186,6 +186,12 @@ for i in range(num_windows):
     <p><b>Figura 2. Foto de la ventana de ECG de 3segundos </b> </p>
 </div>
 
+| Señal| Imagen |
+|-----------|-----------|
+| Paso1_Simulador |![Electrodos de guía](L14_jossymar/ventana_paso1.JPG)|
+| Paso2_Simulador | ![Electrodos de guía](L14_jossymar/ventana_paso2.JPG) |
+
+
 **EMG**
 
 <div align="center">
@@ -193,12 +199,24 @@ for i in range(num_windows):
     <p><b>Figura 3. Foto de la ventana de EMG de 3segundos</b> </p>
 </div>
 
+| Señal| Imagen |
+|-----------|-----------|
+| Antebrazo_Supinación | ![Electrodos de guía](L14_jossymar/antebrazo_supinación.JPG) |
+| Bicep_braquial | ![Electrodos de guía](L14_jossymar/Bicep_braquiañ.JPG)|
+
+
 **EEG**
 
 <div align="center">
     <img src="L14_jossymar/Ventana_eeg2_8.JPG" alt="wCF14V" width="800">
     <p><b>Figura 4. Foto de la ventana de EEG de 3 egundos </b> </p>
 </div>
+
+| Señal| Imagen |
+|-----------|-----------|
+| Basal2 | ![Electrodos de guía](L14_jossymar/Basal2.JPG) |
+| Preguntas_simples | ![Electrodos de guía](L14_jossymar/Preguntas_simples.JPG) |
+
 
 # Link Dek Edge Impulse
 
