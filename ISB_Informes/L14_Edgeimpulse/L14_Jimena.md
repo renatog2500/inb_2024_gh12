@@ -7,7 +7,8 @@ Links del Edge Impulse:
 - [Señal ECG ](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L10_Procesamiento_EEG/LAB_10.ipynb) 
 - [Señal EEG ](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L10_Procesamiento_EEG/LAB_10.ipynb)
   
-Imágenes 
+# Imágenes 
 **Señal EMG**
+
 |  | <img src="Imagenes_L9/Figura_4.png" alt="Electrodos de guía" width="700"> |
 |  | <img src="Imagenes_L9/Figura_4.png" alt="Electrodos de guía" width="700"> |
