@@ -1,7 +1,10 @@
 # Laboratorio N°14 -  Edge Impulse (EI)
 
 Integrante: Jimena Alpiste Espinoza (74297329)
-
+# Objetivos: 
+- Crear un proyecto en EI por cada señal trabajada en clase (EMG, ECG, EEG)
+- Subir cada señal mediante un código en python a EI.
+  
 # Links del Edge Impulse: 
 - [Señal EMG ](https://studio.edgeimpulse.com/public/431540/live ) 
 - [Señal ECG ](https://studio.edgeimpulse.com/public/431532/live) 
