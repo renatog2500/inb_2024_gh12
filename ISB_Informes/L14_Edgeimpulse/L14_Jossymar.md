@@ -191,4 +191,4 @@ for i in range(num_windows):
     <p><b>Figura 1. Resultado del cálculo de SNR, PSNR, RMSE de cada filtro y cuál es el filtro ganador </b> </p>
 </div>
 
-# Archivos
+# Link Dek Edge Impulse
