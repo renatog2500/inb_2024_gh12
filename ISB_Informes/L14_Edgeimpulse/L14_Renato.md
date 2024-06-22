@@ -10,7 +10,7 @@ Link EDGE IMPULSE: https://studio.edgeimpulse.com/public/431196/live
 
 | Imagen 1 | Imagen 2 | Imagen 3 | Imagen 4 | Imagen 5 |
 |----------|----------|----------|----------|----------|
-|  <img src= "L14_Renato/EKG_basal_9.png" alt="EKG_basal_1" width="700"> | ![EKG basal 2](L14_Renato/EKG_basal_3.png) | ![EKG basal 3](/L14_Edgeimpulse/L14_Renato/EKG_basal_6.png) | ![EKG basal 4](ISB_Informes/L14_Edgeimpulse/L14_Renato/EKG_basal_9.png) | ![EKG basal 5](ISB_Informes/L14_Edgeimpulse/L14_Renato/EKG_basal_10.png) |
+|  ![EKG basal 2](L14_Renato/EKG_basal_1.png) | ![EKG basal 2](L14_Renato/EKG_basal_3.png) | ![EKG basal 3](/L14_Edgeimpulse/L14_Renato/EKG_basal_6.png) | ![EKG basal 4](ISB_Informes/L14_Edgeimpulse/L14_Renato/EKG_basal_9.png) | ![EKG basal 5](ISB_Informes/L14_Edgeimpulse/L14_Renato/EKG_basal_10.png) |
 
 ### EKG post ejercicio
 
