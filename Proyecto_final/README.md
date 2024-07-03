@@ -27,6 +27,6 @@ El equipo encontró con los resultados esperados, sin embargo en menor magnitud,
 ## **Referencia al entregable 1 del equipo** <a name = "t6"></a>
 [Sobre nosotros)](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L1_SobreNosotros.md) 
 ## **Enlace a papers with code** <a name = "t7"></a>
-[Papers With Code](https://github.com/renatog2500/inb_2024_gh12/blob/main/ISB_Informes/L10_Procesamiento_EEG/LAB_10.ipynb) ## Proyecto
+[Papers With Code](https://paperswithcode.com/paper/analysis-of-ergonomic-risk-in-university) 
 
 
