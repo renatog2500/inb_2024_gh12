@@ -8,7 +8,7 @@
 7. [Enlace a papers with code](#t7)
 
 ## **Título en inglés** <a name = "t1"></a>
-***Título en inglés: Analysis of Ergonomic Risk in University Study Environments During Class Days***
+***Analysis of Ergonomic Risk in University Study Environments During Class Days***
 
 ## **Título en español** <a name = "t2"></a>
 ***Análisis del Riesgo Ergonómico en Ambientes de Estudio Universitario Durante las Jornadas de Clases***
